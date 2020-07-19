@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+<html class="page" lang="ru">
 
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+
+    <section class="travaler-catalog">
+      <ul class="travaler-catalog__list">
+
+        <li class="catalog__list__item">
+          <img class="travaler__picture" src="https://via.placeholder.com/70x70">
+          <p class="travaler__name">Таня Фирсова</p>
+          <p class="travaler__rating">1,5 M</p>
+          <p class="travaler__hobby">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <p class="travaler__wishes">хочет посетить:</p>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            шри-ланка
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            Тайланд
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            сейшелы
+          </div>
+          <div class="travaler__transport">
+            транспорт:
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+          </div>
+          <div class="travaler__level">
+            левел:
+            <div>99</div>
+          </div>
+          <button class="call__travaler__button">Позвать!</button>
+        </li>
+
+        <li class="catalog__list__item">
+          <img class="travaler__picture" src="https://via.placeholder.com/70x70">
+          <p class="travaler__name">Петя Демин</p>
+          <p class="travaler__rating">1500</p>
+          <p class="travaler__hobby">#бургер #бар #футбол #концерт #крафт</p>
+          <p class="travaler__wishes">хочет посетить:</p>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            бельгия
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            чехия
+          </div>
+          <div class="travaler__transport">
+            транспорт:
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+          </div>
+          <div class="travaler__level">
+            левел:
+            <div>80</div>
+          </div>
+          <button class="call__travaler__button">Позвать!</button>
+        </li>
+        <li class="catalog__list__item">
+          <img class="travaler__picture" src="https://via.placeholder.com/70x70">
+          <p class="travaler__name">Марк Смолов</p>
+          <p class="travaler__rating">170</p>
+          <p class="travaler__hobby">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          <p class="travaler__wishes">хочет посетить:</p>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            сша
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            австралия
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            доминикана
+          </div>
+          <div class="travaler__transport">
+            транспорт:
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+          </div>
+          <div class="travaler__level">
+            левел:
+            <div>25</div>
+          </div>
+          <button class="call__travaler__button">Позвать!</button>
+        </li>
+        <li class="catalog__list__item">
+          <img class="travaler__picture" src="https://via.placeholder.com/70x70">
+          <p class="travaler__name">Лариса Роговая</p>
+          <p class="travaler__rating">23</p>
+          <p class="travaler__hobby">#образование #карьера #учеба #линкедин</p>
+          <p class="travaler__wishes">хочет посетить:</p>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            Великобритания
+          </div>
+          <div class="country__item">
+            <img src="https://via.placeholder.com/26x18">
+            Германия
+          </div>
+          <div class="travaler__transport">
+            транспорт:
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+            <img src="https://via.placeholder.com/32x32">
+          </div>
+          <div class="travaler__level">
+            левел:
+            <div>50</div>
+          </div>
+          <button class="call__travaler__button">Позвать!</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="show__more__travalers">
+      <button class="show__more__button">показать еще</button>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <img src="img/logo-mobile-footer.svg" alt="Главная">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </main>
 </body>
+
 </html>
