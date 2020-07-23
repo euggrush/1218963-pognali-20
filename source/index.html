@@ -12,51 +12,38 @@
       Главная
       <img src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
     </a>
-    <nav class="page-header__main-nav">
-      <button class="main-nav_toggle" type="button">
-        Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__site-list">
-          <li class="page-header__site-list__item">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="page-header__site-list__item">
-            <a href="form.html">
-              Направления
-            </a>
-          </li>
-          <li class="page-header__site-list__item">
-            <a href="catalog.html">
-              Попутчики
-            </a>
-          </li>
-        </ul>
-      </div>
+    <button class="main-nav_toggle" type="button">
+      Открыть меню
+    </button>
+    <nav class="page-header__nav">
+      <a class="page-header__nav-item" href="index.html">
+        Главная
+      </a>
+      <a class="page-header__nav-item" href="form.html">
+        Направления
+      </a>
+      <a class="page-header__nav-item" href="catalog.html">
+        Попутчики
+      </a>
     </nav>
-  </header>
-  <main class="page-main">
-    <h1>В путешествие с крутыми попутчиками!</h1>
 
-    <ul class="user-list">
-      <li class="user-list__item">
-        <a class="user-list__call" href="login.html">
-          Позвонить
-        </a>
-      </li>
-      <li class="user-list__item">
-        <a class="user-list__email" href="login.html">
-          Отправить email
-        </a>
-      </li>
-      <li class="user-list__item">
-        <a class="user-list__login js-login" href="login.html">
-          Авторизация
-        </a>
-      </li>
-    </ul>
+    <h1>В путешествие с крутыми попутчиками!</h1>
+    <div class="page-header__controls">
+      <button class="page-header__controls-item" href="login.html">
+        Позвонить
+      </button>
+      <button class="page-header__controls-item" href="login.html">
+        Отправить email
+      </button>
+      <button class="page-header__controls-item" href="login.html">
+        Авторизация
+      </button>
+    </div>
+
+  </header>
+
+  <main class="page-main">
+
     <section class="service-about">
       <blockquote class="quote">
         «Лучшее приложение, что я видел в жизни!»
@@ -82,6 +69,9 @@
           <span>4</span>
         </li>
       </ul>
+    </section>
+
+    <section class="about">
       <h2>О сервисе</h2>
       <blockquote class="quote">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
@@ -91,6 +81,7 @@
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </b>
     </section>
+
     <section class="directions">
       <h2>Направления</h2>
       <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
