@@ -12,7 +12,7 @@
       Главная
       <img src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
     </a>
-    <button class="main-nav_toggle" type="button">
+    <button class="page-header__button_toggle" type="button">
       Открыть меню
     </button>
     <nav class="page-header__nav">
@@ -29,42 +29,42 @@
 
     <h1>В путешествие с крутыми попутчиками!</h1>
     <div class="page-header__controls">
-      <button class="page-header__controls-item" href="login.html">
+      <a class="page-header__controls-item" href="login.html">
         Позвонить
-      </button>
-      <button class="page-header__controls-item" href="login.html">
+      </a>
+      <a class="page-header__controls-item" href="login.html">
         Отправить email
-      </button>
-      <button class="page-header__controls-item" href="login.html">
+      </a>
+      <a class="page-header__controls-item" href="login.html">
         Авторизация
-      </button>
+      </a>
     </div>
 
   </header>
 
   <main class="page-main">
 
-    <section class="service-about">
-      <blockquote class="quote">
+    <section class="guide">
+      <blockquote class="guide__quote">
         «Лучшее приложение, что я видел в жизни!»
       </blockquote>
-      <b class="quote-autor">
+      <b class="guide__autor">
         Мурат Эльтазин главный редактор газеты «гаджетлайф»
       </b>
-      <ul class="service-about__step-list">
-        <li class="step-list__item">
+      <ul class="guide__list">
+        <li class="guide_item">
           Выберите направление
           <span>1</span>
         </li>
-        <li class="step-list__item">
+        <li class="guide__item">
           Изучите идеи путешественников
           <span>2</span>
         </li>
-        <li class="step-list__item">
+        <li class="guide__item">
           Находите тех, кто похож на вас
           <span>3</span>
         </li>
-        <li class="step-list__item">
+        <li class="guide__item">
           Путешествуйте вместе!
           <span>4</span>
         </li>
@@ -73,11 +73,11 @@
 
     <section class="about">
       <h2>О сервисе</h2>
-      <blockquote class="quote">
+      <blockquote class="about__quote">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
       </blockquote>
-      <b class="quote-autor">
+      <b class="about__slogan">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </b>
     </section>
@@ -107,83 +107,74 @@
     </section>
     <section class="travelers">
       <h2 class="travelers__title">Попутчики</h2>
-      <blockquote class="quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+      <blockquote class="travelers__quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
         нужен пляж и коктейль, а другому маршрут для хайкинга.</blockquote>
-      <b class="quote-autor">Теперь можно легко найти единомышленников!</b>
-      <ul class="travalers-list">
-        <li class="travaler">
-          <span class="travaler__level">99 level</span>
-          <img class="travaler__photo" src="https://via.placeholder.com/270x270">
-          <img class="travaler__country-flag" src="https://via.placeholder.com/35x25">
-          <h3 class="travaler__name">Таня Фирсова</h3>
-          <span class="travaler__hobbies">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
-          <div class="travaler__preferences">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-          </div>
-        </li>
-        <li class="travaler">
-          <span class="travaler__level">80 level</span>
-          <img class="travaler__photo" src="https://via.placeholder.com/270x270">
-          <img class="travaler__country__flag--icon" src="https://via.placeholder.com/35x25">
-          <h3 class="travaler__name">Петя Демин</h3>
-          <span class="travaler__hobbies">#бургер #бар #футбол #концерт #крафт</span>
-          <div class="travaler__preferences">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-            <img src="https://via.placeholder.com/24x24">
-          </div>
-        </li>
-      </ul>
-      <a href="catalog.html" class="show-all-button">Показать всех</a>
+      <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
+      <section class="travelers__item">
+        <span class="travalers__level">99 level</span>
+        <img class="travalers__photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="аватарка">
+        <img class="travalers__country-flag" src="https://via.placeholder.com/35x25" width="" height="" alt="">
+        <h3 class="travalers__name">Таня Фирсова</h3>
+        <span class="travalers__hobbies">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+        <div class="travalers__preferences">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+        </div>
+      </section>
+      <section class="travelers__item">
+        <span class="travalers__level">80 level</span>
+        <img class="travalers__photo" src="https://via.placeholder.com/270x270" width="" height="" alt="">
+        <img class="travalers__country__flag--icon" src="https://via.placeholder.com/35x25" width="" height="" alt="">
+        <h3 class="travalers__name">Петя Демин</h3>
+        <span class="travalers__hobbies">#бургер #бар #футбол #концерт #крафт</span>
+        <div class="travalers__preferences">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+        </div>
+      </section>
+      <a href="catalog.html" class="travelers__button">Показать всех</a>
     </section>
     <section class="profile">
       <h2 class="profile__title">Добавьте свой профиль</h2>
-      <ul class="profile__price-list">
-        <li class="price-list__item">
+      <ul class="profile__list">
+        <li class="profile__item">
           Базовое размещение
           Бесплатно
           <span>1</span>
         </li>
-        <li class="price-list__item">
+        <li class="profile__item">
           Вывод на первых позициях
           99 руб./мес
           <span>2</span>
         </li>
-        <li class="price-list__item">
+        <li class="profile__item">
           Кастомный цвет карточки
           59 руб./мес
           <span>3</span>
         </li>
       </ul>
-      <a href="#" class="business-tariff__button">Показать тарифы для бизнеса</a>
+      <a href="#" class="profile__button">Показать тарифы для бизнеса</a>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
+    <a class="page-footer__contacts">
       <img src="img/logo-mobile-footer.svg" alt="Главная">
+    </a>
+    <div class="page-footer__social">
+      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+        Фейсбуке</a>
+      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+        Инстаграме</a>
     </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <b class="copyright__text">Разработано:
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </b>
     </div>
   </footer>
 </body>
