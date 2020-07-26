@@ -8,9 +8,9 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+    <a href="index.html" class="page-header__link">
       Главная
-      <img src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
+      <img class="page-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
     </a>
     <button class="page-header__button_toggle" type="button">
       Открыть меню
@@ -26,24 +26,20 @@
         Попутчики
       </a>
     </nav>
-
     <h1>В путешествие с крутыми попутчиками!</h1>
     <div class="page-header__controls">
-      <a class="page-header__controls-item" href="login.html">
+      <a class="page-header__controls-item" href="#">
         Позвонить
       </a>
-      <a class="page-header__controls-item" href="login.html">
+      <a class="page-header__controls-item" href="#">
         Отправить email
       </a>
-      <a class="page-header__controls-item" href="login.html">
+      <a class="page-header__controls-item" href="#">
         Авторизация
       </a>
     </div>
-
   </header>
-
   <main class="page-main">
-
     <section class="guide">
       <blockquote class="guide__quote">
         «Лучшее приложение, что я видел в жизни!»
@@ -70,9 +66,8 @@
         </li>
       </ul>
     </section>
-
     <section class="about">
-      <h2>О сервисе</h2>
+      <h2 class="abouy__title">О сервисе</h2>
       <blockquote class="about__quote">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
@@ -81,10 +76,10 @@
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </b>
     </section>
-
     <section class="directions">
-      <h2>Направления</h2>
-      <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+      <h2 class="directions__title">Направления</h2>
+      <p class="directions__slogan">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
+        бы отправиться и чем можно
         там заняться.</p>
       <ul class="directions-list">
         <li class="directions-list__item directions-list__item_thai">
@@ -105,7 +100,6 @@
       </ul>
       <a href="form.html" class="directions__button">Показать все</a>
     </section>
-
     <section class="travelers">
       <h2 class="travelers__title">Попутчики</h2>
       <blockquote class="travelers__quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
@@ -139,7 +133,6 @@
       </section>
       <a href="catalog.html" class="travelers__button">Показать всех</a>
     </section>
-
     <section class="profile">
       <h2 class="profile__title">Добавьте свой профиль</h2>
       <ul class="profile__list">
@@ -164,18 +157,18 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__contacts">
-      <img src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
+      <img class="page-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
     </a>
     <div class="page-footer__social">
-      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">Мы в
         Фейсбуке</a>
-      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+      <a class="page-footer__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">Мы в
         Инстаграме</a>
     </div>
     <div class="page-footer__copyright">
-      <b class="copyright__text">Разработано:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <b class="page-footer__text">Разработано:
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </b>
     </div>
   </footer>
