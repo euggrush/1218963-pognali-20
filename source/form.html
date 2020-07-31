@@ -38,12 +38,15 @@
         Авторизация
       </a>
     </div>
+    <h2 class="page-header__title">Направления</h2>
   </header>
   <main>
 
+<!-- БЛОК МОЙ ПРОФИЛЬ -->
+
     <section class="my-profile">
       <span class="my-profile__level">80 level</span>
-      <img class="my-profile__userpic" src="https://via.placeholder.com" width="100" height="100" alt="аватарка">
+      <img class="my-profile__avatar" src="https://via.placeholder.com" width="100" height="100" alt="аватарка">
       <button class="my-profile__button">сменить фото</button>
       <fieldset>
         <legend>ТЭГИ</legend>
@@ -59,6 +62,8 @@
       </fieldset>
 
     </section>
+
+<!-- БЛОК МОИ ПЛАНЫ -->
 
     <section class="plans">
       <h3 class="plans__title">Мои планы</h3>
@@ -76,24 +81,26 @@
       </ol>
     </section>
 
+<!-- БЛОК ДОБАВИТЬ ПЛАН И СЛАЙДЕР -->
+
     <section class="add-plan slider">
       <h3 class="add-plan__title">Добавить план:</h3>
       <p class="slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle slider__toggle--current" type="button">2</button>
+        <button class="slider__toggle slider__toggle--current" type="button">3</button>
       </p>
       <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
         <ul class="add-plan__list slider__list">
           <li class="add-plan__item slider__item">Шаг 1. Даты пребывания
             <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <label for="add-plan__search">ищу попутчиков:</label>
-            <span>чел.</span>
+            <b>чел.</b>
             <button type="button" class="add-plan__minus">убрать человека</button>
             <input class="add-plan__search" type="text" id="add-plan__search" name="add-plan__search" placeholder="2">
             <button type="button" class="add-plan__plus">добавить человека</button>
             <label for="add-plan__time">длительность:</label>
-            <span>чел.</span>
+            <b>чел.</b>
             <button type="button" class="add-plan__minus">убрать день</button>
             <input class="add-plan__time" type="text" id="add-plan__time" name="add-plan__time" placeholder="2">
             <button type="button" class="add-plan__plus">добавить день</button>
@@ -102,6 +109,9 @@
             <button type="button" class="add-plan__left">лево</button>
             <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
             <button type="button" class="add-plan__right">право</button>
+
+<!-- КАЛЕНДАРЬ -->
+
             <div class="add-plan__calendar">
               <span class="add-plan__week-day">п</span>
               <span class="add-plan__week-day">в</span>
@@ -154,6 +164,7 @@
             </div>
           <button class="add-plan__button-next" type="button">Следующий шаг</button>
           </li>
+
           <li class="add-plan__item slider__item">Шаг 2. Маршрут
             <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
             <input list="add-plan__country" class="add-plan__country" placeholder="Босния и герцеговина">
@@ -166,11 +177,58 @@
               <option value="Босния и герцеговина">
               <option value="чехия">
             </datalist>
+
+          <section class="add-plan__modal">
+            <button class="add-plan__choose-button">выберите страну</button>
+            <div class="add-plan__alphabet">
+              <span class="add-plan__letters">А</span>
+              <span class="add-plan__letters">Б</span>
+              <span class="add-plan__letters">В</span>
+              <span class="add-plan__letters">Г</span>
+              <span class="add-plan__letters">Д</span>
+              <span class="add-plan__letters">Е</span>
+              <span class="add-plan__letters">З</span>
+              <span class="add-plan__letters">И</span>
+              <span class="add-plan__letters">К</span>
+              <span class="add-plan__letters">Л</span>
+              <span class="add-plan__letters">М</span>
+              <span class="add-plan__letters">Н</span>
+              <span class="add-plan__letters">О</span>
+              <span class="add-plan__letters">П</span>
+              <span class="add-plan__letters">Р</span>
+              <span class="add-plan__letters">С</span>
+              <span class="add-plan__letters">Т</span>
+              <span class="add-plan__letters">У</span>
+              <span class="add-plan__letters">Ф</span>
+              <span class="add-plan__letters">Х</span>
+              <span class="add-plan__letters">Ч</span>
+              <span class="add-plan__letters">Ш</span>
+              <span class="add-plan__letters">Щ</span>
+              <span class="add-plan__letters">Э</span>
+              <span class="add-plan__letters">Ю</span>
+            </div>
+
+            <div class="add-plan__country-list">
+              <span class="add-plan__country-item">Австралия</span>
+              <span class="add-plan__country-item">Австрия</span>
+              <span class="add-plan__country-item">Азербайджа</span>
+              <span class="add-plan__country-item">Албания</span>
+              <span class="add-plan__country-item">Алжир</span>
+              <span class="add-plan__country-item">Ангола</span>
+              <span class="add-plan__country-item">Андорра</span>
+              <span class="add-plan__country-item">Антигуа и Барбуда</span>
+              <span class="add-plan__country-item">Аргентина</span>
+              <span class="add-plan__country-item">Армения</span>
+            </div>
+            <button class="add-plan__add-button">Добавить страну</button>
+          </section>
+
             <button class="add-plan__button-next" type="button">Следующий шаг</button>
             <button class="add-plan__button-back" type="button">на шаг назад</button>
           </li>
+
           <li class="add-plan__item slider__item">Шаг 3. Развлечения
-            <p>Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
             <label for="add-plan__todo">Босния и Герцеговина</label>
             <input class="add-plan__todo" type="text" id="add-plan__todo" name="add-plan__todo" placeholder="План действий">
             <label for="add-plan__todo">Чехия</label>
