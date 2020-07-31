@@ -42,6 +42,69 @@
   </header>
   <main>
 
+<!-- БЛОК ЗАКРЫТЬ И ОТКРЫТЬ ФИЛТР ПО СТРАНАМ -->
+
+    <section class="filter-toggle">
+      <h3 class="filter-toggle__title">Фильтрация по странам</h3>
+      <button class="filter-toggle__button">Открыть</button>
+    </section>
+
+<!-- БЛОК ФИЛЬТР ПОДБОРА ПОПУТЧИКА -->
+
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="filter__title">Подберите идеального попутчика</h2>
+
+      <fieldset class="filter__sort">
+        <legend>хобби</legend>
+      </fieldset>
+
+      <fieldset class="filter__sort">
+        <legend>музыка</legend>
+        <label>
+          <input type="checkbox">
+          Тяжелый рок
+        </label>
+        <label>
+          <input type="checkbox">
+          Русский рэп
+        </label>
+        <label>
+          <input type="checkbox">
+          Евроденс
+        </label>
+      </fieldset>
+
+      <fieldset class="filter__sort">
+        <legend>еда</legend>
+      </fieldset>
+
+      <fieldset class="filter__sort">
+        <legend>транспорт</legend>
+          <button type="button">
+            самолет
+            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="самолет">
+          </button>
+          <button type="button">
+            автобус
+            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="автобус">
+          </button>
+          <button type="button">
+            велосипед
+            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="велосипед">
+          </button>
+          <button type="button">
+            пешком
+            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="пешком">
+          </button>
+      </fieldset>
+
+      <fieldset class="filter__sort">
+        <legend>Левел</legend>
+        <input type="range" min="30" max="100">
+      </fieldset>
+      <button class="filter__button" type="submit">показать</button>
+    </form>
+
     <!-- БЛОК КАТАЛОГА С ПОПУТЧИКАМИ -->
 
     <section class="persons">
