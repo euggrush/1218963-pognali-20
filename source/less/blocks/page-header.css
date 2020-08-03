@@ -4,9 +4,6 @@
   background-image: url("../../img/globe-back-mobile.png");
   background-repeat: no-repeat;
 }
-.page-header__nav {
-  display: none;
-}
 .page-header h1 {
   font-family: "Blogger Sans";
   font-style: normal;

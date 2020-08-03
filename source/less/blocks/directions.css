@@ -1,8 +1,6 @@
 .directions {
   background-color: #EDEFF6;
-
 }
-
 .directions__title {
   font-family: Blogger Sans;
   font-style: normal;
@@ -11,7 +9,6 @@
   line-height: 24px;
   color: #FF8D30;
 }
-
 .directions__slogan {
   font-family: Blogger Sans;
   font-style: normal;
@@ -20,11 +17,9 @@
   line-height: 22px;
   color: #444444;
 }
-
 .directions li {
   list-style: none;
 }
-
 .directions__button {
   width: 270px;
   height: 62px;
@@ -37,7 +32,6 @@
   font-size: 18px;
   line-height: 18px;
 }
-
 .directions__country-title {
   font-family: Blogger Sans;
   font-style: normal;
@@ -46,7 +40,6 @@
   line-height: 21px;
   color: #000000;
 }
-
 .directions__quote {
   font-family: Blogger Sans;
   font-style: normal;

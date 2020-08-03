@@ -1,7 +1,6 @@
 .travelers {
   background-color: #192144;
 }
-
 .travelers__title {
   font-family: Blogger Sans;
   font-style: normal;
@@ -10,7 +9,6 @@
   line-height: 24px;
   color: #FF8D30;
 }
-
 .travelers__quote {
   font-family: Blogger Sans;
   font-style: normal;
@@ -19,7 +17,6 @@
   line-height: 22px;
   color: #FFFFFF;
 }
-
 .travelers__slogan {
   font-family: Blogger Sans;
   font-style: normal;
@@ -28,11 +25,9 @@
   line-height: 22px;
   color: #FFFFFF;
 }
-
 .travelers__item {
   background-color: #FFFFFF;
 }
-
 .travelers__button {
   width: 270px;
   height: 61px;
