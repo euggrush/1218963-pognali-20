@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body class="page-body">
@@ -50,18 +49,19 @@
       <span class="my-profile__level">80 level</span>
       <img class="my-profile__avatar" src="https://via.placeholder.com" width="100" height="100" alt="аватарка">
       <button class="my-profile__button">сменить фото</button>
-      <fieldset>
-        <legend>ТЭГИ</legend>
-        #бургер #бар #футбол #концерт #крафт
-      </fieldset>
+      <section>
+        ТЭГИ
+        <h3>#бургер #бар #футбол #концерт #крафт</h3>
+      </section>
 
-      <fieldset>
-        <legend>транспорт</legend>
+      <section>
+        транспорт
+
           <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
           <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
           <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
           <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-      </fieldset>
+      </section>
 
     </section>
 
@@ -86,16 +86,22 @@
 
 <!-- БЛОК ДОБАВИТЬ ПЛАН И СЛАЙДЕР -->
 
-    <section class="add-plan slider">
-      <h3 class="add-plan__title">Добавить план:</h3>
-      <p class="slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle slider__toggle--current" type="button">2</button>
-        <button class="slider__toggle slider__toggle--current" type="button">3</button>
-      </p>
+    <section class="add-plan">
+
+      <header class="add-plan__header">
+        <h2 class="add-plan__title">Добавить план:</h2>
+        <div class="add-plan__toggles">
+          <button class="add-plan__toggle-button add-plan__toggle-button--current" type="button">1</button>
+          <button class="add-plan__toggle-button add-plan__toggle-button--current" type="button">2</button>
+          <button class="add-plan__toggle-button add-plan__toggle-button--current" type="button">3</button>
+        </div>
+      </header>
+
       <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="add-plan__list slider__list">
-          <li class="add-plan__item slider__item">Шаг 1. Даты пребывания
+
+          <section class="add-plan__item">
+            <h3>Шаг 1. Даты пребывания</h3>
+
             <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <label for="add-plan__search">ищу попутчиков:</label>
             <b>чел.</b>
@@ -166,9 +172,11 @@
               <span class="add-plan__week-date">5</span>
             </div>
           <button class="add-plan__button-next" type="button">Следующий шаг</button>
-          </li>
+          </section>
 
-          <li class="add-plan__item slider__item">Шаг 2. Маршрут
+          <section class="add-plan__item">
+            <h3>Шаг 2. Маршрут</h3>
+
             <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
             <input list="add-plan__country" class="add-plan__country" placeholder="Босния и герцеговина">
             <button class="add-plan__flag-button">флаг страны</button>
@@ -230,14 +238,16 @@
             <button class="add-plan__button-back" type="button">на шаг назад</button>
           </li>
 
-          <li class="add-plan__item slider__item">Шаг 3. Развлечения
+          <section class="add-plan__item">
+            <h3>Шаг 3. Развлечения</h3>
+
             <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <label for="add-plan__todo">Босния и Герцеговина</label>
-            <input class="add-plan__todo" type="text" id="add-plan__todo" name="add-plan__todo" placeholder="План действий">
+            <label for="todo">Босния и Герцеговина</label>
+            <input class="add-plan__todo" type="text" id="todo" name="todo" placeholder="План действий">
             <label for="add-plan__todo">Чехия</label>
-            <input class="add-plan__todo" type="text" id="add-plan__todo" name="add-plan__todo" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
-          </li>
-        </ul>
+            <input class="todo" type="text" id="todo" name="todo" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
+          </section>
+
         <button class="search-button" type="submit">Отправить</button>
         <button class="add-plan__button-back" type="button">на шаг назад</button>
       </form>
