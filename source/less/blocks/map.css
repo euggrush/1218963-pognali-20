@@ -1,7 +1,6 @@
 .map {
   background-color: #FFD74B;
 }
-
 .map__address {
   font-style: normal;
   font-weight: bold;
@@ -10,7 +9,6 @@
   text-transform: uppercase;
   color: #1D2E5B;
 }
-
 .map__button {
   width: 270px;
   height: 62px;

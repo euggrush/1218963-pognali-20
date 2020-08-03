@@ -1,15 +1,13 @@
 .reg {
   background-color: #192144;
 }
-
 .reg__title {
   font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 24px;
-color: #FF8D30;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
 }
-
 .reg__quote {
   font-style: normal;
   font-weight: 300;
@@ -18,19 +16,16 @@ color: #FF8D30;
   letter-spacing: 0.01em;
   color: #FFFFFF;
 }
-
 .reg__input {
   width: 220px;
   height: 62px;
 }
-
 .reg__button {
   width: 60px;
   height: 62px;
   background-color: #FFD74B;
   border-radius: 20px;
 }
-
 .reg a {
   font-style: normal;
   font-weight: bold;

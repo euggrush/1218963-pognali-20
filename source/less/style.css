@@ -1,19 +1,195 @@
+.about {
+  background-color: #192144;
+  color: #FFFFFF;
+}
+.about__title {
+  color: #FF8D30;
+  font-size: 24px;
+  line-height: 24px;
+}
+.directions {
+  background-color: #EDEFF6;
+}
+.directions__title {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+}
+.directions__slogan {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+.directions li {
+  list-style: none;
+}
+.directions__button {
+  width: 270px;
+  height: 62px;
+  background-color: #FFD74B;
+  border-radius: 10px;
+  color: #1D2E5B;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+.directions__country-title {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+.directions__quote {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+.guide {
+  background-color: #161C35;
+  color: #FFFFFF;
+}
+.guide__list {
+  width: 270px;
+  list-style: none;
+  background-color: #FF8D30;
+  color: #161C35;
+}
+.page-footer {
+  background-color: #FFFFFF;
+  color: #444444;
+}
 .page-header {
   color: #ffffff;
   background-color: #161C35;
   background-image: url("../../img/globe-back-mobile.png");
   background-repeat: no-repeat;
 }
-.page-header__nav {
+.page-header h1 {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+.profile {
+  margin: 0px;
+  padding: 0px;
+  background-color: #E6E8F1;
+}
+.profile__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+}
+.profile__modal {
   display: none;
 }
-.page-header__logo {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+.profile__list {
+  list-style: none;
+}
+.profile__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #132576;
+}
+.reg {
+  background-color: #192144;
+}
+.reg__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+}
+.reg__quote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.travelers {
+  background-color: #192144;
+}
+.travelers__title {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+}
+.travelers__quote {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.travelers__slogan {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.travelers__item {
+  background-color: #FFFFFF;
+}
+.travelers__button {
+  width: 270px;
+  height: 61px;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #FFD74B;
+  color: #1D2E5B;
+  border-radius: 10px;
+}
+.travelers__name {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #1D2E5B;
+}
+.travelers__hobbies {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
 body {
   width: 100%;
-  margin: 0;
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans.woff"), url("../fonts/bloggersans.woff2");
