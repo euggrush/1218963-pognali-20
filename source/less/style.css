@@ -58,6 +58,18 @@
   color: #444444;
   opacity: 0.3;
 }
+.filter-toggle {
+  height: 66px;
+  background: #E2E5F2;
+}
+.filter-toggle__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #192144;
+}
 .guide {
   background-color: #161C35;
   color: #FFFFFF;
@@ -67,6 +79,25 @@
   list-style: none;
   background-color: #FF8D30;
   color: #161C35;
+}
+.map {
+  background-color: #FFD74B;
+}
+.map__address {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+.map__button {
+  width: 270px;
+  height: 62px;
+  background-color: transparent;
+  border: 3px solid #192144;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 .page-footer {
   background-color: #FFFFFF;
@@ -85,6 +116,13 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+}
+.page-header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
 }
 .profile {
   margin: 0px;
@@ -126,7 +164,25 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 0.01em;
   color: #FFFFFF;
+}
+.reg__input {
+  width: 220px;
+  height: 62px;
+}
+.reg__button {
+  width: 60px;
+  height: 62px;
+  background-color: #FFD74B;
+  border-radius: 20px;
+}
+.reg a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFD74B;
 }
 .travelers {
   background-color: #192144;
@@ -185,6 +241,10 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+}
+.filter {
+  background-color: #FFD74B;
+  border-radius: 20px;
 }
 body {
   width: 100%;

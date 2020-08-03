@@ -1,0 +1,17 @@
+.filter {
+  background-color: #FFD74B;
+  border-radius: 20px;
+}
+.filter__button {
+  width: 230px;
+  height: 41px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}

@@ -1,13 +1,11 @@
 .persons {
   background-color: #E5E5E5;
 }
-
 .persons__item {
   background-color: #FFFFFF;
   border-radius: 20px;
   border: solid 1px black;
 }
-
 .persons__name {
   font-style: normal;
   font-weight: bold;
