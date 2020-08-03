@@ -43,7 +43,7 @@
   </header>
   <main>
 
-<!-- БЛОК МОЙ ПРОФИЛЬ -->
+    <!-- БЛОК МОЙ ПРОФИЛЬ -->
 
     <section class="my-profile">
       <span class="my-profile__level">80 level</span>
@@ -57,15 +57,15 @@
       <section>
         транспорт
 
-          <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-          <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-          <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-          <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
       </section>
 
     </section>
 
-<!-- БЛОК МОИ ПЛАНЫ -->
+    <!-- БЛОК МОИ ПЛАНЫ -->
 
     <section class="plans">
       <h2 class="plans__title">Мои планы</h2>
@@ -84,7 +84,7 @@
 
     </section>
 
-<!-- БЛОК ДОБАВИТЬ ПЛАН И СЛАЙДЕР -->
+    <!-- БЛОК ДОБАВИТЬ ПЛАН И СЛАЙДЕР -->
 
     <section class="add-plan">
 
@@ -99,29 +99,43 @@
 
       <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <section class="add-plan__item">
-            <h3>Шаг 1. Даты пребывания</h3>
+        <section class="add-plan__item">
+          <h3>Шаг 1. Даты пребывания</h3>
 
-            <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+          <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
+            длительность.</p>
+          <div class="add-plan__form-field">
             <label for="add-plan__search">ищу попутчиков:</label>
             <b>чел.</b>
-            <button type="button" class="add-plan__minus">убрать человека</button>
-            <input class="add-plan__search" type="text" id="add-plan__search" name="add-plan__search" placeholder="2">
-            <button type="button" class="add-plan__plus">добавить человека</button>
+            <div class="add-plan__counter">
+              <button type="button" class="add-plan__minus">убрать человека</button>
+              <input class="add-plan__search" type="text" id="add-plan__search" name="add-plan__search" placeholder="2">
+              <button type="button" class="add-plan__plus">добавить человека</button>
+            </div>
+          </div>
+
+          <div class="add-plan__form-field">
             <label for="add-plan__time">длительность:</label>
             <b>чел.</b>
-            <button type="button" class="add-plan__minus">убрать день</button>
-            <input class="add-plan__time" type="text" id="add-plan__time" name="add-plan__time" placeholder="2">
-            <button type="button" class="add-plan__plus">добавить день</button>
-            <input class="add-plan__kids" type="checkbox" id="add-plan__kids" name="add-plan__kids"checked>
-            <label for="add-plan__kids">Можно с детьми</label>
+            <div class="add-plan__counter">
+              <button type="button" class="add-plan__minus">убрать день</button>
+              <input class="add-plan__time" type="text" id="add-plan__time" name="add-plan__time" placeholder="2">
+              <button type="button" class="add-plan__plus">добавить день</button>
+            </div>
+          </div>
+
+          <div class="add-plan__checkbox">
+            <input class="add-plan__kids" type="checkbox" id="kids" name="kids" checked>
+            <label for="kids">Можно с детьми</label>
+          </div>
+
+          <!-- КАЛЕНДАРЬ -->
+
+          <div class="add-plan__calendar">
             <button type="button" class="add-plan__left">лево</button>
             <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
             <button type="button" class="add-plan__right">право</button>
-
-<!-- КАЛЕНДАРЬ -->
-
-            <div class="add-plan__calendar">
+            <div class="add-plan__calendar-days">
               <span class="add-plan__week-day">п</span>
               <span class="add-plan__week-day">в</span>
               <span class="add-plan__week-day">с</span>
@@ -171,27 +185,33 @@
               <span class="add-plan__week-date">4</span>
               <span class="add-plan__week-date">5</span>
             </div>
+          </div>
+
           <button class="add-plan__button-next" type="button">Следующий шаг</button>
-          </section>
+        </section>
 
-          <section class="add-plan__item">
-            <h3>Шаг 2. Маршрут</h3>
+        <section class="add-plan__item">
+          <h3>Шаг 2. Маршрут</h3>
 
-            <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+
+          <div class="add-plan__form-field">
             <input list="add-plan__country" class="add-plan__country" placeholder="Босния и герцеговина">
-            <button class="add-plan__flag-button">флаг страны</button>
-            <input list="add-plan__country" class="add-plan__country" placeholder="чехия">
-            <button class="add-plan__flag-button">флаг страны</button>
-            <input list="add-plan__country" class="add-plan__country" placeholder="Добавить страну">
             <button class="add-plan__flag-button">флаг страны</button>
             <datalist id="add-plan__country">
               <option value="Босния и герцеговина">
               <option value="чехия">
             </datalist>
+          </div>
 
-          <section class="add-plan__modal">
+          <div class="add-plan__form-field">
+            <input list="add-plan__country" class="add-plan__country" placeholder="чехия">
+            <button class="add-plan__flag-button">флаг страны</button>
+          </div>
+
+          <div class="add-plan__form-field">
             <button class="add-plan__choose-button">выберите страну</button>
-            <div class="add-plan__alphabet">
+            <div class="add-plan__alphabet modal">
               <span class="add-plan__letters">А</span>
               <span class="add-plan__letters">Б</span>
               <span class="add-plan__letters">В</span>
@@ -231,11 +251,14 @@
               <span class="add-plan__country-item">Аргентина</span>
               <span class="add-plan__country-item">Армения</span>
             </div>
-            <button class="add-plan__add-button">Добавить страну</button>
-          </section>
+          </div>
 
-            <button class="add-plan__button-next" type="button">Следующий шаг</button>
-            <button class="add-plan__button-back" type="button">на шаг назад</button>
+          <div class="add-plan__form-field">
+            <button class="add-plan__add-button">Добавить страну</button>
+          </div>
+
+          <button class="add-plan__button-next" type="button">Следующий шаг</button>
+          <button class="add-plan__button-back" type="button">на шаг назад</button>
           </li>
 
           <section class="add-plan__item">
@@ -245,11 +268,12 @@
             <label for="todo">Босния и Герцеговина</label>
             <input class="add-plan__todo" type="text" id="todo" name="todo" placeholder="План действий">
             <label for="add-plan__todo">Чехия</label>
-            <input class="todo" type="text" id="todo" name="todo" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
+            <input class="todo" type="text" id="todo" name="todo"
+              placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
           </section>
 
-        <button class="search-button" type="submit">Отправить</button>
-        <button class="add-plan__button-back" type="button">на шаг назад</button>
+          <button class="search-button" type="submit">Отправить</button>
+          <button class="add-plan__button-back" type="button">на шаг назад</button>
       </form>
     </section>
 
