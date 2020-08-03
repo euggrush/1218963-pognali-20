@@ -1,3 +1,70 @@
 // Начните писать стили здесь
-body { background: blue; }
+@import "blocks/about.less";
+@import "blocks/add-plan.less";
+@import "blocks/directions";
+@import "blocks/filter-toggle";
+@import "blocks/guide";
+@import "blocks/map";
+@import "blocks/my-profile";
+@import "blocks/page-body";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/persons";
+@import "blocks/plans";
+@import "blocks/profile";
+@import "blocks/reg";
+@import "blocks/travelers";
+@import "blocks/persons.less";
+@import "blocks/plans.less";
+@import "blocks/profile.less";
 
+// Colors
+
+@darkblue: #161C35;
+@white: #EDEFF6;
+
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Blogger Sans";
+  src:
+    url("../fonts/bloggersans.woff"),
+    url("../fonts/bloggersans.woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.text-hidden {
+  font-size: 0px;
+}
