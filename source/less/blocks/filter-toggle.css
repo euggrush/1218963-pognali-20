@@ -1,6 +1,8 @@
 .filter-toggle {
   height: 66px;
   background: #E2E5F2;
+  border: solid 1px black;
+  border-radius: 20px;
 }
 .filter-toggle__title {
   font-style: normal;

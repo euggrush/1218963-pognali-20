@@ -1,5 +1,6 @@
 .filter {
   background-color: #FFD74B;
+  border: solid 1px black;
   border-radius: 20px;
 }
 .filter__button {

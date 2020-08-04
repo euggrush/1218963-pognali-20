@@ -3,6 +3,8 @@
   background-color: #161C35;
   background-image: url("../../img/globe-back-mobile.png");
   background-repeat: no-repeat;
+  border-radius: 20px;
+  border: solid 1px black;
 }
 .page-header h1 {
   font-family: "Blogger Sans";
