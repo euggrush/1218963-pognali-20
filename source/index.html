@@ -9,16 +9,19 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a href="index.html" class="page-header__link">
-      <span class="visually-hidden">Главная</span>
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
-    </a>
-    <button class="page-header__button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+
+<!-- ОТКРЫТОЕ МЕНЮ -->
+
     <nav class="page-header__nav">
+      <a href="#" class="page-header__nav-item">
+        <span class="text-hidden">Главная</span>
+        <img class="page-header__logo" src="../source/img/logo-mobile-blue@1x.png" width="100" height="15" alt="Главная">
+      </a>
+      <button class="page-header__button" type="button">
+        <span>закрыть меню</span>
+      </button>
       <a class="page-header__nav-item" href="index.html">
-        Главная
+        О сервисе
       </a>
       <a class="page-header__nav-item" href="form.html">
         Направления
@@ -26,8 +29,39 @@
       <a class="page-header__nav-item" href="catalog.html">
         Попутчики
       </a>
+      <a class="page-header__nav-button" href="#">
+        Авторизация
+      </a>
+      <a class="page-header__nav-call" href="#">
+        8 800 555-86-28
+        <span class="text-hidden">Позвонить</span>
+      </a>
+      <a class="page-header__nav-email" href="#">
+        mail@htmlacademy.ru
+        <span class="text-hidden">Отправить email</span>
+      </a>
+
+      <div class="page-header__social">
+        <a class="page-header__link" href="https://www.facebook.com/htmlacademy">Мы в
+          Фейсбуке</a>
+        <a class="page-header__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="page-header__link" href="https://www.instagram.com/htmlacademy">Мы в
+          Инстаграме</a>
+      </div>
+
     </nav>
-    <h1>В путешествие с крутыми попутчиками!</h1>
+
+<!-- БЛОК ЕСЛИ МЕНЮ ЗАКРЫТО -->
+
+<a href="index.html" class="page-header__link">
+  <span class="visually-hidden">Главная</span>
+  <img class="page-header__logo" src="img/logo-mobile-white@1x.png" width="96" height="15" alt="Главная">
+</a>
+<button class="page-header__button" type="button">
+  <span>Открыть меню</span>
+</button>
+
+    <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
     <div class="page-header__controls">
       <a class="page-header__controls-item" href="#">
         <span class="visually-hidden">Позвонить</span>

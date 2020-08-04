@@ -7,6 +7,24 @@
   font-size: 24px;
   line-height: 24px;
 }
+.add-plan {
+  background-color: #D4D9EB;
+  border: solid 1px black;
+  border-radius: 20px;
+}
+.add-plan__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1D2E5B;
+}
+.add-plan__toggle-button {
+  width: 5px;
+  height: 5px;
+  background-color: #1D2E5B;
+  border-radius: 50%;
+}
 .directions {
   background-color: #EDEFF6;
 }
@@ -61,6 +79,8 @@
 .filter-toggle {
   height: 66px;
   background: #E2E5F2;
+  border: solid 1px black;
+  border-radius: 20px;
 }
 .filter-toggle__title {
   font-style: normal;
@@ -99,15 +119,57 @@
   box-sizing: border-box;
   border-radius: 10px;
 }
+.my-profile {
+  background-color: #E5E5E5;
+  border: solid 1px black;
+}
+.my-profile__level {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #FF8D30;
+  border-radius: 50px;
+}
+.my-profile__avatar {
+  border-radius: 50px;
+}
+.my-profile__button {
+  width: 270px;
+  height: 40px;
+  background-color: #DFE3F0;
+  border: none;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #161C35;
+}
 .page-footer {
   background-color: #FFFFFF;
   color: #444444;
+  border: solid 1px black;
 }
 .page-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 568px;
   color: #ffffff;
-  background-color: #161C35;
-  background-image: url("../../img/globe-back-mobile.png");
+  background-image: url(../img/globe-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  border-radius: 20px;
+  border: solid 1px black;
+}
+.page-header__nav {
+  display: none;
+  min-height: 568px;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 2px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -2px;
 }
 .page-header h1 {
   font-family: "Blogger Sans";
@@ -118,11 +180,146 @@
   text-align: center;
 }
 .page-header__title {
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #FFFFFF;
+}
+@media (min-width: 320px) {
+  .page-header__logo {
+    width: 100px;
+    height: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    width: 164px;
+    height: 42px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__logo {
+    width: 200px;
+    height: 52px;
+  }
+}
+.page-header__nav-item {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #192144;
+}
+.page-header__nav-button {
+  display: block;
+  width: 270px;
+  height: 50px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #FFD74B;
+  border-radius: 25px;
+}
+.page-header__nav-call {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+.page-header__nav-email {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+.page-header__controls {
+  display: flex;
+}
+.page-header__controls-item:nth-child(1) {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FF8D30;
+  border-radius: 50%;
+}
+.page-header__controls-item:nth-child(2) {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFBD30;
+  border-radius: 50%;
+}
+.page-header__controls-item:nth-child(3) {
+  display: inline-block;
+  width: 190px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 25px;
+  font-family: " Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}
+.persons {
+  background-color: #E5E5E5;
+}
+.persons__item {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: solid 1px black;
+}
+.persons__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1D2E5B;
+}
+.persons__button {
+  width: 230px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}
+.persons__button--more {
+  background-color: transparent;
+  color: #1D2E5B;
+  border: none;
+}
+.persons__button--prev {
+  width: 270px;
+  height: 51px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.persons__button--next {
+  width: 270px;
+  height: 51px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.plans {
+  background-color: #DFE3F0;
+  border: solid 1px black;
+  border-radius: 20px;
 }
 .profile {
   margin: 0px;
@@ -244,17 +441,35 @@
 }
 .filter {
   background-color: #FFD74B;
+  border: solid 1px black;
   border-radius: 20px;
+}
+.filter__button {
+  width: 230px;
+  height: 41px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/bloggersans.woff") format("woff"), url("../fonts/bloggersans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
 }
 body {
   width: 100%;
   max-width: 320px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans.woff"), url("../fonts/bloggersans.woff2");
-  font-style: normal;
-  font-weight: bold;
+  font-family: "Blogger Sans", "Arial", sans-serif;
 }
 img {
   max-width: 100%;

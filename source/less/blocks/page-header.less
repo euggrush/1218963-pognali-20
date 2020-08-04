@@ -1,15 +1,32 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
+
 .page-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 568px;
   color: #ffffff;
-  background-color: #161C35;
-  background-image: url("../../img/globe-back-mobile.png");
+  background-image: url(../img/bg-mobile.png);
   background-repeat: no-repeat;
   border-radius: 20px;
   border: solid 1px black;
 }
 
-// .page-header__nav {
-//   display: none;
-// }
+.page-header__nav {
+  display: none;
+  // display: flex;
+  // flex-direction: column;
+  min-height: 568px;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+
+  outline: 2px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -2px;
+}
 
 .page-header h1 {
   font-family: "Blogger Sans";
@@ -21,9 +38,102 @@
 }
 
 .page-header__title {
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #FFFFFF;
 }
+
+.page-header__logo {
+  @media (min-width: @mobile-width-only) {
+    width: 100px;
+    height: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
+.page-header__nav-item {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #192144;
+}
+
+.page-header__nav-button {
+  display: block;
+  width: 270px;
+  height: 50px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #FFD74B;
+  border-radius: 25px;
+}
+
+.page-header__nav-call {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.page-header__nav-email {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.page-header__controls {
+  display: flex;
+}
+
+.page-header__controls-item:nth-child(1) {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FF8D30;
+  border-radius: 50%
+}
+
+.page-header__controls-item:nth-child(2) {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFBD30;
+  border-radius: 50%
+}
+
+.page-header__controls-item:nth-child(3) {
+  display: inline-block;
+  width: 190px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 25px;
+  font-family: " Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}
+
