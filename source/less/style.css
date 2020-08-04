@@ -157,13 +157,14 @@
   text-align: center;
   min-height: 568px;
   color: #ffffff;
-  background-image: url(../img/globe-back-mobile@1x.jpg);
+  background-image: url(../img/bg-mobile.png);
   background-repeat: no-repeat;
   border-radius: 20px;
   border: solid 1px black;
 }
 .page-header__nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
   min-height: 568px;
   background-color: #FFFFFF;
   text-align: center;
@@ -270,6 +271,16 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
+}
+.page-header__close-button {
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../img/icon-menu-mobile.svg);
+  background-repeat: no-repeat;
+}
+.modal {
+  display: none;
 }
 .persons {
   background-color: #E5E5E5;
@@ -463,7 +474,7 @@
   font-style: normal;
   font-weight: bold;
 }
-body {
+.page-body {
   width: 100%;
   max-width: 320px;
   min-height: 100%;

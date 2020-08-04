@@ -10,7 +10,8 @@
   border: solid 1px black;
 }
 .page-header__nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
   min-height: 568px;
   background-color: #FFFFFF;
   text-align: center;
@@ -117,4 +118,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
+}
+.page-header__close-button {
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../img/icon-menu-mobile.svg);
+  background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
 }
