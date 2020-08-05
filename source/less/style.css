@@ -1,11 +1,38 @@
 .about {
+  min-height: 353px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: #192144;
+  background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
+  border: solid 1px transparent;
 }
 .about__title {
   color: #FF8D30;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+}
+.about__quote {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0px;
+  padding: 0px;
+}
+.about__slogan {
+  display: block;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0px;
+  padding-top: 20px;
 }
 .add-plan {
   background-color: #D4D9EB;
@@ -92,16 +119,77 @@
 }
 .guide {
   min-height: 555px;
-  margin: 0 auto;
   background-color: #161C35;
   color: #FFFFFF;
+  border: solid 1px transparent;
 }
 .guide__list {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
   width: 270px;
   min-height: 240px;
+  margin: 0 auto;
   list-style: none;
-  background-color: #FF8D30;
   color: #161C35;
+}
+.guide__item {
+  display: flex;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-right: 20px;
+}
+.guide__item:nth-child(1) {
+  background-color: #FF8D30;
+}
+.guide__item:nth-child(2) {
+  margin-top: -30px;
+  background-color: #FFA530;
+}
+.guide__item:nth-child(3) {
+  margin-top: -30px;
+  background-color: #FFBD30;
+}
+.guide__item:nth-child(4) {
+  margin-top: -30px;
+  background-color: #FFD74B;
+}
+.guide__text {
+  color: #161C35;
+}
+.guide__number {
+  color: #FFFFFF;
+}
+.guide__quote {
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 48px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  border: solid 1px transparent;
+}
+.guide__slogan {
+  display: block;
+  height: auto;
+  margin-top: 18px;
+  margin-bottom: 29px;
+  margin-left: 50px;
+  margin-right: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  border: solid 1px transparent;
 }
 .map {
   background-color: #FFD74B;
@@ -227,7 +315,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 20px;
   background-color: #FFD74B;
   border-radius: 25px;
 }
@@ -247,6 +335,7 @@
 }
 .page-header__controls {
   display: flex;
+  justify-content: center;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -272,7 +361,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 41px;
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
@@ -475,9 +564,10 @@
 }
 @font-face {
   font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans.woff") format("woff"), url("../fonts/bloggersans.woff2") format("woff2");
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/bloggersans.woff") format("woff"), url("../fonts/bloggersans.woff2") format("woff2"), url("../fonts/bloggersans-bold.woff") format("woff"), url("../fonts/bloggersans-bold.woff2") format("woff2"), url("../fonts/bloggersans-bolditalic.woff") format("woff"), url("../fonts/bloggersans-bolditalic.woff2") format("woff2"), url("../fonts/bloggersans-italic.woff") format("woff"), url("../fonts/bloggersans-italic.woff2") format("woff2"), url("../fonts/bloggersans-light.woff") format("woff"), url("../fonts/bloggersans-light.woff2") format("woff2"), url("../fonts/bloggersans-lightitalic.woff") format("woff"), url("../fonts/bloggersans-lightitalic.woff2") format("woff2"), url("../fonts/bloggersans-medium.woff") format("woff"), url("../fonts/bloggersans-medium.woff2") format("woff2"), url("../fonts/bloggersans-mediumitalic.woff") format("woff2"), url("../fonts/bloggersans-mediumitalic.woff2") format("woff2");
 }
 .page-body {
   width: 100%;

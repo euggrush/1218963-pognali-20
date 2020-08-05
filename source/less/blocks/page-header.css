@@ -71,7 +71,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 20px;
   background-color: #FFD74B;
   border-radius: 25px;
 }
@@ -91,6 +91,7 @@
 }
 .page-header__controls {
   display: flex;
+  justify-content: center;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -116,7 +117,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 41px;
   text-align: center;
   text-transform: uppercase;
   color: #161C35;

@@ -51,6 +51,7 @@
 }
 .guide__quote {
   margin-left: 50px;
+  margin-right: 100px;
   margin-top: 48px;
   font-style: normal;
   font-weight: 300;
@@ -64,6 +65,7 @@
   margin-top: 18px;
   margin-bottom: 29px;
   margin-left: 50px;
+  margin-right: 100px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
