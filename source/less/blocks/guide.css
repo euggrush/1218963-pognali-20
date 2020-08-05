@@ -2,6 +2,7 @@
   min-height: 555px;
   background-color: #161C35;
   color: #FFFFFF;
+  border: solid 1px transparent;
 }
 .guide__list {
   display: flex;
@@ -22,7 +23,7 @@
   line-height: 18px;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;
   border-radius: 20px;
   padding-left: 24px;
   padding-right: 20px;
@@ -31,12 +32,15 @@
   background-color: #FF8D30;
 }
 .guide__item:nth-child(2) {
+  margin-top: -30px;
   background-color: #FFA530;
 }
 .guide__item:nth-child(3) {
+  margin-top: -30px;
   background-color: #FFBD30;
 }
 .guide__item:nth-child(4) {
+  margin-top: -30px;
   background-color: #FFD74B;
 }
 .guide__text {
@@ -44,4 +48,25 @@
 }
 .guide__number {
   color: #FFFFFF;
+}
+.guide__quote {
+  margin-left: 50px;
+  margin-top: 48px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  border: solid 1px transparent;
+}
+.guide__slogan {
+  display: block;
+  height: auto;
+  margin-top: 18px;
+  margin-bottom: 29px;
+  margin-left: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  border: solid 1px transparent;
 }
