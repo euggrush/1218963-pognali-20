@@ -45,12 +45,14 @@
   .page-header__logo {
     width: 164px;
     height: 42px;
+    background-image: url(../img/logo-tablet-blue@1x.png);
   }
 }
 @media (min-width: 1440px) {
   .page-header__logo {
     width: 200px;
     height: 52px;
+    background-image: url(../img/logo-desktop-blue@1x.png);
   }
 }
 .page-header__nav-item {
