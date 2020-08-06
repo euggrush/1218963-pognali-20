@@ -1,11 +1,13 @@
 .about {
-  min-height: 353px;
+  min-height: 337px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
   border: solid 1px transparent;
 }
 .about__title {
