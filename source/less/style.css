@@ -1,11 +1,16 @@
 .about {
-  min-height: 353px;
+  position: relative;
+  min-height: 337px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 20px;
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
   border: solid 1px transparent;
+  z-index: 1;
 }
 .about__title {
   color: #FF8D30;
@@ -53,30 +58,47 @@
   border-radius: 50%;
 }
 .directions {
+  min-height: 710px;
   background-color: #EDEFF6;
+  margin-top: -45px;
+  padding-top: 97px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .directions__title {
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 24px;
   color: #FF8D30;
+  margin-left: 49px;
 }
 .directions__slogan {
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  margin-top: -5px;
+  margin-bottom: 61px;
+  margin-left: 48px;
+  margin-right: 76px;
+}
+.directions__country-list {
+  width: 270px;
+  margin: 0 auto;
+  border: solid 1px transparent;
 }
 .directions li {
   list-style: none;
 }
 .directions__button {
+  display: block;
   width: 270px;
   height: 62px;
+  margin: 0 auto;
   background-color: #FFD74B;
   border-radius: 10px;
   color: #1D2E5B;
@@ -84,7 +106,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 63px;
 }
 .directions__country-title {
   font-family: Blogger Sans;
@@ -122,51 +144,65 @@
   background-color: #161C35;
   color: #FFFFFF;
   border: solid 1px transparent;
+  margin-top: -94px;
 }
 .guide__list {
   display: flex;
   flex-direction: column;
   align-content: stretch;
   width: 270px;
-  min-height: 240px;
   margin: 0 auto;
   list-style: none;
   color: #161C35;
+  border: solid 1px transparent;
 }
 .guide__item {
   display: flex;
   font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 18px;
   justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  border-radius: 20px;
+  border-radius: 10px;
+  padding-top: 20px;
   padding-left: 24px;
   padding-right: 20px;
+  border: solid 1px transparent;
 }
 .guide__item:nth-child(1) {
+  height: 87px;
   background-color: #FF8D30;
 }
 .guide__item:nth-child(2) {
+  height: 88px;
   margin-top: -30px;
   background-color: #FFA530;
 }
 .guide__item:nth-child(3) {
+  height: 88px;
   margin-top: -30px;
   background-color: #FFBD30;
 }
-.guide__item:nth-child(4) {
+.guide__item:last-child {
+  height: 57px;
   margin-top: -30px;
   background-color: #FFD74B;
 }
+.guide__item:last-child > .guide__text,
+.guide__item:last-child > .guide__number {
+  display: block;
+  height: 40px;
+}
 .guide__text {
   color: #161C35;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .guide__number {
   color: #FFFFFF;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .guide__quote {
   margin-left: 50px;
@@ -175,19 +211,19 @@
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   border: solid 1px transparent;
 }
 .guide__slogan {
   display: block;
   height: auto;
-  margin-top: 18px;
-  margin-bottom: 29px;
+  margin-top: 20px;
+  margin-bottom: 27px;
   margin-left: 50px;
-  margin-right: 100px;
+  margin-right: 90px;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   border: solid 1px transparent;
 }
@@ -263,40 +299,23 @@
   outline: 2px solid rgba(0, 255, 0, 0.8);
   outline-offset: -2px;
 }
-.page-header h1 {
-  font-family: "Blogger Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-}
 .page-header__title {
   font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 39px;
+  line-height: 40px;
   color: #FFFFFF;
+  margin-top: 22px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
 }
 @media (min-width: 320px) {
   .page-header__logo {
     width: 100px;
-    height: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .page-header__logo {
-    width: 164px;
-    height: 42px;
-    background-image: url(../img/logo-tablet-blue@1x.png);
-  }
-}
-@media (min-width: 1440px) {
-  .page-header__logo {
-    width: 200px;
-    height: 52px;
-    background-image: url(../img/logo-desktop-blue@1x.png);
+    height: 20px;
+    margin-top: 25px;
   }
 }
 .page-header__nav-item {
@@ -336,6 +355,7 @@
 .page-header__controls {
   display: flex;
   justify-content: center;
+  margin-top: 217px;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -357,11 +377,11 @@
   height: 40px;
   background-color: #FFD74B;
   border-radius: 25px;
-  font-family: " Blogger Sans";
+  font-family: "Blogger Sans";
   font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 41px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 44px;
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
@@ -427,14 +447,24 @@
   border-radius: 20px;
 }
 .profile {
-  margin: 0px;
-  padding: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 420px;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: #E6E8F1;
+  z-index: -2;
 }
 .profile__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 24px;
   color: #FF8D30;
 }
@@ -442,16 +472,55 @@
   display: none;
 }
 .profile__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
+  min-height: 163px;
+  margin-top: 25px;
+  border: solid 1px transparent;
+}
+.profile__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .profile__button {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 16px;
   color: #132576;
+  margin-top: 60px;
+  border: solid 1px transparent;
+}
+.profile__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.profile__list-number {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #FF8D30;
+  color: #FFFFFF;
 }
 .reg {
+  position: relative;
+  z-index: -3;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  min-height: 536px;
+  margin-top: -25px;
+  padding-top: 77px;
   background-color: #192144;
 }
 .reg__title {
@@ -460,24 +529,43 @@
   font-size: 24px;
   line-height: 24px;
   color: #FF8D30;
+  align-self: center;
 }
 .reg__quote {
+  display: inline-block;
+  max-width: 200px;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  text-align: center;
+  align-self: center;
+}
+.reg__button-wrapper {
+  display: flex;
+  align-self: center;
+  margin-top: 27px;
+  min-width: 266px;
 }
 .reg__input {
-  width: 220px;
-  height: 62px;
+  display: block;
+  width: 100%;
+  height: 61px;
+  border-radius: 10px;
+  border: none;
 }
 .reg__button {
-  width: 60px;
-  height: 62px;
+  position: relative;
+  z-index: 1;
+  margin-left: -20px;
+  width: 68px;
+  height: 63px;
   background-color: #FFD74B;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: none;
 }
 .reg a {
   font-style: normal;
@@ -486,44 +574,108 @@
   line-height: 22px;
   color: #FFD74B;
 }
+.reg__more {
+  display: inline-block;
+  margin-top: 29px;
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-align: center;
+  align-self: center;
+}
+.reg__tel-link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  background-image: url(../img/telephone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.reg__mail-link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  background-image: url(../img/envelope-close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
 .travelers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 1271px;
   background-color: #192144;
+  background-image: url(../img/bg-travelers.png);
+  background-repeat: no-repeat;
+  margin-top: -30px;
+  padding-top: 75px;
+  z-index: -1;
+  border: solid 1px black;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .travelers__title {
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 24px;
   color: #FF8D30;
+  margin-left: 45px;
 }
 .travelers__quote {
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+  margin-top: 0px;
+  margin-left: 45px;
+  margin-right: 50px;
 }
 .travelers__slogan {
-  font-family: Blogger Sans;
+  display: inline-block;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   color: #FFFFFF;
+  margin-top: 5px;
+  margin-bottom: 43px;
+  margin-left: 45px;
 }
 .travelers__item {
+  width: 270px;
+  min-height: 428px;
+  align-self: center;
+  margin-top: 10px;
   background-color: #FFFFFF;
+  border-radius: 10px;
 }
 .travelers__button {
+  display: block;
   width: 270px;
   height: 61px;
-  font-family: Blogger Sans;
+  align-self: center;
+  margin-top: 19px;
+  font-family: "Blogger Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 63px;
   background-color: #FFD74B;
   color: #1D2E5B;
   border-radius: 10px;
@@ -543,6 +695,14 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+}
+.travelers__level {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 2px #FF8D30;
 }
 .filter {
   background-color: #FFD74B;
@@ -583,6 +743,7 @@ img {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 ul {
   padding: 0px;
