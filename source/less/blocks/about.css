@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   min-height: 337px;
   padding-left: 50px;
   padding-right: 50px;
@@ -9,6 +10,7 @@
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
   border: solid 1px transparent;
+  z-index: 1;
 }
 .about__title {
   color: #FF8D30;
