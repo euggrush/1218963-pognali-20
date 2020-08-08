@@ -29,6 +29,7 @@
   font-size: 18px;
   line-height: 18px;
   color: #1D2E5B;
+  cursor: pointer;
 }
 .map__text {
   font-family: "Blogger Sans";

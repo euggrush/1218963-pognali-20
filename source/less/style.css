@@ -298,9 +298,68 @@
   color: #161C35;
 }
 .page-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 240px;
+  margin-top: -142px;
+  padding-top: 12px;
   background-color: #FFFFFF;
   color: #444444;
-  border: solid 1px black;
+  border: solid 1px transparent;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.page-footer__contacts {
+  display: flex;
+  justify-content: center;
+}
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+}
+.page-footer__copyright {
+  padding-left: 23px;
+}
+.page-footer__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #FFD74B;
+}
+.page-footer__link:first-child {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:nth-child(2) {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:last-child {
+  background-image: url(../img/instagram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 28px;
+  height: 34px;
+  margin-left: 153px;
+  background-image: url(../img/html-footer-icon.svg);
+  background-repeat: no-repeat;
+}
+.page-footer__text {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
 }
 .page-header {
   display: flex;
@@ -763,11 +822,11 @@
 }
 .location {
   position: relative;
-  z-index: -1;
+  z-index: -5;
   display: flex;
   flex-direction: column;
   min-height: 424px;
-  margin-top: -1px;
+  margin-top: -20px;
 }
 @font-face {
   font-family: "Blogger Sans";
@@ -795,6 +854,9 @@ a {
 ul {
   padding: 0px;
   margin: 0px;
+}
+button {
+  cursor: pointer;
 }
 .visually-hidden {
   position: absolute;
