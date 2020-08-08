@@ -1,5 +1,49 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 240px;
   background-color: #FFFFFF;
   color: #444444;
+  border: solid 1px transparent;
+}
+.page-footer__contacts {
+  display: flex;
+  justify-content: center;
+}
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+}
+.page-footer__copyright {
   border: solid 1px black;
+}
+.page-footer__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #FFD74B;
+}
+.page-footer__link:first-child {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:nth-child(2) {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:last-child {
+  background-image: url(../img/instagram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 28px;
+  height: 34px;
+  background-image: url(../img/html-footer-icon.svg);
+  background-repeat: no-repeat;
 }
