@@ -1,6 +1,6 @@
 .filter-toggle {
   display: inline-flex;
-  align-items: center;
+  justify-content: space-around;
   position: relative;
   z-index: -1;
   margin-top: -20px;
@@ -18,13 +18,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #192144;
+  padding-top: 15px;
 }
 .filter-toggle__button {
   width: 11px;
   height: 3px;
+  background-image: url(../img/filter-toggle-expand.svg);
 }
 .filter-toggle__icon {
   width: 15px;
   height: 10px;
-  background-image: url(../img/facebook.svg);
+  background-image: url(../img/filter-toggle-icon.svg);
 }
