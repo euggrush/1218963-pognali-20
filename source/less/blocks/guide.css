@@ -1,4 +1,6 @@
 .guide {
+  display: flex;
+  flex-direction: column;
   min-height: 555px;
   background-color: #161C35;
   color: #FFFFFF;
@@ -17,10 +19,10 @@
 }
 .guide__item {
   display: flex;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 18px;
   justify-content: space-between;
   border-radius: 10px;
@@ -64,24 +66,26 @@
   padding-bottom: 0px;
 }
 .guide__quote {
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-top: 48px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 46px;
   line-height: 20px;
   border: solid 1px transparent;
 }
 .guide__slogan {
   display: block;
   height: auto;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 27px;
-  margin-left: 50px;
+  margin-left: 49px;
   margin-right: 90px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
   line-height: 22px;
   border: solid 1px transparent;
