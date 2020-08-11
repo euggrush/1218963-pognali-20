@@ -20,6 +20,7 @@
 @import "blocks/profile.less";
 @import "blocks/filter.less";
 @import "blocks/location.less";
+@import "blocks/catalog-header.less";
 
 // Colors
 
@@ -60,24 +61,21 @@
 
 @font-face {
   font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans.woff");
-  src: url("../fonts/bloggersans.woff2");
-  src: url("../fonts/bloggersans-bold.woff");
-  src: url("../fonts/bloggersans-bold.woff2");
-  // src: url("../fonts/bloggersans-bolditalic.woff");
-  // src: url("../fonts/bloggersans-bolditalic.woff2");
-  // src: url("../fonts/bloggersans-italic.woff");
-  // src: url("../fonts/bloggersans-italic.woff2");
-  src: url("../fonts/bloggersans-light.woff");
-  src: url("../fonts/bloggersans-light.woff2");
-  // src: url("../fonts/bloggersans-lightitalic.woff");
-  // src: url("../fonts/bloggersans-lightitalic.woff2");
-  src: url("../fonts/bloggersans-medium.woff");
-  src: url("../fonts/bloggersans-medium.woff2");
-  // src: url("../fonts/bloggersans-mediumitalic.woff");
-  // src: url("../fonts/bloggersans-mediumitalic.woff2");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/bloggersans-light.woff") format("woff");
+  src: url("../fonts/bloggersans-light.woff2") format("woff2");
+
+  src: url("../fonts/bloggersans.woff") format("woff");
+  src: url("../fonts/bloggersans.woff2") format("woff2");
+
+  src: url("../fonts/bloggersans-medium.woff") format("woff");
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2");
+
+  src: url("../fonts/bloggersans-bold.woff") format("woff");
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2");
+
+  // font-weight: 300;
+  // font-style: normal;
+  // font-display: swap;
 }
 
 .page-body {

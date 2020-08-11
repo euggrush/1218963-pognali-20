@@ -1,9 +1,10 @@
 .about {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  min-height: 337px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
+  min-height: 341px;
+  margin: 0px;
+  padding-top: 16px;
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
@@ -14,30 +15,39 @@
 }
 .about__title {
   color: #FF8D30;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 25px;
   line-height: 24px;
+  padding-left: 48px;
 }
 .about__quote {
-  font-family: "Blogger Sans";
+  display: inline-block;
+  min-width: 212px;
+  text-align: start;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  margin: 0px;
-  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -2px;
+  padding-left: 46px;
+  padding-right: 53px;
 }
 .about__slogan {
-  display: block;
-  font-family: "Blogger Sans";
+  display: inline-block;
+  min-width: 203px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   margin: 0px;
-  padding-top: 20px;
+  padding-top: 2px;
+  padding-left: 46px;
 }
 .add-plan {
   background-color: #D4D9EB;
@@ -58,6 +68,8 @@
   border-radius: 50%;
 }
 .directions {
+  display: flex;
+  flex-direction: column;
   min-height: 710px;
   background-color: #EDEFF6;
   margin-top: -45px;
@@ -66,25 +78,27 @@
   border-bottom-right-radius: 30px;
 }
 .directions__title {
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 20px;
   color: #FF8D30;
   margin-left: 49px;
 }
 .directions__slogan {
-  font-family: "Blogger Sans";
+  display: inline-block;
+  text-align: left;
+  width: 217px;
+  align-self: center;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-bottom: 61px;
-  margin-left: 48px;
-  margin-right: 76px;
 }
 .directions__country-list {
   width: 270px;
@@ -140,6 +154,8 @@
   color: #192144;
 }
 .guide {
+  display: flex;
+  flex-direction: column;
   min-height: 555px;
   background-color: #161C35;
   color: #FFFFFF;
@@ -158,10 +174,10 @@
 }
 .guide__item {
   display: flex;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 18px;
   justify-content: space-between;
   border-radius: 10px;
@@ -205,24 +221,26 @@
   padding-bottom: 0px;
 }
 .guide__quote {
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-top: 48px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 46px;
   line-height: 20px;
   border: solid 1px transparent;
 }
 .guide__slogan {
   display: block;
   height: auto;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 27px;
-  margin-left: 50px;
+  margin-left: 49px;
   margin-right: 90px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
   line-height: 22px;
   border: solid 1px transparent;
@@ -386,13 +404,13 @@
 .page-header__title {
   display: inline-block;
   align-self: center;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: bold;
+  font-size: 38px;
   line-height: 40px;
   color: #FFFFFF;
-  margin-top: 22px;
+  margin-top: 19px;
 }
 @media (min-width: 320px) {
   .page-header__logo {
@@ -438,7 +456,7 @@
 .page-header__controls {
   display: flex;
   justify-content: center;
-  margin-top: 217px;
+  margin-top: 220px;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -460,10 +478,10 @@
   height: 40px;
   background-color: #FFD74B;
   border-radius: 25px;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 20px;
   line-height: 44px;
   text-align: center;
   text-transform: uppercase;
@@ -830,16 +848,14 @@
 }
 @font-face {
   font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans.woff");
-  src: url("../fonts/bloggersans.woff2");
-  src: url("../fonts/bloggersans-bold.woff");
-  src: url("../fonts/bloggersans-bold.woff2");
-  src: url("../fonts/bloggersans-light.woff");
-  src: url("../fonts/bloggersans-light.woff2");
-  src: url("../fonts/bloggersans-medium.woff");
-  src: url("../fonts/bloggersans-medium.woff2");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/bloggersans-light.woff") format("woff");
+  src: url("../fonts/bloggersans-light.woff2") format("woff2");
+  src: url("../fonts/bloggersans.woff") format("woff");
+  src: url("../fonts/bloggersans.woff2") format("woff2");
+  src: url("../fonts/bloggersans-medium.woff") format("woff");
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2");
+  src: url("../fonts/bloggersans-bold.woff") format("woff");
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2");
 }
 .page-body {
   width: 100%;
