@@ -67,3 +67,7 @@
   text-transform: uppercase;
   color: #161C35;
 }
+.my-profile__tags {
+  display: flex;
+  margin: 0 auto;
+}
