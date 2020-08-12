@@ -1,19 +1,57 @@
 .persons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #E5E5E5;
 }
 .persons__item {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  width: 270px;
+  min-height: 415px;
   background-color: #FFFFFF;
   border-radius: 20px;
   border: solid 1px black;
+  list-style: none;
 }
 .persons__name {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
 }
+.persons__rating {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin-top: 55px;
+  margin-left: -34px;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+  width: 71px;
+  height: 32px;
+  background-image: url(../img/heart-rating-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 .persons__button {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  margin-top: 30px;
+  margin-left: 20px;
   width: 230px;
   height: 40px;
   background-color: #FFD74B;
@@ -42,4 +80,94 @@
   height: 51px;
   background-color: #FFFFFF;
   border-radius: 20px;
+}
+.persons__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-top: 15px;
+  margin-left: 18px;
+}
+.persons__hobby {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+}
+.persons__wishes {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #444444;
+}
+.persons__wish-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 170px;
+  min-height: 75px;
+  align-items: center;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+.persons__level {
+  display: block;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #444444;
+}
+.persons__level-number {
+  display: block;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #FF8D30;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: #1D2E5B;
+}
+.persons__transport {
+  display: block;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 16px;
+  color: #444444;
+}
+.persons__transport-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.persons__about-item:nth-child(1) {
+  grid-column-start: 3;
+  grid-row-start: 4;
+  border: solid 1px red;
+}
+.persons__about-item:nth-child(2) {
+  border: solid 1px green;
+}
+.persons__about-item:nth-child(3) {
+  border: solid 1px yellow;
 }
