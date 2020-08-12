@@ -531,7 +531,7 @@
 .persons__item {
   display: grid;
   grid-template-columns: 90px 90px 90px;
-  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px 90px 90px;
   width: 270px;
   min-height: 415px;
   background-color: #FFFFFF;
@@ -552,6 +552,16 @@
   color: #1D2E5B;
   margin-top: 12px;
   margin-left: 14px;
+}
+.persons__dot {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F97676;
+  margin-top: 22px;
+  margin-left: 62px;
 }
 .persons__rating {
   grid-column-start: 2;
@@ -575,7 +585,7 @@
 }
 .persons__button {
   grid-column-start: 1;
-  grid-row-start: 6;
+  grid-row-start: 5;
   margin-top: 30px;
   margin-left: 20px;
   width: 230px;
@@ -619,7 +629,7 @@
 }
 .persons__hobby {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -648,9 +658,10 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 16px;
+  line-height: 1px;
   text-transform: uppercase;
   color: #1D2E5B;
+  margin-top: 16px;
 }
 .persons__level {
   display: block;
@@ -695,21 +706,23 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
+  margin-top: -37px;
+  margin-left: 25px;
 }
 .persons__about-item:nth-child(1) {
   grid-column-start: 1;
   grid-row-start: 1;
-  border: solid 1px red;
+  border: solid 1px transparent;
 }
 .persons__about-item:nth-child(2) {
   grid-column-start: 1;
   grid-row-start: 2;
-  border: solid 1px green;
+  border: solid 1px transparent;
 }
 .persons__about-item:nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
-  border: solid 1px yellow;
+  border: solid 1px transparent;
 }
 .plans {
   background-color: #DFE3F0;
@@ -1043,6 +1056,38 @@
   background-repeat: no-repeat;
 }
 .catalog-header__title {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 4px;
+  padding-left: 26px;
+  padding-top: 21px;
+  color: #FFFFFF;
+}
+.form-header {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 145px;
+  background-color: #182044;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+.form-header__logo {
+  margin-top: 21px;
+  margin-left: 28px;
+}
+.form-header__button {
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../img/icon-menu-mobile.svg);
+  background-repeat: no-repeat;
+}
+.form-header__title {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;

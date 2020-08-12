@@ -8,38 +8,27 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a href="index.html" class="page-header__link">
+  <header class="form-header">
+    <a href="index.html" class="form-header__link">
       <span class="text-hidden">Главная</span>
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
+      <img class="form-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
     </a>
-    <button class="page-header__button" type="button">
+    <button class="form-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="page-header__nav">
-      <a class="page-header__nav-item" href="index.html">
+    <nav class="form-header__nav hidden">
+      <a class="form-header__nav-item" href="index.html">
         О сервисе
       </a>
-      <a class="page-header__nav-item" href="form.html">
+      <a class="form-header__nav-item" href="form.html">
         Направления
       </a>
-      <a class="page-header__nav-item" href="catalog.html">
+      <a class="form-header__nav-item" href="catalog.html">
         Попутчики
       </a>
     </nav>
-    <!-- <h1>В путешествие с крутыми попутчиками!</h1>
-    <div class="page-header__controls">
-      <a class="page-header__controls-item" href="#">
-        Позвонить
-      </a>
-      <a class="page-header__controls-item" href="#">
-        Отправить email
-      </a>
-      <a class="page-header__controls-item" href="#">
-        Авторизация
-      </a>
-    </div> -->
-    <h2 class="page-header__title">Направления</h2>
+
+    <h2 class="form-header__title">Направления</h2>
   </header>
 
   <main>
@@ -47,8 +36,14 @@
     <!-- БЛОК МОЙ ПРОФИЛЬ -->
 
     <section class="my-profile">
-      <span class="my-profile__level">80 level</span>
-      <img class="my-profile__avatar" src="../source/img/demin-desktop@1x.jpg" width="100" height="100" alt="аватарка">
+      <div class="my-profile__wrapper">
+        <div class="my-profile__level">
+          <span class="my-profile__level-number">80</span>
+          <div class="my-profile__level-splitter"></div>
+          <span class="my-profile__level-text">level</span>
+        </div>
+        <img class="my-profile__avatar" src="../source/img/demin-desktop@1x.jpg" width="100" height="100" alt="аватарка">
+      </div>
       <button class="my-profile__button">сменить фото</button>
       <section>
         ТЭГИ
@@ -287,19 +282,21 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__contacts">
-      Главная
+      <span class="text-hidden">Главная</span>
       <img class="page-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
     </a>
     <div class="page-footer__social">
-      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">Мы в
-        Фейсбуке</a>
-      <a class="page-footer__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">Мы в
-        Инстаграме</a>
+      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">
+        <span class="text-hidden">Мы в Фейсбуке</span></a>
+      <a class="page-footer__link" href="https://vk.com/htmlacademy">
+        <span class="text-hidden">Мы в Вконтакте</span></a>
+      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">
+        <span class="text-hidden">Мы в Инстаграме</span></a>
     </div>
     <div class="page-footer__copyright">
       <b class="page-footer__text">Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="text-hidden">HTML Academy</span></a>
       </b>
     </div>
   </footer>
