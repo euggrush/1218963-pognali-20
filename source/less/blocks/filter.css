@@ -1,6 +1,11 @@
 .filter {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: -30px;
   background-color: #FFD74B;
-  border: solid 1px black;
+  border: solid 1px transparent;
   border-radius: 20px;
 }
 .filter__button {

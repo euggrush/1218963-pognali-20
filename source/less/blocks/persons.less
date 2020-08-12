@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #E5E5E5;
+  margin-top: 28px;
 }
 
 .persons__item {
@@ -14,8 +15,9 @@
   min-height: 415px;
   background-color: #FFFFFF;
   border-radius: 20px;
-  border: solid 1px black;
+  border: solid 1px transparent;
   list-style: none;
+  margin-top: 10px;
 }
 
 .persons__name {
@@ -29,13 +31,15 @@
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
+  margin-top: 12px;
+  margin-left: 14px;
 }
 
 .persons__rating {
   grid-column-start: 2;
   grid-row-start: 1;
-  margin-top: 55px;
-  margin-left: -34px;
+  margin-top: 54px;
+  margin-left: -22px;
   display: flex;
   align-items: center;
   padding-left: 36px;
@@ -68,6 +72,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
+  border: none;
 }
 
 .persons__button--more {
@@ -102,7 +107,7 @@
 
 .persons__hobby {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -110,6 +115,8 @@
   font-size: 15px;
   line-height: 18px;
   color: #444444;
+  margin-top: 7px;
+  margin-left: 24px;
 }
 
 .persons__wishes {
@@ -119,6 +126,7 @@
   font-size: 15px;
   line-height: 16px;
   color: #444444;
+  margin-bottom: 0px;
 }
 
 .persons__wish-wrapper {
@@ -177,16 +185,31 @@
     border-radius: 50%;
   }
 
+  .persons__about-list {
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin-top: -37px;
+    margin-left: 25px;
+  }
+
 .persons__about-item:nth-child(1) {
-  grid-column-start: 3;
-  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-start: 1;
   border: solid 1px red;
 }
 
 .persons__about-item:nth-child(2) {
+  grid-column-start: 1;
+  grid-row-start: 2;
   border: solid 1px green;
 }
 
 .persons__about-item:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 2;
   border: solid 1px yellow;
 }
