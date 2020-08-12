@@ -9,7 +9,7 @@
 .persons__item {
   display: grid;
   grid-template-columns: 90px 90px 90px;
-  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px 90px 90px;
   width: 270px;
   min-height: 415px;
   background-color: #FFFFFF;
@@ -30,6 +30,16 @@
   color: #1D2E5B;
   margin-top: 12px;
   margin-left: 14px;
+}
+.persons__dot {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F97676;
+  margin-top: 22px;
+  margin-left: 62px;
 }
 .persons__rating {
   grid-column-start: 2;
@@ -53,7 +63,7 @@
 }
 .persons__button {
   grid-column-start: 1;
-  grid-row-start: 6;
+  grid-row-start: 5;
   margin-top: 30px;
   margin-left: 20px;
   width: 230px;
@@ -115,7 +125,6 @@
   font-size: 15px;
   line-height: 16px;
   color: #444444;
-  margin-bottom: 0px;
 }
 .persons__wish-wrapper {
   display: grid;
@@ -127,9 +136,10 @@
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 16px;
+  line-height: 1px;
   text-transform: uppercase;
   color: #1D2E5B;
+  margin-top: 16px;
 }
 .persons__level {
   display: block;
@@ -180,15 +190,15 @@
 .persons__about-item:nth-child(1) {
   grid-column-start: 1;
   grid-row-start: 1;
-  border: solid 1px red;
+  border: solid 1px transparent;
 }
 .persons__about-item:nth-child(2) {
   grid-column-start: 1;
   grid-row-start: 2;
-  border: solid 1px green;
+  border: solid 1px transparent;
 }
 .persons__about-item:nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
-  border: solid 1px yellow;
+  border: solid 1px transparent;
 }
