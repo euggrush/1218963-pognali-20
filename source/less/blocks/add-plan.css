@@ -51,6 +51,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
+  padding-left: 25px;
 }
 .add-plan__step-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -142,22 +143,35 @@
   width: 224px;
   min-height: 224px;
   margin: 0 auto;
-  border: 1px solid black;
   border-collapse: collapse;
 }
 .add-plan__week-day {
   width: 32px;
   height: 32px;
   text-align: center;
-  border: 1px solid black;
-  border-collapse: collapse;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.add-plan__weekend-day {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF5C23;
 }
 .add-plan__week-date {
   width: 32px;
   height: 32px;
   text-align: center;
-  border: 1px solid black;
-  border-collapse: collapse;
+  border: 1px solid #D6D9E6;
 }
 .add-plan__button-next {
   width: 229px;
@@ -191,6 +205,14 @@
   align-items: center;
 }
 .add-plan__country {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1D2E5B;
   border: none;
 }
 .add-plan__checkmark {
@@ -240,6 +262,7 @@
   height: 42px;
   background-color: #EDEFF6;
   border-radius: 4px;
+  border: none;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -295,4 +318,25 @@
   width: 220px;
   height: 220px;
   border: solid 1px #444444;
+}
+.add-plan__todo {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  opacity: 0.3;
+  border: solid 1px #444444;
+  border-radius: 10px;
+  text-align: left;
+}
+.add-plan__todo-label {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #1D2E5B;
 }
