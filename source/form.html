@@ -111,8 +111,8 @@
           <p class="add-plan__step-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
             длительность.</p>
           <div class="add-plan__form-field">
-            <label for="add-plan__search">ищу попутчиков:</label>
-            <b>чел.</b>
+            <label class="add-plan__label" for="add-plan__search">ищу попутчиков:</label>
+            <b class="add-plan__label-desc">чел.</b>
             <div class="add-plan__counter">
               <button type="button" class="add-plan__minus">
                 <span class="text-hidden">убрать человека</span>
@@ -125,8 +125,8 @@
           </div>
 
           <div class="add-plan__form-field">
-            <label for="add-plan__time">длительность:</label>
-            <b>дн.</b>
+            <label class="add-plan__label" for="add-plan__time">длительность:</label>
+            <b class="add-plan__label-desc">дн.</b>
             <div class="add-plan__counter">
               <button type="button" class="add-plan__minus">
                 <span class="text-hidden">убрать день</span>
@@ -143,14 +143,15 @@
             <label for="kids">Можно с детьми</label>
           </div>
 
-          <!-- КАЛЕНДАРЬ -->
-
           <div class="add-plan__calendar">
             <div class="add-plan__input-wrapper">
               <button type="button" class="add-plan__left"><span class="text-hidden">лево</span></button>
               <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
               <button type="button" class="add-plan__right"><span class="text-hidden">право</span></button>
             </div>
+
+<!-- КАЛЕНДАРЬ -->
+
             <table class="add-plan__calendar-days">
               <tr>
                 <th class="add-plan__week-day">п</th>

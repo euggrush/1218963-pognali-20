@@ -99,6 +99,44 @@
 .add-plan__input-wrapper {
   display: flex;
   justify-content: center;
+  width: 221px;
+  min-height: 42px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+.add-plan__search {
+  border: none;
+  text-align: center;
+}
+.add-plan__time {
+  border: none;
+  text-align: center;
+}
+.add-plan__date {
+  border: none;
+  text-align: center;
+}
+.add-plan__label {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+.add-plan__label-desc {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  opacity: 0.3;
 }
 .add-plan__calendar-days {
   width: 224px;
