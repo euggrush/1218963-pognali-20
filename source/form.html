@@ -233,63 +233,65 @@
 
           <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
 
-          <div class="add-plan__form-field">
+          <div class="add-plan__country-field">
             <input list="add-plan__country" class="add-plan__country" placeholder="Босния и герцеговина">
-            <button class="add-plan__flag-button">флаг страны</button>
+            <button class="add-plan__flag-button"><span class="text-hidden">флаг страны</span></button>
             <datalist id="add-plan__country">
               <option value="Босния и герцеговина">
               <option value="чехия">
             </datalist>
           </div>
 
-          <div class="add-plan__form-field">
+          <div class="add-plan__country-field">
             <input list="add-plan__country" class="add-plan__country" placeholder="чехия">
-            <button class="add-plan__flag-button">флаг страны</button>
+            <button class="add-plan__flag-button"><span class="text-hidden">флаг страны</span></button>
           </div>
 
-          <div class="add-plan__form-field">
+          <div class="add-plan__country-field">
             <button class="add-plan__choose-button">выберите страну</button>
-            <div class="add-plan__alphabet modal">
-              <span class="add-plan__letters">А</span>
-              <span class="add-plan__letters">Б</span>
-              <span class="add-plan__letters">В</span>
-              <span class="add-plan__letters">Г</span>
-              <span class="add-plan__letters">Д</span>
-              <span class="add-plan__letters">Е</span>
-              <span class="add-plan__letters">З</span>
-              <span class="add-plan__letters">И</span>
-              <span class="add-plan__letters">К</span>
-              <span class="add-plan__letters">Л</span>
-              <span class="add-plan__letters">М</span>
-              <span class="add-plan__letters">Н</span>
-              <span class="add-plan__letters">О</span>
-              <span class="add-plan__letters">П</span>
-              <span class="add-plan__letters">Р</span>
-              <span class="add-plan__letters">С</span>
-              <span class="add-plan__letters">Т</span>
-              <span class="add-plan__letters">У</span>
-              <span class="add-plan__letters">Ф</span>
-              <span class="add-plan__letters">Х</span>
-              <span class="add-plan__letters">Ч</span>
-              <span class="add-plan__letters">Ш</span>
-              <span class="add-plan__letters">Щ</span>
-              <span class="add-plan__letters">Э</span>
-              <span class="add-plan__letters">Ю</span>
-            </div>
+            <div class="add-plan__country-wrapper modal hidden">
+              <div class="add-plan__alphabet">
+                <span class="add-plan__letters">А</span>
+                <span class="add-plan__letters">Б</span>
+                <span class="add-plan__letters">В</span>
+                <span class="add-plan__letters">Г</span>
+                <span class="add-plan__letters">Д</span>
+                <span class="add-plan__letters">Е</span>
+                <span class="add-plan__letters">З</span>
+                <span class="add-plan__letters">И</span>
+                <span class="add-plan__letters">К</span>
+                <span class="add-plan__letters">Л</span>
+                <span class="add-plan__letters">М</span>
+                <span class="add-plan__letters">Н</span>
+                <span class="add-plan__letters">О</span>
+                <span class="add-plan__letters">П</span>
+                <span class="add-plan__letters">Р</span>
+                <span class="add-plan__letters">С</span>
+                <span class="add-plan__letters">Т</span>
+                <span class="add-plan__letters">У</span>
+                <span class="add-plan__letters">Ф</span>
+                <span class="add-plan__letters">Х</span>
+                <span class="add-plan__letters">Ч</span>
+                <span class="add-plan__letters">Ш</span>
+                <span class="add-plan__letters">Щ</span>
+                <span class="add-plan__letters">Э</span>
+                <span class="add-plan__letters">Ю</span>
+              </div>
 
-            <div class="add-plan__country-list">
-              <span class="add-plan__country-item">Австралия</span>
-              <span class="add-plan__country-item">Австрия</span>
-              <span class="add-plan__country-item">Азербайджа</span>
-              <span class="add-plan__country-item">Албания</span>
-              <span class="add-plan__country-item">Алжир</span>
-              <span class="add-plan__country-item">Ангола</span>
-              <span class="add-plan__country-item">Андорра</span>
-              <span class="add-plan__country-item">Антигуа и Барбуда</span>
-              <span class="add-plan__country-item">Аргентина</span>
-              <span class="add-plan__country-item">Армения</span>
+              <div class="add-plan__country-list">
+                <span class="add-plan__country-item">Австралия</span>
+                <span class="add-plan__country-item">Австрия</span>
+                <span class="add-plan__country-item">Азербайджа</span>
+                <span class="add-plan__country-item">Албания</span>
+                <span class="add-plan__country-item">Алжир</span>
+                <span class="add-plan__country-item">Ангола</span>
+                <span class="add-plan__country-item">Андорра</span>
+                <span class="add-plan__country-item">Антигуа и Барбуда</span>
+                <span class="add-plan__country-item">Аргентина</span>
+                <span class="add-plan__country-item">Армения</span>
+              </div>
             </div>
-          </div>
+            </div>
 
           <div class="add-plan__form-field">
             <button class="add-plan__add-button">Добавить страну</button>
@@ -309,7 +311,7 @@
             <label for="add-plan__todo">Чехия</label>
             <input class="todo" type="text" id="todo" name="todo"
               placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
-              <button class="search-button" type="submit">Отправить</button>
+              <button class="add-plan__submit-button" type="submit">Отправить</button>
               <button class="add-plan__button-back" type="button">на шаг назад</button>
           </section>
       </form>
