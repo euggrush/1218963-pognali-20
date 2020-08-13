@@ -8,6 +8,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -1px;
+  padding-bottom: 160px;
 }
 .add-plan__header {
   display: flex;
@@ -42,6 +43,22 @@
   background-color: #FFFFFF;
   border-radius: 10px;
   margin-top: 10px;
+}
+.add-plan__step {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1D2E5B;
+}
+.add-plan__step-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
 }
 .add-plan__counter {
   display: flex;
@@ -111,4 +128,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #1D2E5B;
+}
+.add-plan__todo {
+  display: block;
+  width: 220px;
+  height: 220px;
+  border: solid 1px #444444;
 }
