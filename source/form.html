@@ -146,59 +146,83 @@
           <!-- КАЛЕНДАРЬ -->
 
           <div class="add-plan__calendar">
-            <button type="button" class="add-plan__left">лево</button>
-            <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
-            <button type="button" class="add-plan__right">право</button>
-            <div class="add-plan__calendar-days">
-              <span class="add-plan__week-day">п</span>
-              <span class="add-plan__week-day">в</span>
-              <span class="add-plan__week-day">с</span>
-              <span class="add-plan__week-day">ч</span>
-              <span class="add-plan__week-day">п</span>
-              <span class="add-plan__week-day">с</span>
-              <span class="add-plan__week-day">в</span>
-              <span class="add-plan__week-date">23</span>
-              <span class="add-plan__week-date">24</span>
-              <span class="add-plan__week-date">25</span>
-              <span class="add-plan__week-date">26</span>
-              <span class="add-plan__week-date">27</span>
-              <span class="add-plan__week-date">28</span>
-              <span class="add-plan__week-date">1</span>
-              <span class="add-plan__week-date">2</span>
-              <span class="add-plan__week-date">3</span>
-              <span class="add-plan__week-date">4</span>
-              <span class="add-plan__week-date">5</span>
-              <span class="add-plan__week-date">6</span>
-              <span class="add-plan__week-date">7</span>
-              <span class="add-plan__week-date">8</span>
-              <span class="add-plan__week-date">9</span>
-              <span class="add-plan__week-date">10</span>
-              <span class="add-plan__week-date">11</span>
-              <span class="add-plan__week-date">12</span>
-              <span class="add-plan__week-date">13</span>
-              <span class="add-plan__week-date">14</span>
-              <span class="add-plan__week-date">15</span>
-              <span class="add-plan__week-date">16</span>
-              <span class="add-plan__week-date">17</span>
-              <span class="add-plan__week-date">18</span>
-              <span class="add-plan__week-date">19</span>
-              <span class="add-plan__week-date">20</span>
-              <span class="add-plan__week-date">21</span>
-              <span class="add-plan__week-date">22</span>
-              <span class="add-plan__week-date">23</span>
-              <span class="add-plan__week-date">25</span>
-              <span class="add-plan__week-date">26</span>
-              <span class="add-plan__week-date">27</span>
-              <span class="add-plan__week-date">28</span>
-              <span class="add-plan__week-date">29</span>
-              <span class="add-plan__week-date">30</span>
-              <span class="add-plan__week-date">31</span>
-              <span class="add-plan__week-date">1</span>
-              <span class="add-plan__week-date">2</span>
-              <span class="add-plan__week-date">3</span>
-              <span class="add-plan__week-date">4</span>
-              <span class="add-plan__week-date">5</span>
+            <div class="add-plan__input-wrapper">
+              <button type="button" class="add-plan__left"><span class="text-hidden">лево</span></button>
+              <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
+              <button type="button" class="add-plan__right"><span class="text-hidden">право</span></button>
             </div>
+            <table class="add-plan__calendar-days">
+              <tr>
+                <th class="add-plan__week-day">п</th>
+                <th class="add-plan__week-day">в</th>
+                <th class="add-plan__week-day">с</th>
+                <th class="add-plan__week-day">ч</th>
+                <th class="add-plan__week-day">п</th>
+                <th class="add-plan__week-day">с</th>
+                <th class="add-plan__week-day">в</th>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">23</td>
+                <td class="add-plan__week-date">24</td>
+                <td class="add-plan__week-date">25</td>
+                <td class="add-plan__week-date">26</td>
+                <td class="add-plan__week-date">27</td>
+                <td class="add-plan__week-date">28</td>
+                <td class="add-plan__week-date">1</td>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">2</td>
+                <td class="add-plan__week-date">3</td>
+                <td class="add-plan__week-date">4</td>
+                <td class="add-plan__week-date">5</td>
+                <td class="add-plan__week-date">6</td>
+                <td class="add-plan__week-date">7</td>
+                <td class="add-plan__week-date">8</td>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">9</td>
+                <td class="add-plan__week-date">10</td>
+                <td class="add-plan__week-date">11</td>
+                <td class="add-plan__week-date">12</td>
+                <td class="add-plan__week-date">13</td>
+                <td class="add-plan__week-date">14</td>
+                <td class="add-plan__week-date">15</td>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">16</td>
+                <td class="add-plan__week-date">17</td>
+                <td class="add-plan__week-date">18</td>
+                <td class="add-plan__week-date">19</td>
+                <td class="add-plan__week-date">20</td>
+                <td class="add-plan__week-date">21</td>
+                <td class="add-plan__week-date">22</td>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">23</td>
+                <td class="add-plan__week-date">24</td>
+                <td class="add-plan__week-date">25</td>
+                <td class="add-plan__week-date">26</td>
+                <td class="add-plan__week-date">27</td>
+                <td class="add-plan__week-date">28</td>
+                <td class="add-plan__week-date">29</td>
+              </tr>
+
+              <tr>
+                <td class="add-plan__week-date">30</td>
+                <td class="add-plan__week-date">31</td>
+                <td class="add-plan__week-date">1</td>
+                <td class="add-plan__week-date">2</td>
+                <td class="add-plan__week-date">3</td>
+                <td class="add-plan__week-date">4</td>
+                <td class="add-plan__week-date">5</td>
+              </tr>
+
+            </table>
           </div>
 
           <button class="add-plan__button-next" type="button">Следующий шаг</button>
@@ -273,7 +297,8 @@
 
           <button class="add-plan__button-next" type="button">Следующий шаг</button>
           <button class="add-plan__button-back" type="button">на шаг назад</button>
-          </li>
+
+        </section>
 
           <section class="add-plan__item">
             <h3 class="add-plan__step">Шаг 3. Развлечения</h3>
@@ -284,14 +309,14 @@
             <label for="add-plan__todo">Чехия</label>
             <input class="todo" type="text" id="todo" name="todo"
               placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.">
+              <button class="search-button" type="submit">Отправить</button>
+              <button class="add-plan__button-back" type="button">на шаг назад</button>
           </section>
-
-          <button class="search-button" type="submit">Отправить</button>
-          <button class="add-plan__button-back" type="button">на шаг назад</button>
       </form>
     </section>
 
   </main>
+
   <footer class="page-footer">
     <a class="page-footer__contacts">
       <span class="text-hidden">Главная</span>
