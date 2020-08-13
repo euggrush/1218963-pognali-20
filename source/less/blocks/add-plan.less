@@ -1,7 +1,19 @@
 .add-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #D4D9EB;
   border: solid 1px black;
   border-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -1px;
+}
+
+.add-plan__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .add-plan__title {
@@ -12,9 +24,29 @@
   color: #1D2E5B;
 }
 
+.add-plan__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48px;;
+}
+
 .add-plan__toggle-button {
   width: 5px;
-  height: 5px;
+  height: auto;
   background-color: #1D2E5B;
   border-radius: 50%;
+  border: none;
+}
+
+.add-plan__item {
+  width: 270px;
+  min-height: 796px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.add-plan__counter {
+  display: flex;
+  justify-content: center;
 }

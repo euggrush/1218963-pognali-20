@@ -106,7 +106,7 @@
       <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
 
         <section class="add-plan__item">
-          <h3>Шаг 1. Даты пребывания</h3>
+          <h3 class="add-plan__step">Шаг 1. Даты пребывания</h3>
 
           <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
             длительность.</p>
@@ -114,19 +114,27 @@
             <label for="add-plan__search">ищу попутчиков:</label>
             <b>чел.</b>
             <div class="add-plan__counter">
-              <button type="button" class="add-plan__minus">убрать человека</button>
+              <button type="button" class="add-plan__minus">
+                <span class="text-hidden">убрать человека</span>
+                </button>
               <input class="add-plan__search" type="text" id="add-plan__search" name="add-plan__search" placeholder="2">
-              <button type="button" class="add-plan__plus">добавить человека</button>
+              <button type="button" class="add-plan__plus">
+                <span class="text-hidden">добавить человека</span>
+                </button>
             </div>
           </div>
 
           <div class="add-plan__form-field">
             <label for="add-plan__time">длительность:</label>
-            <b>чел.</b>
+            <b>дн.</b>
             <div class="add-plan__counter">
-              <button type="button" class="add-plan__minus">убрать день</button>
+              <button type="button" class="add-plan__minus">
+                <span class="text-hidden">убрать день</span>
+                </button>
               <input class="add-plan__time" type="text" id="add-plan__time" name="add-plan__time" placeholder="2">
-              <button type="button" class="add-plan__plus">добавить день</button>
+              <button type="button" class="add-plan__plus">
+                <span class="text-hidden">добавить день</span>
+                </button>
             </div>
           </div>
 
@@ -197,7 +205,7 @@
         </section>
 
         <section class="add-plan__item">
-          <h3>Шаг 2. Маршрут</h3>
+          <h3 class="add-plan__step">Шаг 2. Маршрут</h3>
 
           <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
 
@@ -268,7 +276,7 @@
           </li>
 
           <section class="add-plan__item">
-            <h3>Шаг 3. Развлечения</h3>
+            <h3 class="add-plan__step">Шаг 3. Развлечения</h3>
 
             <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
             <label for="todo">Босния и Герцеговина</label>
