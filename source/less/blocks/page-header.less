@@ -18,15 +18,61 @@
 }
 
 .page-header__nav {
+  position: absolute;
   display: flex;
   flex-direction: column;
   min-height: 568px;
   background-color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
-
+  min-width: 320px;
   outline: 2px solid rgba(0, 255, 0, 0.8);
   outline-offset: -2px;
+}
+
+.page-header__btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.page-header__link-fb {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-image: url("../img/icon-facebook-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-header__link-vk {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon-vk-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-header__link-inst {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon-instagram-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-header__title {
