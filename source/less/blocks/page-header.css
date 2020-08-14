@@ -97,23 +97,54 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 50px;
   background-color: #FFD74B;
   border-radius: 25px;
 }
+.page-header__contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+}
 .page-header__nav-call {
-  display: block;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+  background-color: #121936;
+  background-image: url("../img/icon-telephone-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 25px;
 }
 .page-header__nav-email {
   display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+  background-color: #121936;
+  background-image: url("../img/icon-mail-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 25px;
+}
+.page-header__link-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #192144;
+  text-align: left;
+  margin-top: 10px;
 }
 .page-header__controls {
   display: flex;
