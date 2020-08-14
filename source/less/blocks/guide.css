@@ -6,6 +6,8 @@
   color: #FFFFFF;
   border: solid 1px transparent;
   margin-top: -94px;
+  position: relative;
+  z-index: 1;
 }
 .guide__list {
   display: flex;
