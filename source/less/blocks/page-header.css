@@ -20,13 +20,15 @@
   text-align: center;
   text-transform: uppercase;
   min-width: 320px;
-  outline: 2px solid rgba(0, 255, 0, 0.8);
+  border: solid 1px transparent;
   outline-offset: -2px;
 }
 .page-header__btn-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid transparent;
+  margin-bottom: 60px;
 }
 .page-header__button {
   width: 30px;
@@ -37,6 +39,9 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
+}
+.page-header__social {
+  margin-top: 20px;
 }
 .page-header__link-fb {
   display: inline-block;
@@ -94,6 +99,7 @@
   width: 270px;
   height: 50px;
   margin: 0 auto;
+  margin-top: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -105,6 +111,8 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
+  border: solid 1px transparent;
+  margin-top: 20px;
 }
 .page-header__nav-call {
   display: inline-block;
@@ -145,6 +153,7 @@
   color: #192144;
   text-align: left;
   margin-top: 10px;
+  cursor: pointer;
 }
 .page-header__controls {
   display: flex;
