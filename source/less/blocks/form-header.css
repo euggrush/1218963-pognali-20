@@ -1,6 +1,7 @@
 .form-header {
-  display: inline-flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   min-width: 320px;
   min-height: 145px;
   background-color: #182044;
@@ -8,19 +9,31 @@
   border-bottom-right-radius: 20px;
   margin: 0px;
   padding: 0px;
+  position: relative;
+  z-index: 1;
 }
 .form-header__logo {
+  grid-column-start: 1;
+  grid-row-start: 1;
   margin-top: 21px;
   margin-left: 28px;
 }
 .form-header__button {
+  grid-column-start: 2;
+  grid-row-start: 1;
   width: 30px;
   height: 20px;
-  background-color: transparent;
   background-image: url(../img/icon-menu-mobile.svg);
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 .form-header__title {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: inline-block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
