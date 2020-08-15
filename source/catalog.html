@@ -111,54 +111,70 @@
     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
       <h2 class="filter__title">Подберите идеального попутчика</h2>
 
-      <fieldset class="filter__sort">
-        <legend>хобби</legend>
-      </fieldset>
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">хобби</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <fieldset class="filter__sort">
 
-      <fieldset class="filter__sort">
-        <legend>музыка</legend>
-        <label>
-          <input type="checkbox">
-          Тяжелый рок
-        </label>
-        <label>
-          <input type="checkbox">
-          Русский рэп
-        </label>
-        <label>
-          <input type="checkbox">
-          Евроденс
-        </label>
-      </fieldset>
+        </fieldset>
+      </section>
 
-      <fieldset class="filter__sort">
-        <legend>еда</legend>
-      </fieldset>
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">музыка</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <fieldset class="filter__sort">
+          <label>
+            <input type="checkbox">
+            Тяжелый рок
+          </label>
+          <label>
+            <input type="checkbox">
+            Русский рэп
+          </label>
+          <label>
+            <input type="checkbox">
+            Евроденс
+          </label>
+        </fieldset>
+      </section>
 
-      <fieldset class="filter__sort">
-        <legend>транспорт</legend>
-          <button type="button">
-            самолет
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="самолет">
-          </button>
-          <button type="button">
-            автобус
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="автобус">
-          </button>
-          <button type="button">
-            велосипед
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="велосипед">
-          </button>
-          <button type="button">
-            пешком
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="пешком">
-          </button>
-      </fieldset>
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">еда</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <fieldset class="filter__sort">
 
-      <fieldset class="filter__sort">
-        <legend>Левел</legend>
-        <input type="range" min="30" max="100">
+        </fieldset>
+      </section>
+
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">транспорт</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <fieldset class="filter__sort">
+          <button class="filter__btn-plane" type="button"> <span class="text-hidden">самолет</span></button>
+          <button class="filter__btn-bus" type="button"><span class="text-hidden">автобус</span></button>
+          <button class="filter__btn-bike" type="button"><span class="text-hidden">велосипед</span></button>
+          <button class="filter__btn-run" type="button"><span class="text-hidden">пешком</span></button>
       </fieldset>
+      </section>
+
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">Левел</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <fieldset class="filter__sort">
+          <input type="range" min="30" max="100">
+        </fieldset>
+      </section>
+
       <button class="filter__button" type="submit">показать</button>
     </form>
 
