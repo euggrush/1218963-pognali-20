@@ -42,7 +42,7 @@
         <button class="filter-toggle__button"><span class="text-hidden">Открыть</span></button>
       </div>
 
-      <section class="filter-toggle__modal">
+      <section class="filter-toggle__modal hidden">
         <span class="filter-toggle__country-title">Европа</span>
         <span class="filter-toggle__country-title">Азия</span>
         <span class="filter-toggle__country-title">америка</span>
@@ -102,8 +102,8 @@
           <span class="filter-toggle__country-item">Армения</span>
           <span class="filter-toggle__country-item">Афганистан</span>
         </div>
+        <button class="filter-toggle__close" type="button">Свернуть</button>
       </section>
-      <button class="filter-toggle__close" type="button">Свернуть</button>
     </section>
 
 <!-- БЛОК ФИЛЬТР ПОДБОРА ПОПУТЧИКА -->
@@ -307,13 +307,15 @@
       </section>
 
       <section class="persons__controls">
-        <button class="persons__button persons__button--more">показать еще</button>
-        <button class="persons__button persons__button--prev" type="button">
-          <span class="text-hidden">лево</span>
-        </button>
-        <button class="persons__button persons__button--next" type="button">
-          <span class="text-hidden">право</span>
-        </button>
+        <button class="persons__btn-more">показать еще</button>
+        <div class="persons__controls-wrap">
+          <button class="persons__btn-prev" type="button">
+            <span class="text-hidden">лево</span>
+          </button>
+          <button class="persons__btn-next" type="button">
+            <span class="text-hidden">право</span>
+          </button>
+        </div>
       </section>
     </section>
 

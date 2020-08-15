@@ -1,15 +1,12 @@
 .page-footer {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-height: 240px;
-  margin-top: -142px;
   padding-top: 12px;
   background-color: #FFFFFF;
   color: #444444;
-  border: solid 1px transparent;
+  border: solid 1px black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }

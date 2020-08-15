@@ -9,8 +9,6 @@
   border-bottom-right-radius: 20px;
   margin: 0px;
   padding: 0px;
-  position: relative;
-  z-index: 1;
 }
 .catalog-header__logo {
   grid-column-start: 1;
