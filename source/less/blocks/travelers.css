@@ -2,14 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
   min-height: 1271px;
   background-color: #192144;
   background-image: url(../img/bg-travelers.png);
   background-repeat: no-repeat;
-  margin-top: -30px;
+  margin-top: 0px;
   padding-top: 75px;
-  z-index: -1;
   border: solid 1px black;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
