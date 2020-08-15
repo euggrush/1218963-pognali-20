@@ -1,12 +1,16 @@
 .filter {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  justify-content: start;
+  width: 218px;
+  min-height: 624px;
   margin: 0 auto;
   margin-top: 0px;
   background-color: #FFD74B;
   border: solid 1px transparent;
   border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .filter__button {
@@ -14,6 +18,7 @@
   height: 41px;
   background: #FFFFFF;
   border-radius: 25px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -21,17 +26,30 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
+  align-self: center;
+  border: none;
+}
+
+.filter__title {
+  font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #1D2E5B;
 }
 
 .filter__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  border-top: solid 1px #F3C72B;
+}
+
+.filter__item-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter__item-title {
-  grid-column-start: 1;
-  grid-row-start: 1;
   font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -42,8 +60,6 @@
 }
 
 .filter__toggle-btn {
-  grid-column-end: 3;
-  grid-row-start: 1;
   width: 20px;
   height: 20px;
   background-image: url("../img/icon-arrows-next.svg");
@@ -52,4 +68,55 @@
   border: none;
   background-color: transparent;
   transform: rotate(90deg);
+}
+
+.filter__sort {
+  border: none;
+  padding: 0px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter__btn-plane {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.filter__btn-bus {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.filter__btn-bike {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.filter__btn-run {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.filter__checkbox {
+  display: none;
 }

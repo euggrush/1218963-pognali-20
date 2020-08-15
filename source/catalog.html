@@ -112,54 +112,71 @@
       <h2 class="filter__title">Подберите идеального попутчика</h2>
 
       <section class="filter__item">
-        <span class="filter__item-title">хобби</span>
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">хобби</span>
           <button class="filter__toggle-btn" type="button"></button>
+        </div>
         <fieldset class="filter__sort">
 
         </fieldset>
       </section>
 
       <section class="filter__item">
-        <span class="filter__item-title">музыка</span>
-        <button class="filter__toggle-btn" type="button"></button>
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">музыка</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
         <fieldset class="filter__sort">
           <label>
-            <input type="checkbox">
+            <input class="filter__checkbox" type="checkbox">
             Тяжелый рок
           </label>
           <label>
-            <input type="checkbox">
+            <input class="filter__checkbox" type="checkbox">
             Русский рэп
           </label>
           <label>
-            <input type="checkbox">
+            <input class="filter__checkbox" type="checkbox">
             Евроденс
           </label>
         </fieldset>
       </section>
 
       <section class="filter__item">
-        <span class="filter__item-title">еда</span>
-        <button class="filter__toggle-btn" type="button"></button>
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">еда</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
         <fieldset class="filter__sort">
 
         </fieldset>
       </section>
 
       <section class="filter__item">
-        <span class="filter__item-title">транспорт</span>
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">транспорт</span>
         <button class="filter__toggle-btn" type="button"></button>
+        </div>
         <fieldset class="filter__sort">
-          <button class="filter__btn-plane" type="button"> <span class="text-hidden">самолет</span></button>
-          <button class="filter__btn-bus" type="button"><span class="text-hidden">автобус</span></button>
-          <button class="filter__btn-bike" type="button"><span class="text-hidden">велосипед</span></button>
-          <button class="filter__btn-run" type="button"><span class="text-hidden">пешком</span></button>
+          <input class="filter__checkbox" type="checkbox" id="input-plane" name="input-plane" value="input-plane">
+          <label for="input-plane" class="filter__btn-plane" type="radio"> <span class="text-hidden">самолет</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-bus" name="input-bus" value="input-bus">
+          <label for="input-bus" class="filter__btn-bus" type="radio"><span class="text-hidden">автобус</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-bike" name="input-bike" value="input-bike">
+          <label for="input-bike" class="filter__btn-bike" type="radio"><span class="text-hidden">велосипед</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-run" name="input-run" value="input-run">
+          <label for="input-run" class="filter__btn-run" type="radio"><span class="text-hidden">пешком</span></label>
       </fieldset>
       </section>
 
       <section class="filter__item">
-        <span class="filter__item-title">Левел</span>
-        <button class="filter__toggle-btn" type="button"></button>
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">Левел</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
         <fieldset class="filter__sort">
           <input type="range" min="30" max="100">
         </fieldset>
