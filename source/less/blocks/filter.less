@@ -68,6 +68,7 @@
   border: none;
   background-color: transparent;
   transform: rotate(90deg);
+  background-size: 10px 6px;
 }
 
 .filter__sort {
@@ -81,40 +82,60 @@
   color: #000000;
 }
 
-.filter__btn-plane {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  border: none;
+.filter__sort label {
+  display: block;
 }
 
-.filter__btn-bus {
+.filter__sort .filter__btn-plane {
   display: inline-block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #FFFFFF;
   border: none;
+  background-image: url("../img/transport-plane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
-.filter__btn-bike {
+.filter__sort .filter__btn-bus {
   display: inline-block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #FFFFFF;
   border: none;
+  background-image: url("../img/transport-bus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
-.filter__btn-run {
+.filter__sort .filter__btn-bike {
   display: inline-block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #FFFFFF;
   border: none;
+  background-image: url("../img/transport-bike.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.filter__sort .filter__btn-run {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/transport-run.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .filter__checkbox {
