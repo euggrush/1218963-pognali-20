@@ -6,7 +6,6 @@
   color: #ffffff;
   background-image: url(../img/bg-mobile.png);
   background-repeat: no-repeat;
-  border-radius: 20px;
   border: solid 1px transparent;
 }
 .page-header__nav {
@@ -72,16 +71,17 @@
   font-family: "Blogger Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 40px;
   color: #FFFFFF;
-  margin-top: 19px;
+  margin-top: -21px;
 }
 @media (min-width: 320px) {
   .page-header__logo {
     width: 100px;
     height: 20px;
-    margin-top: 25px;
+    margin-top: 22px;
+    margin-left: 23px;
   }
 }
 .page-header__nav-item {
@@ -156,7 +156,7 @@
 .page-header__controls {
   display: flex;
   justify-content: center;
-  margin-top: 220px;
+  margin-top: 222px;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -200,7 +200,8 @@
   background-image: url(../img/icon-menu-mobile.svg);
   background-repeat: no-repeat;
   border: none;
-  margin-top: 10px;
+  margin-top: 23px;
+  margin-right: 18px;
 }
 .hidden {
   display: none;
