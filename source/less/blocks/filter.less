@@ -146,8 +146,53 @@
   display: inline-block;
   width: 110px;
   height: 34px;
+  background-color: #FFFFFF;
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
+  font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #1D2E5B;
+  text-align: center;
+}
+
+.filter__range-input:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.filter__range-input:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .filter__range {
   width: 100%;
+}
+
+.filter__range-wrap {
+  display: flex;
+}
+
+.filter__checkbox-wrap {
+  display: flex;
+}
+
+.filter__check-on {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter__check-off {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }

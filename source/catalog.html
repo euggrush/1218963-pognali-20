@@ -127,18 +127,27 @@
           <button class="filter__toggle-btn" type="button"></button>
         </div>
         <fieldset class="filter__sort">
-          <label>
-            <input class="filter__checkbox" type="checkbox">
-            Тяжелый рок
-          </label>
-          <label>
-            <input class="filter__checkbox" type="checkbox">
-            Русский рэп
-          </label>
-          <label>
-            <input class="filter__checkbox" type="checkbox">
-            Евроденс
-          </label>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label>
+              <input class="filter__checkbox" type="checkbox">
+              Тяжелый рок
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label>
+              <input class="filter__checkbox" type="checkbox">
+              Русский рэп
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-off"></div>
+            <label>
+              <input class="filter__checkbox" type="checkbox">
+              Евроденс
+            </label>
+          </div>
         </fieldset>
       </section>
 
@@ -179,8 +188,10 @@
         </div>
 
         <fieldset class="filter__sort">
-          <input class="filter__range-input" type="text">
-          <input class="filter__range-input" type="text">
+          <div class="filter__range-wrap">
+            <input class="filter__range-input" type="text" placeholder="30">
+            <input class="filter__range-input" type="text" placeholder="100">
+          </div>
           <input class="filter__range" type="range" min="30" max="100">
         </fieldset>
       </section>
