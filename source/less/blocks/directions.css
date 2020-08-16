@@ -30,7 +30,7 @@
   line-height: 22px;
   color: #444444;
   margin-top: 2px;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
   margin-left: 49px;
 }
 .directions__country-list {
@@ -40,6 +40,13 @@
 }
 .directions li {
   list-style: none;
+}
+.directions__country-wrap {
+  width: 270px;
+  min-height: 89px;
+  border: solid 1px transparent;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 .directions__button {
   display: block;
