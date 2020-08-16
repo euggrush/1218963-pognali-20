@@ -59,6 +59,7 @@
   line-height: 20px;
   color: #1D2E5B;
   padding-left: 25px;
+  align-self: flex-start;
 }
 
 .add-plan__step-text {
@@ -195,6 +196,7 @@
   height: 32px;
   text-align: center;
   border: 1px solid #D6D9E6;
+  cursor: pointer;
 }
 
 .add-plan__button-next {
@@ -363,10 +365,8 @@
   width: 220px;
   height: 220px;
   border: solid 1px #444444;
-}
-
-
-.add-plan__todo {
+  border-radius: 10px;
+  text-align: left;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -374,9 +374,6 @@
   line-height: 22px;
   color: #444444;
   opacity: 0.3;
-  border: solid 1px #444444;
-  border-radius: 10px;
-  text-align: left;
 }
 
 .add-plan__todo-label {
@@ -387,6 +384,26 @@
   line-height: 18px;
   letter-spacing: 0.01em;
   color: #1D2E5B;
+  align-self: flex-start;
+}
+
+.add-plan__todo-label::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1D2E5B;
+}
+
+.add-plan__todo-label::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/flag-bosnia.png");
+  margin-left: 35px;
 }
 
 .add-plan__country-wrapper {
