@@ -7,8 +7,8 @@
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
-  border-bottom-left-radius: 27px;
-  border-bottom-right-radius: 27px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   border: solid 1px transparent;
 }
 .about__title {
@@ -16,34 +16,31 @@
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 24px;
   padding-left: 48px;
 }
 .about__quote {
   display: inline-block;
-  min-width: 212px;
-  text-align: start;
+  width: 211px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: -2px;
+  margin-left: 2px;
+  margin-top: 0px;
   padding-left: 46px;
-  padding-right: 53px;
 }
 .about__slogan {
   display: inline-block;
-  min-width: 203px;
+  width: 202px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   margin: 0px;
-  padding-top: 2px;
-  padding-left: 46px;
+  padding-top: 3px;
+  padding-left: 48px;
 }
