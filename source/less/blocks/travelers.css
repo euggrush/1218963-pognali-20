@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 1271px;
+  min-height: 1273px;
   background-color: #192144;
   background-image: url(../img/bg-travelers.png);
   background-repeat: no-repeat;
@@ -73,15 +73,21 @@
   width: 270px;
   height: 61px;
   align-self: center;
-  margin-top: 19px;
-  font-family: "Blogger Sans";
+  margin-top: 20px;
+  background-color: #FFD74B;
+  border-radius: 10px;
+  background-image: url("../img/icon-btn-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 92% 52%;
+}
+.travelers__btn-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 63px;
-  background-color: #FFD74B;
+  line-height: 60px;
   color: #1D2E5B;
-  border-radius: 10px;
+  margin-left: 24px;
 }
 .travelers__name {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -103,12 +109,17 @@
   margin: 3px 10px;
 }
 .travelers__hobbies {
-  font-family: Blogger Sans;
+  display: inline-block;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 40px;
 }
 .travelers__level {
   display: block;
