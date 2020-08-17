@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: start;
   min-height: 420px;
-  margin-top: 0px;
+  margin-top: -25px;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 25px;
@@ -13,11 +13,13 @@
   border: solid 1px transparent;
 }
 .profile__title {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 24px;
   color: #FF8D30;
+  margin-top: 24px;
 }
 .profile__modal {
   display: flex;
@@ -91,17 +93,29 @@
   justify-content: space-between;
 }
 .profile__button {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 16px;
   color: #132576;
-  margin-top: 60px;
+  margin-top: 61px;
+  margin-left: -1px;
   border: solid 1px transparent;
 }
 .profile__wrapper {
   display: flex;
   justify-content: space-around;
+}
+.profile__list-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  margin-left: -4px;
+  margin-top: 0px;
 }
 .profile__list-number {
   display: inline-block;
