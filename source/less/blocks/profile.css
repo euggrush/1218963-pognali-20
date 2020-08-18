@@ -24,7 +24,6 @@
 .profile__modal {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: absolute;
   width: 270px;
   height: 443px;
@@ -47,14 +46,21 @@
   border-bottom: 1px solid #F3F4F8;
   padding-bottom: 28px;
   margin-top: 33px;
+  margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 25px;
+}
+.profile__cost-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16px 16px 16px 16px;
+  border-bottom: 1px solid #F3F4F8;
 }
 .profile__modal-close {
   width: 270px;
   height: 59px;
   background-color: #F3F4F8;
-  font-family: "Blogger Sans";
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -65,8 +71,24 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: none;
+  margin-top: 45px;
 }
 .profile__modal-item {
+  grid-row-start: 2;
+  display: block;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 13px;
+  color: #444444;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.profile__modal-item-cost {
+  grid-row-start: 3;
   display: block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -74,11 +96,10 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  margin-top: 0px;
+  margin-top: 2px;
+  margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 25px;
-  padding-right: 84px;
-  border-bottom: 1px solid #F3F4F8;
 }
 .profile__list {
   display: flex;
