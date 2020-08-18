@@ -38,9 +38,13 @@
   letter-spacing: 0.02em;
   color: #1D2E5B;
   margin-top: 23px;
+  margin-bottom: 24px;
 }
 .filter__item {
   border-top: solid 1px #F3C72B;
+}
+.filter__item-transport {
+  margin-bottom: 20px;
 }
 .filter__item-wrap {
   display: flex;
@@ -54,6 +58,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #1D2E5B;
+  margin-top: 11px;
+  margin-bottom: 10px;
 }
 .filter__toggle-btn {
   width: 20px;
@@ -90,6 +96,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top: 5px;
+  margin-left: -2px;
 }
 .filter__sort .filter__btn-bus {
   display: inline-block;
@@ -102,6 +110,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top: 5px;
+  margin-left: -4px;
 }
 .filter__sort .filter__btn-bike {
   display: inline-block;
@@ -114,6 +124,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top: 5px;
+  margin-left: -6px;
 }
 .filter__sort .filter__btn-run {
   display: inline-block;
@@ -126,6 +138,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  margin-top: 5px;
+  margin-left: -2px;
 }
 .filter__checkbox {
   display: none;
@@ -162,6 +176,12 @@
 }
 .filter__checkbox-wrap {
   display: flex;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  margin-left: -4px;
+}
+.filter__checkbox-wrap:last-child {
+  margin-bottom: 18px;
 }
 .filter__check-on {
   width: 20px;
@@ -169,6 +189,8 @@
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: -8px;
+  margin-left: 0px;
 }
 .filter__check-off {
   width: 20px;
@@ -176,4 +198,16 @@
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: -4px;
+  margin-left: 0px;
+}
+.filter__checkbox-level {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: -7px;
+  margin-left: 9px;
 }
