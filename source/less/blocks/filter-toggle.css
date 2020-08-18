@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 0px;
-  min-height: 69px;
+  margin-top: -20px;
+  min-height: 73px;
   width: 320px;
   background-color: #E2E5F2;
   border: solid 1px transparent;
@@ -22,6 +22,8 @@
   text-transform: uppercase;
   color: #192144;
   padding-top: 15px;
+  margin-top: 25px;
+  margin-left: -17px;
 }
 .filter-toggle__button {
   width: 19px;
@@ -30,6 +32,8 @@
   background-repeat: no-repeat;
   border: none;
   align-self: center;
+  margin-top: 24px;
+  margin-right: 27px;
 }
 .filter-toggle__icon {
   width: 15px;
@@ -37,6 +41,8 @@
   background-image: url(../img/filter-toggle-icon.svg);
   background-repeat: no-repeat;
   align-self: center;
+  margin-top: 24px;
+  margin-left: 24px;
 }
 .filter-toggle__modal {
   display: flex;
