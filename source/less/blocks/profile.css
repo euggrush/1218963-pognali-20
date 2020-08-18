@@ -81,16 +81,17 @@
 .profile__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-  min-height: 163px;
+  min-width: 244px;
+  min-height: 192px;
   margin-top: 25px;
-  border: solid 1px transparent;
 }
 .profile__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  min-height: 56px;
 }
 .profile__button {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -99,8 +100,8 @@
   font-size: 16px;
   line-height: 16px;
   color: #132576;
-  margin-top: 61px;
-  margin-left: -1px;
+  margin-top: 34px;
+  margin-left: -3px;
   border: solid 1px transparent;
 }
 .profile__wrapper {
@@ -112,10 +113,10 @@
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
   color: #444444;
   margin-left: -4px;
-  margin-top: 0px;
+  margin-top: 7px;
 }
 .profile__list-number {
   display: inline-block;
