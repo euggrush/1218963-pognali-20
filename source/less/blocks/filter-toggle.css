@@ -58,7 +58,7 @@
   background-color: #E2E5F2;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  border: solid 1px black;
+  border: solid 1px transparent;
 }
 .filter-toggle__country-title {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -96,7 +96,10 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  margin-top: 0px;
+  margin-bottom: 14px;
   margin-left: 52px;
+  border: solid 1px transparent;
 }
 .filter-toggle__country-item {
   display: block;
