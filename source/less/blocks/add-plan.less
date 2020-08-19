@@ -378,17 +378,20 @@
 
 .add-plan__border {
   position: absolute;
-  width: 283px;
+  width: 245px;
   height: 12px;
   border-top: solid 3px #1D2E5B;
   border-left: solid 3px #1D2E5B;
   border-right: solid 3px #1D2E5B;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translate(14%, 50%);
   margin-top: 24%;
   margin-left: -19%;
 }
 
 .add-plan__todo-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -396,7 +399,6 @@
   line-height: 18px;
   letter-spacing: 0.01em;
   color: #1D2E5B;
-  align-self: flex-start;
 }
 
 .add-plan__todo-label::before {
@@ -415,7 +417,6 @@
   height: 24px;
   background-color: transparent;
   background-image: url("../img/flag-bosnia.png");
-  margin-left: 35px;
 }
 
 .add-plan__country-wrapper {
