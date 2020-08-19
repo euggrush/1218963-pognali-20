@@ -65,6 +65,7 @@
   line-height: 20px;
   color: #1D2E5B;
   padding-left: 25px;
+  padding-right: 0px;
   align-self: flex-start;
 }
 .add-plan__step-text {
@@ -74,6 +75,8 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .add-plan__counter {
   display: flex;
