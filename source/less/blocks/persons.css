@@ -4,18 +4,20 @@
   justify-content: space-between;
   align-items: center;
   background-color: #E5E5E5;
+  padding-bottom: 66px;
 }
 .persons__item {
   display: grid;
   grid-template-columns: 90px 90px 90px;
-  grid-template-rows: 90px 90px 90px 90px 90px;
+  grid-template-rows: 0.8fr 0.4fr 2fr 0.4fr;
   width: 270px;
-  min-height: 415px;
   background-color: #FFFFFF;
   border-radius: 20px;
   border: solid 1px transparent;
   list-style: none;
   margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 17px;
 }
 .persons__name {
   grid-column-start: 2;
@@ -23,11 +25,11 @@
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
-  margin-top: 12px;
+  margin-top: -3px;
+  margin-bottom: 0px;
   margin-left: 14px;
 }
 .persons__dot {
@@ -37,13 +39,13 @@
   height: 6px;
   border-radius: 50%;
   background-color: #F97676;
-  margin-top: 22px;
-  margin-left: 62px;
+  margin-top: 8px;
+  margin-left: 61px;
 }
 .persons__rating {
   grid-column-start: 2;
   grid-row-start: 1;
-  margin-top: 54px;
+  margin-top: 38px;
   margin-left: -22px;
   display: flex;
   align-items: center;
@@ -62,13 +64,17 @@
 }
 .persons__button {
   grid-column-start: 1;
-  grid-row-start: 5;
-  margin-top: 30px;
+  grid-row-start: 4;
+  margin-top: 10px;
   margin-left: 20px;
   width: 230px;
   height: 40px;
   background-color: #FFD74B;
   border-radius: 25px;
+  border: solid 1px transparent;
+}
+.persons__btn-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -76,7 +82,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
-  border: none;
 }
 .persons__avatar {
   width: 70px;
@@ -84,7 +89,7 @@
   border-radius: 50%;
   grid-column-start: 1;
   grid-row-start: 1;
-  margin-top: 15px;
+  margin-top: 0px;
   margin-left: 18px;
 }
 .persons__hobby {
@@ -97,7 +102,8 @@
   font-size: 15px;
   line-height: 18px;
   color: #444444;
-  margin-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 27px;
   margin-right: 20px;
 }
@@ -108,12 +114,12 @@
   font-size: 15px;
   line-height: 16px;
   color: #444444;
+  margin-top: 0px;
 }
 .persons__wish-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 170px;
-  min-height: 75px;
   align-items: center;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -124,6 +130,9 @@
   color: #1D2E5B;
   margin-top: 16px;
 }
+.persons__wish-wrapper p {
+  margin-top: 12px;
+}
 .persons__level {
   display: block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -132,12 +141,14 @@
   font-size: 15px;
   line-height: 16px;
   color: #444444;
+  margin-top: 2px;
+  margin-left: 11px;
 }
 .persons__level-number {
   display: block;
   text-align: center;
-  width: 45px;
-  height: 45px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   border: 3px solid #FF8D30;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -146,6 +157,8 @@
   font-size: 24px;
   line-height: 40px;
   color: #1D2E5B;
+  margin-top: 11px;
+  margin-left: 6px;
 }
 .persons__transport {
   display: block;
@@ -156,40 +169,55 @@
   line-height: 16px;
   color: #444444;
 }
+.persons__transport-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin-top: 20px;
+  margin-left: -3px;
+}
 .persons__transport-icon {
-  width: 16px;
-  height: 16px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  background-color: #EDEFF6;
 }
 .persons__about-list {
   grid-column-start: 1;
   grid-row-start: 3;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
-  margin-top: -37px;
+  grid-template-rows: 1.5fr 1fr;
+  margin-top: 4px;
   margin-left: 25px;
 }
 .persons__about-item:nth-child(1) {
   grid-column-start: 1;
   grid-row-start: 1;
   border: solid 1px transparent;
+  margin-top: 0px;
 }
 .persons__about-item:nth-child(2) {
   grid-column-start: 1;
   grid-row-start: 2;
   border: solid 1px transparent;
+  margin-top: 0px;
 }
 .persons__about-item:nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
   border: solid 1px transparent;
+  margin-top: 0px;
 }
 .persons__controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid 1px transparent;
+  margin-top: 12px;
+  margin-left: 5px;
 }
 .persons__btn-more {
   min-width: 150px;
@@ -207,12 +235,14 @@
   text-align: right;
   background-image: url("../img/persons-btn-more.svg");
   background-repeat: no-repeat;
-  background-position: 5% 50%;
+  background-position: -4% 73%;
 }
 .persons__controls-wrap {
   display: flex;
   justify-content: space-between;
   width: 271px;
+  margin-top: 22px;
+  margin-left: -10px;
 }
 .persons__btn-prev {
   width: 135px;
