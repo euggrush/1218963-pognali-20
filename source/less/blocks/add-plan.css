@@ -47,36 +47,85 @@
   background-position: center;
 }
 .add-plan__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
   width: 270px;
-  min-height: 796px;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 30px;
   align-items: center;
+  padding: 0px;
 }
 .add-plan__step {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
+  margin: 0px;
   padding-left: 25px;
   padding-right: 0px;
   align-self: flex-start;
 }
 .add-plan__step-text {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: solid 1px green;
+}
+.add-plan__form-field-person {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.add-plan__form-field-dates {
+  grid-column-start: 1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.add-plan__checkbox {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.add-plan__calendar {
+  grid-column-start: 1;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  margin: 0 auto;
+}
+.add-plan__button-next {
+  grid-column-start: 1;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  width: 229px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5px;
+  margin-left: 21px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1D2E5B;
 }
 .add-plan__counter {
   display: flex;
@@ -159,7 +208,6 @@
 .add-plan__calendar-days {
   width: 224px;
   min-height: 224px;
-  margin: 0 auto;
   border-collapse: collapse;
 }
 .add-plan__week-day {
@@ -190,22 +238,6 @@
   text-align: center;
   border: 1px solid #D6D9E6;
   cursor: pointer;
-}
-.add-plan__button-next {
-  width: 229px;
-  height: 40px;
-  background-color: #FFD74B;
-  border-radius: 20px;
-  border: none;
-  margin-top: 5px;
-  margin-left: 21px;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #1D2E5B;
 }
 .add-plan__button-back {
   width: 130px;
