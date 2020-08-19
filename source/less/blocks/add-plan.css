@@ -49,7 +49,7 @@
 .add-plan__item {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 270px;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -76,7 +76,6 @@
 .add-plan__step-text {
   grid-column-start: 1;
   grid-row-start: 2;
-  grid-row-end: 4;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -85,33 +84,39 @@
   color: #444444;
   margin-top: 0px;
   margin-bottom: 0px;
-  border: solid 1px green;
 }
 .add-plan__form-field-person {
   grid-column-start: 1;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .add-plan__form-field-dates {
   grid-column-start: 1;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .add-plan__checkbox {
   grid-column-start: 1;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .add-plan__calendar {
   grid-column-start: 1;
-  grid-row-start: 7;
-  grid-row-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 9;
   margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .add-plan__button-next {
   grid-column-start: 1;
-  grid-row-start: 10;
-  grid-row-end: 11;
+  grid-row-start: 9;
   width: 229px;
   height: 40px;
   background-color: #FFD74B;
