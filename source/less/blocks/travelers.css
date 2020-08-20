@@ -122,41 +122,23 @@
   margin-right: 40px;
   text-align: center;
 }
-.travelers__level {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.travelers__level-firsova {
   position: absolute;
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  border: solid 6px #FF8D30;
+  width: 60px;
+  height: 60px;
   transform: translate(-143%, 27%);
+  background-image: url("../img/travelers-level-firsova.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.travelers__level-number {
-  display: block;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-.travelers__level-text {
-  display: block;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  color: #FFFFFF;
-}
-.travelers__level-splitter {
-  width: 30px;
-  height: 1px;
-  background-color: #FFFFFF;
-  opacity: 0.3;
+.travelers__level-demin {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translate(-143%, 27%);
+  background-image: url("../img/travelers-level-demin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .travelers__transport {
   display: flex;
