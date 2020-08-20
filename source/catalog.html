@@ -3,244 +3,360 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a href="index.html" class="page-header__link">
-      Главная
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
+  <header class="catalog-header">
+    <a href="index.html" class="catalog--header__link">
+      <span class="visually-hidden">Главная</span>
+      <img class="catalog-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
     </a>
-    <button class="page-header__button" type="button">
-      Открыть меню
+    <button class="catalog-header__button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="page-header__nav">
-      <a class="page-header__nav-item" href="index.html">
-        Главная
+    <nav class="catalog-header__nav hidden">
+      <a class="catalog-header__nav-item" href="index.html">
+        О сервисе
       </a>
-      <a class="page-header__nav-item" href="form.html">
+      <a class="catalog-header__nav-item" href="form.html">
         Направления
       </a>
-      <a class="page-header__nav-item" href="catalog.html">
+      <a class="catalog-header__nav-item" href="catalog.html">
         Попутчики
       </a>
     </nav>
-    <h1>В путешествие с крутыми попутчиками!</h1>
-    <div class="page-header__controls">
-      <a class="page-header__controls-item" href="#">
-        Позвонить
-      </a>
-      <a class="page-header__controls-item" href="#">
-        Отправить email
-      </a>
-      <a class="page-header__controls-item" href="#">
-        Авторизация
-      </a>
-    </div>
-    <h2 class="page-header__title">Попутчики</h2>
+
+    <h2 class="catalog-header__title">Попутчики</h2>
+    <div class="catalog-header__title-underline"></div>
   </header>
+
   <main>
 
 <!-- БЛОК ЗАКРЫТЬ И ОТКРЫТЬ ФИЛТР ПО СТРАНАМ -->
 
     <section class="filter-toggle">
-      <h3 class="filter-toggle__title">Фильтрация по странам</h3>
-      <button class="filter-toggle__button">Открыть</button>
+      <div class="filter-toggle__btn-wrap">
+        <div class="filter-toggle__icon"></div>
+        <h3 class="filter-toggle__title">Фильтрация по странам</h3>
+        <button class="filter-toggle__button"><span class="text-hidden">Открыть</span></button>
+      </div>
+
+      <section class="filter-toggle__modal hidden">
+        <span class="filter-toggle__country-title">Европа</span>
+        <span class="filter-toggle__country-title">Азия</span>
+        <span class="filter-toggle__country-title">америка</span>
+        <span class="filter-toggle__country-title">острова</span>
+        <table class="filter-toggle__alphabet">
+          <tr>
+            <td class="filter-toggle__letters">а</td>
+            <td class="filter-toggle__letters">б</td>
+            <td class="filter-toggle__letters">в</td>
+            <td class="filter-toggle__letters">г</td>
+            <td class="filter-toggle__letters">д</td>
+          </tr>
+
+          <tr>
+            <td class="filter-toggle__letters">е</td>
+            <td class="filter-toggle__letters">з</td>
+            <td class="filter-toggle__letters">и</td>
+            <td class="filter-toggle__letters">к</td>
+            <td class="filter-toggle__letters">л</td>
+          </tr>
+
+          <tr>
+            <td class="filter-toggle__letters">м</td>
+            <td class="filter-toggle__letters">н</td>
+            <td class="filter-toggle__letters">о</td>
+            <td class="filter-toggle__letters">п</td>
+            <td class="filter-toggle__letters">р</td>
+          </tr>
+
+          <tr>
+            <td class="filter-toggle__letters">с</td>
+            <td class="filter-toggle__letters">т</td>
+            <td class="filter-toggle__letters">у</td>
+            <td class="filter-toggle__letters">ф</td>
+            <td class="filter-toggle__letters">х</td>
+          </tr>
+
+          <tr>
+            <td class="filter-toggle__letters">ч</td>
+            <td class="filter-toggle__letters">ш</td>
+            <td class="filter-toggle__letters">э</td>
+            <td class="filter-toggle__letters">ю</td>
+            <td class="filter-toggle__letters">я</td>
+          </tr>
+
+        </table>
+        <div class="filter-toggle__country-list">
+          <span class="filter-toggle__country-item">Австралия</span>
+          <span class="filter-toggle__country-item">Австрия</span>
+          <span class="filter-toggle__country-item">Азербайджан</span>
+          <span class="filter-toggle__country-item">Албания</span>
+          <span class="filter-toggle__country-item">Алжир</span>
+          <span class="filter-toggle__country-item">Ангола</span>
+          <span class="filter-toggle__country-item">Андорра</span>
+          <span class="filter-toggle__country-item">Антигуа и Барбуда</span>
+          <span class="filter-toggle__country-item">Аргентина</span>
+          <span class="filter-toggle__country-item">Армения</span>
+          <span class="filter-toggle__country-item">Афганистан</span>
+        </div>
+        <button class="filter-toggle__close" type="button">Свернуть</button>
+      </section>
     </section>
 
 <!-- БЛОК ФИЛЬТР ПОДБОРА ПОПУТЧИКА -->
 
-    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-      <h2 class="filter__title">Подберите идеального попутчика</h2>
+<section class="filter">
+  <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+    <h2 class="filter__title">Подберите идеального попутчика</h2>
+
+    <section class="filter__item">
+      <div class="filter__item-wrap">
+        <span class="filter__item-title">хобби</span>
+        <button class="filter__toggle-btn" type="button"></button>
+      </div>
+      <fieldset class="filter__sort">
+
+      </fieldset>
+    </section>
+
+    <section class="filter__item">
+      <div class="filter__item-wrap">
+        <span class="filter__item-title">музыка</span>
+        <button class="filter__toggle-btn" type="button"></button>
+      </div>
+      <fieldset class="filter__sort">
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Тяжелый рок
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Русский рэп
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-off"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Евроденс
+          </label>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="filter__item">
+      <div class="filter__item-wrap">
+        <span class="filter__item-title">еда</span>
+        <button class="filter__toggle-btn" type="button"></button>
+      </div>
+      <fieldset class="filter__sort">
+
+      </fieldset>
+    </section>
+
+    <section class="filter__item filter__item-transport">
+      <div class="filter__item-wrap">
+        <span class="filter__item-title">транспорт</span>
+      <button class="filter__toggle-btn" type="button"></button>
+      </div>
+      <fieldset class="filter__sort">
+        <input class="filter__checkbox" type="checkbox" id="input-plane" name="input-plane" value="input-plane">
+        <label for="input-plane" class="filter__btn-plane" type="radio"> <span class="text-hidden">самолет</span></label>
+
+        <input class="filter__checkbox" type="checkbox" id="input-bus" name="input-bus" value="input-bus">
+        <label for="input-bus" class="filter__btn-bus" type="radio"><span class="text-hidden">автобус</span></label>
+
+        <input class="filter__checkbox" type="checkbox" id="input-bike" name="input-bike" value="input-bike">
+        <label for="input-bike" class="filter__btn-bike" type="radio"><span class="text-hidden">велосипед</span></label>
+
+        <input class="filter__checkbox" type="checkbox" id="input-run" name="input-run" value="input-run">
+        <label for="input-run" class="filter__btn-run" type="radio"><span class="text-hidden">пешком</span></label>
+    </fieldset>
+    </section>
+
+    <section class="filter__item">
+      <div class="filter__item-wrap">
+        <span class="filter__item-title">Левел</span>
+        <button class="filter__toggle-btn" type="button"></button>
+      </div>
 
       <fieldset class="filter__sort">
-        <legend>хобби</legend>
+        <div class="filter__range-wrap">
+          <input class="filter__range-input" type="text" placeholder="30">
+          <input class="filter__range-input" type="text" placeholder="100">
+        </div>
+        <input class="filter__range" type="range" min="30" max="100">
       </fieldset>
+    </section>
 
-      <fieldset class="filter__sort">
-        <legend>музыка</legend>
-        <label>
-          <input type="checkbox">
-          Тяжелый рок
-        </label>
-        <label>
-          <input type="checkbox">
-          Русский рэп
-        </label>
-        <label>
-          <input type="checkbox">
-          Евроденс
-        </label>
-      </fieldset>
-
-      <fieldset class="filter__sort">
-        <legend>еда</legend>
-      </fieldset>
-
-      <fieldset class="filter__sort">
-        <legend>транспорт</legend>
-          <button type="button">
-            самолет
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="самолет">
-          </button>
-          <button type="button">
-            автобус
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="автобус">
-          </button>
-          <button type="button">
-            велосипед
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="велосипед">
-          </button>
-          <button type="button">
-            пешком
-            <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="пешком">
-          </button>
-      </fieldset>
-
-      <fieldset class="filter__sort">
-        <legend>Левел</legend>
-        <input type="range" min="30" max="100">
-      </fieldset>
-      <button class="filter__button" type="submit">показать</button>
-    </form>
+    <button class="filter__button" type="submit">показать</button>
+  </form>
+</section>
 
     <!-- БЛОК КАТАЛОГА С ПОПУТЧИКАМИ -->
 
     <section class="persons">
 
       <section class="persons__item">
-        <img class="persons__avatar" src="https://via.placeholder.com/70x70" width="70" height="70"
+        <img class="persons__avatar" src="img/firsova-mobile@1x.jpg" width="70" height="70"
           alt="фото попутчика">
         <h3 class="persons__name">Таня Фирсова</h3>
+        <div class="persons__dot"></div>
         <b class="persons__rating">1,5 M</b>
         <p class="persons__hobby">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
         <ul class="persons__about-list">
           <li class="persons__about-item">
             <b class="persons__wishes">хочет посетить:</b>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>шри-ланка</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>Тайланд</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>сейшелы</p>
+            <div class="persons__wish-wrapper">
+              <img src="img/flag-sri-lanka.png" width="26" height="18" alt="флаг">
+              <p>шри-ланка</p>
+              <img src="img/flag-thailand.png" width="26" height="18" alt="флаг">
+              <p>Тайланд</p>
+              <img src="img/flag-seychelles.png" width="26" height="18" alt="флаг">
+              <p>сейшелы</p>
+            </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__transport">транспорт:</b>
             <div class="persons__transport-wrapper">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/plane.svg" width="16" height="16" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bus.svg" width="16" height="16" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bike.svg" width="16" height="16" alt="транспорт">
+              <img class="persons__transport-icon" src="img/run.svg" width="16" height="16" alt="транспорт">
             </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__level">левел:</b>
-            <span class="persons__level-number">99</span>
+            <span class="persons__level-number-firsova"></span>
           </li>
         </ul>
-        <button class="persons__button">Позвать!</button>
+        <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
       </section>
 
       <section class="persons__item">
-        <img class="persons__avatar" src="https://via.placeholder.com/70x70" width="70" height="70"
+        <img class="persons__avatar" src="img/demin-mobile@1x.jpg" width="70" height="70"
           alt="фото попутчика">
         <h3 class="persons__name">Петя Демин</h3>
+        <div class="persons__dot"></div>
         <b class="persons__rating">1500</b>
         <p class="persons__hobby">#бургер #бар #футбол #концерт #крафт</p>
         <ul class="persons__about-list">
           <li class="persons__about-item">
             <b class="persons__wishes">хочет посетить:</b>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>бельгия</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>чехия</p>
+            <div class="persons__wish-wrapper">
+              <img src="img/flag-belgium.png" width="26" height="18" alt="флаг">
+              <p>бельгия</p>
+              <img src="img/flag-czech.png" width="26" height="18" alt="флаг">
+              <p>чехия</p>
+            </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__transport">транспорт:</b>
             <div class="persons__transport-wrapper">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/plane.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bus.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bike.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/run.svg" width="32" height="32" alt="транспорт">
             </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__level">левел:</b>
-            <span class="persons__level-number">80</span>
+            <span class="persons__level-number-demin"></span>
           </li>
         </ul>
-        <button class="persons__button">Позвать!</button>
+        <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
       </section>
 
       <section class="persons__item">
-        <img class="persons__avatar" src="https://via.placeholder.com/70x70" width="70" height="70"
+        <img class="persons__avatar" src="img/smolov-mobile@1x.jpg" width="70" height="70"
           alt="фото попутчика">
         <h3 class="persons__name">Марк Смолов</h3>
+        <div class="persons__dot"></div>
         <b class="persons__rating">170</b>
         <p class="persons__hobby">#рэп #тату #хайпбист #кроссовки #суприм</p>
         <ul class="persons__about-list">
           <li class="persons__about-item">
             <b class="persons__wishes">хочет посетить:</b>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>сша</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>австралия</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>доминикана</p>
+            <div class="persons__wish-wrapper">
+              <img src="img/flag-usa.png" width="26" height="18" alt="флаг">
+              <p>сша</p>
+              <img src="img/flag-australia.png" width="26" height="18" alt="флаг">
+              <p>австралия</p>
+              <img src="img/flag-dominica.png" width="26" height="18" alt="флаг">
+              <p>доминикана</p>
+            </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__transport">транспорт:</b>
             <div class="persons__transport-wrapper">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/plane.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bus.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bike.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/run.svg" width="32" height="32" alt="транспорт">
             </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__level">левел:</b>
-            <span class="persons__level-number">25</span>
+            <span class="persons__level-number-smolov"></span>
           </li>
         </ul>
-        <button class="persons__button">Позвать!</button>
+        <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
       </section>
 
       <section class="persons__item">
-        <img class="persons__avatar" src="https://via.placeholder.com/70x70" width="70" height="70"
+        <img class="persons__avatar" src="img/rogovaya-back-mobile@1x.png" width="70" height="70"
           alt="фото попутчика">
         <h3 class="persons__name">Лариса Роговая</h3>
+        <div class="persons__dot"></div>
         <b class="persons__rating">23</b>
         <p class="persons__hobby">#образование #карьера #учеба #линкедин</p>
         <ul class="persons__about-list">
           <li class="persons__about-item">
             <b class="persons__wishes">хочет посетить:</b>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>Великобритания</p>
-            <img src="https://via.placeholder.com/26x18" width="26" height="18" alt="флаг">
-            <p>Германия</p>
+            <div class="persons__wish-wrapper">
+              <img src="img/flag-united-kingdom.png" width="26" height="18" alt="флаг">
+              <p>Великобритания</p>
+              <img src="img/flag-germany.png" width="26" height="18" alt="флаг">
+              <p>Германия</p>
+            </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__transport">транспорт:</b>
             <div class="persons__transport-wrapper">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/plane.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bus.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/bike.svg" width="32" height="32" alt="транспорт">
+              <img class="persons__transport-icon" src="img/run.svg" width="32" height="32" alt="транспорт">
             </div>
           </li>
           <li class="persons__about-item">
             <b class="persons__level">левел:</b>
-            <span class="persons__level-number">50</span>
+            <span class="persons__level-number-rogovya"></span>
           </li>
         </ul>
-        <button class="persons__button">Позвать!</button>
+        <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
       </section>
 
       <section class="persons__controls">
-        <button class="persons__button persons__button--more">показать еще</button>
-        <button class="persons__button persons__button--prev" type="button">лево</button>
-        <button class="persons__button persons__button--next" type="button">право</button>
+        <button class="persons__btn-more">показать еще</button>
+        <div class="persons__controls-wrap">
+          <button class="persons__btn-prev" type="button">
+            <span class="text-hidden">лево</span>
+          </button>
+          <button class="persons__btn-next" type="button">
+            <span class="text-hidden">право</span>
+          </button>
+        </div>
       </section>
     </section>
 
@@ -248,24 +364,27 @@
 
   <!-- ФУТЕР -->
 
-  <footer class="page-footer">
-    <a class="page-footer__contacts">
-      Главная
-      <img class="page-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
+  <footer class="catalog-footer">
+    <a class="catalog-footer__contacts">
+      <span class="text-hidden">Главная</span>
+      <img class="catalog-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
     </a>
-    <div class="page-footer__social">
-      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">Мы в
-        Фейсбуке</a>
-      <a class="page-footer__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">Мы в
-        Инстаграме</a>
+    <div class="catalog-footer__social">
+      <a class="catalog-footer__link" href="https://www.facebook.com/htmlacademy">
+        <span class="text-hidden">Мы в Фейсбуке</span></a>
+      <a class="catalog-footer__link" href="https://vk.com/htmlacademy">
+        <span class="text-hidden">Мы в Вконтакте</span></a>
+      <a class="catalog-footer__link" href="https://www.instagram.com/htmlacademy">
+        <span class="text-hidden">Мы в Инстаграме</span></a>
     </div>
-    <div class="page-footer__copyright">
-      <b class="page-footer__text">Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="catalog-footer__copyright">
+      <b class="catalog-footer__text">Разработано:
+        <a class="catalog-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="text-hidden">HTML Academy</span></a>
       </b>
     </div>
   </footer>
+
 </body>
 
 </html>

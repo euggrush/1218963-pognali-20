@@ -1,0 +1,6 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  min-height: 424px;
+  margin-top: 0px;
+}

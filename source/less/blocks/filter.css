@@ -1,0 +1,224 @@
+.filter {
+  margin-top: -35px;
+  margin-bottom: 0px;
+  background-color: #E5E5E5;
+  padding-top: 36px;
+  min-height: 662px;
+}
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 218px;
+  min-height: 622px;
+  margin: 0 auto;
+  background-color: #FFD74B;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+}
+.filter__button {
+  width: 230px;
+  height: 41px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+  align-self: center;
+  border: none;
+  margin-top: 13px;
+}
+.filter__title {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #1D2E5B;
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+.filter__item {
+  border-top: solid 1px #F3C72B;
+}
+.filter__item-transport {
+  margin-bottom: 20px;
+}
+.filter__item-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.filter__item-title {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+.filter__toggle-btn {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/filter-btn-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  background-size: 10px 6px;
+  margin-top: 10px;
+  margin-right: -7px;
+}
+.filter__sort {
+  border: none;
+  padding: 0px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+.filter__sort label {
+  display: block;
+}
+.filter__sort .filter__btn-plane {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/transport-plane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -2px;
+}
+.filter__sort .filter__btn-bus {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/transport-bus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -4px;
+}
+.filter__sort .filter__btn-bike {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/transport-bike.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -6px;
+}
+.filter__sort .filter__btn-run {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/transport-run.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -2px;
+}
+.filter__checkbox {
+  display: none;
+}
+.filter__range-input {
+  display: inline-block;
+  width: 110px;
+  height: 34px;
+  background-color: #FFFFFF;
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #1D2E5B;
+  text-align: center;
+}
+.filter__range-input:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.filter__range-input:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.filter__range {
+  width: 100%;
+  margin-top: 18px;
+}
+.filter__range-wrap {
+  display: flex;
+  margin-top: 2px;
+  margin-left: -3px;
+}
+.filter__checkbox-wrap {
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  margin-left: -4px;
+}
+.filter__checkbox-wrap:last-child {
+  margin-bottom: 18px;
+}
+.filter__check-on {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -8px;
+  margin-left: 0px;
+}
+.filter__check-off {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -4px;
+  margin-left: 0px;
+}
+.filter__checkbox-level {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: -7px;
+  margin-left: 9px;
+}

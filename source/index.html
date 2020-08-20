@@ -3,21 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a href="index.html" class="page-header__link">
-      Главная
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
-    </a>
-    <button class="page-header__button" type="button">
-      Открыть меню
-    </button>
+
+    <!-- ОТКРЫТОЕ МЕНЮ -->
+
     <nav class="page-header__nav">
+      <div class="page-header__btn-wrap">
+        <a href="#" class="page-header__nav-item">
+          <span class="text-hidden">Главная</span>
+          <img class="page-header__logo-open" src="img/logo-mobile-blue@1x.png" width="100" height="15"
+            alt="Главная">
+        </a>
+        <button class="page-header__button" type="button">
+          <span class="text-hidden">закрыть меню</span>
+        </button>
+      </div>
+
       <a class="page-header__nav-item" href="index.html">
-        Главная
+        О сервисе
       </a>
       <a class="page-header__nav-item" href="form.html">
         Направления
@@ -25,14 +35,51 @@
       <a class="page-header__nav-item" href="catalog.html">
         Попутчики
       </a>
+      <a class="page-header__nav-button" href="#">
+        Авторизация
+      </a>
+
+      <div class="page-header__contact-wrap">
+        <a class="page-header__nav-call" href="tel:+88005558628"><span class="text-hidden">Позвонить</span></a>
+        <span class="page-header__link-text">8 800 555-86-28</span>
+
+        <a class="page-header__nav-email" href="mailto:mail@htmlacademy.ru"><span class="text-hidden">Отправить email</span></a>
+        <span class="page-header__link-text">mail@htmlacademy.ru</span>
+      </div>
+
+      <div class="page-header__social">
+        <a class="page-header__link-fb" href="https://www.facebook.com/htmlacademy">
+          <span class="text-hidden">Мы в Фейсбуке</span>
+          </a>
+        <a class="page-header__link-vk" href="https://vk.com/htmlacademy">
+          <span class="text-hidden">Мы в Вконтакте</span>
+          </a>
+        <a class="page-header__link-inst" href="https://www.instagram.com/htmlacademy">
+          <span class="text-hidden">Мы в Инстаграме</span>
+          </a>
+      </div>
+
     </nav>
-    <h1>В путешествие с крутыми попутчиками!</h1>
+
+    <!-- БЛОК ЕСЛИ МЕНЮ ЗАКРЫТО -->
+
+    <div class="page-header__btn-wrap">
+      <a href="index.html" class="page-header__link">
+        <span class="visually-hidden">Главная</span>
+        <img class="page-header__logo" src="img/logo-mobile-white@1x.png" width="96" height="15" alt="Главная">
+      </a>
+      <button class="page-header__close-button" type="button">
+        <span class="text-hidden">Открыть меню</span>
+      </button>
+    </div>
+
+    <h1 class="page-header__title">В путешествие <br> с крутыми попутчиками!</h1>
     <div class="page-header__controls">
       <a class="page-header__controls-item" href="#">
-        Позвонить
+        <span class="visually-hidden">Позвонить</span>
       </a>
       <a class="page-header__controls-item" href="#">
-        Отправить email
+        <span class="visually-hidden">Отправить email</span>
       </a>
       <a class="page-header__controls-item" href="#">
         Авторизация
@@ -50,20 +97,20 @@
       </b>
       <ul class="guide__list">
         <li class="guide__item">
-          Выберите направление
-          <span>1</span>
+          <span class="guide__text">Выберите <br> направление</span>
+          <span class="guide__number">1</span>
         </li>
         <li class="guide__item">
-          Изучите идеи путешественников
-          <span>2</span>
+          <span class="guide__text">Изучите идеи <br> путешественников</span>
+          <span class="guide__number">2</span>
         </li>
         <li class="guide__item">
-          Находите тех, кто похож на вас
-          <span>3</span>
+          <span class="guide__text">Находите тех, <br> кто похож на вас</span>
+          <span class="guide__number">3</span>
         </li>
         <li class="guide__item">
-          Путешествуйте вместе!
-          <span>4</span>
+          <span class="guide__text">Путешествуйте <br> вместе!</span>
+          <span class="guide__number">4</span>
         </li>
       </ul>
     </section>
@@ -77,7 +124,7 @@
         черпайте вдохновение в чужих.
       </blockquote>
       <b class="about__slogan">
-        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        А если найдете кого-то близкого по духу —- скорее зовите в совместный трип!
       </b>
     </section>
 
@@ -90,22 +137,39 @@
         там заняться.</p>
       <ul class="directions__country-list">
         <li class="directions__country-item">
-          <h3 class="directions__country-title">Таиланд</h3>
-          <p class="directions__quote">Джунгли зовут!</p>
-          <p class="directions__quote">18321</p>
+          <img src="img/thailand-mobile.png" width="270" height="110" alt="Таиланд">
+
+          <div class="directions__country-wrap">
+            <img class="directions__flag-icon" src="img/thailand-flag.svg" width="35" height="24" alt="флаг">
+            <h3 class="directions__country-title">Таиланд</h3>
+            <p class="directions__quote">Джунгли зовут!</p>
+            <p class="directions__rating">18321</p>
+          </div>
+
         </li>
         <li class="directions__country-item">
-          <h3 class="directions__country-title">Франция</h3>
-          <p class="directions__quote">Трэ бьен, манифик!</p>
-          <p class="directions__quote">12518</p>
+          <img src="img/france-mobile.png" width="270" height="110" alt="Франция">
+
+          <div class="directions__country-wrap">
+            <img class="directions__flag-icon" src="img/france-flag.svg" width="35" height="24" alt="флаг">
+            <h3 class="directions__country-title">Франция</h3>
+            <p class="directions__quote">Трэ бьен, манифик!</p>
+            <p class="directions__rating">12518</p>
+          </div>
+
         </li>
         <li class="directions__country-item">
-          <h3 class="directions__country-title">Чехия</h3>
-          <p class="directions__quote">Закоулки старой Европы</p>
-          <p class="directions__quote">5326</p>
+          <img src="img/czech-mobile.png" width="270" height="110" alt="Чехия">
+
+          <div class="directions__country-wrap">
+            <img class="directions__flag-icon" src="img/czech-flag.svg" width="35" height="24" alt="флаг">
+            <h3 class="directions__country-title">Чехия</h3>
+            <p class="directions__quote">Закоулки старой Европы</p>
+            <p class="directions__rating">5326</p>
+          </div>
         </li>
       </ul>
-      <a href="form.html" class="directions__button">Показать все</a>
+      <a href="form.html" class="directions__button"><span class="directions__btn-text">Показать все</span></a>
     </section>
 
     <!-- БЛОК СО СПИСКОМ ПОПУТЧИКОВ -->
@@ -116,95 +180,150 @@
         нужен пляж и коктейль, а другому маршрут для хайкинга.</blockquote>
       <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
       <section class="travelers__item">
-        <span class="travelers__level">99 level</span>
-        <img class="travelers__avatar" src="https://via.placeholder.com/270x270" width="270" height="270"
-          alt="аватарка">
-        <img class="travelers__flag" src="https://via.placeholder.com/35x25" width="35" height="25" alt="флаг">
+        <span class="travelers__level-firsova">
+          <!-- <span class="travelers__level-number">99</span>
+          <div class="travelers__level-splitter"></div>
+          <span class="travelers__level-text">level</span> -->
+        </span>
+        <img class="travelers__avatar" src="img/firsova-mobile.png" width="270" height="270" alt="аватарка">
+
+        <div class="travelers__preferences">
+          <img src="img/flag-sri-lanka.png" width="35" height="25" alt="флаг">
+          <img src="img/flag-thailand.png" width="35" height="25" alt="флаг">
+          <img src="img/flag-seychelles.png" width="35" height="25" alt="флаг">
+        </div>
+
         <h3 class="travelers__name">Таня Фирсова</h3>
         <span class="travelers__hobbies">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
-        <div class="travelers__preferences">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+
+        <div class="travelers__transport">
+          <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
         </div>
+
       </section>
+
       <section class="travelers__item">
-        <span class="travelers__level">80 level</span>
-        <img class="travelers__avatar" src="https://via.placeholder.com/270x270" width="270" height="270"
-          alt="аватарка">
-        <img class="travelers__flag" src="https://via.placeholder.com/35x25" width="35" height="25" alt="флаг">
+        <span class="travelers__level-demin">
+          <!-- <span class="travelers__level-number">80</span>
+          <div class="travelers__level-splitter"></div>
+          <span class="travelers__level-text">level</span> -->
+        </span>
+        <img class="travelers__avatar" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="аватарка">
+
+        <div class="travelers__preferences">
+          <img src="img/flag-belgium.png" width="35" height="25" alt="флаг">
+          <img src="img/flag-czech.png" width="35" height="25" alt="флаг">
+        </div>
+
         <h3 class="travelers__name">Петя Демин</h3>
         <span class="travelers__hobbies">#бургер #бар #футбол #концерт #крафт</span>
-        <div class="travelers__preferences">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
-          <img src="https://via.placeholder.com/24x24" width="24" height="24" alt="флаг">
+
+        <div class="travelers__transport">
+          <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
+          <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
         </div>
+
       </section>
-      <a href="catalog.html" class="travelers__button">Показать всех</a>
+      <a href="catalog.html" class="travelers__button"><span class="travelers__btn-text">Показать всех</span></a>
     </section>
 
     <!-- БЛОК ДОБАВЛЕНИЯ СВОЕГО ПРОФИЛЯ -->
 
     <section class="profile">
-      <h2 class="profile__title">Добавьте свой профиль</h2>
+      <div class="profile__wrapper">
+        <h2 class="profile__title">Добавьте свой профиль</h2>
+        <img class="profile__rates" src="img/rates.svg" width="100" height="100" alt="rates">
+      </div>
       <ul class="profile__list">
         <li class="profile__item">
-          Базовое размещение
-          Бесплатно
-          <span>1</span>
+          <span class="profile__list-text">Базовое размещение <br>
+            Бесплатно</span>
+          <span class="profile__list-number">1</span>
         </li>
         <li class="profile__item">
-          Вывод на первых позициях
-          99 руб./мес
-          <span>2</span>
+          <span class="profile__list-text">Вывод на первых позициях <br>
+            99 руб./мес</span>
+          <span class="profile__list-number">2</span>
         </li>
         <li class="profile__item">
-          Кастомный цвет карточки
-          59 руб./мес
-          <span>3</span>
+          <span class="profile__list-text">Кастомный цвет карточки <br>
+            59 руб./мес</span>
+          <span class="profile__list-number">3</span>
         </li>
       </ul>
       <a href="#" class="profile__button">Показать тарифы для бизнеса</a>
 
-<!-- МОДАЛЬНОЕ ОКНО С ТАРИФАМИ ДЛЯ БИЗНЕСА -->
+      <!-- МОДАЛЬНОЕ ОКНО С ТАРИФАМИ ДЛЯ БИЗНЕСА -->
 
       <div class="profile__modal">
-        <h2 class="profile__title">Бизнес-тарифы</h2>
-        <p class="profile__modal-item">Реклама у блоггера 300 000 руб./пост</p>
-        <p class="profile__modal-item">Накрутка подписчиков от 1 руб./шт.</p>
-        <p class="profile__modal-item">Лайки от ботов от 20 коп./лайк</p>
-        <p class="profile__modal-item">Ваш продакт-плейсмент Индивидуально</p>
+        <h2 class="profile__modal-title">Бизнес-тарифы</h2>
+        <div class="profile__cost-wrap">
+          <p class="profile__modal-item">Реклама у блоггера</p>
+          <p class="profile__modal-item-cost">300 000 руб./пост</p>
+        </div>
+
+        <div class="profile__cost-wrap">
+          <p class="profile__modal-item">Накрутка подписчиков</p>
+          <p class="profile__modal-item-cost">от 1 руб./шт.</p>
+        </div>
+
+        <div class="profile__cost-wrap">
+          <p class="profile__modal-item">Лайки от ботов</p>
+          <p class="profile__modal-item-cost">от 20 коп./лайк</p>
+        </div>
+
+        <div class="profile__cost-wrap">
+          <p class="profile__modal-item">Ваш продакт-плейсмент</p>
+          <p class="profile__modal-item-cost">Индивидуально</p>
+        </div>
+
+
         <button class="profile__modal-close" type="button">Закрыть окно</button>
       </div>
 
-    </section>
+      </section>
 
-<!-- ФОРМА РЕГИСТРАЦИИ -->
+    <!-- ФОРМА РЕГИСТРАЦИИ -->
 
     <section class="reg">
       <h2 class="reg__title">Заинтересовались?</h2>
-      <span class="reg__quote">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее авторизуйтесь.</span>
-      <input class="reg__input" type="text" id="reg__input" name="reg__input" placeholder="E-mail">
-      <button class="reg__button" type="button">регистрация</button>
-      <span class="reg__quote">Остались вопросы? Мы с радостью на них ответим!</span>
-      <img src="https://via.placeholder.com" width="45" height="45" alt="телефон">
-      <a href="tel:+88005558628"> 8 800 555-86-28 </ a>
-      <img src="https://via.placeholder.com" width="45" height="45" alt="емэйл">
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <span class="reg__quote">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+        <a class="reg__quote-link" href="#">авторизуйтесь</a>.</span>
+      <div class="reg__button-wrapper">
+        <input class="reg__input" type="text" id="reg__input" name="reg__input" placeholder="E-mail">
+        <button class="reg__button" type="button"> <span class="text-hidden">регистрация</span></button>
+      </div>
+      <span class="reg__more">Остались вопросы? <br> Мы с радостью на них ответим!</span>
+
+      <div class="reg__contact-wrapper">
+        <a class="reg__tel-link" href="tel:+88005558628">
+          <span class="text-hidden">8 800 555-86-28</span></a>
+        <span class="reg__contact-text">8 800 555-86-28</span>
+      </div>
+      <div class="reg__contact-wrapper">
+        <a class="reg__mail-link" href="mailto:mail@htmlacademy.ru">
+          <span class="text-hidden">mail@htmlacademy.ru</span></a>
+        <span class="reg__contact-text">mail@htmlacademy.ru</span>
+      </div>
     </section>
 
-<!-- БЛОК МАРШРУТ И КАРТА -->
+    <!-- БЛОК МАРШРУТ И КАРТА -->
 
     <section class="map">
-      <img src="https://via.placeholder.com" width="45" height="45" alt="локация">
-      <p class="map__address">
-        ул. Большая Конюшенная, 19/8
-      </p>
-      <button type="button" class="map__button">Проложить маршрут</button>
-      <!-- КАРТА -->
+      <div class="map__address">
+        <div class="map__icon"></div>
+        <span class="map__text">ул. Большая Конюшенная, 19/8</span>
+      </div>
+      <button type="button" class="map__button"><span class="map__btn-text">Проложить маршрут</span></button>
+    </section>
+
+    <section class="location">
+      <img class="location__picture" src="img/background-map.png" width="320" height="424" alt="карта">
     </section>
 
   </main>
@@ -213,22 +332,25 @@
 
   <footer class="page-footer">
     <a class="page-footer__contacts">
-      Главная
+      <span class="text-hidden">Главная</span>
       <img class="page-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
     </a>
     <div class="page-footer__social">
-      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">Мы в
-        Фейсбуке</a>
-      <a class="page-footer__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">Мы в
-        Инстаграме</a>
+      <a class="page-footer__link" href="https://www.facebook.com/htmlacademy">
+        <span class="text-hidden">Мы в Фейсбуке</span></a>
+      <a class="page-footer__link" href="https://vk.com/htmlacademy">
+        <span class="text-hidden">Мы в Вконтакте</span></a>
+      <a class="page-footer__link" href="https://www.instagram.com/htmlacademy">
+        <span class="text-hidden">Мы в Инстаграме</span></a>
     </div>
     <div class="page-footer__copyright">
       <b class="page-footer__text">Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="text-hidden">HTML Academy</span></a>
       </b>
     </div>
   </footer>
+
 </body>
 
 </html>

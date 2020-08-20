@@ -1,0 +1,66 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 240px;
+  padding-top: 12px;
+  background-color: #FFFFFF;
+  color: #444444;
+  border: solid 1px transparent;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -170px;
+}
+.page-footer__logo {
+  margin-top: 10px;
+}
+.page-footer__contacts {
+  display: flex;
+  justify-content: center;
+}
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+.page-footer__copyright {
+  padding-left: 23px;
+}
+.page-footer__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #FFD74B;
+}
+.page-footer__link:first-child {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:nth-child(2) {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__link:last-child {
+  background-image: url(../img/instagram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 28px;
+  height: 34px;
+  margin-left: 153px;
+  background-image: url(../img/html-footer-icon.svg);
+  background-repeat: no-repeat;
+}
+.page-footer__text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
