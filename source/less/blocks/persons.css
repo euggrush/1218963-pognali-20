@@ -144,21 +144,45 @@
   margin-top: 2px;
   margin-left: 11px;
 }
-.persons__level-number {
+.persons__level-number-firsova {
   display: block;
-  text-align: center;
-  width: 39px;
-  height: 39px;
-  border-radius: 50%;
-  border: 3px solid #FF8D30;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 40px;
-  color: #1D2E5B;
+  width: 45px;
+  height: 45px;
   margin-top: 11px;
   margin-left: 6px;
+  background-image: url("../img/person-level-firsova.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-demin {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-demin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-smolov {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-smolov.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-rogovya {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-rogovya.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .persons__transport {
   display: block;
