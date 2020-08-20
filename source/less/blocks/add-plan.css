@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: #D4D9EB;
-  border: solid 1px black;
+  border: solid 1px transparent;
   border-radius: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  margin-top: -7px;
+  margin-top: -29px;
   padding-bottom: 160px;
 }
 .add-plan__header {
@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 24px;
   color: #1D2E5B;
-  margin-top: 29px;
+  margin-top: 22px;
   margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 0px;
@@ -54,7 +54,7 @@
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 25px;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 23px;
@@ -137,13 +137,23 @@
   text-transform: uppercase;
   color: #1D2E5B;
 }
-.add-plan__counter {
+.add-plan__counter-person {
   display: flex;
   justify-content: center;
   border: solid 1px #1D2E5B;
   border-radius: 5px;
   width: 220px;
   min-height: 43px;
+  margin-top: 0px;
+}
+.add-plan__counter-date {
+  display: flex;
+  justify-content: center;
+  border: solid 1px #1D2E5B;
+  border-radius: 5px;
+  width: 220px;
+  min-height: 43px;
+  margin-top: 0px;
 }
 .add-plan__minus {
   background-color: transparent;
@@ -202,6 +212,7 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #1D2E5B;
+  margin-bottom: 0px;
 }
 .add-plan__label-desc-search {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;

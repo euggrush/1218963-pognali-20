@@ -4,7 +4,7 @@
   justify-content: space-around;
   min-height: 400px;
   margin-top: -32px;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #DFE3F0;
@@ -17,7 +17,7 @@
   font-size: 24px;
   line-height: 24px;
   color: #1D2E5B;
-  margin-top: 18px;
+  margin-top: 19px;
   margin-left: 25px;
 }
 .plans__item {
@@ -35,8 +35,8 @@
   color: #1D2E5B;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 .plans__count {
   display: inline;
