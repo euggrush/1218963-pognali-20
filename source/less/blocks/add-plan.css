@@ -366,6 +366,7 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #1D2E5B;
+  margin: 0 auto;
 }
 .add-plan__country {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -436,20 +437,6 @@
   background-color: transparent;
   border: none;
 }
-.add-plan__submit-button {
-  width: 230px;
-  height: 40px;
-  background-color: #FFD74B;
-  border-radius: 20px;
-  border: none;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #1D2E5B;
-}
 .add-plan__todo {
   display: block;
   width: 220px;
@@ -464,6 +451,7 @@
   line-height: 22px;
   color: #444444;
   opacity: 0.3;
+  margin: 0 auto;
 }
 .add-plan__border {
   position: absolute;
@@ -472,37 +460,7 @@
   border-top: solid 3px #1D2E5B;
   border-left: solid 3px #1D2E5B;
   border-right: solid 3px #1D2E5B;
-  transform: rotate(-90deg) translate(14%, 50%);
-  margin-top: 24%;
-  margin-left: -19%;
-}
-.add-plan__todo-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 0.01em;
-  color: #1D2E5B;
-}
-.add-plan__todo-label::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #1D2E5B;
-}
-.add-plan__todo-label::after {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 24px;
-  background-color: transparent;
-  background-image: url("../img/flag-bosnia.png");
+  transform: rotate(-90deg) translate(-111%, -717%);
 }
 .add-plan__country-wrapper {
   position: absolute;
@@ -556,10 +514,96 @@
 .add-plan__item-three {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   width: 270px;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.add-plan__todo-wrap-one {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.add-plan__todo-wrap-two {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.add-plan__submit-button {
+  grid-column-start: 1;
+  grid-row-start: 9;
+  width: 230px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 20px;
+  border: none;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  margin: 0 auto;
+}
+.add-plan__btn-back-step-three {
+  grid-column-start: 1;
+  grid-row-start: 10;
+  width: 130px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  margin: 0 auto;
+}
+.add-plan__todo-label-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  width: 220px;
+}
+.add-plan__todo-label-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1D2E5B;
+}
+.add-plan__todo-label {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #1D2E5B;
+  margin-left: 2px;
+}
+.add-plan__todo-flag-bosnia {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-bosnia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+}
+.add-plan__todo-flag-czech {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-czech.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
 }
