@@ -99,9 +99,10 @@
 .add-plan__form-field-dates {
   grid-column-start: 1;
   grid-row-start: 4;
-  margin-top: 0px;
+  margin-top: -20px;
   margin-bottom: 0px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .add-plan__checkbox {
   grid-column-start: 1;
@@ -203,12 +204,23 @@
   border: none;
   text-align: center;
 }
-.add-plan__label {
+.add-plan__label-person {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 37px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  margin-bottom: 0px;
+}
+.add-plan__label-dates {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #1D2E5B;
