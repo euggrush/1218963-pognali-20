@@ -56,7 +56,7 @@
 .add-plan__item-one {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 1fr 0.5fr;
   width: 270px;
   // min-height: 796px;
   background-color: #FFFFFF;
@@ -65,7 +65,7 @@
   margin-top: 30px;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 0px;
+  padding-bottom: 23px;
 }
 
 .add-plan__step {
@@ -103,7 +103,7 @@
 .add-plan__form-field-person {
   grid-column-start: 1;
   grid-row-start: 3;
-  grid-row-end: 4;
+  // grid-row-end: 4;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0 auto;
@@ -112,7 +112,7 @@
 .add-plan__form-field-dates {
   grid-column-start: 1;
   grid-row-start: 4;
-  grid-row-end: 5;
+  // grid-row-end: 5;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: 0 auto;
@@ -124,6 +124,7 @@
   grid-row-end: 6;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 20px;
 }
 
 .add-plan__calendar {
@@ -154,7 +155,6 @@
   text-transform: uppercase;
   color: #1D2E5B;
 }
-
 
 .add-plan__counter {
   display: flex;
@@ -230,11 +230,9 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #1D2E5B;
-  margin-top: 0px;
-  margin-left: 0px;
 }
 
-.add-plan__label-desc {
+.add-plan__label-desc-search {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -245,6 +243,21 @@
   text-transform: uppercase;
   color: #1D2E5B;
   opacity: 0.3;
+  margin-left: 31px;
+}
+
+.add-plan__label-desc-dates {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  opacity: 0.3;
+  margin-left: 60px;
 }
 
 .add-plan__calendar-days {
@@ -300,13 +313,100 @@
   color: #1D2E5B;
 }
 
-.add-plan__country-field {
+.add-plan__country-field-one {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   border: solid 1px #EDEFF6;
   border-radius: 5px;
   min-width: 221px;
   min-height: 42px;
   align-items: center;
+}
+
+.add-plan__country-field-two {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  border: solid 1px #EDEFF6;
+  border-radius: 5px;
+  min-width: 221px;
+  min-height: 42px;
+  align-items: center;
+}
+
+.add-plan__dropdown-wrap {
+  grid-column-start: 1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  min-height: 42px;
+  border: solid 1px #EDEFF6;
+  border-radius: 5px;
+}
+
+.add-plan__add-button {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 42px;
+  background-color: #EDEFF6;
+  border-radius: 4px;
+  border: none;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.add-plan__btn-next-step-two {
+  grid-column-start: 1;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  width: 229px;
+  height: 40px;
+  background-color: #FFD74B;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5px;
+  margin-left: 21px;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.add-plan__btn-back-step-two {
+  grid-column-start: 1;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  width: 130px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #1D2E5B;
 }
 
 .add-plan__country {
@@ -365,40 +465,12 @@
   border: none;
 }
 
-.add-plan__add-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 220px;
-  height: 42px;
-  background-color: #EDEFF6;
-  border-radius: 4px;
-  border: none;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #1D2E5B;
-}
-
 .add-plan__add-plus {
   width: 14px;
   height: 14px;
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.add-plan__dropdown-wrap {
-  display: flex;
-  align-items: center;
-  width: 220px;
-  min-height: 42px;
-  border: solid 1px #EDEFF6;
-  border-radius: 5px;
 }
 
 .add-plan__choose-button {
@@ -529,4 +601,19 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+.add-plan__item-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 0.5fr;
+  width: 270px;
+  // min-height: 796px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 23px;
 }
