@@ -4,6 +4,7 @@
   text-align: center;
   min-height: 568px;
   color: #ffffff;
+  background-color: #161C35;
   background-image: url(../img/bg-mobile.png);
   background-repeat: no-repeat;
   border: solid 1px transparent;
@@ -24,6 +25,8 @@
   align-items: center;
   border: 1px solid transparent;
   margin-bottom: 50px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 .page-header__button {
   width: 30px;
@@ -78,6 +81,14 @@
   line-height: 40px;
   color: #FFFFFF;
   margin-top: -12px;
+  outline: 5px solid rgba(255, 166, 0, 0.849);
+  outline-offset: -5px;
+}
+@media (min-width: 768px) {
+  .page-header__title {
+    order: 4;
+    width: 400px;
+  }
 }
 .page-header__logo-open {
   width: 102px;
@@ -167,6 +178,13 @@
   display: flex;
   justify-content: center;
   margin-top: 222px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+@media (min-width: 768px) {
+  .page-header__controls {
+    order: 2;
+  }
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;

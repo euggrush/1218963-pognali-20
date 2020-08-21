@@ -1,4 +1,6 @@
 .about {
+  position: relative;
+  z-index: 9;
   display: flex;
   flex-direction: column;
   min-height: 341px;
@@ -797,6 +799,8 @@
   margin-left: auto;
 }
 .directions {
+  position: relative;
+  z-index: 8;
   display: flex;
   flex-direction: column;
   min-height: 710px;
@@ -942,7 +946,6 @@
   min-height: 73px;
   width: 320px;
   background-color: #E2E5F2;
-  border: solid 1px transparent;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -1067,7 +1070,7 @@
   background-color: #161C35;
   color: #FFFFFF;
   border: solid 1px transparent;
-  margin-top: 0px;
+  margin-top: -97px;
 }
 .guide__list {
   display: flex;
@@ -1235,14 +1238,11 @@
   width: 236px;
 }
 .my-profile__level {
-  display: inline-block;
-  text-align: center;
-  width: 90px;
-  height: 90px;
-  border-top: solid 5px #FF8D30;
-  border-bottom: solid 5px #FF8D30;
-  border-right: solid 5px #FF8D30;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/my-profile-level.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .my-profile__level-number {
   display: block;
@@ -1254,13 +1254,6 @@
   text-align: center;
   color: #161C35;
   margin-top: 11px;
-}
-.my-profile__level-splitter {
-  width: 52px;
-  height: 1px;
-  background-color: #444444;
-  opacity: 0.3;
-  margin: 0 auto;
 }
 .my-profile__level-text {
   display: block;
@@ -1397,6 +1390,8 @@
   background-position: center;
 }
 .page-footer {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1468,6 +1463,7 @@
   text-align: center;
   min-height: 568px;
   color: #ffffff;
+  background-color: #161C35;
   background-image: url(../img/bg-mobile.png);
   background-repeat: no-repeat;
   border: solid 1px transparent;
@@ -1480,9 +1476,7 @@
   background-color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
-  min-width: 320px;
-  border: solid 1px transparent;
-  outline-offset: -2px;
+  min-width: 319px;
 }
 .page-header__btn-wrap {
   display: flex;
@@ -1490,6 +1484,8 @@
   align-items: center;
   border: 1px solid transparent;
   margin-bottom: 50px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 .page-header__button {
   width: 30px;
@@ -1543,7 +1539,9 @@
   font-size: 36px;
   line-height: 40px;
   color: #FFFFFF;
-  margin-top: -21px;
+  margin-top: -12px;
+  outline: 5px solid rgba(255, 166, 0, 0.849);
+  outline-offset: -5px;
 }
 .page-header__logo-open {
   width: 102px;
@@ -1633,6 +1631,8 @@
   display: flex;
   justify-content: center;
   margin-top: 222px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
@@ -1832,21 +1832,45 @@
   margin-top: 2px;
   margin-left: 11px;
 }
-.persons__level-number {
+.persons__level-number-firsova {
   display: block;
-  text-align: center;
-  width: 39px;
-  height: 39px;
-  border-radius: 50%;
-  border: 3px solid #FF8D30;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 40px;
-  color: #1D2E5B;
+  width: 45px;
+  height: 45px;
   margin-top: 11px;
   margin-left: 6px;
+  background-image: url("../img/person-level-firsova.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-demin {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-demin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-smolov {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-smolov.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.persons__level-number-rogovya {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 11px;
+  margin-left: 6px;
+  background-image: url("../img/person-level-rogovya.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .persons__transport {
   display: block;
@@ -2338,6 +2362,8 @@
   text-transform: uppercase;
 }
 .travelers {
+  position: relative;
+  z-index: 7;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2461,41 +2487,23 @@
   margin-right: 40px;
   text-align: center;
 }
-.travelers__level {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.travelers__level-firsova {
   position: absolute;
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  border: solid 6px #FF8D30;
+  width: 60px;
+  height: 60px;
   transform: translate(-143%, 27%);
+  background-image: url("../img/travelers-level-firsova.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.travelers__level-number {
-  display: block;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-.travelers__level-text {
-  display: block;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  color: #FFFFFF;
-}
-.travelers__level-splitter {
-  width: 30px;
-  height: 1px;
-  background-color: #FFFFFF;
-  opacity: 0.3;
+.travelers__level-demin {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translate(-143%, 27%);
+  background-image: url("../img/travelers-level-demin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .travelers__transport {
   display: flex;
@@ -2952,14 +2960,38 @@
   src: url("../fonts/bloggersans-bold.woff") format("woff");
   src: url("../fonts/bloggersans-bold.woff2") format("woff2");
 }
-.page-body {
-  width: 100%;
-  max-width: 320px;
-  min-width: 320px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Blogger Sans", "Arial", sans-serif;
+@media (min-width: 320px) {
+  .page-body {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
+}
+@media (min-width: 768px) {
+  .page-body {
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
+}
+@media (min-width: 1440px) {
+  .page-body {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
 }
 img {
   max-width: 100%;
