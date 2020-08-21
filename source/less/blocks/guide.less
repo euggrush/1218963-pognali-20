@@ -28,6 +28,18 @@
   list-style: none;
   color: #161C35;
   border: solid 1px transparent;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 689px;
+    height: 280px;
+    margin-top: 212px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .guide__item {
@@ -48,24 +60,64 @@
 .guide__item:nth-child(1) {
   height: 87px;
   background-color: #FF8D30;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:nth-child(2) {
   height: 88px;
   margin-top: -30px;
   background-color: #FFA530;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:nth-child(3) {
   height: 88px;
   margin-top: -30px;
   background-color: #FFBD30;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:last-child {
   height: 59px;
   margin-top: -30px;
   background-color: #FFD74B;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:last-child>.guide__text,
