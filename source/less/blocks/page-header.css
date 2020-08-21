@@ -9,6 +9,13 @@
   background-repeat: no-repeat;
   border: solid 1px transparent;
 }
+@media (min-width: 768px) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .page-header__nav {
   position: absolute;
   display: flex;
@@ -27,6 +34,17 @@
   margin-bottom: 50px;
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
+}
+@media (min-width: 768px) {
+  .page-header__btn-wrap {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .page-header__button {
   width: 30px;
@@ -83,6 +101,18 @@
   margin-top: -12px;
   outline: 5px solid rgba(255, 166, 0, 0.849);
   outline-offset: -5px;
+}
+@media (min-width: 768px) {
+  .page-header__title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .page-header__logo-open {
   width: 102px;
@@ -173,6 +203,16 @@
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
+@media (min-width: 768px) {
+  .page-header__controls {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
   width: 40px;
@@ -183,6 +223,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .page-header__controls-item:nth-child(1) {
+    display: none;
+  }
+}
 .page-header__controls-item:nth-child(2) {
   display: inline-block;
   width: 40px;
@@ -192,6 +237,11 @@
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .page-header__controls-item:nth-child(2) {
+    display: none;
+  }
 }
 .page-header__controls-item:nth-child(3) {
   display: inline-block;
