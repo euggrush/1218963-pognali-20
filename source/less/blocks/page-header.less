@@ -4,24 +4,28 @@
 
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  min-height: 568px;
-  color: #ffffff;
-  background-color: #161C35;
-  background-image: url(../img/bg-mobile.png);
-  background-repeat: no-repeat;
-  border: solid 1px transparent;
+
+  @media (min-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 568px;
+    color: #ffffff;
+    background-color: #161C35;
+    background-image: url(../img/bg-mobile.png);
+    background-repeat: no-repeat;
+    border: solid 1px transparent;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #161C35;
-    background-image: url(../img/bg-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 0px, 50px;
+    background-color: #182044;
+    background-image: none;
+    // background-image: url(../img/bg-tablet.png);
+    // background-repeat: no-repeat;
+    // background-position: 0px, 50px;
   }
 }
 
@@ -51,7 +55,7 @@
     margin-bottom: 0px;
     margin-left: 80px;
     margin-right: -36px;
-    }
+  }
 }
 
 .page-header__button {
@@ -126,7 +130,7 @@
     margin-bottom: 0px;
     margin-left: -9px;
     margin-right: 0px;
-    }
+  }
 }
 
 .page-header__logo-open {
@@ -138,9 +142,21 @@
 
 .page-header__logo {
   width: 100px;
-    height: 20px;
-    margin-top: 22px;
-    margin-left: 23px;
+  height: 20px;
+  margin-top: 22px;
+  margin-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 166px;
+    height: 42px;
+    background-image: url(../img/logo-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    margin-left: -43px;
+    margin-right: 0px;
+  }
 }
 
 .page-header__nav-item {
@@ -231,7 +247,7 @@
     margin-bottom: 0px;
     margin-left: -75px;
     margin-right: 0px;
-    }
+  }
 }
 
 .page-header__controls-item:nth-child(1) {
@@ -245,7 +261,7 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-  display: none;
+    display: none;
   }
 }
 
@@ -261,7 +277,7 @@
 
   @media (min-width: @tablet-width) {
     display: none;
-    }
+  }
 }
 
 .page-header__controls-item:nth-child(3) {
@@ -280,9 +296,9 @@
   color: #161C35;
 
   @media (min-width: @tablet-width) {
-  width: 190px;
-  height: 50px;
-    }
+    width: 190px;
+    height: 50px;
+  }
 }
 
 .page-header__close-button {

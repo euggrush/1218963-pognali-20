@@ -1,11 +1,22 @@
 .guide {
-  display: flex;
-  flex-direction: column;
-  min-height: 555px;
-  background-color: #161C35;
-  color: #FFFFFF;
-  border: solid 1px transparent;
-  margin-top: -97px;
+
+  @media (min-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    min-height: 555px;
+    background-color: #161C35;
+    color: #FFFFFF;
+    border: solid 1px transparent;
+    margin-top: -97px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 0px, 50px;
+    margin-top: -160px;
+  }
+
 }
 
 .guide__list {
