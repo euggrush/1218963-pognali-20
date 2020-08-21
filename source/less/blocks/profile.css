@@ -15,6 +15,9 @@
 }
 @media (min-width: 768px) {
   .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin: 0px;
   }
 }
@@ -33,6 +36,10 @@
 }
 @media (min-width: 768px) {
   .profile__title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -55,6 +62,14 @@
   margin-left: 23px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .profile__rates {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
 .profile__list {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -68,11 +83,28 @@
   margin-left: 0px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .profile__list {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    min-width: auto;
+  }
+}
 .profile__item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   min-height: 56px;
+}
+@media (min-width: 768px) {
+  .profile__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 56px;
+  }
 }
 .profile__list-text {
   grid-column-start: 1;
@@ -90,6 +122,14 @@
   margin-left: -1px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .profile__list-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 .profile__list-price {
   grid-column-start: 1;
   grid-row-start: 2;
@@ -104,6 +144,14 @@
   margin-bottom: 0px;
   margin-left: -2px;
   margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .profile__list-price {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 .profile__list-number {
   grid-column-start: 3;
@@ -126,6 +174,14 @@
   margin-left: 48px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .profile__list-number {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 .profile__button {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -142,6 +198,14 @@
   margin-left: -2px;
   margin-right: 0px;
   border: solid 1px transparent;
+}
+@media (min-width: 768px) {
+  .profile__button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }
 .profile__modal {
   display: flex;
