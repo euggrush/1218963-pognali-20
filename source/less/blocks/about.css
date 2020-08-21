@@ -13,6 +13,18 @@
   border-bottom-right-radius: 30px;
   border: solid 1px transparent;
 }
+@media (min-width: 768px) {
+  .about {
+    background-image: url(../img/bg-about-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 39px, 50px;
+    min-height: 760px;
+    background-color: #182044;
+    margin-top: 0px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}
 .about__title {
   color: #FF8D30;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -21,6 +33,20 @@
   font-size: 24px;
   line-height: 24px;
   padding-left: 48px;
+}
+@media (min-width: 768px) {
+  .about__title {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: #FF8D30;
+    margin-top: 114px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    margin-right: 0px;
+  }
 }
 .about__quote {
   display: inline-block;
@@ -34,6 +60,22 @@
   margin-top: 0px;
   padding-left: 46px;
 }
+@media (min-width: 768px) {
+  .about__quote {
+    display: inline-block;
+    width: 300px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-top: 42px;
+    margin-bottom: 0px;
+    margin-left: 27px;
+    margin-right: 0px;
+  }
+}
 .about__slogan {
   display: inline-block;
   width: 202px;
@@ -45,4 +87,20 @@
   margin: 0px;
   padding-top: 3px;
   padding-left: 48px;
+}
+@media (min-width: 768px) {
+  .about__slogan {
+    display: inline-block;
+    width: 260px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    margin-right: 0px;
+  }
 }
