@@ -84,25 +84,17 @@
   outline: 5px solid rgba(255, 166, 0, 0.849);
   outline-offset: -5px;
 }
-@media (min-width: 768px) {
-  .page-header__title {
-    order: 4;
-    width: 400px;
-  }
-}
 .page-header__logo-open {
   width: 102px;
   height: 20px;
   margin-top: 20px;
   margin-left: 12px;
 }
-@media (min-width: 320px) {
-  .page-header__logo {
-    width: 100px;
-    height: 20px;
-    margin-top: 22px;
-    margin-left: 23px;
-  }
+.page-header__logo {
+  width: 100px;
+  height: 20px;
+  margin-top: 22px;
+  margin-left: 23px;
 }
 .page-header__nav-item {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -180,11 +172,6 @@
   margin-top: 222px;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
-}
-@media (min-width: 768px) {
-  .page-header__controls {
-    order: 2;
-  }
 }
 .page-header__controls-item:nth-child(1) {
   display: inline-block;
