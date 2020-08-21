@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .travelers {
   position: relative;
   z-index: 7;
@@ -13,6 +17,15 @@
   border: solid 1px black;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-height: 1177px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .travelers__title {
@@ -24,6 +37,21 @@
   color: #FF8D30;
   margin-top: 22px;
   margin-left: 48px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: #FF8D30;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: 72px;
+    margin-right: 0px;
+  }
 }
 
 .travelers__quote {
@@ -36,6 +64,23 @@
   margin-top: 0px;
   margin-left: 49px;
   margin-right: 50px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: inline-block;
+    width: 470px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-top: 57px;
+    margin-bottom: 0px;
+    margin-left: 73px;
+    margin-right: 0px;
+  }
 }
 
 .travelers__slogan {
@@ -49,6 +94,23 @@
   margin-top: 5px;
   margin-bottom: 45px;
   margin-left: 48px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: inline-block;
+    width: 260px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 39px;
+    margin-bottom: 0px;
+    margin-left: 73px;
+    margin-right: 0px;
+  }
 }
 
 .travelers__item {
@@ -62,6 +124,16 @@
   // margin-bottom: 20px;
   background-color: #FFFFFF;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: auto;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .travelers__preferences {
@@ -90,6 +162,15 @@
   background-image: url("../img/icon-btn-triangle.svg");
   background-repeat: no-repeat;
   background-position: 92% 52%;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: auto;
+    grid-row-start: 6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .travelers__btn-text {
