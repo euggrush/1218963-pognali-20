@@ -1,6 +1,15 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .location {
   display: flex;
   flex-direction: column;
   min-height: 424px;
   margin-top: 0px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 581px;
+    margin-top: 0px;
+  }
 }

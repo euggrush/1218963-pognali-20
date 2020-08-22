@@ -4,3 +4,9 @@
   min-height: 424px;
   margin-top: 0px;
 }
+@media (min-width: 768px) {
+  .location {
+    min-height: 581px;
+    margin-top: 0px;
+  }
+}
