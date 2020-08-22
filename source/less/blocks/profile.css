@@ -205,6 +205,16 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    display: block;
+    width: 360px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url("../img/business-tarrif-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .profile__modal {
