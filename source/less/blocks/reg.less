@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .reg {
   display: flex;
   flex-direction: column;
@@ -8,6 +12,10 @@
   background-color: #192144;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0px;
+  }
 }
 
 .reg__title {
@@ -19,6 +27,18 @@
   color: #FF8D30;
   align-self: center;
   margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 128px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 
 .reg__quote {
@@ -33,14 +53,27 @@
   text-align: center;
   align-self: center;
   width: 211px;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 638px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 63px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
 }
 
 .reg__quote .reg__quote-link {
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 28px;
+  line-height: 32px;
   color: #FFD74B;
   text-decoration: underline;
 }
@@ -50,6 +83,15 @@
   align-self: center;
   margin-top: 30px;
   min-width: 270px;
+
+  @media (min-width: @tablet-width) {
+    width: 617px;
+    margin-top: 68px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
 }
 
 .reg__input {
@@ -102,6 +144,36 @@
   color: #FFFFFF;
   text-align: center;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    min-width: 614px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 68px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+}
+
+.reg__contact-wrapper {
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  // margin-top: 10px;
+  margin-left: 25px;
+
+  @media (min-width: @tablet-width) {
+
+    margin-top: 59px;
+    margin-bottom: 0px;
+    margin-left: 118px;
+    margin-right: 0px;
+  }
 }
 
 .reg__tel-link {
@@ -126,14 +198,6 @@
   background-position: center;
 }
 
-.reg__contact-wrapper {
-  display: flex;
-  // justify-content: space-around;
-  align-items: center;
-  // margin-top: 10px;
-  margin-left: 25px;
-}
-
 .reg__contact-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -143,4 +207,15 @@
   color: #FFD74B;
   margin-left: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
