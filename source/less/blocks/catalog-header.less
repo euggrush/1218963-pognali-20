@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .catalog-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -9,6 +13,10 @@
   border-bottom-right-radius: 20px;
   margin: 0px;
   padding: 0px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 350px;
+  }
 }
 
 .catalog-header__logo {
@@ -30,6 +38,22 @@
   border: none;
   margin-top: 23px;
   margin-left: 72px;
+}
+
+.catalog-header__btn-authorization {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.catalog-header__main-page-link {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .catalog-header__title {
