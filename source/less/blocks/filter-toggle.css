@@ -8,6 +8,19 @@
   background-color: #E2E5F2;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
+  z-index: 9;
+}
+@media (min-width: 768px) {
+  .filter-toggle {
+    margin-top: -40px;
+    min-width: 768px;
+    min-height: 182px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    position: relative;
+    z-index: 9;
+  }
 }
 .filter-toggle__btn-wrap {
   display: flex;
@@ -43,7 +56,7 @@
   margin-top: 24px;
   margin-left: 24px;
 }
-.filter-toggle__modal {
+.filter-modal {
   display: flex;
   justify-content: space-between;
   margin: 0px;
@@ -59,7 +72,7 @@
   border-bottom-right-radius: 30px;
   border: solid 1px transparent;
 }
-.filter-toggle__country-title {
+.filter-modal__country-title {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -69,12 +82,12 @@
   color: #192144;
   margin-left: 50px;
 }
-.filter-toggle__alphabet {
+.filter-modal__alphabet {
   width: 220px;
   border-collapse: collapse;
   margin: 0 auto;
 }
-.filter-toggle__letters {
+.filter-modal__letters {
   width: 40px;
   height: 38px;
   border: 1px solid #CBCED9;
@@ -88,7 +101,7 @@
   color: #1D2E5B;
   background-color: #FFFFFF;
 }
-.filter-toggle__country-list {
+.filter-modal__country-list {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -100,10 +113,10 @@
   margin-left: 52px;
   border: solid 1px transparent;
 }
-.filter-toggle__country-item {
+.filter-modal__country-item {
   display: block;
 }
-.filter-toggle__close {
+.filter-modal__close {
   width: 270px;
   height: 39px;
   background-color: #D6DAED;
