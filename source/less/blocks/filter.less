@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .filter {
   margin-top: -35px;
   margin-bottom: 0px;
@@ -19,6 +23,10 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 688px;
+  }
 }
 
 .filter__button {
@@ -37,6 +45,10 @@
   align-self: center;
   border: none;
   margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 617px;
+  }
 }
 
 .filter__title {
@@ -49,6 +61,17 @@
   color: #1D2E5B;
   margin-top: 23px;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .filter__item {
