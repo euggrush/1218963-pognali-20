@@ -26,6 +26,19 @@
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .filter-toggle__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 39px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 72px;
+    padding-right: 52px;
+  }
+}
 .filter-toggle__title {
   font-style: normal;
   font-weight: bold;
@@ -60,6 +73,20 @@
 .filter-toggle__btn-more {
   display: none;
 }
+@media (min-width: 768px) {
+  .filter-toggle__btn-more {
+    display: inline-block;
+    width: 217px;
+    height: 23px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+}
 .filter-toggle__button {
   width: 19px;
   height: 5px;
@@ -69,6 +96,24 @@
   align-self: center;
   margin-top: 24px;
   margin-right: 27px;
+}
+@media (min-width: 768px) {
+  .filter-toggle__button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 45px;
+    background-image: url(../img/filter-toggle-expand-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: 90%, 50%;
+    background-color: transparent;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 .filter-toggle__icon {
   width: 15px;
