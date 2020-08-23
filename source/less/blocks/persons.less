@@ -25,6 +25,37 @@
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 17px;
+
+
+  @media (min-width: @tablet-width) {
+  grid-template-columns: 229px 229px 229px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: auto;
+  }
+}
+
+.persons__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-top: 0px;
+  margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    // grid-column-end: 2;
+    grid-row-start: 1;
+    // grid-column-end: 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    }
 }
 
 .persons__name {
@@ -40,6 +71,15 @@
   margin-top: -3px;
   margin-bottom: 0px;
   margin-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
 }
 
 .persons__dot {
@@ -51,6 +91,15 @@
   background-color: #F97676;
   margin-top: 8px;
   margin-left: 61px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
 }
 
 .persons__rating {
@@ -72,6 +121,80 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+}
+
+.persons__hobby {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 27px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+}
+
+.persons__about-list {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  margin-top: 4px;
+  margin-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+}
+
+.persons__about-item:nth-child(1) {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  border: solid 1px transparent;
+  margin-top: 0px;
+}
+
+.persons__about-item:nth-child(2) {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  border: solid 1px transparent;
+  margin-top: 0px;
+}
+
+.persons__about-item:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border: solid 1px transparent;
+  margin-top: 0px;
 }
 
 .persons__button {
@@ -95,32 +218,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
-}
-
-.persons__avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  margin-top: 0px;
-  margin-left: 18px;
-}
-
-.persons__hobby {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: #444444;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 27px;
-  margin-right: 20px;
 }
 
 .persons__wishes {
@@ -275,37 +372,6 @@
   height: 32px;
   border-radius: 50%;
   background-color: #EDEFF6;
-}
-
-.persons__about-list {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.5fr 1fr;
-  margin-top: 4px;
-  margin-left: 25px;
-}
-
-.persons__about-item:nth-child(1) {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  border: solid 1px transparent;
-  margin-top: 0px;
-}
-
-.persons__about-item:nth-child(2) {
-  grid-column-start: 1;
-  grid-row-start: 2;
-  border: solid 1px transparent;
-  margin-top: 0px;
-}
-
-.persons__about-item:nth-child(3) {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  border: solid 1px transparent;
-  margin-top: 0px;
 }
 
 .persons__controls {
