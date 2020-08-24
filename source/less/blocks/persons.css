@@ -157,16 +157,18 @@
 }
 @media (min-width: 768px) {
   .persons__about-list {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 4fr 1fr;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    border: solid 1px blue;
   }
 }
 .persons__about-item:nth-child(1) {
@@ -178,7 +180,7 @@
 @media (min-width: 768px) {
   .persons__about-item:nth-child(1) {
     grid-column-start: 1;
-    grid-row-start: 4;
+    grid-row-start: 2;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -195,7 +197,7 @@
 }
 @media (min-width: 768px) {
   .persons__about-item:nth-child(2) {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 1;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -212,8 +214,8 @@
 }
 @media (min-width: 768px) {
   .persons__about-item:nth-child(3) {
-    grid-column-start: 3;
-    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-start: 2;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -264,6 +266,11 @@
   text-transform: uppercase;
   color: #1D2E5B;
   margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .persons__wish-wrapper {
+    display: flex;
+  }
 }
 .persons__wish-wrapper p {
   margin-top: 12px;
@@ -335,6 +342,12 @@
   width: 130px;
   margin-top: 20px;
   margin-left: -3px;
+}
+@media (min-width: 768px) {
+  .persons__transport-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .persons__transport-icon {
   display: inline-block;
