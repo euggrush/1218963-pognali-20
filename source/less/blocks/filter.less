@@ -78,9 +78,11 @@
   border-top: solid 1px #F3C72B;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+
+    border: solid 1px blue;
   }
 }
 
@@ -113,7 +115,6 @@
   background-position: center;
   border: none;
   background-color: transparent;
-  // transform: rotate(180deg);
   background-size: 10px 6px;
   margin-top: 10px;
   margin-right: -7px;
@@ -134,7 +135,10 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px red;
   }
 }
 
