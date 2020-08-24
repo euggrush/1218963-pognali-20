@@ -39,6 +39,7 @@
   .persons__avatar {
     grid-column-start: 1;
     grid-row-start: 1;
+    grid-row-end: 3;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -233,6 +234,16 @@
   background-color: #FFD74B;
   border-radius: 25px;
   border: solid 1px transparent;
+}
+@media (min-width: 768px) {
+  .persons__button {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .persons__btn-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
