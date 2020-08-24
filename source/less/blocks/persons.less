@@ -31,6 +31,8 @@
   grid-template-columns: 229px 229px 229px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: auto;
+  padding: 0px;
+  margin: 0px;
   }
 }
 
@@ -47,10 +49,10 @@
     grid-column-start: 1;
     // grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
-    margin-top: 0px;
+    grid-row-end: 4;
+    margin-top: 36px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 35px;
     margin-right: 0px;
     width: 190px;
     height: 190px;
@@ -61,6 +63,7 @@
 .persons__name {
   grid-column-start: 2;
   grid-row-start: 1;
+  grid-row-end: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -75,9 +78,14 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin-top: 0px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 33px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 30px;
     margin-right: 0px;
     }
 }
@@ -95,9 +103,9 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 3;
     grid-row-start: 1;
-    margin-top: 0px;
+    margin-top: 46px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 12px;
     margin-right: 0px;
     }
 }
@@ -125,9 +133,12 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 3;
     grid-row-start: 3;
-    margin-top: 0px;
+    grid-row-end: 4;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -6px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: -32px;
     margin-right: 0px;
     }
 }
@@ -150,9 +161,14 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 2;
-    margin-top: 0px;
+    grid-row-end: 3;
+    display: inline-block;
+    width: 227px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: -13px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 33px;
     margin-right: 0px;
     }
 }
@@ -171,8 +187,6 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
-
-
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr 1fr;
@@ -181,7 +195,6 @@
     margin-left: 0px;
     margin-right: 0px;
 
-    border: solid 1px blue;
     }
 }
 
@@ -194,13 +207,11 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-row-start: 2;
-    margin-top: 0px;
+    margin-top: -58px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 35px;
     margin-right: 0px;
     order: 3;
-
-    border: solid 1px red;
     }
 }
 
@@ -213,13 +224,10 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 1;
-
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-
-    border: solid 1px green;
     }
 }
 
@@ -234,10 +242,8 @@
     grid-row-start: 2;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 50px;
     margin-right: 0px;
-
-    border: solid 1px orange;
     }
 }
 
@@ -255,9 +261,12 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 3;
-    margin-top: 0px;
+    grid-row-end: 4;
+    width: 150px;
+    height: 50px;
+    margin-top: -15px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 26px;
     margin-right: 0px;
     }
 }
@@ -271,6 +280,11 @@
   text-align: center;
   text-transform: uppercase;
   color: #161C35;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    }
 }
 
 .persons__wishes {
@@ -300,6 +314,15 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
+    min-width: 465px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
   }
 }
 
@@ -412,6 +435,10 @@
   font-size: 15px;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .persons__transport-wrapper {
@@ -425,6 +452,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-top: 34px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
