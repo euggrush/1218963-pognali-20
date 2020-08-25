@@ -90,6 +90,9 @@
 }
 @media (min-width: 768px) {
   .add-plan__item-one {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 1fr;
     min-width: 618px;
     min-height: 1437px;
     border-radius: 30px;
@@ -116,6 +119,9 @@
 }
 @media (min-width: 768px) {
   .add-plan__step {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: inline-block;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -147,6 +153,9 @@
 }
 @media (min-width: 768px) {
   .add-plan__step-text {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: inline-block;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -172,6 +181,9 @@
 }
 @media (min-width: 768px) {
   .add-plan__form-field-person {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
     min-width: 531px;
     min-height: 72px;
     margin-top: 0px;
@@ -191,6 +203,9 @@
 }
 @media (min-width: 768px) {
   .add-plan__form-field-dates {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
     min-width: 531px;
     min-height: 72px;
     margin-top: 0px;
@@ -217,8 +232,8 @@
 @media (min-width: 768px) {
   .add-plan__checkbox {
     grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
     margin-top: -10px;
     margin-bottom: 0px;
     margin-left: 40px;
@@ -238,6 +253,13 @@
   margin-top: -30px;
   margin-bottom: 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__calendar {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 8;
+  }
+}
 .add-plan__button-next {
   grid-column-start: 1;
   grid-row-start: 9;
@@ -255,6 +277,17 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #1D2E5B;
+}
+@media (min-width: 768px) {
+  .add-plan__button-next {
+    grid-column-start: 1;
+    grid-row-start: 8;
+    width: 284px;
+    height: 80px;
+    background-image: url("../img/icon-btn-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 80%, 50%;
+  }
 }
 .add-plan__counter-person {
   display: flex;
@@ -319,6 +352,15 @@
   min-height: 42px;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
+}
+@media (min-width: 768px) {
+  .add-plan__input-wrapper {
+    min-width: 532px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .add-plan__search {
   border: none;
@@ -391,6 +433,16 @@
   min-height: 224px;
   border-collapse: collapse;
   margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .add-plan__calendar-days {
+    min-width: 532px;
+    min-height: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .add-plan__week-day {
   width: 32px;
