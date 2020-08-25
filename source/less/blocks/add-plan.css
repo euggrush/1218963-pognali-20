@@ -170,6 +170,17 @@
   margin-bottom: 0px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .add-plan__form-field-person {
+    min-width: 531px;
+    min-height: 72px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+  }
+}
 .add-plan__form-field-dates {
   grid-column-start: 1;
   grid-row-start: 4;
@@ -177,6 +188,17 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  .add-plan__form-field-dates {
+    min-width: 531px;
+    min-height: 72px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+  }
 }
 .add-plan__checkbox {
   grid-column-start: 1;
@@ -191,6 +213,22 @@
   font-size: 15px;
   line-height: 15px;
   color: #1D2E5B;
+}
+@media (min-width: 768px) {
+  .add-plan__checkbox {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #1D2E5B;
+  }
 }
 .add-plan__calendar {
   grid-column-start: 1;
@@ -227,6 +265,11 @@
   min-height: 43px;
   margin-top: 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__counter-person {
+    width: auto;
+  }
+}
 .add-plan__counter-date {
   display: flex;
   justify-content: center;
@@ -235,6 +278,11 @@
   width: 220px;
   min-height: 43px;
   margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .add-plan__counter-date {
+    width: auto;
+  }
 }
 .add-plan__minus {
   background-color: transparent;
