@@ -46,12 +46,6 @@
   border-radius: 10px;
   background-color: #FFFFFF;
   align-self: center;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
-  color: #1D2E5B;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 21px;
@@ -63,16 +57,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     white-space: nowrap;
-    min-width: 582px;
-    min-height: 112px;
+    min-width: 618px;
+    min-height: 153px;
     font-size: 24px;
     line-height: 24px;
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
-    padding-left: 36px;
+    padding: 0px;
   }
 }
 .plans__item-title {
@@ -83,6 +76,20 @@
   font-size: 16px;
   line-height: 16px;
   color: #1D2E5B;
+}
+@media (min-width: 768px) {
+  .plans__item-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 39px;
+    margin-bottom: 0px;
+    margin-left: 36px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 .plans__count {
   display: inline;
@@ -97,10 +104,13 @@
 @media (min-width: 768px) {
   .plans__count {
     grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
-    margin-top: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 41px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 159px;
     margin-right: 0px;
     padding: 0px;
   }
@@ -118,6 +128,19 @@
   margin-bottom: 0px;
   margin-left: 24px;
 }
+@media (min-width: 768px) {
+  .plans__number {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    font-size: 21px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 33px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+}
 .plans__date {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -130,6 +153,19 @@
   margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 24px;
+}
+@media (min-width: 768px) {
+  .plans__date {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: 13px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 .plans__button {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -147,4 +183,17 @@
   margin-top: 23px;
   margin-bottom: 0px;
   margin-left: 19px;
+}
+@media (min-width: 768px) {
+  .plans__button {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: -3px;
+    margin-bottom: 0px;
+    margin-left: 32px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
