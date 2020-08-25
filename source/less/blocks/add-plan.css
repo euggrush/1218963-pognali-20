@@ -9,6 +9,14 @@
   margin-top: -29px;
   padding-bottom: 160px;
 }
+@media (min-width: 768px) {
+  .add-plan {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -26px;
+    padding: 0px;
+  }
+}
 .add-plan__header {
   display: flex;
   justify-content: space-between;
@@ -25,11 +33,32 @@
   margin-left: 25px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__title {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 49px;
+    margin-bottom: 59px;
+    margin-left: 73px;
+    margin-right: 0px;
+  }
+}
 .add-plan__toggles {
   margin-top: 37px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 41px;
+}
+@media (min-width: 768px) {
+  .add-plan__toggles {
+    margin-top: 64px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 74px;
+  }
 }
 .add-plan__toggle-button {
   display: inline-block;
@@ -59,6 +88,17 @@
   padding-top: 24px;
   padding-bottom: 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__item-one {
+    min-width: 618px;
+    min-height: 1437px;
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .add-plan__step {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -74,6 +114,22 @@
   padding-right: 20px;
   align-self: flex-start;
 }
+@media (min-width: 768px) {
+  .add-plan__step {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    width: 293px;
+    height: 72px;
+    margin-top: 21px;
+    margin-bottom: 0px;
+    margin-left: 17px;
+    margin-right: 0px;
+  }
+}
 .add-plan__step-text {
   grid-column-start: 1;
   grid-row-start: 2;
@@ -88,6 +144,24 @@
   margin-bottom: 0px;
   padding-left: 25px;
   padding-right: 25px;
+}
+@media (min-width: 768px) {
+  .add-plan__step-text {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    width: 505px;
+    height: 72px;
+    margin-top: -37px;
+    margin-bottom: 0px;
+    margin-left: 19px;
+    margin-right: 0px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #E1E3E9;
+  }
 }
 .add-plan__form-field-person {
   grid-column-start: 1;
@@ -609,6 +683,16 @@
   padding-top: 24px;
   padding-bottom: 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__item-two {
+    min-width: 618px;
+    min-height: 1437px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .add-plan__item-three {
   display: grid;
   grid-template-columns: 1fr;
@@ -621,6 +705,16 @@
   margin-bottom: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .add-plan__item-three {
+    min-width: 618px;
+    min-height: 1437px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .add-plan__step-three {
   grid-column-start: 1;
