@@ -1,3 +1,7 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .my-profile {
   display: flex;
   flex-direction: column;
@@ -8,6 +12,16 @@
   border: solid 1px transparent;
   margin-top: -15px;
   padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-width: 768px;
+    min-height: 500px;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 .my-profile__wrapper {
@@ -15,6 +29,18 @@
   justify-content: space-between;
   align-items: center;
   width: 236px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 624px;
+    margin-top: 61px;
+    margin-bottom: 0px;
+    margin-left: 71px;
+    margin-right: 0px;
+  }
 }
 
 .my-profile__level {
@@ -80,6 +106,19 @@
   text-transform: uppercase;
   color: #161C35;
   margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 618px;
+    height: 60px;
+    margin-top: -25px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .my-profile__tags {
@@ -90,6 +129,19 @@
   border-radius: 10px;
   padding: 0px;
   margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 618px;
+    min-height: 95px;
+    margin-top: -95px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .my-profile__tags-text {
@@ -136,6 +188,19 @@
   text-align: center;
   margin-top: 25px;
   padding-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 308px;
+    min-height: 93px;
+    margin-top: 55px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .my-profile__transport-title {
