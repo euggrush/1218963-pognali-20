@@ -10,6 +10,15 @@
   background-color: #DFE3F0;
   border: solid 1px transparent;
 }
+@media (min-width: 768px) {
+  .plans {
+    justify-content: start;
+    min-width: 768px;
+    min-height: 500px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
 .plans__title {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -19,6 +28,16 @@
   color: #1D2E5B;
   margin-top: 19px;
   margin-left: 25px;
+}
+@media (min-width: 768px) {
+  .plans__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 54px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 0px;
+  }
 }
 .plans__item {
   display: block;
@@ -38,6 +57,33 @@
   padding-top: 21px;
   padding-bottom: 21px;
 }
+@media (min-width: 768px) {
+  .plans__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    white-space: nowrap;
+    min-width: 582px;
+    min-height: 112px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-left: 36px;
+  }
+}
+.plans__item-title {
+  display: inline;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1D2E5B;
+}
 .plans__count {
   display: inline;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -47,6 +93,17 @@
   line-height: 16px;
   color: #1D2E5B;
   margin-left: 24px;
+}
+@media (min-width: 768px) {
+  .plans__count {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 .plans__number {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
