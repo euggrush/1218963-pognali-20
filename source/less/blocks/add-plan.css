@@ -823,6 +823,16 @@
   margin-right: auto;
   white-space: normal;
 }
+@media (min-width: 768px) {
+  .add-plan__todo {
+    min-width: 499px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .add-plan__border {
   position: absolute;
   width: 277px;
@@ -923,12 +933,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    min-width: 618px;
+    min-width: 575px;
     min-height: 883px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 43px;
+    padding-right: 0px;
+    border-radius: 30px;
   }
 }
 .add-plan__step-three {
@@ -957,10 +972,11 @@
     height: 72px;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 0px;
+    margin-top: 44px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    padding: 0px;
   }
 }
 .add-plan__step-three-text {
@@ -983,10 +999,19 @@
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 0px;
+    display: inline-block;
+    width: 505px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 35px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    padding-bottom: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #E1E3E9;
   }
 }
 .add-plan__todo-container {
@@ -1003,6 +1028,7 @@
     grid-column-start: 1;
     grid-row-start: 3;
     grid-row-end: 7;
+    min-width: 500px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -1020,9 +1046,7 @@
 }
 @media (min-width: 768px) {
   .add-plan__todo-wrap-one {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    width: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -1040,9 +1064,7 @@
 }
 @media (min-width: 768px) {
   .add-plan__todo-wrap-two {
-    grid-column-start: 1;
-    grid-row-start: 5;
-    grid-row-end: 7;
+    width: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -1118,6 +1140,11 @@
   margin: 0 auto;
   width: 220px;
 }
+@media (min-width: 768px) {
+  .add-plan__todo-label-wrap {
+    width: auto;
+  }
+}
 .add-plan__todo-label-dot {
   width: 6px;
   height: 6px;
@@ -1134,6 +1161,12 @@
   color: #1D2E5B;
   margin-left: 2px;
 }
+@media (min-width: 768px) {
+  .add-plan__todo-label {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 .add-plan__todo-flag-bosnia {
   width: 35px;
   height: 24px;
@@ -1142,6 +1175,16 @@
   background-position: center;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  .add-plan__todo-flag-bosnia {
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/flag-bosnia-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0px;
+  }
+}
 .add-plan__todo-flag-czech {
   width: 35px;
   height: 24px;
@@ -1149,4 +1192,14 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
+}
+@media (min-width: 768px) {
+  .add-plan__todo-flag-czech {
+    width: 70px;
+    height: 47px;
+    background-image: url("../img/flag-czech-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0px;
+  }
 }
