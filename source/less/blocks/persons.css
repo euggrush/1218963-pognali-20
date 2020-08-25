@@ -25,7 +25,8 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: auto;
     padding: 0px;
-    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .persons__avatar {
