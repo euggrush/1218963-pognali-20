@@ -98,6 +98,16 @@
 
 .my-profile__avatar {
   border-radius: 50px;
+  @media (min-width: @tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+    margin-top: -11px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 3px;
+
+  }
 }
 
 .my-profile__button {
@@ -226,6 +236,34 @@
   margin: 0 auto;
   margin-top: -9px;
   background-color: #CBCED9;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.my-profile__transport-title-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 112px;
+    height: 20px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background-color: #CBCED9;
+    margin-top: 33px;
+    margin-bottom: 0px;
+    margin-left: 95px;
+    margin-right: 0px;
+  }
 }
 
 .my-profile__transport-plane {

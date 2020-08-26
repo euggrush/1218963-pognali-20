@@ -595,7 +595,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: inline-block;
-    width: 415px;
+    width: 410px;
     height: 48px;
     font-size: 20px;
     line-height: 24px;
@@ -1001,7 +1001,7 @@
   .add-plan__item-two {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     min-width: 575px;
     min-height: 761px;
     border-radius: 30px;
@@ -1034,7 +1034,7 @@
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
     min-width: 575px;
     min-height: 883px;
-    margin-top: 0px;
+    margin-top: 65px;
     margin-bottom: 62px;
     margin-left: auto;
     margin-right: auto;
