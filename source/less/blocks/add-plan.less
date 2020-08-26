@@ -102,7 +102,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.9fr 0.9fr 0.3fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.9fr 0.9fr 0.3fr 1fr 1fr 0.5fr 0.5fr;
     min-width: 618px;
     min-height: 1437px;
     border-radius: 30px;
@@ -199,7 +199,7 @@
     grid-row-end: 4;
     min-width: 531px;
     min-height: 72px;
-    margin-top: 0px;
+    margin-top: -39px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -248,16 +248,16 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    margin-top: -10px;
+    grid-row-start: 2;
+    /* grid-row-end: 5; */
+    margin-top: 26px;
     margin-bottom: 0px;
-    margin-left: 40px;
+    margin-left: 75px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     color: #1D2E5B;
   }
 }
@@ -273,7 +273,7 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-row-start: 5;
-    grid-row-end: 8;
+    grid-row-end: 9;
   }
 }
 
@@ -298,13 +298,14 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    grid-row-start: 8;
+    grid-row-start: 9;
     width: 284px;
     height: 80px;
     background-image: url("../img/icon-btn-triangle.svg");
     background-repeat: no-repeat;
     background-position: 80%, 50%;
-    // grid-row-end: 8;
+    margin-top: -76px;
+    margin-left: 44px;
   }
 }
 
@@ -319,6 +320,8 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    min-height: 70px;
+    margin-top: 24px;
   }
 }
 
@@ -333,6 +336,8 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    min-height: 70px;
+    margin-top: 23px;
   }
 }
 
@@ -378,7 +383,8 @@
 
   @media (min-width: @tablet-width) {
     min-width: 532px;
-    margin-top: 0px;
+    min-height: 86px;
+    margin-top: -28px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -452,6 +458,13 @@
   color: #1D2E5B;
   opacity: 0.3;
   margin-left: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-left: 291px;
+  }
 }
 
 .add-plan__label-desc-dates {
@@ -466,6 +479,13 @@
   color: #1D2E5B;
   opacity: 0.3;
   margin-left: 60px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-left: 331px;
+  }
 }
 
 .add-plan__calendar-days {
@@ -477,7 +497,7 @@
   @media (min-width: @tablet-width) {
     min-width: 532px;
     min-height: 400px;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -521,6 +541,10 @@
   text-align: center;
   border: 1px solid #D6D9E6;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    height: 66px;
+  }
 }
 
 .add-plan__button-back {
