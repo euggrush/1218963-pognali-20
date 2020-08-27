@@ -29,7 +29,7 @@
   }
 }
 
-.page-header__nav {
+.page-header__nav-modal {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,11 @@
   text-align: center;
   text-transform: uppercase;
   min-width: 319px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    min-height: 910px;
+  }
 }
 
 .page-header__btn-wrap {
