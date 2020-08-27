@@ -33,7 +33,7 @@
 @media (min-width: 768px) {
   .page-header__nav-modal {
     position: absolute;
-    transform: translate(-100%, 0%);
+    transform: translate(0%, 0%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
@@ -108,7 +108,7 @@
   .page-header__social {
     grid-column-start: 1;
     grid-row-start: 6;
-    margin: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 129px;
   }
 }
 .page-header__link-fb {
