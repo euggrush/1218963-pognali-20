@@ -948,7 +948,7 @@
     transform: translate(3472%, 12%);
   }
 }
-.add-plan__country-wrapper {
+.add-plan__country-modal {
   position: absolute;
   width: 233px;
   min-height: 544px;
@@ -956,8 +956,26 @@
   border: solid 1px #CBCED9;
   border-radius: 4px;
 }
+@media (min-width: 768px) {
+  .add-plan__country-modal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    width: 575px;
+    min-height: 416px;
+    transform: translate(0%, 57%);
+  }
+}
 .add-plan__alphabet {
   border-collapse: collapse;
+}
+@media (min-width: 768px) {
+  .add-plan__alphabet {
+    width: 262px;
+    height: 346px;
+    margin: 38px auto auto 25px;
+  }
 }
 .add-plan__letters {
   width: 44px;
@@ -972,9 +990,21 @@
   text-transform: uppercase;
   color: #1D2E5B;
 }
+@media (min-width: 768px) {
+  .add-plan__letters {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 .add-plan__country-list {
   padding-top: 19px;
   padding-left: 19px;
+}
+@media (min-width: 768px) {
+  .add-plan__country-list {
+    padding-top: 34px;
+    padding-left: 8px;
+  }
 }
 .add-plan__country-item {
   display: block;
@@ -984,6 +1014,16 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .add-plan__country-item {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+  }
 }
 .add-plan__item-two {
   display: grid;
