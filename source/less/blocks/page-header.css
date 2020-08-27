@@ -20,6 +20,15 @@
     background-image: none;
   }
 }
+@media (min-width: 1440px) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #182044;
+    background-image: none;
+  }
+}
 .page-header__nav-modal {
   position: absolute;
   display: flex;
@@ -193,6 +202,9 @@
   height: 20px;
   margin-top: 22px;
   margin-left: 23px;
+  background-image: url(../img/logo-mobile-white@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .page-header__logo {
@@ -440,6 +452,11 @@
   border: none;
   margin-top: 23px;
   margin-right: 18px;
+}
+@media (min-width: 1440px) {
+  .page-header__close-button {
+    display: none;
+  }
 }
 .hidden {
   display: none;

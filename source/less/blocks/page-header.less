@@ -27,6 +27,14 @@
     // background-repeat: no-repeat;
     // background-position: 0px, 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #182044;
+    background-image: none;
+  }
 }
 
 .page-header__nav-modal {
@@ -205,6 +213,9 @@
   height: 20px;
   margin-top: 22px;
   margin-left: 23px;
+  background-image: url(../img/logo-mobile-white@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
     width: 166px;
@@ -455,6 +466,10 @@
   border: none;
   margin-top: 23px;
   margin-right: 18px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .hidden {

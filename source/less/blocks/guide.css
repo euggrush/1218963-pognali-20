@@ -17,6 +17,11 @@
     margin-top: -160px;
   }
 }
+@media (min-width: 1440px) {
+  .guide {
+    margin-top: 0px;
+  }
+}
 .guide__list {
   display: flex;
   flex-direction: column;
