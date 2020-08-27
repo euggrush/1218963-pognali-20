@@ -73,6 +73,16 @@
     margin-bottom: 0px;
     margin-left: 80px;
     margin-right: -36px;
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 }
 
@@ -181,6 +191,23 @@
     margin-left: -9px;
     margin-right: 0px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: inline-block;
+    width: 418px;
+    height: 210px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .page-header__logo-open {
@@ -226,6 +253,18 @@
     margin-top: 13px;
     margin-bottom: 0px;
     margin-left: -43px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 63px;
+    background-image: url(../img/logo-desktop-white@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -4px;
+    margin-bottom: 0px;
+    margin-left: 58px;
     margin-right: 0px;
   }
 }
@@ -404,6 +443,15 @@
     margin-left: -75px;
     margin-right: 0px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .page-header__controls-item:nth-child(1) {
@@ -419,6 +467,12 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .page-header__controls-item:nth-child(2) {
@@ -433,6 +487,12 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -469,6 +529,34 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.page-header__desktop-line {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px -38px;
+  }
+}
+
+.page-header__desktop-link {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
   }
 }
 
