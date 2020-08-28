@@ -27,7 +27,14 @@
 }
 @media (min-width: 1440px) {
   .about {
-    margin-top: 0px;
+    margin-top: -2px;
+    background-image: url(../img/background-about.png);
+    background-repeat: no-repeat;
+    background-position: 0px, 0px;
+    min-height: 731px;
+    background-color: #182044;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 .about__title {
@@ -51,6 +58,15 @@
     margin-bottom: 0px;
     margin-left: 24px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .about__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0px 0px 0px 0px;
   }
 }
 .about__quote {
@@ -81,6 +97,15 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .about__quote {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .about__slogan {
   display: inline-block;
   width: 202px;
@@ -107,5 +132,14 @@
     margin-bottom: 0px;
     margin-left: 24px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .about__slogan {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0px 0px 0px 0px;
   }
 }
