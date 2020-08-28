@@ -14,25 +14,36 @@
       <span class="text-hidden">Главная</span>
       <img class="form-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
       <img class="form-header__logo-tablet" src="img/logo-tablet.png" width="166" height="42" alt="Главная">
+      <img class="form-header__logo-desktop" src="img/logo-desktop-white.png" width="200" height="52" alt="Главная">
     </a>
     <button class="form-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <a class="form-header__btn-authorization" href="#">
-      Авторизация
-    </a>
+    <div class="form-header__btn-container">
+      <a class="form-header__btn-call" href="#">
+        <span class="visually-hidden">Позвонить</span>
+      </a>
+      <a class="form-header__btn-email" href="#">
+        <span class="visually-hidden">Отправить email</span>
+      </a>
+
+      <a class="form-header__btn-authorization" href="#">
+        Авторизация
+      </a>
+    </div>
 
     <a class="form-header__main-page-link" href="index.html">на главную</a>
 
-    <nav class="form-header__nav hidden">
-      <a class="form-header__nav-item" href="index.html">
+    <nav class="form-header__nav">
+      <div class="form-header__desktop-line"></div>
+      <a class="form-header__nav-item-service" href="index.html">
         О сервисе
       </a>
-      <a class="form-header__nav-item" href="form.html">
+      <a class="form-header__nav-item-directions" href="form.html">
         Направления
       </a>
-      <a class="form-header__nav-item" href="catalog.html">
+      <a class="form-header__nav-item-travelers" href="catalog.html">
         Попутчики
       </a>
     </nav>
@@ -58,7 +69,7 @@
 
       <section class="my-profile__tags">
         <span class="my-profile__tags-title">ТЭГИ</span>
-        <h3  class="my-profile__tags-text">#бургер #бар #футбол #концерт #крафт</h3>
+        <h3 class="my-profile__tags-text">#бургер #бар #футбол #концерт #крафт</h3>
       </section>
 
       <section class="my-profile__transport">
@@ -104,13 +115,13 @@
         <div class="add-plan__toggles">
           <button class="add-plan__toggle-button add-plan__toggle-button--current" type="button">
             <span class="text-hidden">1</span>
-            </button>
+          </button>
           <button class="add-plan__toggle-button" type="button">
             <span class="text-hidden">2</span>
-            </button>
+          </button>
           <button class="add-plan__toggle-button" type="button">
             <span class="text-hidden">3</span>
-            </button>
+          </button>
         </div>
       </header>
 
@@ -134,11 +145,11 @@
             <div class="add-plan__counter-person">
               <button type="button" class="add-plan__minus">
                 <span class="text-hidden">убрать человека</span>
-                </button>
+              </button>
               <input class="add-plan__search" type="text" id="add-plan__search" name="add-plan__search" placeholder="2">
               <button type="button" class="add-plan__plus">
                 <span class="text-hidden">добавить человека</span>
-                </button>
+              </button>
             </div>
           </div>
 
@@ -148,11 +159,11 @@
             <div class="add-plan__counter-date">
               <button type="button" class="add-plan__minus">
                 <span class="text-hidden">убрать день</span>
-                </button>
+              </button>
               <input class="add-plan__time" type="text" id="add-plan__time" name="add-plan__time" placeholder="2">
               <button type="button" class="add-plan__plus">
                 <span class="text-hidden">добавить день</span>
-                </button>
+              </button>
             </div>
           </div>
 
@@ -164,11 +175,12 @@
           <div class="add-plan__calendar">
             <div class="add-plan__input-wrapper">
               <button type="button" class="add-plan__left"><span class="text-hidden">лево</span></button>
-              <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date" placeholder="Март 2019">
+              <input class="add-plan__date" type="text" id="add-plan__date" name="add-plan__date"
+                placeholder="Март 2019">
               <button type="button" class="add-plan__right"><span class="text-hidden">право</span></button>
             </div>
 
-<!-- КАЛЕНДАРЬ -->
+            <!-- КАЛЕНДАРЬ -->
 
             <table class="add-plan__calendar-days">
               <tr>
@@ -330,46 +342,52 @@
                 <span class="add-plan__country-item">Армения</span>
               </div>
             </div>
-            </div>
+          </div>
 
-            <button class="add-plan__add-button">Добавить страну
-              <div class="add-plan__circle"></div>
-              <div class="add-plan__add-plus"></div>
-            </button>
+          <button class="add-plan__add-button">Добавить страну
+            <div class="add-plan__circle"></div>
+            <div class="add-plan__add-plus"></div>
+          </button>
 
           <button class="add-plan__btn-next-step-two" type="button">Следующий шаг</button>
-          <button class="add-plan__btn-back-step-two" type="button"><span class="add-plan__btn-back-text">На шаг назад</span></button>
+          <button class="add-plan__btn-back-step-two" type="button"><span class="add-plan__btn-back-text">На шаг
+              назад</span></button>
 
         </section>
 
-          <section class="add-plan__item-three">
-            <h3 class="add-plan__step-three">Шаг 3. Развлечения</h3>
-            <p class="add-plan__step-three-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной
-              форме и ставить тэги.</p>
+        <section class="add-plan__item-three">
+          <h3 class="add-plan__step-three">Шаг 3. Развлечения</h3>
+          <p class="add-plan__step-three-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+            свободной
+            форме и ставить тэги.</p>
 
-              <div class="add-plan__todo-container">
-                <div class="add-plan__border"></div>
-                <div class="add-plan__todo-wrap-one">
-                  <div class="add-plan__todo-label-wrap">
-                    <!-- <div class="add-plan__todo-label-dot"></div> -->
-                    <label class="add-plan__todo-label" for="todo">Босния и Герцеговина</label>
-                    <div class="add-plan__todo-flag-bosnia"></div>
-                  </div>
-                <textarea class="add-plan__todo" name="todo" id="todo" cols="30" rows="10" placeholder="План действий"></textarea>
-                </div>
-
-                <div class="add-plan__todo-wrap-two">
-                  <div class="add-plan__todo-label-wrap">
-                    <!-- <div class="add-plan__todo-label-dot"></div> -->
-                    <label class="add-plan__todo-label" for="add-plan__todo">Чехия</label>
-                    <div class="add-plan__todo-flag-czech"></div>
-                  </div>
-                <textarea class="add-plan__todo" name="todo" id="todo" cols="30" rows="10" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
-                </div>
+          <div class="add-plan__todo-container">
+            <div class="add-plan__border"></div>
+            <div class="add-plan__todo-wrap-one">
+              <div class="add-plan__todo-label-wrap">
+                <!-- <div class="add-plan__todo-label-dot"></div> -->
+                <label class="add-plan__todo-label" for="todo">Босния и Герцеговина</label>
+                <div class="add-plan__todo-flag-bosnia"></div>
               </div>
-            <button class="add-plan__submit-button" type="submit"><span class="add-plan__submit-btn-text">Отправить</span></button>
-            <button class="add-plan__btn-back-step-three" type="button"><span class="add-plan__btn-back-text">На шаг назад</span></button>
-          </section>
+              <textarea class="add-plan__todo" name="todo" id="todo" cols="30" rows="10"
+                placeholder="План действий"></textarea>
+            </div>
+
+            <div class="add-plan__todo-wrap-two">
+              <div class="add-plan__todo-label-wrap">
+                <!-- <div class="add-plan__todo-label-dot"></div> -->
+                <label class="add-plan__todo-label" for="add-plan__todo">Чехия</label>
+                <div class="add-plan__todo-flag-czech"></div>
+              </div>
+              <textarea class="add-plan__todo" name="todo" id="todo" cols="30" rows="10"
+                placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+            </div>
+          </div>
+          <button class="add-plan__submit-button" type="submit"><span
+              class="add-plan__submit-btn-text">Отправить</span></button>
+          <button class="add-plan__btn-back-step-three" type="button"><span class="add-plan__btn-back-text">На шаг
+              назад</span></button>
+        </section>
       </form>
     </section>
 
