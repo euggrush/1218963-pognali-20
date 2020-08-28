@@ -16,6 +16,20 @@
     border-bottom-right-radius: 60px;
   }
 }
+@media (min-width: 1440px) {
+  .map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 260px;
+    padding: 0px 135px 0px 283px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .map__address {
   display: flex;
   align-items: center;
@@ -31,6 +45,15 @@
     margin-top: 150px;
     margin-bottom: 0px;
     margin-left: 65px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .map__address {
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
     margin-right: 0px;
   }
 }
@@ -50,6 +73,12 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .map__icon {
+    width: 90px;
+    height: 90px;
   }
 }
 .map__text {
@@ -79,6 +108,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .map__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 .map__button {
   width: 270px;
   height: 62px;
@@ -100,6 +137,17 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .map__button {
+    width: 324px;
+    height: 80px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .map__btn-text {
