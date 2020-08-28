@@ -66,7 +66,7 @@
     font-weight: bold;
     font-size: 45px;
     line-height: 45px;
-    margin: 0px 0px 0px 0px;
+    margin: 109px 0px 0px 81px;
   }
 }
 .about__quote {
@@ -99,11 +99,14 @@
 }
 @media (min-width: 1440px) {
   .about__quote {
+    display: inline-block;
+    width: 619px;
+    height: 102px;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
     line-height: 34px;
-    margin: 0px 0px 0px 0px;
+    margin: 60px 0px 0px 84px;
   }
 }
 .about__slogan {
@@ -136,10 +139,56 @@
 }
 @media (min-width: 1440px) {
   .about__slogan {
+    width: 425px;
+    height: 48px;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 24px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 38px 0px 0px 129px;
+  }
+}
+.about__btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about__btn {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .about__btn {
+    display: block;
+    width: 274px;
+    height: 80px;
+    background-color: #FFD74B;
+    background-image: url(../img/icon-btn-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: 87%, 50%;
+    border-radius: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 87px 0px 0px 130px;
+  }
+}
+.about__btn-text {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about__btn-text {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .about__btn-text {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 78px;
+    color: #1D2E5B;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 33px;
   }
 }
