@@ -23,6 +23,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 0px;
+    background-image: none;
   }
 
 }
@@ -43,6 +44,18 @@
     grid-template-rows: 1fr 1fr;
     width: 689px;
     height: 280px;
+    margin-top: 212px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1330px;
+    height: 107px;
     margin-top: 212px;
     margin-bottom: 0px;
     margin-right: auto;
@@ -78,6 +91,16 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:nth-child(2) {
@@ -86,6 +109,16 @@
   background-color: #FFA530;
 
   @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-row-start: 1;
     height: auto;
@@ -110,6 +143,16 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .guide__item:last-child {
@@ -120,6 +163,16 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 2;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 4;
+    grid-row-start: 1;
     height: auto;
     margin-top: 0px;
     margin-bottom: 0px;
