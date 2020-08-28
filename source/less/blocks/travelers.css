@@ -25,6 +25,16 @@
     padding-left: 74px;
   }
 }
+@media (min-width: 1440px) {
+  .travelers {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 852px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .travelers__title {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -49,6 +59,14 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 }
 .travelers__quote {
@@ -81,6 +99,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .travelers__quote {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .travelers__slogan {
   display: inline-block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -111,6 +137,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .travelers__slogan {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .travelers__item {
   display: flex;
   flex-direction: column;
@@ -131,6 +165,15 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__item {
+    grid-column-start: auto;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 }
 .travelers__preferences {
@@ -169,6 +212,14 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__button {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 }
 .travelers__btn-text {
