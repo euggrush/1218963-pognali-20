@@ -28,6 +28,8 @@
     background-color: #182044;
     background-image: url(../img/bg-desktop.png);
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
   }
 }
 .page-header__nav-modal {
