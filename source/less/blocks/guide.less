@@ -3,16 +3,13 @@
 @mobile-width-only: 320px;
 
 .guide {
-
-  @media (min-width: @mobile-width-only) {
-    display: flex;
-    flex-direction: column;
-    min-height: 555px;
-    background-color: #161C35;
-    color: #FFFFFF;
-    border: solid 1px transparent;
-    margin-top: -97px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 555px;
+  background-color: #161C35;
+  color: #FFFFFF;
+  border: solid 1px transparent;
+  margin-top: -97px;
 
   @media (min-width: @tablet-width) {
     background-image: url(../img/bg-tablet.png);
@@ -22,7 +19,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -557px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 750px;
+    margin-top: -750px;
     background-image: none;
     background-color: transparent;
     position: relative;
@@ -59,7 +60,7 @@
     grid-template-rows: 1fr;
     width: 1330px;
     height: 107px;
-    margin-top: 212px;
+    margin-top: 116px;
     margin-bottom: 0px;
     margin-right: auto;
     margin-left: auto;
@@ -245,10 +246,10 @@
     font-weight: 300;
     font-size: 28px;
     line-height: 32px;
-    margin-top: 0px;
+    margin-top: 216px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 80px;
   }
 }
 
@@ -288,9 +289,9 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 24px;
-    margin-top: 0px;
+    margin-top: 47px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 98px;
   }
 }

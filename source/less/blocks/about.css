@@ -25,6 +25,11 @@
     border-bottom-right-radius: 60px;
   }
 }
+@media (min-width: 1440px) {
+  .about {
+    margin-top: 0px;
+  }
+}
 .about__title {
   color: #FF8D30;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;

@@ -4,18 +4,16 @@
 
 
 .page-header {
-
-  @media (min-width: @mobile-width-only) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-height: 568px;
-    color: #ffffff;
-    background-color: #161C35;
-    background-image: url(../img/bg-mobile.png);
-    background-repeat: no-repeat;
-    border: solid 1px transparent;
-  }
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 320px;
+  min-height: 568px;
+  color: #ffffff;
+  background-color: #161C35;
+  background-image: url(../img/bg-mobile.png);
+  background-repeat: no-repeat;
+  border: solid 1px transparent;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -32,6 +30,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 750px;
     background-color: #182044;
     background-image: url(../img/bg-desktop.png);
     background-repeat: no-repeat;
@@ -83,7 +82,7 @@
       grid-row-start: 1;
       display: flex;
       justify-content: flex-start;
-      margin-top: 0px;
+      margin-top: -37px;
       margin-bottom: 0px;
       margin-left: 0px;
       margin-right: 0px;
@@ -208,7 +207,7 @@
     font-size: 60px;
     line-height: 70px;
     text-align: left;
-    margin-top: 43px;
+    margin-top: -130px;
     margin-bottom: 0px;
     margin-left: 127px;
     margin-right: 0px;
@@ -453,7 +452,7 @@
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
-    margin-top: 45px;
+    margin-top: 49px;
     margin-bottom: 0px;
     margin-left: 73px;
     margin-right: 0px;
