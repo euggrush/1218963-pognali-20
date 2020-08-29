@@ -46,9 +46,10 @@
 @media (min-width: 1440px) {
   .form-header__logo-link {
     grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 29px 0px 0px 60px;
   }
 }
 .form-header__logo {
@@ -150,6 +151,7 @@
     align-items: center;
     width: 290px;
     height: 52px;
+    margin: 49px 0px 0px 131px;
   }
 }
 .form-header__btn-call {
@@ -282,6 +284,8 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 124px 0px 0px 124px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .form-header__title-underline {
@@ -320,10 +324,11 @@
     grid-row-end: 2;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     width: 500px;
     height: 25px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 63px 0px 0px 60px;
   }
 }
 .form-header__desktop-line {
@@ -350,7 +355,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 45px;
   }
 }
 .form-header__nav-item-directions {
@@ -372,7 +377,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 34px;
   }
 }
 .form-header__nav-item-travelers {
@@ -394,6 +399,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 34px;
   }
 }
