@@ -31,6 +31,8 @@
     grid-template-rows: 1fr 2fr;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    position: relative;
+    z-index: 9;
   }
 }
 @media (min-width: 768px) {
