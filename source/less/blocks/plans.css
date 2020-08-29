@@ -31,6 +31,7 @@
   .plans {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     min-height: 383px;
     margin-top: -27px;
     margin-bottom: 0px;
@@ -67,9 +68,9 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: -2px;
+    margin-bottom: 35px;
+    margin-left: 7px;
     margin-right: 0px;
   }
 }
@@ -105,10 +106,11 @@
 @media (min-width: 1440px) {
   .plans__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    align-self: flex-start;
     width: 1258px;
-    height: 97px;
+    min-height: 97px;
     margin-top: 15px;
     margin-bottom: 0px;
     margin-left: 0px;
