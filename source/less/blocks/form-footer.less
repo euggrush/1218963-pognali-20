@@ -26,6 +26,13 @@
     position: relative;
     z-index: 12;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .form-footer__logo {
@@ -41,6 +48,26 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.form-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 67px;
+    margin-right: 0px;
   }
 }
 
@@ -74,6 +101,13 @@
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 33px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 4px;
+  }
 }
 
 .form-footer__copyright {
@@ -88,6 +122,13 @@
     margin-left: 36px;
     margin-right: 0px;
     padding: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 240px;
+    margin-right: 0px;
   }
 }
 
