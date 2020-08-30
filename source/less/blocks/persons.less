@@ -15,9 +15,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0px 0px 0px 0px;
+    margin: -845px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-
+    position: relative;
+    z-index: 9;
     border: solid 1px red;
   }
 }
@@ -46,6 +47,16 @@
   margin-top: 10px;
   margin-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
 }
 
 .persons__avatar {
@@ -59,7 +70,6 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
-    // grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
     margin-top: 36px;
@@ -70,6 +80,15 @@
     height: 190px;
     border-radius: 20px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
 }
 
 .persons__name {
@@ -100,6 +119,15 @@
     margin-left: 30px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
 }
 
 .persons__dot {
@@ -120,6 +148,15 @@
     margin-left: 12px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      }
 }
 
 .persons__rating {
@@ -153,6 +190,15 @@
     margin-left: -32px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
 }
 
 .persons__hobby {
@@ -183,6 +229,15 @@
     margin-left: 33px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
 }
 
 .persons__about-list {
@@ -206,8 +261,22 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      }
 }
 
 .persons__about-item:nth-child(1) {
@@ -225,6 +294,18 @@
     margin-right: 0px;
     order: 3;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px 0px 0px 0px;
+      }
 }
 
 .persons__about-item:nth-child(2) {
@@ -241,6 +322,18 @@
     margin-left: 0px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px 0px 0px 0px;
+      }
 }
 
 .persons__about-item:nth-child(3) {
@@ -257,6 +350,18 @@
     margin-left: 50px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px 0px 0px 0px;
+      }
 }
 
 .persons__button {
@@ -281,6 +386,15 @@
     margin-left: 26px;
     margin-right: 0px;
     }
+
+    @media (min-width: @desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      }
 }
 
 .persons__btn-text {
@@ -313,7 +427,6 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 170px;
-  // min-height: 85px;
   align-items: center;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -330,6 +443,19 @@
     min-width: 465px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-width: 159px;
+    width: 159px;
+    align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -465,6 +591,15 @@
     display: flex;
     flex-direction: column;
     margin-top: 34px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
