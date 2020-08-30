@@ -22,6 +22,14 @@
     z-index: 9;
   }
 }
+@media (min-width: 1440px) {
+  .filter-toggle {
+    width: auto;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .filter-toggle__btn-wrap {
   display: flex;
   justify-content: space-between;
