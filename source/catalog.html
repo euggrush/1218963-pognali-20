@@ -10,21 +10,40 @@
 
 <body class="page-body">
   <header class="catalog-header">
-    <a href="index.html" class="catalog--header__link">
+    <a href="index.html" class="catalog-header__logo-link">
       <span class="visually-hidden">Главная</span>
       <img class="catalog-header__logo" src="img/logo-mobile.svg" width="96" height="15" alt="Главная">
+      <img class="catalog-header__logo-tablet" src="img/logo-tablet.png" width="166" height="42" alt="Главная">
+      <img class="catalog-header__logo-desktop" src="img/logo-desktop-white.png" width="200" height="52" alt="Главная">
     </a>
     <button class="catalog-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="catalog-header__nav hidden">
-      <a class="catalog-header__nav-item" href="index.html">
+
+    <div class="catalog-header__btn-container">
+      <a class="catalog-header__btn-call" href="#">
+        <span class="visually-hidden">Позвонить</span>
+      </a>
+      <a class="catalog-header__btn-email" href="#">
+        <span class="visually-hidden">Отправить email</span>
+      </a>
+
+      <a class="catalog-header__btn-authorization" href="#">
+        Авторизация
+      </a>
+    </div>
+
+    <a class="catalog-header__main-page-link" href="index.html">на главную</a>
+
+    <nav class="catalog-header__nav">
+      <div class="catalog-header__desktop-line"></div>
+      <a class="catalog-header__nav-service" href="index.html">
         О сервисе
       </a>
-      <a class="catalog-header__nav-item" href="form.html">
+      <a class="catalog-header__nav-directions" href="form.html">
         Направления
       </a>
-      <a class="catalog-header__nav-item" href="catalog.html">
+      <a class="catalog-header__nav-travelers" href="catalog.html">
         Попутчики
       </a>
     </nav>
@@ -41,72 +60,84 @@
       <div class="filter-toggle__btn-wrap">
         <div class="filter-toggle__icon"></div>
         <h3 class="filter-toggle__title">Фильтрация по странам</h3>
-        <button class="filter-toggle__button"><span class="text-hidden">Открыть</span></button>
-      </div>
-
-      <section class="filter-toggle__modal hidden">
         <span class="filter-toggle__country-title">Европа</span>
         <span class="filter-toggle__country-title">Азия</span>
         <span class="filter-toggle__country-title">америка</span>
         <span class="filter-toggle__country-title">острова</span>
-        <table class="filter-toggle__alphabet">
-          <tr>
-            <td class="filter-toggle__letters">а</td>
-            <td class="filter-toggle__letters">б</td>
-            <td class="filter-toggle__letters">в</td>
-            <td class="filter-toggle__letters">г</td>
-            <td class="filter-toggle__letters">д</td>
-          </tr>
 
-          <tr>
-            <td class="filter-toggle__letters">е</td>
-            <td class="filter-toggle__letters">з</td>
-            <td class="filter-toggle__letters">и</td>
-            <td class="filter-toggle__letters">к</td>
-            <td class="filter-toggle__letters">л</td>
-          </tr>
-
-          <tr>
-            <td class="filter-toggle__letters">м</td>
-            <td class="filter-toggle__letters">н</td>
-            <td class="filter-toggle__letters">о</td>
-            <td class="filter-toggle__letters">п</td>
-            <td class="filter-toggle__letters">р</td>
-          </tr>
-
-          <tr>
-            <td class="filter-toggle__letters">с</td>
-            <td class="filter-toggle__letters">т</td>
-            <td class="filter-toggle__letters">у</td>
-            <td class="filter-toggle__letters">ф</td>
-            <td class="filter-toggle__letters">х</td>
-          </tr>
-
-          <tr>
-            <td class="filter-toggle__letters">ч</td>
-            <td class="filter-toggle__letters">ш</td>
-            <td class="filter-toggle__letters">э</td>
-            <td class="filter-toggle__letters">ю</td>
-            <td class="filter-toggle__letters">я</td>
-          </tr>
-
-        </table>
-        <div class="filter-toggle__country-list">
-          <span class="filter-toggle__country-item">Австралия</span>
-          <span class="filter-toggle__country-item">Австрия</span>
-          <span class="filter-toggle__country-item">Азербайджан</span>
-          <span class="filter-toggle__country-item">Албания</span>
-          <span class="filter-toggle__country-item">Алжир</span>
-          <span class="filter-toggle__country-item">Ангола</span>
-          <span class="filter-toggle__country-item">Андорра</span>
-          <span class="filter-toggle__country-item">Антигуа и Барбуда</span>
-          <span class="filter-toggle__country-item">Аргентина</span>
-          <span class="filter-toggle__country-item">Армения</span>
-          <span class="filter-toggle__country-item">Афганистан</span>
-        </div>
-        <button class="filter-toggle__close" type="button">Свернуть</button>
-      </section>
+        <button class="filter-toggle__button">
+          <span class="text-hidden">Открыть</span>
+          <span class="filter-toggle__btn-more">показать все</span>
+        </button>
+      </div>
     </section>
+
+<!-- ФИЛЬТ МОДАЛЬНОЕ ОКНО -->
+
+<section class="filter-modal hidden">
+  <span class="filter-modal__country-title">Европа</span>
+  <span class="filter-modal__country-title">Азия</span>
+  <span class="filter-modal__country-title">америка</span>
+  <span class="filter-modal__country-title">острова</span>
+
+  <table class="filter-modal__alphabet">
+    <tr>
+      <td class="filter-modal__letters">а</td>
+      <td class="filter-modal__letters">б</td>
+      <td class="filter-modal__letters">в</td>
+      <td class="filter-modal__letters">г</td>
+      <td class="filter-modal__letters">д</td>
+    </tr>
+
+    <tr>
+      <td class="filter-modal__letters">е</td>
+      <td class="filter-modal__letters">з</td>
+      <td class="filter-modal__letters">и</td>
+      <td class="filter-modal__letters">к</td>
+      <td class="filter-modal__letters">л</td>
+    </tr>
+
+    <tr>
+      <td class="filter-modal__letters">м</td>
+      <td class="filter-modal__letters">н</td>
+      <td class="filter-modal__letters">о</td>
+      <td class="filter-modal__letters">п</td>
+      <td class="filter-modal__letters">р</td>
+    </tr>
+
+    <tr>
+      <td class="filter-modal__letters">с</td>
+      <td class="filter-modal__letters">т</td>
+      <td class="filter-modal__letters">у</td>
+      <td class="filter-modal__letters">ф</td>
+      <td class="filter-modal__letters">х</td>
+    </tr>
+
+    <tr>
+      <td class="filter-modal__letters">ч</td>
+      <td class="filter-modal__letters">ш</td>
+      <td class="filter-modal__letters">э</td>
+      <td class="filter-modal__letters">ю</td>
+      <td class="filter-modal__letters">я</td>
+    </tr>
+
+  </table>
+  <div class="filter-modal__country-list">
+    <span class="filter-modal__country-item">Австралия</span>
+    <span class="filter-modal__country-item">Австрия</span>
+    <span class="filter-modal__country-item">Азербайджан</span>
+    <span class="filter-modal__country-item">Албания</span>
+    <span class="filter-modal__country-item">Алжир</span>
+    <span class="filter-modal__country-item">Ангола</span>
+    <span class="filter-modal__country-item">Андорра</span>
+    <span class="filter-modal__country-item">Антигуа и Барбуда</span>
+    <span class="filter-modal__country-item">Аргентина</span>
+    <span class="filter-modal__country-item">Армения</span>
+    <span class="filter-modal__country-item">Афганистан</span>
+  </div>
+  <button class="filter-modal__close" type="button">Свернуть</button>
+  <button class="filter-modal__close-tablet" type="button">Свернуть</button>
+</section>
 
 <!-- БЛОК ФИЛЬТР ПОДБОРА ПОПУТЧИКА -->
 
@@ -119,9 +150,29 @@
         <span class="filter__item-title">хобби</span>
         <button class="filter__toggle-btn" type="button"></button>
       </div>
-      <fieldset class="filter__sort">
-
-      </fieldset>
+      <div class="filter__sort">
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Спортзал
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Кальян
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-off"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Диван
+          </label>
+        </div>
+      </div>
     </section>
 
     <section class="filter__item">
@@ -129,7 +180,7 @@
         <span class="filter__item-title">музыка</span>
         <button class="filter__toggle-btn" type="button"></button>
       </div>
-      <fieldset class="filter__sort">
+      <div class="filter__sort">
         <div class="filter__checkbox-wrap">
           <div class="filter__check-on"></div>
           <label class="filter__checkbox-level">
@@ -151,7 +202,7 @@
             Евроденс
           </label>
         </div>
-      </fieldset>
+      </div>
     </section>
 
     <section class="filter__item">
@@ -159,9 +210,29 @@
         <span class="filter__item-title">еда</span>
         <button class="filter__toggle-btn" type="button"></button>
       </div>
-      <fieldset class="filter__sort">
-
-      </fieldset>
+      <div class="filter__sort">
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Мясоед
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-on"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Сидит на ПП
+          </label>
+        </div>
+        <div class="filter__checkbox-wrap">
+          <div class="filter__check-off"></div>
+          <label class="filter__checkbox-level">
+            <input class="filter__checkbox" type="checkbox">
+            Веган-сыроед
+          </label>
+        </div>
+      </div>
     </section>
 
     <section class="filter__item filter__item-transport">
@@ -169,7 +240,7 @@
         <span class="filter__item-title">транспорт</span>
       <button class="filter__toggle-btn" type="button"></button>
       </div>
-      <fieldset class="filter__sort">
+      <div class="filter__sort">
         <input class="filter__checkbox" type="checkbox" id="input-plane" name="input-plane" value="input-plane">
         <label for="input-plane" class="filter__btn-plane" type="radio"> <span class="text-hidden">самолет</span></label>
 
@@ -181,22 +252,22 @@
 
         <input class="filter__checkbox" type="checkbox" id="input-run" name="input-run" value="input-run">
         <label for="input-run" class="filter__btn-run" type="radio"><span class="text-hidden">пешком</span></label>
-    </fieldset>
+    </div>
     </section>
 
-    <section class="filter__item">
+    <section class="filter__item filter__item-range">
       <div class="filter__item-wrap">
         <span class="filter__item-title">Левел</span>
         <button class="filter__toggle-btn" type="button"></button>
       </div>
 
-      <fieldset class="filter__sort">
+      <div class="filter__sort">
         <div class="filter__range-wrap">
           <input class="filter__range-input" type="text" placeholder="30">
           <input class="filter__range-input" type="text" placeholder="100">
         </div>
         <input class="filter__range" type="range" min="30" max="100">
-      </fieldset>
+      </div>
     </section>
 
     <button class="filter__button" type="submit">показать</button>
@@ -350,12 +421,14 @@
       <section class="persons__controls">
         <button class="persons__btn-more">показать еще</button>
         <div class="persons__controls-wrap">
-          <button class="persons__btn-prev" type="button">
-            <span class="text-hidden">лево</span>
-          </button>
-          <button class="persons__btn-next" type="button">
-            <span class="text-hidden">право</span>
-          </button>
+          <button class="persons__breadcrumbs-btn">1</button>
+          <button class="persons__breadcrumbs-btn">2</button>
+          <button class="persons__breadcrumbs-btn">3</button>
+          <button class="persons__breadcrumbs-btn">4</button>
+
+          <button class="persons__btn-prev" type="button"><span class="text-hidden">лево</span></button>
+          <button class="persons__btn-next" type="button"><span class="text-hidden">право</span></button>
+
         </div>
       </section>
     </section>
@@ -368,6 +441,8 @@
     <a class="catalog-footer__contacts">
       <span class="text-hidden">Главная</span>
       <img class="catalog-footer__logo" src="img/logo-mobile-footer.svg" width="96" height="15" alt="Главная">
+      <img class="catalog-footer__logo-tablet" src="img/logo-footer-tablet.png" width="164" height="42" alt="Главная">
+      <img class="catalog-footer__logo-desktop" src="img/logo-desktop-white@1x.png" width="200" height="55" alt="Главная">
     </a>
     <div class="catalog-footer__social">
       <a class="catalog-footer__link" href="https://www.facebook.com/htmlacademy">

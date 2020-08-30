@@ -1,9 +1,21 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
 .filter {
   margin-top: -35px;
   margin-bottom: 0px;
   background-color: #E5E5E5;
   padding-top: 36px;
   min-height: 662px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 1094px;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
 }
 
 .filter__form {
@@ -19,6 +31,24 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 636px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-width: 285px;
+    width: 285px;
+    min-height: 814px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .filter__button {
@@ -37,6 +67,29 @@
   align-self: center;
   border: none;
   margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    min-width: 617px;
+    height: 50px;
+    margin-top: 65px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 194px;
+    width: 194px;
+    height: 49px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .filter__title {
@@ -49,19 +102,80 @@
   color: #1D2E5B;
   margin-top: 23px;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin-top: 34px;
+    margin-bottom: 39px;
+    margin-left: 8px;
+    margin-right: 0px;
+    border-bottom: solid 1px #F3C72B;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .filter__item {
   border-top: solid 1px #F3C72B;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 9px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .filter__item-transport {
   margin-bottom: 20px;
 }
 
+.filter__item-transport > .filter__sort {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .filter__item-wrap {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 190px;
+  }
 }
 
 .filter__item-title {
@@ -74,6 +188,29 @@
   color: #1D2E5B;
   margin-top: 11px;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 58px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .filter__toggle-btn {
@@ -84,10 +221,17 @@
   background-position: center;
   border: none;
   background-color: transparent;
-  // transform: rotate(180deg);
   background-size: 10px 6px;
   margin-top: 10px;
   margin-right: -7px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .filter__sort {
@@ -99,6 +243,25 @@
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .filter__sort label {
@@ -196,15 +359,57 @@
   border-top-right-radius: 4px;
 }
 
+.filter__item-range {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -28px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.filter__item-range .filter__sort {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 500px;
+  }
+}
+
 .filter__range {
   width: 100%;
   margin-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    order: 2;
+  }
 }
 
 .filter__range-wrap {
   display: flex;
   margin-top: 2px;
   margin-left: -3px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    width: 148px;
+    height: 46px;
+  }
 }
 
 .filter__checkbox-wrap {
@@ -212,6 +417,11 @@
   margin-top: 11px;
   margin-bottom: 10px;
   margin-left: -4px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: auto;
+    grid-row-start: auto;
+  }
 }
 
 .filter__checkbox-wrap:last-child {
@@ -247,4 +457,19 @@
   color: #000000;
   margin-top: -7px;
   margin-left: 9px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }

@@ -4,3 +4,22 @@
   min-height: 424px;
   margin-top: 0px;
 }
+@media (min-width: 768px) {
+  .location {
+    min-height: 581px;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .location {
+    width: 1440px;
+    height: 584px;
+    background-image: url(../img/bg-map-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

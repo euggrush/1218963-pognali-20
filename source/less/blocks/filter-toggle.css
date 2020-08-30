@@ -8,10 +8,44 @@
   background-color: #E2E5F2;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
+  z-index: 9;
+}
+@media (min-width: 768px) {
+  .filter-toggle {
+    margin-top: -40px;
+    min-width: 768px;
+    min-height: 182px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    position: relative;
+    z-index: 9;
+  }
+}
+@media (min-width: 1440px) {
+  .filter-toggle {
+    width: auto;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 .filter-toggle__btn-wrap {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .filter-toggle__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 39px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 72px;
+    padding-right: 52px;
+  }
 }
 .filter-toggle__title {
   font-style: normal;
@@ -24,6 +58,44 @@
   margin-top: 25px;
   margin-left: -17px;
 }
+@media (min-width: 768px) {
+  .filter-toggle__title {
+    display: none;
+  }
+}
+.filter-toggle__country-title {
+  display: none;
+}
+@media (min-width: 768px) {
+  .filter-toggle__country-title {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    cursor: pointer;
+  }
+}
+.filter-toggle__btn-more {
+  display: none;
+}
+@media (min-width: 768px) {
+  .filter-toggle__btn-more {
+    display: inline-block;
+    width: 217px;
+    height: 23px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+}
 .filter-toggle__button {
   width: 19px;
   height: 5px;
@@ -34,6 +106,24 @@
   margin-top: 24px;
   margin-right: 27px;
 }
+@media (min-width: 768px) {
+  .filter-toggle__button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 45px;
+    background-image: url(../img/filter-toggle-expand-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: 90%, 50%;
+    background-color: transparent;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+}
 .filter-toggle__icon {
   width: 15px;
   height: 10px;
@@ -43,83 +133,8 @@
   margin-top: 24px;
   margin-left: 24px;
 }
-.filter-toggle__modal {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding-top: 31px;
-  padding-bottom: 25px;
-  position: absolute;
-  transform: translate(0%, 54%);
-  flex-direction: column;
-  width: 320px;
-  min-height: 650px;
-  background-color: #E2E5F2;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border: solid 1px transparent;
-}
-.filter-toggle__country-title {
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 4px;
-  text-transform: uppercase;
-  color: #192144;
-  margin-left: 50px;
-}
-.filter-toggle__alphabet {
-  width: 220px;
-  border-collapse: collapse;
-  margin: 0 auto;
-}
-.filter-toggle__letters {
-  width: 40px;
-  height: 38px;
-  border: 1px solid #CBCED9;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #1D2E5B;
-  background-color: #FFFFFF;
-}
-.filter-toggle__country-list {
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #444444;
-  margin-top: 0px;
-  margin-bottom: 14px;
-  margin-left: 52px;
-  border: solid 1px transparent;
-}
-.filter-toggle__country-item {
-  display: block;
-}
-.filter-toggle__close {
-  width: 270px;
-  height: 39px;
-  background-color: #D6DAED;
-  border-radius: 20px;
-  text-align: center;
-  align-self: center;
-  border: transparent;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #192144;
-  background-image: url("../img/filter-toggle-close.svg");
-  background-repeat: no-repeat;
-  background-position: 30% 50%;
+@media (min-width: 768px) {
+  .filter-toggle__icon {
+    display: none;
+  }
 }
