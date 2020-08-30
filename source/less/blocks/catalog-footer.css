@@ -22,6 +22,14 @@
     border-top-right-radius: 60px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .catalog-footer__logo {
   margin-top: 10px;
 }
@@ -36,6 +44,28 @@
 @media (min-width: 768px) {
   .catalog-footer__logo-tablet {
     display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-footer__logo-tablet {
+    display: none;
+  }
+}
+.catalog-footer__logo-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .catalog-footer__logo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-footer__logo-desktop {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 67px;
+    margin-right: 0px;
   }
 }
 .catalog-footer__contacts {
@@ -70,6 +100,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-footer__social {
+    margin-top: 33px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 4px;
+  }
+}
 .catalog-footer__copyright {
   padding-left: 23px;
 }
@@ -83,6 +121,14 @@
     margin-left: 36px;
     margin-right: 0px;
     padding: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-footer__copyright {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 240px;
+    margin-right: 0px;
   }
 }
 .catalog-footer__link {
