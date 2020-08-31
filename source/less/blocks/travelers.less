@@ -26,6 +26,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     margin-top: -50px;
+    padding-top: 125px;
     padding-left: 74px;
   }
 
@@ -173,13 +174,9 @@
   border-radius: 10px;
 
   @media (min-width: @tablet-width) {
-    grid-column-start: auto;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    margin-top: -90px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 285px;
+    height: 483px;
+    border-radius: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -192,6 +189,17 @@
 }
 
 .travelers__item-left {
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin-top: -36px;
+    margin-bottom: 0px;
+    margin-left: -1px;
+    margin-right: 0px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -203,6 +211,17 @@
 }
 
 .travelers__item-right {
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    margin-top: -35px;
+    margin-bottom: 0px;
+    margin-left: -12px;
+    margin-right: 0px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -251,6 +270,7 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    background-position: 95% 52%;
   }
 
   @media (min-width: @desktop-width) {
@@ -273,6 +293,15 @@
   color: #1D2E5B;
   margin-left: 24px;
 
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 77px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 34px;
+  }
+
   @media (min-width: @desktop-width) {
     font-style: normal;
     font-weight: bold;
@@ -292,6 +321,15 @@
   color: #1D2E5B;
   margin-top: 11px;
   margin-left: -25px;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+    padding: 0px 0px 0px 0px;
+    margin: 17px 0px 0px -26px;
+  }
 
   @media (min-width: @desktop-width) {
     font-style: normal;
@@ -332,6 +370,16 @@
   margin-right: 40px;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
+  }
+
   @media (min-width: @desktop-width) {
     font-style: normal;
     font-weight: normal;
@@ -357,6 +405,11 @@
   background-image: url("../img/travelers-level-firsova.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+
+  @media (min-width: @tablet-width) {
+    transform: translate(-151%, 34%);
+  }
 }
 
 .travelers__level-demin {
@@ -373,6 +426,10 @@
   background-image: url("../img/travelers-level-demin.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    transform: translate(-151%, 34%);
+  }
 }
 
 // .travelers__level-number {
@@ -403,6 +460,17 @@
 // }
 
 .travelers__avatar {
+
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    height: 284px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 285px;
     height: 284px;
@@ -417,6 +485,11 @@
   width: 125px;
   margin-top: 15px;
   margin-left: 0px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 26px 0px 0px 0px;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0px 0px 0px 0px;
