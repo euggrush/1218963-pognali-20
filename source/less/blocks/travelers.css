@@ -29,8 +29,8 @@
   .travelers {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    min-height: 852px;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    min-height: 809px;
     padding: 0px 0px 0px 0px;
     margin: -60px 0px 0px 0px;
   }
@@ -64,9 +64,11 @@
 @media (min-width: 1440px) {
   .travelers__title {
     grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
+    grid-row-end: 3;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 185px 0px 0px 126px;
   }
 }
 .travelers__quote {
@@ -103,8 +105,14 @@
   .travelers__quote {
     grid-column-start: 1;
     grid-row-start: 2;
+    display: inline-block;
+    width: 427px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 58px 0px 0px 128px;
   }
 }
 .travelers__slogan {
@@ -141,8 +149,15 @@
   .travelers__slogan {
     grid-column-start: 1;
     grid-row-start: 3;
+    display: inline-block;
+    width: 260px;
+    height: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -2px 0px 0px 127px;
   }
 }
 .travelers__item {
@@ -169,8 +184,11 @@
 }
 @media (min-width: 1440px) {
   .travelers__item {
+    width: 285px;
+    height: 483px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    border-radius: 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -178,9 +196,9 @@
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 59px 0px 0px 29px;
   }
 }
 @media (min-width: 1440px) {
@@ -188,9 +206,9 @@
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 59px 0px 0px 15px;
   }
 }
 .travelers__preferences {
@@ -235,8 +253,11 @@
   .travelers__button {
     grid-column-start: 1;
     grid-row-start: 4;
+    width: 281px;
+    height: 80px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -230px 0px 0px 128px;
+    background-position: 87% 52%;
   }
 }
 .travelers__btn-text {
@@ -247,6 +268,16 @@
   line-height: 60px;
   color: #1D2E5B;
   margin-left: 24px;
+}
+@media (min-width: 1440px) {
+  .travelers__btn-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 77px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 34px;
+  }
 }
 .travelers__name {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
