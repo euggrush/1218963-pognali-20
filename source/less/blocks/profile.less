@@ -28,11 +28,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 732px;
-    margin-top: 0px;
+    min-height: 797px;
+    margin-top: -50px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 }
 
@@ -70,11 +73,11 @@
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
-    margin-top: 0px;
+    grid-row-end: 3;
+    margin-top: 150px;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 121px;
   }
 }
 
@@ -99,13 +102,13 @@
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     width: 198px;
     height: 198px;
-    margin-top: 0px;
+    margin-top: 136px;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 28px;
   }
 }
 
@@ -135,7 +138,7 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 4;
-    margin-top: 0px;
+    margin-top: 132px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
@@ -153,6 +156,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   min-height: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 0.15fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    width: 907px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 125px;
   }
 }
 
@@ -180,10 +194,16 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
-    line-height: 28px;
+    line-height: 66px;
+    margin: 0px 0px 0px 11px;
+    padding: 0px 0px 0px 0px;
     }
 }
 
@@ -213,8 +233,9 @@
       font-style: normal;
       font-weight: 300;
       font-size: 28px;
-      line-height: 28px;
-      //text-align: right;
+      line-height: 67px;
+      margin: 0px 0px 0px auto;
+      padding: 0px 0px 0px 0px;
       }
 }
 
@@ -249,6 +270,12 @@
   @media (min-width: @desktop-width) {
     width: 68px;
     height: 68px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 74px;
+    margin: 0px 0px 0px 3px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -281,20 +308,30 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    background-image: url("../img/business-tarrif-icon.svg");
+    background-image: url("../img/business-rates.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50%, 50%;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -34px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 130px;
     margin-right: 0px;
+    background-position: -1%, 50%;
+    padding: 0px 0px 0px 0px;
   }
 }
 
