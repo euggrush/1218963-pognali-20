@@ -525,6 +525,11 @@
   margin-top: 29px;
   margin-right: 20px;
 }
+@media (min-width: 768px) {
+  .page-header__close-button {
+    margin: 21px 18px 0px 0px;
+  }
+}
 @media (min-width: 1440px) {
   .page-header__close-button {
     display: none;
