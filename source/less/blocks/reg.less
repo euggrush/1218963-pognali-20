@@ -18,11 +18,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 800px;
     padding: 0px 0px 0px 0px;
     margin-top: -50px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     position: relative;
     z-index: 5;
   }
@@ -127,7 +130,7 @@
     width: 1174px;
     height: 81px;
     padding: 0px 0px 0px 0px;
-    margin-top: 0px;
+    margin-top: 62px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -146,6 +149,24 @@
   font-size: 18px;
   line-height: 18px;
   padding-left: 25px;
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    width: 830px;
+    height: 81px;
+    padding: 0px 0px 0px 37px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
 }
 
 .reg__button {
@@ -160,6 +181,40 @@
   background-image: url("../img/icon-btn-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @desktop-width) {
+    width: 330px;
+    height: 81px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-position: 89%, 50%;
+  }
+}
+
+.reg__btn-text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1D2E5B;
+    margin: 3px 114px 0px 0px;
+  }
 }
 
 .reg a {
@@ -197,6 +252,16 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+
+    @media (min-width: @desktop-width) {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      margin: 69px 0px 0px -7px;
+    }
   }
 }
 
