@@ -16,7 +16,11 @@
   z-index: 5;
 
   @media (min-width: @tablet-width) {
-    margin: 0px;
+    margin: -50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    min-height: 765px;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,9 +52,9 @@
     font-weight: bold;
     font-size: 45px;
     line-height: 45px;
-    margin-top: 128px;
+    margin-top: 122px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 2px;
     margin-right: 0px;
     padding: 0px;
   }
@@ -79,13 +83,15 @@
     width: 638px;
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 27px;
     line-height: 32px;
-    margin-top: 63px;
+    text-align: center;
+    margin-top: 61px;
     margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: @desktop-width) {
@@ -166,6 +172,20 @@
   line-height: 18px;
   padding-left: 25px;
 
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    height: 80px;
+    padding: 0px 0px 0px 37px;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
   @media (min-width: @desktop-width) {
     font-style: normal;
     font-weight: bold;
@@ -197,6 +217,21 @@
   background-image: url("../img/icon-btn-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    padding: 0px 0px 0px 0px;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-position: 50%, 50%;
+  }
 
   @media (min-width: @desktop-width) {
     width: 330px;
@@ -266,10 +301,10 @@
     font-weight: 300;
     font-size: 28px;
     line-height: 30px;
-    margin-top: 68px;
+    margin-top: 59px;
     margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 8px;
+    margin-right: 0px;
     padding: 0px;
 
     @media (min-width: @desktop-width) {
@@ -300,10 +335,10 @@
   margin-left: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 59px;
-    margin-bottom: 0px;
-    margin-left: 118px;
-    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
