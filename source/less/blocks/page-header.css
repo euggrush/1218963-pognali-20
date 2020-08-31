@@ -522,8 +522,8 @@
   background-image: url(../img/icon-menu-mobile.svg);
   background-repeat: no-repeat;
   border: none;
-  margin-top: 23px;
-  margin-right: 18px;
+  margin-top: 29px;
+  margin-right: 20px;
 }
 @media (min-width: 1440px) {
   .page-header__close-button {
