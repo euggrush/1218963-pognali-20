@@ -32,7 +32,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-height: 852px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -60px 0px 0px 0px;
   }
 }
 .travelers__title {
@@ -169,7 +169,24 @@
 }
 @media (min-width: 1440px) {
   .travelers__item {
-    grid-column-start: auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__item-left {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__item-right {
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
     padding: 0px 0px 0px 0px;
