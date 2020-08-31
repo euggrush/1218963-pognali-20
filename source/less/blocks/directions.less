@@ -8,7 +8,7 @@
   z-index: 8;
   display: flex;
   flex-direction: column;
-  min-height: 710px;
+  min-height: 916px;
   background-color: #EDEFF6;
   margin-top: -20px;
   padding-top: 97px;
@@ -159,6 +159,9 @@
 }
 
 .directions__country-picture {
+  position: relative;
+  z-index: 1;
+
   @media (min-width: @tablet-width) {
     width: auto;
     height: 100%;
@@ -193,6 +196,8 @@
   border-radius: 10px;
   margin-top: -17px;
   margin-bottom: 11px;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -277,7 +282,7 @@
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 0px;
@@ -296,6 +301,7 @@
 
 .directions__quote {
   grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -325,6 +331,7 @@
 .directions__rating {
   grid-column-start: 2;
   grid-row-start: 1;
+  grid-row-end: 3;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -332,9 +339,9 @@
   line-height: 20px;
   color: #161C35;
   opacity: 0.3;
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 0px;
-  margin-left: 53px;
+  margin-left: 68px;
   margin-right: 0px;
 
   @media (min-width: @desktop-width) {

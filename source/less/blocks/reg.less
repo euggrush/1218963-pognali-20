@@ -70,7 +70,7 @@
   color: #FFFFFF;
   text-align: center;
   align-self: center;
-  width: 211px;
+  width: 206px;
 
   @media (min-width: @tablet-width) {
     display: inline-block;
@@ -105,10 +105,24 @@
 .reg__quote .reg__quote-link {
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   color: #FFD74B;
   text-decoration: underline;
+
+  @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+  }
 }
 
 .reg__button-wrapper {
@@ -227,9 +241,12 @@
 
 .reg__more {
   display: inline-block;
+  width: 216px;
+  height: 44px;
   margin-top: 27px;
-  margin-left: 4px;
   margin-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
