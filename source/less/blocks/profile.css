@@ -139,6 +139,10 @@
     grid-row-start: 2;
     grid-row-end: 4;
     min-width: auto;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    margin-left: 36px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -164,7 +168,7 @@
     display: grid;
     grid-template-columns: 0.15fr 1fr 0.5fr;
     grid-template-rows: 1fr;
-    width: 700px;
+    width: 630px;
     min-height: 70px;
   }
 }
@@ -205,8 +209,8 @@
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
-    line-height: 28px;
-    margin: 0px 0px 0px 11px;
+    line-height: 69px;
+    margin: 0px 0px 0px 22px;
     padding: 0px 0px 0px 0px;
   }
 }
