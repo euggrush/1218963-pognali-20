@@ -90,7 +90,7 @@
     display: inline-block;
     width: 655px;
     height: 62px;
-    font-family: "Blogger Sans" Arial, Helvetica, sans-serif;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
@@ -216,13 +216,6 @@
     margin: 3px 114px 0px 0px;
   }
 }
-.reg a {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFD74B;
-}
 .reg__more {
   display: inline-block;
   margin-top: 27px;
@@ -269,8 +262,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
-    margin: 0px auto 0px auto;
+    width: 869px;
+    margin: 47px 0px 0px 283px;
   }
 }
 .reg__contact-wrapper {
@@ -286,6 +279,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .reg__contact-wrapper {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .reg__tel-link {
   display: inline-block;
   width: 45px;
@@ -296,6 +297,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 1440px) {
+  .reg__tel-link {
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .reg__mail-link {
   display: inline-block;
   width: 45px;
@@ -305,6 +313,13 @@
   background-image: url(../img/envelope-close-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 1440px) {
+  .reg__mail-link {
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 0px;
+  }
 }
 .reg__contact-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -326,5 +341,15 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .reg__contact-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #FFD74B;
+    margin: 0px 0px 0px 33px;
   }
 }

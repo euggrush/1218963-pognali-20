@@ -90,7 +90,7 @@
     display: inline-block;
     width: 655px;
     height: 62px;
-    font-family: "Blogger Sans" Arial, Helvetica, sans-serif;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
@@ -217,13 +217,13 @@
   }
 }
 
-.reg a {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFD74B;
-}
+// .reg a {
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 16px;
+//   line-height: 22px;
+//   color: #FFD74B;
+// }
 
 .reg__more {
   display: inline-block;
@@ -270,24 +270,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
-    margin: 0px auto 0px auto;
+    width: 869px;
+    margin: 47px 0px 0px 283px;
   }
 }
 
 .reg__contact-wrapper {
   display: flex;
-  // justify-content: space-around;
   align-items: center;
-  // margin-top: 10px;
   margin-left: 25px;
 
   @media (min-width: @tablet-width) {
-
     margin-top: 59px;
     margin-bottom: 0px;
     margin-left: 118px;
     margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -300,6 +304,12 @@
   background-image: url(../img/telephone-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .reg__mail-link {
@@ -311,6 +321,12 @@
   background-image: url(../img/envelope-close-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .reg__contact-text {
@@ -332,5 +348,14 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #FFD74B;
+    margin: 0px 0px 0px 33px;
   }
 }
