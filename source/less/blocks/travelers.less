@@ -197,7 +197,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 59px 0px 0px 29px;
+    margin: 58px 0px 0px 29px;
   }
 }
 
@@ -208,7 +208,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 59px 0px 0px 15px;
+    margin: 58px 0px 0px 15px;
   }
 }
 
@@ -291,6 +291,15 @@
   color: #1D2E5B;
   margin-top: 11px;
   margin-left: -25px;
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+    padding: 0px 0px 0px 0px;
+    margin: 17px 0px 0px -26px;
+  }
 }
 
 .travelers__name::before {
@@ -301,6 +310,11 @@
   background-color: #F97676;
   border-radius: 50%;
   margin: 3px 10px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .travelers__hobbies {
@@ -316,6 +330,16 @@
   margin-left: 40px;
   margin-right: 40px;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
+  }
 }
 
 .travelers__level-firsova {
@@ -377,12 +401,26 @@
 //   opacity: 0.3;
 // }
 
+.travelers__avatar {
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    height: 284px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
 .travelers__transport {
   display: flex;
   justify-content: space-between;
   width: 125px;
   margin-top: 15px;
   margin-left: 0px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 26px 0px 0px 0px;
+  }
 }
 
 .travelers__plane-icon {
