@@ -41,6 +41,8 @@
   text-align: center;
   text-transform: uppercase;
   min-width: 319px;
+  padding-top: 4px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .page-header__nav-modal {
@@ -51,6 +53,11 @@
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
     min-width: 768px;
     min-height: 910px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__nav-modal {
+    display: none;
   }
 }
 .page-header__btn-wrap {
