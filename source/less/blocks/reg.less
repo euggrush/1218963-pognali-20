@@ -18,8 +18,8 @@
   @media (min-width: @tablet-width) {
     margin: -50px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     min-height: 765px;
   }
 
@@ -320,8 +320,19 @@
 }
 
 .reg__contact-container {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 869px;
+    margin: 28px 0px 0px 76px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 869px;
@@ -359,6 +370,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin: 0px 0px 0px 0px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 90px;
     height: 90px;
@@ -375,6 +392,12 @@
   background-image: url(../img/envelope-close-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin: 0px 0px 0px 0px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 90px;
@@ -400,7 +423,7 @@
     line-height: 28px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 21px;
     margin-right: 0px;
   }
 
