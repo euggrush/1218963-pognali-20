@@ -399,7 +399,7 @@
   border-radius: 20px;
   margin-bottom: 0px;
   align-self: center;
-  transform: translate(-9%, -9%);
+  transform: translate(8%, -1%);
 }
 @media (min-width: 768px) {
   .profile__modal {
