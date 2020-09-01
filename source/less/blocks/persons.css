@@ -38,7 +38,7 @@
     width: auto;
     padding: 0px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 27px;
   }
 }
 @media (min-width: 1440px) {
@@ -102,6 +102,7 @@
 @media (min-width: 768px) {
   .persons__name {
     grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start: 1;
     font-style: normal;
     font-weight: bold;
@@ -185,7 +186,7 @@
     background-position: left;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -20px;
+    margin-top: 5px;
     margin-bottom: 0px;
     margin-left: -56px;
     margin-right: 0px;
@@ -226,7 +227,7 @@
     width: 227px;
     font-size: 20px;
     line-height: 23px;
-    margin-top: -16px;
+    margin-top: -4px;
     margin-bottom: 0px;
     margin-left: 30px;
     margin-right: 0px;
@@ -259,7 +260,7 @@
     grid-row-end: 5;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 2fr 2fr 0.4fr;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -290,7 +291,7 @@
 @media (min-width: 768px) {
   .persons__about-item:nth-child(1) {
     grid-column-start: 1;
-    grid-row-start: 2;
+    grid-row-start: 3;
     margin-top: -63px;
     margin-bottom: 0px;
     margin-left: 35px;
@@ -352,7 +353,7 @@
     grid-row-start: 2;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 43px;
     margin-right: 0px;
   }
 }
@@ -387,7 +388,7 @@
     grid-row-end: 4;
     width: 150px;
     height: 50px;
-    margin-top: -18px;
+    margin-top: 6px;
     margin-bottom: 0px;
     margin-left: 23px;
     margin-right: 0px;
@@ -451,11 +452,13 @@
 @media (min-width: 768px) {
   .persons__wish-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
     min-width: 465px;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 10px;
+    margin-top: 22px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -476,8 +479,46 @@
     padding: 0px;
   }
 }
-.persons__wish-wrapper p {
+@media (min-width: 768px) {
+  .persons__wish-flag {
+    width: 35px;
+    height: 24px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: -1px;
+    margin-right: 9px;
+    padding: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__wish-flag {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+}
+.persons__wish-text {
   margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .persons__wish-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 28px;
+    padding: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__wish-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 }
 .persons__level {
   display: block;
@@ -490,6 +531,11 @@
   margin-top: 2px;
   margin-left: 11px;
 }
+@media (min-width: 768px) {
+  .persons__level {
+    display: none;
+  }
+}
 .persons__level-number-firsova {
   display: block;
   width: 45px;
@@ -499,6 +545,15 @@
   background-image: url("../img/person-level-firsova.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .persons__level-number-firsova {
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/person-level-firsova-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .persons__level-number-demin {
   display: block;
@@ -510,6 +565,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .persons__level-number-demin {
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/person-level-demin-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .persons__level-number-smolov {
   display: block;
   width: 45px;
@@ -520,6 +584,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .persons__level-number-smolov {
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/person-level-smolov-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .persons__level-number-rogovya {
   display: block;
   width: 45px;
@@ -529,6 +602,15 @@
   background-image: url("../img/person-level-rogovya.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .persons__level-number-rogovya {
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/person-level-rogovya-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .persons__transport {
   display: block;
