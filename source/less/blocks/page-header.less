@@ -58,7 +58,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
     min-width: 768px;
+    width: 768px;;
     min-height: 910px;
+    padding-top: 0px;
+    padding-left: 6px;
   }
 
   @media (min-width: @desktop-width) {
@@ -144,7 +147,8 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-row-start: 6;
-    margin: 10px 0px 0px 129px;
+    margin: 10px 0px 0px 110px;
+    width: 150px;
   }
 }
 
@@ -156,6 +160,15 @@
   background-image: url("../img/icon-facebook-white.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-facebook-white-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -1px 0px 0px -4px;
+  }
 }
 
 .page-header__link-vk {
@@ -165,6 +178,15 @@
   background-image: url("../img/icon-vk-white.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-vk-white-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .page-header__link-inst {
@@ -174,6 +196,15 @@
   background-image: url("../img/icon-instagram-white.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-instagram-white-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .page-header__title {
