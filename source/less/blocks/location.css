@@ -9,8 +9,11 @@
 }
 @media (min-width: 768px) {
   .location {
-    min-height: 581px;
-    margin-top: 0px;
+    min-height: 685px;
+    margin-top: -50px;
+    background-image: url(../img/tablet-map.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 @media (min-width: 1440px) {
