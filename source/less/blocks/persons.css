@@ -50,11 +50,11 @@
   .persons__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: auto;
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 948px;
+    min-height: 283px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 31px 0px;
   }
 }
 .persons__avatar {
@@ -83,9 +83,11 @@
 @media (min-width: 1440px) {
   .persons__avatar {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 5;
+    width: 285px;
+    height: 285px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
@@ -122,11 +124,11 @@
 @media (min-width: 1440px) {
   .persons__name {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px 31px;
   }
 }
 .persons__dot {
@@ -153,9 +155,9 @@
   .persons__dot {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin-top: 0px;
+    margin-top: 57px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 6px;
     margin-right: 0px;
   }
 }
@@ -201,11 +203,11 @@
 @media (min-width: 1440px) {
   .persons__rating {
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 0px 0px 0px 58px;
+    margin: 42px 0px 0px 171px;
   }
 }
 .persons__hobby {
@@ -242,10 +244,10 @@
   .persons__hobby {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 23px 0px 0px 31px;
   }
 }
 .persons__about-list {
@@ -274,13 +276,13 @@
 }
 @media (min-width: 1440px) {
   .persons__about-list {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 5;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 675px 274px;
+    grid-template-rows: 142px 143px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -306,11 +308,11 @@
 }
 @media (min-width: 1440px) {
   .persons__about-item:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-top: 0px;
+    margin-top: 43px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -335,13 +337,13 @@
 }
 @media (min-width: 1440px) {
   .persons__about-item:nth-child(2) {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 0px;
+    margin-top: 55px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: -9px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -368,9 +370,9 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 0px;
+    margin-top: 27px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 163px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -403,10 +405,10 @@
   .persons__button {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px 23px;
   }
 }
 .persons__btn-text {
@@ -438,6 +440,11 @@
   .persons__wishes {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 47px;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__wishes {
+    display: none;
   }
 }
 .persons__wish-wrapper {
@@ -474,9 +481,10 @@
   .persons__wish-wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    min-width: 159px;
-    width: 159px;
     align-items: center;
+    min-width: 200px;
+    width: 200px;
+    min-height: 108px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -655,6 +663,8 @@
   .persons__transport-wrapper {
     display: flex;
     flex-direction: row;
+    width: 120px;
+    height: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
