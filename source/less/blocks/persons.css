@@ -6,6 +6,11 @@
   background-color: #E5E5E5;
   padding-bottom: 66px;
 }
+@media (min-width: 768px) {
+  .persons {
+    padding-bottom: 120px;
+  }
+}
 @media (min-width: 1440px) {
   .persons {
     display: flex;
@@ -736,7 +741,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #FFD74B;
+    background-color: transparent;
     border: none;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -748,6 +753,15 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+.persons__breadcrumbs-btn-active {
+  display: none;
+}
+@media (min-width: 768px) {
+  .persons__breadcrumbs-btn-active {
+    display: inline-block;
+    background-color: #FFD74B;
   }
 }
 .persons__btn-prev {
