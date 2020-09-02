@@ -1,0 +1,23 @@
+.countries-modal {
+  display: none;
+}
+@media (min-width: 768px) {
+  .countries-modal {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .countries-modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 1440px;
+    height: 2833px;
+    margin: -128px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #D6DAED;
+    position: relative;
+    z-index: 9;
+    border: solid 1px black;
+  }
+}
