@@ -315,6 +315,17 @@
   margin-top: 5px;
   margin-left: -2px;
 }
+@media (min-width: 768px) {
+  .filter__sort .filter__btn-plane {
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/transport-plane-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .filter__sort .filter__btn-bus {
   display: inline-block;
   width: 32px;
@@ -328,6 +339,17 @@
   cursor: pointer;
   margin-top: 5px;
   margin-left: -4px;
+}
+@media (min-width: 768px) {
+  .filter__sort .filter__btn-bus {
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/transport-bus-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 .filter__sort .filter__btn-bike {
   display: inline-block;
@@ -343,6 +365,17 @@
   margin-top: 5px;
   margin-left: -6px;
 }
+@media (min-width: 768px) {
+  .filter__sort .filter__btn-bike {
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/transport-bike-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .filter__sort .filter__btn-run {
   display: inline-block;
   width: 32px;
@@ -356,6 +389,17 @@
   cursor: pointer;
   margin-top: 5px;
   margin-left: -2px;
+}
+@media (min-width: 768px) {
+  .filter__sort .filter__btn-run {
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/transport-run-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 .filter__checkbox {
   display: none;
