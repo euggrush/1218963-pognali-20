@@ -4,9 +4,9 @@
 
 .filter-modal {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0px;
-  padding-top: 31px;
+  padding-top: 13px;
   padding-bottom: 25px;
   position: absolute;
   transform: translate(0%, 0%);
@@ -34,7 +34,18 @@
   }
 }
 
+.filter-modal__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 68px;
+  height: 107px;
+  margin: 0px 0px 0px 49px;
+}
+
 .filter-modal__country-title {
+  display: block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -42,7 +53,7 @@
   line-height: 4px;
   text-transform: uppercase;
   color: #192144;
-  margin-left: 50px;
+  margin: 0px 0px 0px 0px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -90,7 +101,7 @@
 .filter-modal__alphabet {
   width: 220px;
   border-collapse: collapse;
-  margin: 0 auto;
+  margin: 19px 0px 0px 50px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -139,7 +150,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  margin-top: 0px;
+  margin-top: 12px;
   margin-bottom: 14px;
   margin-left: 52px;
   border: solid 1px transparent;
@@ -178,7 +189,9 @@
   color: #192144;
   background-image: url("../img/filter-toggle-close.svg");
   background-repeat: no-repeat;
-  background-position: 30% 50%;
+  background-position: 33% 50%;
+  margin: 14px auto 0px auto;
+  padding: 0px 0px 0px 26px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;

@@ -161,6 +161,9 @@
     background-color: #FF8D30;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    background-image: url(../img/scroll-icon-call.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .catalog-header__btn-email {
@@ -180,6 +183,9 @@
     background-color: #FFBD30;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    background-image: url(../img/scroll-icon-email.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .catalog-header__btn-authorization {
