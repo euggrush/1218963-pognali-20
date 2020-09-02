@@ -12,14 +12,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     width: 1440px;
-    height: 2833px;
-    margin: -128px 0px 0px 0px;
+    height: 2755px;
+    margin: -50px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    background-color: #D6DAED;
+    background-color: #E5E5E5;
     position: relative;
     z-index: 9;
     box-sizing: border-box;
-    border: solid 1px black;
+    border: solid 1px transparent;
   }
 }
 .countries-modal__title {
