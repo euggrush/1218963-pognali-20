@@ -112,7 +112,7 @@
     line-height: 30px;
     letter-spacing: 0.02em;
     margin-top: 34px;
-    margin-bottom: 39px;
+    margin-bottom: 20px;
     margin-left: 8px;
     margin-right: 0px;
     padding: 0px 0px 39px 0px;
@@ -133,13 +133,15 @@
 @media (min-width: 768px) {
   .filter__item {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 0.7fr 3fr;
     grid-template-rows: 1fr;
     border: none;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 9px;
     margin-right: 0px;
+    height: 49px;
+    border: solid 1px red;
   }
 }
 @media (min-width: 1440px) {
@@ -171,6 +173,14 @@
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .filter__item-wrap {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 @media (min-width: 1440px) {
   .filter__item-wrap {
     display: flex;
@@ -193,11 +203,13 @@
 }
 @media (min-width: 768px) {
   .filter__item-title {
+    display: block;
+    height: 20px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 58px;
+    line-height: 46px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -214,6 +226,18 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .filter__item-title-transport {
+    margin: 8px 0px 0px -2px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .filter__item-title-level {
+    margin: 14px 0px 0px -2px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .filter__toggle-btn {
@@ -250,13 +274,18 @@
 }
 @media (min-width: 768px) {
   .filter__sort {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-top: 14px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: -20px;
+    margin-left: 0px;
     margin-right: 0px;
+    border: solid 1px green;
   }
 }
 @media (min-width: 1440px) {
@@ -415,12 +444,23 @@
 }
 @media (min-width: 768px) {
   .filter__checkbox-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     grid-column-start: auto;
     grid-row-start: auto;
+    margin: 0px 0px 0px 5px;
+    border: solid 1px blue;
   }
 }
 .filter__checkbox-wrap:last-child {
   margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .filter__checkbox-wrap:last-child {
+    margin: 0px 0px 0px 9px;
+  }
 }
 .filter__check-on {
   width: 20px;
@@ -431,6 +471,16 @@
   margin-top: -8px;
   margin-left: 0px;
 }
+@media (min-width: 768px) {
+  .filter__check-on {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/checkbox-on-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 0px;
+  }
+}
 .filter__check-off {
   width: 20px;
   height: 20px;
@@ -439,6 +489,16 @@
   background-position: center;
   margin-top: -4px;
   margin-left: 0px;
+}
+@media (min-width: 768px) {
+  .filter__check-off {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/checkbox-off-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 0px;
+  }
 }
 .filter__checkbox-level {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -456,6 +516,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
+    margin: 0px 0px 0px 12px;
   }
 }
 @media (min-width: 1440px) {
