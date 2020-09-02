@@ -189,7 +189,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 48px 0px 0px 59px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -208,7 +208,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 49px 0px 0px 23px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -227,7 +227,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 50px 0px 0px -15px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -246,7 +246,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 50px 0px 0px -53px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -265,7 +265,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 47px 0px 0px 95px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -284,7 +284,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 45px 0px 0px 59px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -303,7 +303,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 47px 0px 0px 22px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -322,7 +322,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 44px 0px 0px -13px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -341,7 +341,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 45px 0px 0px -53px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -358,9 +358,9 @@
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px 95px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -379,7 +379,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 45px 0px 0px 60px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -398,7 +398,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 44px 0px 0px 24px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -417,7 +417,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px -14px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -436,7 +436,7 @@
     grid-row-start: 4;
     grid-row-end: 5;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 45px 0px 0px -52px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -455,7 +455,7 @@
     grid-row-start: 5;
     grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 91px 0px 0px 94px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -474,7 +474,7 @@
     grid-row-start: 5;
     grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 92px 0px 0px 58px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -493,7 +493,7 @@
     grid-row-start: 5;
     grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 95px 0px 0px 26px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -512,7 +512,7 @@
     grid-row-start: 5;
     grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 92px 0px 0px -12px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -531,7 +531,7 @@
     grid-row-start: 5;
     grid-row-end: 6;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 93px 0px 0px -49px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -574,12 +574,12 @@
     background-color: #D6DAED;
     background-image: url(../img/menu-close.svg);
     background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    background-size: 24px, 24px;
+    background-position: 46%, 50%;
+    background-size: 22px, 22px;
     border-radius: 20px;
     border: none;
-    margin: 0px auto 0px auto;
-    padding: 0px 0px 0px 0px;
+    margin: -51px auto 0px auto;
+    padding: 0px 0px 0px 34px;
     box-sizing: border-box;
   }
 }
