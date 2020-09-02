@@ -10,7 +10,7 @@
   min-height: 662px;
 
   @media (min-width: @desktop-width) {
-    margin: 0px 0px 0px 0px;
+    margin: -25px 0px 0px 0px;
     padding: 0px 0px 0px 1094px;
     background-color: transparent;
     position: relative;
@@ -45,7 +45,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     min-width: 285px;
     width: 285px;
     min-height: 814px;
@@ -123,8 +123,11 @@
   @media (min-width: @desktop-width) {
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 30px;
+    border: none;
+    margin: 43px 0px 0px 47px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -145,10 +148,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 156px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    border: solid 1px green;
   }
 }
 
@@ -183,11 +190,17 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-width: 190px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -279,6 +292,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -290,6 +304,13 @@
   }
 
   @media (min-width: @desktop-width) {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -519,6 +540,16 @@ height: 44px;
     margin: 0px 0px 0px 5px;
     border: solid 1px transparent;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+
+    border: solid 1px red;
+  }
 }
 
 .filter__checkbox-wrap:last-child {
@@ -526,6 +557,16 @@ height: 44px;
 
   @media (min-width: @tablet-width) {
     margin: 0px 0px 0px 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+
+    border: solid 1px red;
   }
 }
 
