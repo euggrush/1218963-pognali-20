@@ -40,6 +40,8 @@
     line-height: 60px;
     text-transform: uppercase;
     color: #192144;
+    margin: 0px 0px 32px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .countries-modal__item-wrap {
@@ -73,7 +75,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 70px 0px 0px 96px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -92,7 +94,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 69px 0px 0px 60px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -111,7 +113,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 69px 0px 0px 23px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -130,7 +132,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 69px 0px 0px -12px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -149,7 +151,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 69px 0px 0px -54px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -168,7 +170,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    margin: 0px 0px 0px 0px;
+    margin: 51px 0px 0px 95px;
     padding: 0px 0px 0px 0px;
   }
 }
