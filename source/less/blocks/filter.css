@@ -478,6 +478,7 @@
     order: 3;
     width: 148px;
     height: 46px;
+    border: solid 1px purple;
   }
 }
 .filter__checkbox-wrap {
