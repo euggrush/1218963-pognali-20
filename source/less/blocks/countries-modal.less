@@ -12,7 +12,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     width: 1440px;
     height: 2833px;
     margin: -128px 0px 0px 0px;
@@ -39,6 +39,85 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 60px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+}
+
+.countries-modal__item-wrap {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.countries-modal__list-item {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+  }
+}
+
+.countries-modal__btn {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: block;
+    width: 1320px;
+    height: 100px;
+    background-color: #D6DAED;
+    background-image: url(../img/menu-close.svg);
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    background-size: 24px, 24px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+  }
+}
+
+.countries-modal__btn-text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #192144;
   }
