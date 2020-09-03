@@ -404,6 +404,7 @@
     grid-column-start: 1;
     grid-row-start: 5;
     grid-row-end: 9;
+    margin: -33px auto 0px auto;
   }
 }
 @media (min-width: 1440px) {
@@ -567,6 +568,8 @@
 }
 @media (min-width: 768px) {
   .add-plan__input-wrapper {
+    display: flex;
+    justify-content: space-between;
     min-width: 532px;
     min-height: 86px;
     margin-top: -28px;
@@ -614,6 +617,15 @@
   color: #1D2E5B;
   border: none;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .add-plan__date {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #1D2E5B;
+  }
 }
 .add-plan__label-person {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
