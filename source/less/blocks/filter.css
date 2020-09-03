@@ -153,8 +153,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
     height: 156px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 22px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
     border: solid 1px transparent;
   }
 }
@@ -170,6 +171,7 @@
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     border: solid 1px transparent;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 768px) {
