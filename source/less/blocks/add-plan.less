@@ -97,9 +97,9 @@
 .add-plan__item-one {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 1fr 0.4fr;
   width: 270px;
-  // min-height: 796px;
+  min-height: 773px;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 0 auto;
@@ -324,15 +324,22 @@
   grid-column-start: 1;
   grid-row-start: 5;
   grid-row-end: 6;
-  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -6px;
   margin-bottom: 0px;
-  margin-left: 40px;
+  margin-left: 24px;
+  width: 140px;
+  height: 30px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 15px;
   color: #1D2E5B;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -362,12 +369,27 @@
   }
 }
 
+.add-plan__kids {
+  display: none;
+}
+
+.add-plan__checkbox-on {
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .add-plan__calendar {
   grid-column-start: 1;
   grid-row-start: 6;
   grid-row-end: 9;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -26px;
   margin-bottom: 0px;
 
   @media (min-width: @tablet-width) {
@@ -392,13 +414,14 @@
 .add-plan__button-next {
   grid-column-start: 1;
   grid-row-start: 9;
-  // grid-row-end: 11;
+  grid-row-end: 10;
   width: 229px;
   height: 40px;
   background-color: #FFD74B;
   border-radius: 20px;
   border: none;
-  margin-top: -49px;
+  margin-top: -41px;
+  margin-bottom: 0px;
   margin-left: 21px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;

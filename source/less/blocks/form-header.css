@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   min-width: 320px;
-  min-height: 145px;
+  min-height: 143px;
   background-color: #182044;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -57,7 +57,7 @@
 .form-header__logo {
   grid-column-start: 1;
   grid-row-start: 1;
-  margin-top: 21px;
+  margin-top: 19px;
   margin-left: 22px;
 }
 @media (min-width: 768px) {
@@ -109,7 +109,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  margin-top: 25px;
+  margin-top: 23px;
   margin-left: 29px;
 }
 @media (min-width: 768px) {
