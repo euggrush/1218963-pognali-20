@@ -236,6 +236,11 @@
     padding: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .filter-toggle__button {
+    display: none;
+  }
+}
 .filter-toggle__icon {
   width: 15px;
   height: 10px;
