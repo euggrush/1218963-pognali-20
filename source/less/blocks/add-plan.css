@@ -771,13 +771,16 @@
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: inline-block;
+  width: 81px;
+  height: 40px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   color: #1D2E5B;
-  margin: 0px;
+  margin: -3px 0px 0px -2px;
   padding-left: 25px;
   padding-right: 20px;
   align-self: flex-start;
@@ -870,7 +873,6 @@
   grid-row-start: 3;
   grid-row-end: 4;
   display: flex;
-  border: solid 1px #EDEFF6;
   border-radius: 5px;
   width: 220px;
   height: 42px;
@@ -879,6 +881,7 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  border: solid 1px transparent;
 }
 @media (min-width: 768px) {
   .add-plan__country-field-one {
@@ -905,6 +908,32 @@
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
+}
+.add-plan__input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 168px;
+  height: 42px;
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0px 17px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.add-plan__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 53px;
+  height: 42px;
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .add-plan__country-field-two {
   grid-column-start: 1;
@@ -952,6 +981,7 @@
   grid-row-start: 5;
   grid-row-end: 6;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 220px;
   min-height: 42px;
@@ -961,6 +991,8 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 13px 0px 0px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .add-plan__dropdown-wrap {
@@ -1148,6 +1180,8 @@
   text-transform: uppercase;
   color: #1D2E5B;
   border: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 9px;
 }
 @media (min-width: 768px) {
   .add-plan__country {
@@ -1169,19 +1203,36 @@
   background-image: url("../img/arrow-back-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 0px;
 }
 .add-plan__circle {
+  position: absolute;
+  transform: translate(-158%, -9%);
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #1D2E5B;
+  margin: 0px 0px 0px 6px;
+  padding: 0px 0px 0px 0px;
+}
+.add-plan__circle-empty {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #CBCED9;
+  box-sizing: border-box;
 }
 .add-plan__flag-bosnia {
   width: 53px;
   height: 42px;
   background-image: url("../img/flag-bosnia.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50%, 50%;
+  background-size: 35px, 24px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .add-plan__flag-czech {
   width: 53px;
@@ -1189,8 +1240,14 @@
   background-image: url("../img/flag-czech.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-position: 50%, 50%;
+  background-size: 35px, 24px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .add-plan__remove-btn {
+  position: absolute;
+  transform: translate(187%, -96%);
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -1198,6 +1255,8 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .add-plan__add-plus {
   width: 14px;
@@ -1361,8 +1420,9 @@
 .add-plan__item-two {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.9fr 0.9fr 0.3fr 1fr 1fr 0.3fr;
   width: 270px;
+  min-height: 493px;
   background-color: #FFFFFF;
   border-radius: 10px;
   margin: 0 auto;
