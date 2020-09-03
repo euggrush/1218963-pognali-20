@@ -126,7 +126,7 @@
     font-size: 29px;
     line-height: 30px;
     border: none;
-    margin: 43px 0px 0px 47px;
+    margin: 43px 0px 33px 47px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -161,10 +161,20 @@
 
 .filter__item-transport {
   margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    border: solid 1px purple;
+  }
 }
 
-.filter__item-transport > .filter__sort {
-
+.filter__item-transport .filter__sort-transport {
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: flex-start;
@@ -175,6 +185,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: -19px 0px 0px 42px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -201,6 +213,9 @@
     min-width: 190px;
     margin: 0px 0px 20px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+
+    border: solid 1px blue;
   }
 }
 
@@ -236,7 +251,7 @@
     line-height: 22px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 47px;
     margin-right: 0px;
   }
 }
@@ -245,6 +260,11 @@
 
   @media (min-width: @tablet-width) {
     margin: 8px 0px 0px -2px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0px 0px 0px 45px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -274,6 +294,8 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    margin: 0px 39px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
@@ -366,9 +388,10 @@
   @media (min-width: @tablet-width) {
     width: 44px;
 height: 44px;
-    background-image: url("../img/transport-bus-tablet.svg");
+    background-image: url(../img/bus.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 19px;
     margin: 5px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -546,7 +569,7 @@ height: 44px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 0px 0px;
+    margin: 1px 0px 0px 46px;
 
     border: solid 1px red;
   }
@@ -564,7 +587,7 @@ height: 44px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 46px;
 
     border: solid 1px red;
   }

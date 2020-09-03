@@ -126,7 +126,7 @@
     font-size: 29px;
     line-height: 30px;
     border: none;
-    margin: 43px 0px 0px 47px;
+    margin: 43px 0px 33px 47px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -161,18 +161,31 @@
 .filter__item-transport {
   margin-bottom: 20px;
 }
+@media (min-width: 1440px) {
+  .filter__item-transport {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: solid 1px purple;
+  }
+}
 @media (min-width: 768px) {
-  .filter__item-transport > .filter__sort {
+  .filter__item-transport .filter__sort-transport {
     display: flex;
     justify-content: flex-start;
   }
 }
 @media (min-width: 1440px) {
-  .filter__item-transport > .filter__sort {
+  .filter__item-transport .filter__sort-transport {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: -19px 0px 0px 42px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .filter__item-wrap {
@@ -200,6 +213,8 @@
     min-width: 190px;
     margin: 0px 0px 20px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    border: solid 1px blue;
   }
 }
 .filter__item-title {
@@ -236,13 +251,19 @@
     line-height: 22px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 47px;
     margin-right: 0px;
   }
 }
 @media (min-width: 768px) {
   .filter__item-title-transport {
     margin: 8px 0px 0px -2px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .filter__item-title-transport {
+    margin: 0px 0px 0px 45px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -272,6 +293,8 @@
 @media (min-width: 1440px) {
   .filter__toggle-btn {
     display: block;
+    margin: 0px 39px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .filter__sort {
@@ -360,9 +383,10 @@
   .filter__sort .filter__btn-bus {
     width: 44px;
     height: 44px;
-    background-image: url("../img/transport-bus-tablet.svg");
+    background-image: url(../img/bus.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 19px;
     margin: 5px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -537,7 +561,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 0px 0px;
+    margin: 1px 0px 0px 46px;
     border: solid 1px red;
   }
 }
@@ -555,7 +579,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 3px 46px;
     border: solid 1px red;
   }
 }
