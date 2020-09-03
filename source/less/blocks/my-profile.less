@@ -86,6 +86,17 @@
   background-image: url("../img/my-profile-level.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/my-profile-level.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 94px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .my-profile__level-number {
@@ -165,10 +176,19 @@
     grid-row-end: 3;
     width: 618px;
     height: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.09em;
     margin-top: -25px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px 0px 0px 228px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -279,6 +299,7 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -321,21 +342,21 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 112px;
+    width: 149px;
     height: 20px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 21px;
     letter-spacing: 0.08em;
     text-align: center;
     text-transform: uppercase;
     color: #1D2E5B;
     background-color: #CBCED9;
-    margin-top: 33px;
-    margin-bottom: 0px;
-    margin-left: 95px;
+    margin-top: 9px;
+    margin-bottom: -41px;
+    margin-left: 76px;
     margin-right: 0px;
   }
 }
@@ -351,6 +372,13 @@
   background-position: center;
   margin-top: 5px;
   margin-left: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;;
+    margin: 22px 0px 0px -8px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .my-profile__transport-bus {
@@ -361,6 +389,13 @@
   background-image: url("../img/transport-bus.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .my-profile__transport-bike {
@@ -371,6 +406,13 @@
   background-image: url("../img/transport-bike.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .my-profile__transport-run {
@@ -381,4 +423,11 @@
   background-image: url("../img/transport-run.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;;
+    margin: 7px 0px 0px -6px;
+    padding: 0px 0px 0px 0px;
+  }
 }
