@@ -1258,6 +1258,19 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+.add-plan__dropdown-wrap .add-plan__remove-btn {
+  position: absolute;
+  transform: translate(984%, -96%);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-image: url("../img/icon-close-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
 .add-plan__add-plus {
   width: 14px;
   height: 14px;
