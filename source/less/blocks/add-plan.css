@@ -1609,13 +1609,15 @@
 }
 @media (min-width: 768px) {
   .add-plan__country-modal {
+    z-index: 10;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 4fr;
     position: absolute;
     width: 575px;
-    min-height: 416px;
-    transform: translate(0%, 57%);
+    min-height: 485px;
+    transform: translate(-4%, 42%);
+    border: solid 1px transparent;
   }
 }
 .add-plan__modal-btn {
@@ -1633,6 +1635,28 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 14px;
 }
+@media (min-width: 768px) {
+  .add-plan__modal-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: block;
+    width: 369px;
+    height: 71px;
+    background: #1D2E5B;
+    background-image: url(../img/icon-close-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 93%, 50%;
+    background-size: 22px;
+    text-align: left;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border: none;
+    margin: 1px 0px 0px 2px;
+    padding: 0px 0px 0px 14px;
+  }
+}
 .add-plan__modal-btn-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -1646,14 +1670,30 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+@media (min-width: 768px) {
+  .add-plan__modal-btn-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 11px;
+  }
+}
 .add-plan__alphabet {
   border-collapse: collapse;
 }
 @media (min-width: 768px) {
   .add-plan__alphabet {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: 262px;
     height: 346px;
-    margin: 38px auto auto 25px;
+    margin: 10px 0px 0px 29px;
   }
 }
 .add-plan__letters {
@@ -1682,8 +1722,13 @@
 }
 @media (min-width: 768px) {
   .add-plan__country-list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     padding-top: 34px;
     padding-left: 8px;
+    margin: 68px 0px 0px 5px;
   }
 }
 .add-plan__country-item {
