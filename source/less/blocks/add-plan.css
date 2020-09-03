@@ -1308,9 +1308,10 @@
     margin-bottom: 0px;
     margin-left: 350px;
     margin-right: 0px;
-    background-image: url(../img/icon-btn-triangle.svg);
+    background-image: url(../img/triangle-arrow-left.svg);
     background-repeat: no-repeat;
-    background-position: 4%, 50%;
+    background-position: 2%, 50%;
+    background-size: 11px;
   }
 }
 @media (min-width: 1440px) {
@@ -2148,5 +2149,44 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 352px;
+  }
+}
+.add-plan__line-tablet-up {
+  display: none;
+}
+@media (min-width: 768px) {
+  .add-plan__line-tablet-up {
+    display: block;
+    position: absolute;
+    transform: translate(616%, -63%);
+    width: 1px;
+    height: 71px;
+    background-color: #E1E3E9;
+  }
+}
+.add-plan__line-tablet-down {
+  display: none;
+}
+@media (min-width: 768px) {
+  .add-plan__line-tablet-down {
+    display: block;
+    position: absolute;
+    transform: translate(523%, 176%);
+    width: 1px;
+    height: 71px;
+    background-color: #E1E3E9;
+  }
+}
+.add-plan__line-tablet-down-last {
+  display: none;
+}
+@media (min-width: 768px) {
+  .add-plan__line-tablet-down-last {
+    display: block;
+    position: absolute;
+    transform: translate(36898%, 63%);
+    width: 1px;
+    height: 46px;
+    background-color: #E1E3E9;
   }
 }
