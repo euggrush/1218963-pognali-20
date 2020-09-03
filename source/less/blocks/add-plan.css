@@ -50,7 +50,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 49px;
+    margin-top: 47px;
     margin-bottom: 59px;
     margin-left: 73px;
     margin-right: 0px;
@@ -64,10 +64,16 @@
 }
 @media (min-width: 768px) {
   .add-plan__toggles {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 81px;
+    height: 6px;
+    margin-top: -11px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 74px;
+    margin-right: 70px;
   }
 }
 .add-plan__toggle-button {
@@ -281,7 +287,7 @@
     grid-row-end: 5;
     min-width: 531px;
     min-height: 72px;
-    margin-top: 0px;
+    margin-top: -7px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -334,9 +340,15 @@
     grid-column-start: 1;
     grid-row-start: 2;
     /* grid-row-end: 5; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 30px;
     margin-top: 26px;
     margin-bottom: 0px;
-    margin-left: 75px;
+    margin-left: 47px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 20px;
@@ -370,6 +382,14 @@
   background-image: url(../img/checkbox-on.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .add-plan__checkbox-on {
+    width: 36px;
+    height: 36px;
+    background-size: 25px;
+    margin: 2px 0px 0px -3px;
+  }
 }
 .add-plan__calendar {
   grid-column-start: 1;
@@ -453,18 +473,23 @@
   width: 220px;
   min-height: 43px;
   margin-top: 0px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .add-plan__counter-person {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     min-height: 70px;
     margin-top: 24px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
   .add-plan__counter-person {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
   }
 }
 .add-plan__counter-date {
@@ -475,12 +500,17 @@
   width: 220px;
   min-height: 43px;
   margin-top: 0px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .add-plan__counter-date {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     min-height: 70px;
-    margin-top: 23px;
+    margin: 23px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -496,12 +526,22 @@
   background-position: center;
   border: none;
 }
+@media (min-width: 768px) {
+  .add-plan__minus {
+    margin: 0px 0px 0px 26px;
+  }
+}
 .add-plan__plus {
   background-color: transparent;
   background-image: url("../img/plus-icon-btn.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+}
+@media (min-width: 768px) {
+  .add-plan__plus {
+    margin: -3px 23px 0px 0px;
+  }
 }
 .add-plan__left {
   background-color: transparent;
@@ -549,6 +589,17 @@
 .add-plan__search {
   border: none;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .add-plan__search {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1D2E5B;
+  }
 }
 .add-plan__time {
   border: none;
@@ -606,6 +657,8 @@
   .add-plan__label-dates {
     font-size: 20px;
     line-height: 18px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {

@@ -56,7 +56,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 49px;
+    margin-top: 47px;
     margin-bottom: 59px;
     margin-left: 73px;
     margin-right: 0px;
@@ -70,10 +70,16 @@
   margin-right: 41px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 81px;
+    height: 6px;
+    margin-top: -11px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 74px;
+    margin-right: 70px;
   }
 }
 
@@ -291,7 +297,7 @@
     grid-row-end: 5;
     min-width: 531px;
     min-height: 72px;
-    margin-top: 0px;
+    margin-top: -7px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -345,9 +351,15 @@
     grid-column-start: 1;
     grid-row-start: 2;
     /* grid-row-end: 5; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 30px;
     margin-top: 26px;
     margin-bottom: 0px;
-    margin-left: 75px;
+    margin-left: 47px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 20px;
@@ -382,6 +394,13 @@
   background-image: url(../img/checkbox-on.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 36px;
+    height: 36px;
+    background-size: 25px;
+    margin:2px 0px 0px -3px;
+  }
 }
 
 .add-plan__calendar {
@@ -464,16 +483,21 @@
   width: 220px;
   min-height: 43px;
   margin-top: 0px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     min-height: 70px;
     margin-top: 24px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
   }
 }
 
@@ -485,11 +509,16 @@
   width: 220px;
   min-height: 43px;
   margin-top: 0px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     min-height: 70px;
-    margin-top: 23px;
+    margin: 23px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
@@ -504,6 +533,10 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0px 0px 0px 26px;
+  }
 }
 
 .add-plan__plus {
@@ -512,6 +545,10 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin:-3px 23px 0px 0px;
+  }
 }
 
 .add-plan__left {
@@ -561,6 +598,16 @@
 .add-plan__search {
   border: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1D2E5B;
+  }
 }
 
 .add-plan__time {
@@ -619,6 +666,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 18px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
