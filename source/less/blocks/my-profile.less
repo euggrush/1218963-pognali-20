@@ -227,6 +227,7 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -274,6 +275,32 @@
   margin: 0 auto;
   margin-top: -12px;
   background-color: #CBCED9;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.my-profile__tags-title-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #161C35;
+    margin: 27px auto -14px auto;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    background-color: #CBCED9;
+  }
 }
 
 .my-profile__transport {
