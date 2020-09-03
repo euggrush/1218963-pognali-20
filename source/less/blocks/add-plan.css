@@ -1044,6 +1044,8 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 15px 0px 11px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .add-plan__add-button {
@@ -1277,6 +1279,9 @@
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
 }
 .add-plan__choose-button {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
