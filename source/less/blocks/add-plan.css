@@ -23,7 +23,7 @@
   .add-plan {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    margin-top: 0px;
+    margin: -26px 0px 60px 0px;
     padding: 0px 0px 60px 0px;
   }
 }
@@ -56,6 +56,19 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .add-plan__title {
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 51px;
+    margin-bottom: 57px;
+    margin-left: 128px;
+    margin-right: 0px;
+  }
+}
 .add-plan__toggles {
   margin-top: 37px;
   margin-bottom: 0px;
@@ -74,6 +87,11 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__toggles {
+    display: none;
   }
 }
 .add-plan__toggle-button {
@@ -125,12 +143,12 @@
   .add-plan__item-one {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 4fr 0.5fr;
     min-width: 1320px;
-    min-height: 1301px;
+    min-height: 1205px;
     border-radius: 60px;
     margin: 0px auto 0px auto;
-    padding: 0px 0px 0px 0px;
+    padding: 98px 0px 0px 0px;
   }
 }
 .add-plan__step {
@@ -174,9 +192,11 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: inline-block;
+    width: 430px;
+    height: 72px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 160px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -221,14 +241,39 @@
   .add-plan__step-text {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
     display: inline-block;
-    margin-top: 0px;
+    width: 550px;
+    height: 72px;
+    margin-top: 28px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 161px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
+    border: none;
+  }
+}
+.add-plan__desktop-slider {
+  display: none;
+}
+@media (min-width: 768px) {
+  .add-plan__desktop-slider {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__desktop-slider {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    width: 220px;
+    height: 137px;
+    padding: 0px 0px 0px 0px;
+    margin: -52px 0px 0px 251px;
+    border: solid 1px green;
   }
 }
 .add-plan__form-field-person {
@@ -361,11 +406,11 @@
   .add-plan__checkbox {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-top: 0px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: -80px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 262px;
     margin-right: 0px;
     padding-bottom: 0px;
   }
@@ -413,7 +458,7 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    margin-top: 0px;
+    margin-top: -152px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -465,9 +510,9 @@
   .add-plan__button-next {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-row-end: 7;
-    margin-top: 0px;
+    margin-top: 544px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
