@@ -1914,7 +1914,7 @@
     width: 730px;
     min-height: 556px;
     transform: translate(-3%, 42%);
-    border: solid 1px green;
+    border: solid 1px transparent;
   }
 }
 
@@ -2031,9 +2031,10 @@
     grid-row-start: 2;
     grid-row-end: 3;
     border-collapse: separate;
-    width: 364px;
-    height: 412px;
-    margin: 0px 0px 0px 25px;
+    border-spacing: 15px;
+    width: 391px;
+    height: 438px;
+    margin: -13px 0px 0px 12px;
   }
 }
 
@@ -2057,10 +2058,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 44px;
-    height: 38px;
+    width: auto;
+    height: auto;
     font-size: 20px;
     line-height: 20px;
+    border-radius: 4px;
   }
 }
 
