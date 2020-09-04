@@ -298,6 +298,29 @@
     border: solid 1px green;
   }
 }
+.add-plan__desktop-slider-three {
+  display: none
+  ;
+}
+@media (min-width: 768px) {
+  .add-plan__desktop-slider-three {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__desktop-slider-three {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    width: 220px;
+    height: 137px;
+    padding: 0px 0px 0px 0px;
+    margin: 89px 189px 0px 0px;
+    border: solid 1px green;
+  }
+}
 .add-plan__form-field-person {
   grid-column-start: 1;
   grid-row-start: 3;
@@ -2079,9 +2102,9 @@
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 3fr 0.5fr;
     min-width: 1320px;
-    min-height: 1301px;
+    min-height: 1064px;
     border-radius: 60px;
-    margin: 0px auto 0px auto;
+    margin: 43px auto 0px auto;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -2126,6 +2149,8 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    width: 209px;
+    height: 72px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
