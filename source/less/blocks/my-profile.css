@@ -270,9 +270,9 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    width: 729px;
+    width: 734px;
     height: 94px;
-    margin-top: -48px;
+    margin-top: -52px;
     margin-bottom: 0px;
     margin-left: 122px;
     margin-right: 0px;
@@ -329,6 +329,11 @@
     display: none;
   }
 }
+@media (min-width: 1440px) {
+  .my-profile__tags-title {
+    display: none;
+  }
+}
 .my-profile__tags-title-tablet {
   display: none;
 }
@@ -346,6 +351,25 @@
     text-transform: uppercase;
     color: #161C35;
     margin: 18px auto -14px auto;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    background-color: #CBCED9;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__tags-title-tablet {
+    display: block;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #161C35;
+    margin: 18px auto -14px 14px;
     padding: 0px 0px 0px 0px;
     box-sizing: border-box;
     background-color: #CBCED9;
@@ -413,6 +437,11 @@
     display: none;
   }
 }
+@media (min-width: 1440px) {
+  .my-profile__transport-title {
+    display: none;
+  }
+}
 .my-profile__transport-title-tablet {
   display: none;
 }
@@ -437,6 +466,27 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .my-profile__transport-title-tablet {
+    display: block;
+    width: 149px;
+    height: 20px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background-color: #CBCED9;
+    margin-top: 10px;
+    margin-bottom: -41px;
+    margin-left: 117px;
+    margin-right: 0px;
+  }
+}
 .my-profile__transport-plane {
   width: 32px;
   height: 32px;
@@ -457,6 +507,14 @@
     padding: 0px 0px 0px 0px;
   }
 }
+@media (min-width: 1440px) {
+  .my-profile__transport-plane {
+    width: 44px;
+    height: 44px;
+    margin: 22px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .my-profile__transport-bus {
   width: 32px;
   height: 32px;
@@ -467,6 +525,14 @@
   background-position: center;
 }
 @media (min-width: 768px) {
+  .my-profile__transport-bus {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
   .my-profile__transport-bus {
     width: 44px;
     height: 44px;
@@ -491,6 +557,14 @@
     padding: 0px 0px 0px 0px;
   }
 }
+@media (min-width: 1440px) {
+  .my-profile__transport-bike {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .my-profile__transport-run {
   width: 32px;
   height: 32px;
@@ -501,6 +575,14 @@
   background-position: center;
 }
 @media (min-width: 768px) {
+  .my-profile__transport-run {
+    width: 44px;
+    height: 44px;
+    margin: 7px 0px 0px -6px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
   .my-profile__transport-run {
     width: 44px;
     height: 44px;
