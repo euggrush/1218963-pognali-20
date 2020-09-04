@@ -1850,6 +1850,24 @@
     box-sizing: border-box;
   }
 }
+@media (min-width: 1440px) {
+  .add-plan__todo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    min-width: 731px;
+    width: auto;
+    height: 142px;
+    border-radius: 5px;
+    margin-top: 31px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 21px 0px 0px 25px;
+    box-sizing: border-box;
+  }
+}
 .add-plan__border {
   position: absolute;
   width: 26px;
@@ -2149,11 +2167,11 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: 209px;
+    width: 350px;
     height: 72px;
-    margin-top: 0px;
+    margin-top: 97px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 158px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -2199,11 +2217,12 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 0px;
+    margin-top: -25px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 160px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
+    border: none;
   }
 }
 .add-plan__todo-container {
@@ -2233,9 +2252,9 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-top: 0px;
+    margin-top: -61px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 160px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -2311,9 +2330,9 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: 0px;
+    margin-top: -87px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 160px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -2374,9 +2393,13 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: 0px;
+    background-image: url(../img/triangle-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: 4%, 50%;
+    background-size: 11px;
+    margin-top: -58px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 65px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -2416,6 +2439,11 @@
     width: 500px;
   }
 }
+@media (min-width: 1440px) {
+  .add-plan__todo-label-wrap {
+    width: 886px;
+  }
+}
 .add-plan__todo-label-dot {
   width: 6px;
   height: 6px;
@@ -2439,6 +2467,17 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__todo-label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: normal;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
