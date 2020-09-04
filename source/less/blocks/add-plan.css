@@ -1173,7 +1173,7 @@
 }
 @media (min-width: 1440px) {
   .add-plan__input-container {
-    width: 369px;
+    width: 730px;
     height: 70px;
     border: 1px solid #CBCED9;
     box-sizing: border-box;
@@ -1286,11 +1286,13 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    width: 730px;
+    height: 70px;
     margin-top: -11px;
     margin-bottom: 0px;
     margin-left: 160px;
     margin-right: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 26px 0px 19px;
   }
 }
 .add-plan__add-button {
@@ -1348,11 +1350,13 @@
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7;
+    width: 730px;
+    height: 70px;
     margin-top: -56px;
     margin-bottom: 0px;
     margin-left: 160px;
     margin-right: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 29px 0px 26px;
   }
 }
 @media (min-width: 768px) {
@@ -1488,6 +1492,18 @@
 }
 @media (min-width: 768px) {
   .add-plan__country {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__country {
+    width: 260px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
