@@ -459,8 +459,10 @@
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
-    grid-row-end: 6;
-    margin-top: -152px;
+    grid-row-end: 7;
+    height: auto;
+    min-height: auto;
+    margin-top: -222px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -514,9 +516,9 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 7;
-    margin-top: 544px;
+    margin-top: 539px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 161px;
     margin-right: 0px;
     padding-bottom: 0px;
   }
@@ -621,6 +623,14 @@
     margin: 27px 0px 0px 10px;
   }
 }
+@media (min-width: 1440px) {
+  .add-plan__left {
+    width: 36px;
+    height: 36px;
+    background-size: 28px, 20px;
+    margin: 27px 0px 0px -9px;
+  }
+}
 .add-plan__right {
   background-color: transparent;
   background-image: url("../img/arrow-next-icon.svg");
@@ -634,6 +644,14 @@
     height: 36px;
     background-size: 28px, 20px;
     margin: 24px 8px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__right {
+    width: 36px;
+    height: 36px;
+    background-size: 28px, 20px;
+    margin: 24px -8px 0px 0px;
   }
 }
 .add-plan__input-wrapper {
@@ -658,12 +676,12 @@
 }
 @media (min-width: 1440px) {
   .add-plan__input-wrapper {
-    width: 1016px;
+    width: 1000px;
     min-height: 86px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -890,8 +908,9 @@
 @media (min-width: 1440px) {
   .add-plan__calendar-days {
     min-width: 1000px;
-    min-height: 450px;
-    margin: 0px auto 0px auto;
+    min-height: auto;
+    width: auto;
+    margin: 19px auto 0px auto;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -934,6 +953,11 @@
 @media (min-width: 768px) {
   .add-plan__week-date {
     height: 66px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__week-date {
+    height: 69px;
   }
 }
 .add-plan__button-back {
