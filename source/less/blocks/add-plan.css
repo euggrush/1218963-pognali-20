@@ -273,7 +273,10 @@
     height: 137px;
     padding: 0px 0px 0px 0px;
     margin: -52px 0px 0px 251px;
-    border: solid 1px green;
+    background-image: url(../img/slider-one.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px transparent;
   }
 }
 .add-plan__desktop-slider-two {
@@ -295,7 +298,10 @@
     height: 137px;
     padding: 0px 0px 0px 0px;
     margin: 89px 189px 0px 0px;
-    border: solid 1px green;
+    background-image: url(../img/slider-two.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px transparent;
   }
 }
 .add-plan__desktop-slider-three {
@@ -318,7 +324,10 @@
     height: 137px;
     padding: 0px 0px 0px 0px;
     margin: 89px 189px 0px 0px;
-    border: solid 1px green;
+    background-image: url(../img/slider-three.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px transparent;
   }
 }
 .add-plan__form-field-person {
