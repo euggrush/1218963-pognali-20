@@ -305,8 +305,7 @@
   }
 }
 .add-plan__desktop-slider-three {
-  display: none
-  ;
+  display: none;
 }
 @media (min-width: 768px) {
   .add-plan__desktop-slider-three {
@@ -968,6 +967,29 @@
     padding: 0px 0px 0px 0px;
   }
 }
+@media (min-width: 768px) {
+  .add-plan__cal-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__cal-mobile {
+    display: none;
+  }
+}
+.add-plan__cal-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .add-plan__cal-tablet {
+    display: table-row;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__cal-tablet {
+    display: table-row;
+  }
+}
 .add-plan__week-day {
   width: 32px;
   height: 32px;
@@ -1006,11 +1028,19 @@
 }
 @media (min-width: 768px) {
   .add-plan__week-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
     height: 66px;
   }
 }
 @media (min-width: 1440px) {
   .add-plan__week-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
     height: 69px;
   }
 }
@@ -2757,4 +2787,7 @@
   .add-plan__arrow-down-three {
     display: none;
   }
+}
+::placeholder {
+  color: #1D2E5B;
 }

@@ -307,8 +307,8 @@
 }
 
 .add-plan__desktop-slider-three {
-  display: none
-  ;
+  display: none;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -489,7 +489,7 @@
     width: 36px;
     height: 36px;
     background-size: 25px;
-    margin:2px 0px 0px -3px;
+    margin: 2px 0px 0px -3px;
   }
 }
 
@@ -955,6 +955,29 @@
   }
 }
 
+.add-plan__cal-mobile {
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+   display: none;
+  }
+}
+
+.add-plan__cal-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-row;
+  }
+
+  @media (min-width: @desktop-width) {
+   display: table-row;
+  }
+}
+
 .add-plan__week-day {
   width: 32px;
   height: 32px;
@@ -994,10 +1017,18 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
     height: 66px;
   }
 
   @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
     height: 69px;
   }
 }
@@ -2720,4 +2751,8 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+::placeholder {
+  color: #1D2E5B;
 }
