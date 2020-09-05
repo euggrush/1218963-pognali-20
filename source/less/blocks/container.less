@@ -1,0 +1,27 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 320px;
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
