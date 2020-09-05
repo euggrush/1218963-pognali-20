@@ -3,31 +3,38 @@
   flex-direction: column;
   min-height: 424px;
   margin-top: -30px;
-  background-image: url(../img/background-map.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 768px) {
   .location {
     min-height: 685px;
     margin-top: -50px;
-    background-image: url(../img/tablet-map.png);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 @media (min-width: 1440px) {
   .location {
     width: 1440px;
     min-height: 625px;
-    background-image: url(../img/bg-map-desktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
     margin-top: -100px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
     position: relative;
     z-index: 3;
+  }
+}
+.location__map {
+  width: auto;
+  height: 424px;
+}
+@media (min-width: 768px) {
+  .location__map {
+    width: auto;
+    height: 581px;
+  }
+}
+@media (min-width: 1440px) {
+  .location__map {
+    width: auto;
+    height: 584px;
   }
 }
