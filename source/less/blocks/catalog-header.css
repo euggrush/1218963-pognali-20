@@ -161,6 +161,9 @@
     background-color: #FF8D30;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    background-image: url(../img/scroll-icon-call.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .catalog-header__btn-email {
@@ -180,6 +183,9 @@
     background-color: #FFBD30;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    background-image: url(../img/scroll-icon-email.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .catalog-header__btn-authorization {
@@ -225,6 +231,8 @@
     grid-column-end: 3;
     grid-row-start: 2;
     display: block;
+    width: 176px;
+    height: 20px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -236,6 +244,9 @@
     margin-bottom: 0px;
     margin-left: 134px;
     margin-right: 0px;
+    background-image: url(../img/icon-arrow-bend.svg);
+    background-repeat: no-repeat;
+    background-position: 99%, 50%;
   }
 }
 @media (min-width: 1440px) {

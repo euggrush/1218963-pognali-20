@@ -65,11 +65,15 @@
         </div>
         <img class="my-profile__avatar" src="img/demin-desktop@1x.jpg" width="100" height="100" alt="аватарка">
       </div>
-      <button class="my-profile__button">сменить фото</button>
+      <button class="my-profile__button">
+        <span class="my-profile__btn-text">сменить фото</span>
+        <span class="my-profile__btn-text-desktop">фото</span>
+      </button>
 
       <section class="my-profile__tags">
         <span class="my-profile__tags-title">ТЭГИ</span>
         <h3 class="my-profile__tags-text">#бургер #бар #футбол #концерт #крафт</h3>
+        <span class="my-profile__tags-title-tablet">ТЭГИ</span>
       </section>
 
       <section class="my-profile__transport">
@@ -98,7 +102,7 @@
 
       <section class="plans__item">
         <p class="plans__count">2.</p>
-        <h3 class="plans__item-title">Таиланд, Индонезия</h3>
+        <h3 class="plans__item-title">Тайланд, Индонезия</h3>
         <p class="plans__number">1 попутчик</p>
         <p class="plans__date">1 июл —- 15 июл</p>
         <button class="plans__button">изменить</button>
@@ -139,6 +143,10 @@
             длительность.
           </p>
 
+          <section class="add-plan__desktop-slider">
+
+          </section>
+
           <div class="add-plan__form-field-person">
             <label class="add-plan__label-person" for="add-plan__search">ищу попутчиков:</label>
             <b class="add-plan__label-desc-search">чел.</b>
@@ -169,6 +177,7 @@
 
           <div class="add-plan__checkbox">
             <input class="add-plan__kids" type="checkbox" id="kids" name="kids" checked>
+            <div class="add-plan__checkbox-on add-plan__checkbox-off"></div>
             <label for="kids">Можно с детьми</label>
           </div>
 
@@ -183,7 +192,7 @@
             <!-- КАЛЕНДАРЬ -->
 
             <table class="add-plan__calendar-days">
-              <tr>
+              <tr class="add-plan__cal-mobile">
                 <th class="add-plan__week-day">п</th>
                 <th class="add-plan__week-day">в</th>
                 <th class="add-plan__week-day">с</th>
@@ -191,6 +200,16 @@
                 <th class="add-plan__week-day">п</th>
                 <th class="add-plan__weekend-day">с</th>
                 <th class="add-plan__weekend-day">в</th>
+              </tr>
+
+              <tr class="add-plan__cal-tablet">
+                <th class="add-plan__week-day">Пн</th>
+                <th class="add-plan__week-day">Вт</th>
+                <th class="add-plan__week-day">Ср</th>
+                <th class="add-plan__week-day">Чт</th>
+                <th class="add-plan__week-day">Пт</th>
+                <th class="add-plan__weekend-day">Сб</th>
+                <th class="add-plan__weekend-day">Вс</th>
               </tr>
 
               <tr>
@@ -237,20 +256,20 @@
                 <td class="add-plan__week-date">23</td>
                 <td class="add-plan__week-date">24</td>
                 <td class="add-plan__week-date">25</td>
-                <td class="add-plan__week-date">26</td>
-                <td class="add-plan__week-date">27</td>
-                <td class="add-plan__week-date">28</td>
-                <td class="add-plan__week-date">29</td>
+                <td class="add-plan__week-date add-plan__week-date-blue ">26</td>
+                <td class="add-plan__week-date add-plan__week-date-blue ">27</td>
+                <td class="add-plan__week-date add-plan__week-date-blue ">28</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">29</td>
               </tr>
 
               <tr>
-                <td class="add-plan__week-date">30</td>
-                <td class="add-plan__week-date">31</td>
-                <td class="add-plan__week-date">1</td>
-                <td class="add-plan__week-date">2</td>
-                <td class="add-plan__week-date">3</td>
-                <td class="add-plan__week-date">4</td>
-                <td class="add-plan__week-date">5</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">30</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">31</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">1</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">2</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">3</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">4</td>
+                <td class="add-plan__week-date add-plan__week-date-grey">5</td>
               </tr>
 
             </table>
@@ -267,29 +286,53 @@
             Это может быть одна или сразу несколько.
           </span>
 
+          <section class="add-plan__desktop-slider-two">
+
+          </section>
+
           <div class="add-plan__country-field-one">
-            <input type="text" class="add-plan__country" placeholder="Босния и герцеговина">
-            <div class="add-plan__checkmark"></div>
-            <div class="add-plan__circle"></div>
-            <div class="add-plan__flag-bosnia"></div>
-            <button class="add-plan__remove-btn" type="button"><span class="text-hidden">удалить страну</span></button>
+            <div class="add-plan__input-container">
+              <input type="text" class="add-plan__country" placeholder="Босния и герцеговина">
+              <div class="add-plan__checkmark"></div>
+            </div>
+
+            <div class="add-plan__btn-container">
+              <div class="add-plan__line-tablet-up"></div>
+              <div class="add-plan__circle"></div>
+              <div class="add-plan__line-tablet-down"></div>
+              <div class="add-plan__flag-bosnia"></div>
+              <button class="add-plan__remove-btn" type="button"><span class="text-hidden">удалить страну</span></button>
+              <div class="add-plan__arrow-down"></div>
+            </div>
+
           </div>
 
           <div class="add-plan__country-field-two">
-            <input type="text" class="add-plan__country" placeholder="чехия">
-            <div class="add-plan__checkmark"></div>
-            <div class="add-plan__circle"></div>
-            <div class="add-plan__flag-czech"></div>
-            <button class="add-plan__remove-btn" type="button"><span class="text-hidden">удалить страну</span></button>
+            <div class="add-plan__input-container">
+              <input type="text" class="add-plan__country" placeholder="чехия">
+              <div class="add-plan__checkmark"></div>
+            </div>
+
+            <div class="add-plan__btn-container">
+              <div class="add-plan__line-tablet-up"></div>
+              <div class="add-plan__circle"></div>
+              <div class="add-plan__line-tablet-down"></div>
+              <div class="add-plan__flag-czech"></div>
+              <button class="add-plan__remove-btn" type="button"><span class="text-hidden">удалить страну</span></button>
+              <div class="add-plan__arrow-down"></div>
+            </div>
           </div>
 
           <div class="add-plan__dropdown-wrap">
             <button class="add-plan__choose-button">выберите страну</button>
-            <div class="add-plan__circle"></div>
+            <div class="add-plan__circle-empty"></div>
             <div class="add-plan__checkmark"></div>
             <button class="add-plan__remove-btn" type="button"><span class="text-hidden">удалить страну</span></button>
-
+            <div class="add-plan__arrow-down-three"></div>
+<!-- МОДАЛЬНОЕ ОКНО -->
             <div class="add-plan__country-modal hidden">
+
+              <button class="add-plan__modal-btn" type="button"><span class="add-plan__modal-btn-text">Выберите страну</span></button>
 
               <table class="add-plan__alphabet">
                 <tr>
@@ -345,7 +388,8 @@
           </div>
 
           <button class="add-plan__add-button">Добавить страну
-            <div class="add-plan__circle"></div>
+            <div class="add-plan__circle-empty"></div>
+            <div class="add-plan__line-tablet-down-last"></div>
             <div class="add-plan__add-plus"></div>
           </button>
 
@@ -360,6 +404,10 @@
           <p class="add-plan__step-three-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в
             свободной
             форме и ставить тэги.</p>
+
+            <section class="add-plan__desktop-slider-three">
+
+            </section>
 
           <div class="add-plan__todo-container">
             <div class="add-plan__border"></div>

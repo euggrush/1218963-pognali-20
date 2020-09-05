@@ -14,7 +14,7 @@
 
     <!-- ОТКРЫТОЕ МЕНЮ МОДАЛЬНОЕ -->
 
-    <nav class="page-header__nav-modal hidden">
+    <nav class="page-header__nav-modal">
       <div class="page-header__modal-btn-wrap">
         <a href="#" class="page-header__nav-item">
           <span class="text-hidden">Главная</span>
@@ -97,6 +97,29 @@
         Авторизация
       </a>
     </div>
+
+  <section class="page-header__scroll-modal">
+    <img  class="page-header__scroll-logo" src="img/scroll-logo.png" width="198" height="60" alt="лого">
+
+    <div class="page-header__scroll-line"></div>
+
+    <button class="page-header__scroll-btn-main" type="button"></button>
+
+    <a class="page-header__scroll-service" href="index.html">
+      О сервисе
+    </a>
+    <a class="page-header__scroll-directions" href="form.html">
+      Направления
+    </a>
+    <a class="page-header__scroll-travelers" href="catalog.html">
+      Попутчики
+    </a>
+
+    <a class="page-header__scroll-btn-call" href="#"><span class="visually-hidden">Позвонить</span></a>
+    <a class="page-header__scroll-btn-email" href="#"><span class="visually-hidden">Отправить email</span></a>
+    <a class="page-header__scroll-btn-authorization" href="#">Авторизация</a>
+  </section>
+
   </header>
 
   <main class="page-main">
@@ -150,8 +173,8 @@
         там заняться.</p>
       <ul class="directions__country-list">
         <li class="directions__country-item">
-          <img class="directions__country-picture" src="img/thailand-mobile.png" width="270" height="110" alt="Таиланд">
-
+          <!-- <img class="directions__country-picture" src="img/thailand-mobile.png" width="270" height="110" alt="Таиланд"> -->
+          <div class="directions__country-picture directions__country-picture-thailand"></div>
           <div class="directions__country-wrap">
             <img class="directions__flag-icon" src="img/thailand-flag.svg" width="35" height="24" alt="флаг">
             <h3 class="directions__country-title">Таиланд</h3>
@@ -161,8 +184,8 @@
 
         </li>
         <li class="directions__country-item">
-          <img class="directions__country-picture" src="img/france-mobile.png" width="270" height="110" alt="Франция">
-
+          <!-- <img class="directions__country-picture" src="img/france-mobile.png" width="270" height="110" alt="Франция"> -->
+          <div class="directions__country-picture directions__country-picture-france"></div>
           <div class="directions__country-wrap">
             <img class="directions__flag-icon" src="img/france-flag.svg" width="35" height="24" alt="флаг">
             <h3 class="directions__country-title">Франция</h3>
@@ -172,8 +195,8 @@
 
         </li>
         <li class="directions__country-item">
-          <img class="directions__country-picture" src="img/czech-mobile.png" width="270" height="110" alt="Чехия">
-
+          <!-- <img class="directions__country-picture" src="img/czech-mobile.png" width="270" height="110" alt="Чехия"> -->
+          <div class="directions__country-picture directions__country-picture-czech"></div>
           <div class="directions__country-wrap">
             <img class="directions__flag-icon" src="img/czech-flag.svg" width="35" height="24" alt="флаг">
             <h3 class="directions__country-title">Чехия</h3>
@@ -192,7 +215,7 @@
       <blockquote class="travelers__quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
         нужен пляж и коктейль, а другому маршрут для хайкинга.</blockquote>
       <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
-      <section class="travelers__item">
+      <section class="travelers__item travelers__item-left">
         <span class="travelers__level-firsova">
           <!-- <span class="travelers__level-number">99</span>
           <div class="travelers__level-splitter"></div>
@@ -218,7 +241,7 @@
 
       </section>
 
-      <section class="travelers__item">
+      <section class="travelers__item travelers__item-right">
         <span class="travelers__level-demin">
           <!-- <span class="travelers__level-number">80</span>
           <div class="travelers__level-splitter"></div>
@@ -271,7 +294,7 @@
 
       <!-- МОДАЛЬНОЕ ОКНО С ТАРИФАМИ ДЛЯ БИЗНЕСА -->
 
-      <div class="profile__modal hidden">
+      <div class="profile__modal">
         <h2 class="profile__modal-title">Бизнес-тарифы</h2>
         <div class="profile__cost-wrap">
           <p class="profile__modal-item">Реклама у блоггера</p>
@@ -303,11 +326,11 @@
 
     <section class="reg">
       <h2 class="reg__title">Заинтересовались?</h2>
-      <span class="reg__quote">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+      <span class="reg__quote">Зарегистрируйтесь, это быстро и бесплатно! <br> Уже зарегистрированы? Тогда скорее
         <a class="reg__quote-link" href="#">авторизуйтесь</a>.</span>
       <div class="reg__button-wrapper">
         <input class="reg__input" type="text" id="reg__input" name="reg__input" placeholder="E-mail">
-        <button class="reg__button" type="button"> <span class="text-hidden">регистрация</span></button>
+        <button class="reg__button" type="button"> <span class="reg__btn-text">Регистрация</span></button>
       </div>
       <span class="reg__more">Остались вопросы? Мы с радостью на них ответим!</span>
 
@@ -336,7 +359,7 @@
     </section>
 
     <section class="location">
-      <img class="location__picture" src="img/background-map.png" width="320" height="424" alt="карта">
+      <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sca!4v1599280905211!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 
   </main>

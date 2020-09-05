@@ -4,7 +4,7 @@
   min-height: 436px;
   justify-content: space-between;
   align-items: center;
-  background-color: #CBCED9;
+  background-color: #E5E5E5;
   border: solid 1px transparent;
   margin-top: -15px;
   padding-top: 38px;
@@ -79,6 +79,30 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .my-profile__level {
+    background-image: url("../img/my-profile-level.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 94px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__level {
+    background-image: url("../img/my-profile-level-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 94px;
+    margin-top: -9px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .my-profile__level-number {
   display: block;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -131,13 +155,6 @@
   background-color: #DFE3F0;
   border: none;
   border-radius: 20px;
-  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #161C35;
   margin-top: 16px;
 }
 @media (min-width: 768px) {
@@ -148,10 +165,19 @@
     grid-row-end: 3;
     width: 618px;
     height: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.09em;
     margin-top: -25px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px 0px 0px 228px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
@@ -168,6 +194,50 @@
     margin-left: 136px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
+  }
+}
+.my-profile__btn-text {
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #161C35;
+}
+@media (min-width: 768px) {
+  .my-profile__btn-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__btn-text {
+    display: none;
+  }
+}
+.my-profile__btn-text-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .my-profile__btn-text-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__btn-text-desktop {
+    display: inline-block;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #161C35;
+    margin: 0 auto;
   }
 }
 .my-profile__tags {
@@ -191,6 +261,7 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
@@ -199,9 +270,9 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    width: 729px;
+    width: 734px;
     height: 94px;
-    margin-top: -48px;
+    margin-top: -52px;
     margin-bottom: 0px;
     margin-left: 122px;
     margin-right: 0px;
@@ -221,6 +292,21 @@
   color: #444444;
   opacity: 0.6;
 }
+@media (min-width: 768px) {
+  .my-profile__tags-text {
+    display: inline-block;
+    width: 330px;
+    height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    color: #444444;
+    opacity: 0.6;
+    margin: 30px 0px 0px 36px;
+    padding: 0px 0px 0px;
+  }
+}
 .my-profile__tags-title {
   display: block;
   width: 68px;
@@ -236,7 +322,58 @@
   color: #1D2E5B;
   margin: 0 auto;
   margin-top: -12px;
-  background-color: #CBCED9;
+  background-color: #E5E5E5;
+}
+@media (min-width: 768px) {
+  .my-profile__tags-title {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__tags-title {
+    display: none;
+  }
+}
+.my-profile__tags-title-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .my-profile__tags-title-tablet {
+    display: block;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #161C35;
+    margin: 18px auto -14px auto;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__tags-title-tablet {
+    display: block;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #161C35;
+    margin: 18px auto -14px 14px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+  }
 }
 .my-profile__transport {
   display: block;
@@ -262,6 +399,7 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
@@ -292,9 +430,14 @@
   color: #1D2E5B;
   margin: 0 auto;
   margin-top: -9px;
-  background-color: #CBCED9;
+  background-color: #E5E5E5;
 }
 @media (min-width: 768px) {
+  .my-profile__transport-title {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
   .my-profile__transport-title {
     display: none;
   }
@@ -305,34 +448,72 @@
 @media (min-width: 768px) {
   .my-profile__transport-title-tablet {
     display: block;
-    width: 112px;
+    width: 149px;
     height: 20px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 21px;
     letter-spacing: 0.08em;
     text-align: center;
     text-transform: uppercase;
     color: #1D2E5B;
-    background-color: #CBCED9;
-    margin-top: 33px;
-    margin-bottom: 0px;
-    margin-left: 95px;
+    background-color: #E5E5E5;
+    margin-top: 9px;
+    margin-bottom: -41px;
+    margin-left: 76px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__transport-title-tablet {
+    display: block;
+    width: 149px;
+    height: 20px;
+    font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    background-color: #E5E5E5;
+    margin-top: 10px;
+    margin-bottom: -41px;
+    margin-left: 117px;
     margin-right: 0px;
   }
 }
 .my-profile__transport-plane {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #FFFFFF;
-  background-image: url("../img/transport-plane.svg");
+  background-image: url(../img/plane.svg);
+  background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 5px;
   margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .my-profile__transport-plane {
+    width: 44px;
+    height: 44px;
+    margin: 22px 0px 0px -8px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__transport-plane {
+    width: 44px;
+    height: 44px;
+    margin: 22px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 .my-profile__transport-bus {
   width: 32px;
@@ -343,6 +524,22 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .my-profile__transport-bus {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__transport-bus {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .my-profile__transport-bike {
   width: 32px;
   height: 32px;
@@ -352,6 +549,22 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .my-profile__transport-bike {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__transport-bike {
+    width: 44px;
+    height: 44px;
+    margin: 0px 0px 0px -7px;
+    padding: 0px 0px 0px 0px;
+  }
+}
 .my-profile__transport-run {
   width: 32px;
   height: 32px;
@@ -360,4 +573,20 @@
   background-image: url("../img/transport-run.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .my-profile__transport-run {
+    width: 44px;
+    height: 44px;
+    margin: 7px 0px 0px -6px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile__transport-run {
+    width: 44px;
+    height: 44px;
+    margin: 7px 0px 0px -6px;
+    padding: 0px 0px 0px 0px;
+  }
 }

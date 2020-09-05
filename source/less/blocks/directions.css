@@ -3,7 +3,7 @@
   z-index: 8;
   display: flex;
   flex-direction: column;
-  min-height: 710px;
+  min-height: 916px;
   background-color: #EDEFF6;
   margin-top: -20px;
   padding-top: 97px;
@@ -12,7 +12,8 @@
 }
 @media (min-width: 768px) {
   .directions {
-    min-height: 1017px;
+    margin-top: -50px;
+    min-height: 1045px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -22,9 +23,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    min-height: 838px;
+    min-height: 800px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -50px 0px 0px 0px;
   }
 }
 .directions__title {
@@ -45,7 +46,7 @@
     font-size: 45px;
     line-height: 45px;
     color: #FF8D30;
-    margin-top: -8px;
+    margin-top: 22px;
     margin-bottom: 0px;
     margin-left: 73px;
     margin-right: 0px;
@@ -61,7 +62,7 @@
     font-size: 45px;
     line-height: 45px;
     padding: 0px 0px 0px 0px;
-    margin: 249px 0px 0px 137px;
+    margin: 212px 0px 0px 142px;
   }
 }
 .directions__slogan {
@@ -105,7 +106,7 @@
     font-size: 28px;
     line-height: 33px;
     padding: 0px 0px 0px 0px;
-    margin: 77px 0px 0px 138px;
+    margin: 50px 0px 0px 141px;
   }
 }
 .directions__country-list {
@@ -116,7 +117,7 @@
 @media (min-width: 768px) {
   .directions__country-list {
     width: auto;
-    margin-top: 104px;
+    margin-top: 89px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -141,22 +142,110 @@
     grid-template-rows: 1fr;
     width: 616px;
     min-height: 140px;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+@media (min-width: 1440px) {
+  .directions__country-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    width: 561px;
+    height: 140px;
+    padding: 0px 0px 0px 0px;
+    margin: -23px 0px 33px 91px;
+  }
+}
+.directions__country-picture {
+  position: relative;
+  z-index: 1;
+  width: 270px;
+  height: 110px;
+}
 @media (min-width: 768px) {
   .directions__country-picture {
     width: auto;
-    height: 100%;
+    height: 140px;
     grid-column-start: 2;
     grid-row-start: 1;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-picture {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: auto;
+    height: 137px;
+    border-radius: 10px;
+  }
+}
+.directions__country-picture-thailand {
+  background-image: url(../img/thailand-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .directions__country-picture-thailand {
+    background-image: url(../img/thailand-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-picture-thailand {
+    background-image: url(../img/thailand-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.directions__country-picture-france {
+  background-image: url(../img/france-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .directions__country-picture-france {
+    background-image: url(../img/france-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-picture-france {
+    background-image: url(../img/france-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.directions__country-picture-czech {
+  background-image: url(../img/czech-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .directions__country-picture-czech {
+    background-image: url(../img/czech-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-picture-czech {
+    background-image: url(../img/czech-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .directions__country-wrap {
@@ -168,14 +257,37 @@
   border: solid 1px transparent;
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin-top: -17px;
-  margin-bottom: 11px;
+  margin-top: -10px;
+  margin-bottom: 7px;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .directions__country-wrap {
-    width: auto;
+    width: 427px;
+    min-height: 89px;
     grid-column-start: 1;
     grid-row-start: 1;
+    margin: 0px 0px 0px 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-wrap {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    width: 373px;
+    height: 137px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 }
 .directions__button {
@@ -194,10 +306,12 @@
   .directions__button {
     width: 616px;
     height: 82px;
-    margin-top: 22px;
+    margin-top: 46px;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+    background-position: 95% 50%;
   }
 }
 @media (min-width: 1440px) {
@@ -208,7 +322,8 @@
     height: 80px;
     border-radius: 20px;
     padding: 0px 0px 0px 0px;
-    margin: 61px 0px 0px 140px;
+    margin: 49px 0px 0px 143px;
+    background-position: 87% 50%;
   }
 }
 .directions__btn-text {
@@ -221,6 +336,26 @@
   padding-left: 24px;
   padding-right: 0px;
 }
+@media (min-width: 768px) {
+  .directions__btn-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 78px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 33px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__btn-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 78px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 33px;
+  }
+}
 .directions__country-title {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -230,13 +365,38 @@
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .directions__country-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0px 0px 0px 0px;
+    margin: 27px 0px 0px 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__country-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0px 0px 0px 0px;
+    margin: 21px 0px 0px 30px;
+  }
+}
 .directions__quote {
   grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 2;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -250,9 +410,37 @@
   margin-left: 25px;
   margin-right: 0px;
 }
+@media (min-width: 768px) {
+  .directions__quote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 56px 0px 0px 27px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__quote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 49px 0px 0px 32px;
+  }
+}
 .directions__rating {
   grid-column-start: 2;
   grid-row-start: 1;
+  grid-row-end: 3;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -260,19 +448,52 @@
   line-height: 20px;
   color: #161C35;
   opacity: 0.3;
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 0px;
-  margin-left: 53px;
+  margin-left: 68px;
   margin-right: 0px;
 }
-.directions__rating::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+@media (min-width: 768px) {
+  .directions__rating {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: inline-block;
+    width: 84px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 25px;
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+    background-position: 14%, 50%;
+    text-align: end;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__rating {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: inline-block;
+    width: 84px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 26px 0px 0px 30px;
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+    background-position: 14%, 50%;
+    text-align: end;
+  }
 }
 .directions__flag-icon {
   grid-column-start: 1;
@@ -281,4 +502,26 @@
   margin-bottom: 0px;
   margin-left: 25px;
   margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .directions__flag-icon {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 70px;
+    height: 47px;
+    padding: 0px 0px 0px 0px;
+    margin: 16px 0px 0px 183px;
+  }
+}
+@media (min-width: 1440px) {
+  .directions__flag-icon {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 70px;
+    height: 47px;
+    padding: 0px 0px 0px 0px;
+    margin: 22px 0px 0px 150px;
+  }
 }

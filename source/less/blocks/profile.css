@@ -1,7 +1,7 @@
 .profile {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.6fr;
   min-height: 420px;
   margin-top: -25px;
   padding-top: 50px;
@@ -12,13 +12,19 @@
   border-bottom-right-radius: 30px;
   background-color: #E6E8F1;
   border: solid 1px transparent;
+  position: relative;
+  z-index: 6;
 }
 @media (min-width: 768px) {
   .profile {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 0px;
+    min-height: 503px;
+    margin: -50px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 }
 @media (min-width: 1440px) {
@@ -26,11 +32,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 732px;
-    margin-top: 0px;
+    min-height: 797px;
+    margin-top: -50px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    z-index: 6;
   }
 }
 .profile__title {
@@ -60,7 +71,7 @@
     color: #FF8D30;
     margin-top: 19px;
     margin-bottom: 0px;
-    margin-left: 91px;
+    margin-left: 145px;
     margin-right: 0px;
   }
 }
@@ -69,11 +80,11 @@
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
-    margin-top: 0px;
+    grid-row-end: 3;
+    margin-top: 150px;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 121px;
   }
 }
 .profile__rates {
@@ -92,6 +103,10 @@
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
+    margin-top: -18px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 7px;
   }
 }
 @media (min-width: 1440px) {
@@ -99,13 +114,13 @@
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     width: 198px;
     height: 198px;
-    margin-top: 0px;
+    margin-top: 136px;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 28px;
   }
 }
 .profile__list {
@@ -128,6 +143,10 @@
     grid-row-start: 2;
     grid-row-end: 4;
     min-width: auto;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 36px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -136,7 +155,7 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 4;
-    margin-top: 0px;
+    margin-top: 132px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
@@ -151,9 +170,26 @@
 @media (min-width: 768px) {
   .profile__item {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.15fr 1fr 0.5fr;
     grid-template-rows: 1fr;
-    min-height: 56px;
+    width: 657px;
+    min-height: 70px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__item {
+    display: grid;
+    grid-template-columns: 0.15fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    width: 907px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 125px;
   }
 }
 .profile__list-text {
@@ -178,14 +214,26 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 69px;
+    margin: 0px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
   .profile__list-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
-    line-height: 28px;
+    line-height: 66px;
+    margin: 0px 0px 0px 11px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__list-price {
@@ -209,6 +257,12 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 67px;
+    margin: 0px 0px 0px auto;
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -216,7 +270,9 @@
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
-    line-height: 28px;
+    line-height: 67px;
+    margin: 0px 0px 0px auto;
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__list-number {
@@ -246,12 +302,26 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    width: 68px;
+    height: 68px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 74px;
+    margin: 0px 0px 0px 3px;
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
   .profile__list-number {
     width: 68px;
     height: 68px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 74px;
+    margin: 0px 0px 0px 3px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__button {
@@ -265,7 +335,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #132576;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 0px;
   margin-left: -2px;
   margin-right: 0px;
@@ -277,34 +347,52 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    display: block;
     width: 360px;
     height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    background-image: url("../img/business-tarrif-icon.svg");
+    margin-top: -6px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 0px;
+    background-image: url("../img/business-rates.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 00%, 50%;
   }
 }
 @media (min-width: 1440px) {
   .profile__button {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -34px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 130px;
     margin-right: 0px;
+    background-position: -1%, 50%;
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__modal {
   display: flex;
   flex-direction: column;
   position: absolute;
+  z-index: 8;
   width: 270px;
   height: 443px;
   background-color: #FFFFFF;
@@ -312,7 +400,7 @@
   border-radius: 20px;
   margin-bottom: 0px;
   align-self: center;
-  transform: translate(-9%, -9%);
+  transform: translate(8%, -1%);
 }
 @media (min-width: 768px) {
   .profile__modal {
@@ -322,7 +410,16 @@
     width: 688px;
     height: 526px;
     margin: 0px auto 0px auto;
-    transform: translate(-2%, -10%);
+    transform: translate(5%, 2%);
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__modal {
+    width: 750px;
+    height: 526px;
+    border-radius: 30px;
+    transform: translate(46%, 4%);
   }
 }
 .profile__modal-title {
@@ -375,6 +472,19 @@
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
+    margin-top: 49px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__modal-close {
+    width: 749px;
+    height: 106px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    margin-top: 49px;
   }
 }
 .profile__cost-wrap {
@@ -389,6 +499,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 55px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__cost-wrap {
+    margin: 0px 61px 0px 32px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__modal-item {
@@ -412,6 +528,11 @@
     font-size: 22px;
     line-height: 54px;
     padding: 0px 0px 0px 65px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__modal-item {
+    padding: 0px 0px 0px 0px;
   }
 }
 .profile__modal-item-cost {
@@ -438,6 +559,11 @@
     padding: 0px 94px 0px 66px;
     margin: 0px 0px 0px 0px;
     text-align: end;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__modal-item-cost {
+    padding: 0px 0px 0px 0px;
   }
 }
 .hidden {
