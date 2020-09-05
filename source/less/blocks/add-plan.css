@@ -1807,6 +1807,8 @@
   color: #1D2E5B;
   background-color: transparent;
   border: none;
+  padding: 0px 0px 0px 10px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .add-plan__choose-button {
@@ -2689,5 +2691,47 @@
     width: 1px;
     height: 46px;
     background-color: #E1E3E9;
+  }
+}
+.add-plan__arrow-down {
+  display: block;
+  position: absolute;
+  transform: translate(-58%, 191%);
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/arrow-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px transparent;
+}
+@media (min-width: 768px) {
+  .add-plan__arrow-down {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__arrow-down {
+    display: none;
+  }
+}
+.add-plan__arrow-down-three {
+  display: block;
+  position: absolute;
+  transform: translate(931%, 193%);
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/arrow-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px transparent;
+}
+@media (min-width: 768px) {
+  .add-plan__arrow-down-three {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__arrow-down-three {
+    display: none;
   }
 }
