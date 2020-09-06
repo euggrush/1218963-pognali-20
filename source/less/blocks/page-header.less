@@ -257,12 +257,18 @@
 }
 
 .page-header__logo-open {
-  width: 102px;
-  height: 20px;
-  margin-top: 20px;
-  margin-left: 12px;
+  width: 100px;
+  height: 15px;
+  margin: 0px 0px 0px 0px;
 
   @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 164px;
+    height: 42px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
@@ -686,7 +692,9 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
-    margin: 3px 0px 0px 59px;
+    width: 198px;
+    height: 60px;
+    margin: 3px 0px 0px 40px;
     cursor: pointer;
   }
 }
