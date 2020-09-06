@@ -61,35 +61,23 @@
 .catalog-header__logo {
   grid-column-start: 1;
   grid-row-start: 1;
+  width: 96px;
+  height: 15px;
   margin-top: 19px;
   margin-left: 27px;
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.catalog-header__logo-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
+    display: inline-block;
+    width: 166px;
+    height: 42px;
+    margin: 0px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.catalog-header__logo-desktop {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
+    display: inline-block;
+    width: 200px;
+    height: 52px;
+    margin: 0px 0px 0px 0px;
   }
 }
 

@@ -35,41 +35,24 @@
   }
 }
 .catalog-footer__logo {
+  width: 96px;
+  height: 15px;
   margin-top: 10px;
 }
 @media (min-width: 768px) {
   .catalog-footer__logo {
-    display: none;
-  }
-}
-.catalog-footer__logo-tablet {
-  display: none;
-}
-@media (min-width: 768px) {
-  .catalog-footer__logo-tablet {
-    display: block;
+    display: inline-block;
+    width: 164px;
+    height: 42px;
+    margin: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
-  .catalog-footer__logo-tablet {
-    display: none;
-  }
-}
-.catalog-footer__logo-desktop {
-  display: none;
-}
-@media (min-width: 768px) {
-  .catalog-footer__logo-desktop {
-    display: none;
-  }
-}
-@media (min-width: 1440px) {
-  .catalog-footer__logo-desktop {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 67px;
-    margin-right: 0px;
+  .catalog-footer__logo {
+    display: inline-block;
+    width: 164px;
+    height: 42px;
+    margin: 0px 0px 0px 0px;
   }
 }
 .catalog-footer__contacts {
