@@ -1686,7 +1686,7 @@
 .add-plan__flag-bosnia {
   width: 53px;
   height: 42px;
-  background-image: url("../img/flag-bosnia.png");
+  background-image: url("../img/flag-bosnia.svg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: 35px, 24px;
@@ -1697,7 +1697,7 @@
   .add-plan__flag-bosnia {
     width: 70px;
     height: 47px;
-    background-image: url(../img/flag-bosnia.png);
+    background-image: url("../img/flag-bosnia.svg");
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 24px;
@@ -1709,7 +1709,7 @@
   .add-plan__flag-bosnia {
     width: 70px;
     height: 47px;
-    background-image: url(../img/flag-bosnia.png);
+    background-image: url("../img/flag-bosnia.svg");
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 24px;
@@ -1720,7 +1720,7 @@
 .add-plan__flag-czech {
   width: 53px;
   height: 42px;
-  background-image: url("../img/flag-czech.png");
+  background-image: url("../img/flag-czech.svg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: 35px, 24px;
@@ -1731,7 +1731,7 @@
   .add-plan__flag-czech {
     width: 70px;
     height: 47px;
-    background-image: url(../img/flag-czech.png);
+    background-image: url(../img/flag-czech.svg);
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 24px;
@@ -1743,7 +1743,7 @@
   .add-plan__flag-czech {
     width: 70px;
     height: 47px;
-    background-image: url(../img/flag-czech.png);
+    background-image: url(../img/flag-czech.svg);
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 24px;
@@ -2640,18 +2640,20 @@
 .add-plan__todo-flag-bosnia {
   width: 35px;
   height: 24px;
-  background-image: url("../img/flag-bosnia.png");
+  background-image: url("../img/flag-bosnia.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 35px 24px;
   margin: 0px 0px 0px 0px;
 }
 @media (min-width: 768px) {
   .add-plan__todo-flag-bosnia {
     width: 70px;
     height: 47px;
-    background-image: url("../img/flag-bosnia-tablet.png");
+    background-image: url("../img/flag-bosnia.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px 47px;
     margin-left: 136px;
   }
 }
@@ -2659,7 +2661,7 @@
   .add-plan__todo-flag-bosnia {
     width: 70px;
     height: 47px;
-    background-image: url("../img/flag-bosnia-tablet.png");
+    background-image: url("../img/flag-bosnia.svg");
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 47px;
@@ -2670,19 +2672,20 @@
 .add-plan__todo-flag-czech {
   width: 35px;
   height: 24px;
-  background-image: url("../img/flag-czech.png");
+  background-image: url("../img/flag-czech.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 35px;
+  background-size: 35px 24px;
   margin: 0px 0px 0px 0px;
 }
 @media (min-width: 768px) {
   .add-plan__todo-flag-czech {
     width: 70px;
     height: 47px;
-    background-image: url("../img/flag-czech-tablet.png");
+    background-image: url("../img/flag-czech.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px 47px;
     margin-left: 352px;
   }
 }
@@ -2690,7 +2693,7 @@
   .add-plan__todo-flag-czech {
     width: 70px;
     height: 47px;
-    background-image: url("../img/flag-czech-tablet.png");
+    background-image: url("../img/flag-czech.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px, 47px;
