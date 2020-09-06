@@ -15,9 +15,9 @@
 }
 @media (min-width: 768px) {
   .about {
-    background-image: url(../img/bg-about-tablet.png);
+    background-image: url(../img/about-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 39px, 50px;
+    background-position: 382px 139px;
     min-height: 760px;
     background-color: #182044;
     margin-top: 0px;
@@ -28,9 +28,9 @@
 @media (min-width: 1440px) {
   .about {
     margin-top: -3px;
-    background-image: url(../img/background-about.png);
+    background-image: url(../img/about-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: 0px, 0px;
+    background-position: 750px 82px;
     min-height: 731px;
     background-color: #182044;
     border-bottom-left-radius: 60px;
