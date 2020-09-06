@@ -6,8 +6,9 @@
   justify-content: flex-start;
   min-height: 1273px;
   background-color: #192144;
-  background-image: url(../img/bg-travelers.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/smolov-back-desktop@1x.png), url(../img/rogovaya-back-mobile@1x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 152px 66px, -10px 337px;
   margin-top: -31px;
   padding-top: 75px;
   border: solid 1px black;
@@ -22,6 +23,10 @@
     min-height: 1177px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    background-image: url(../img/smolov-back-desktop@2x.png), url(../img/rogovaya-back-desktop@2x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 40px 474px, 409px 130px;
+    background-size: 143px 143px, 285px 285px;
     margin-top: -50px;
     padding-top: 125px;
     padding-left: 74px;
@@ -33,6 +38,10 @@
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
     min-height: 809px;
+    background-image: url(../img/smolov-back-desktop@2x.png), url(../img/rogovaya-back-desktop@2x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 542px 192px, 186px 444px;
+    background-size: 143px 143px, 285px 285px;
     padding: 0px 0px 0px 0px;
     margin: -60px 0px 0px 0px;
   }
@@ -419,6 +428,9 @@
     transform: translate(-151%, 34%);
   }
 }
+.travelers__avatar {
+  margin: 0px 0px 0px 0px;
+}
 @media (min-width: 768px) {
   .travelers__avatar {
     width: 285px;
@@ -431,6 +443,30 @@
 }
 @media (min-width: 1440px) {
   .travelers__avatar {
+    width: 285px;
+    height: 284px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+.travelers__pictire {
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media (min-width: 768px) {
+  .travelers__pictire {
+    width: 285px;
+    height: 284px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .travelers__pictire {
     width: 285px;
     height: 284px;
     padding: 0px 0px 0px 0px;
