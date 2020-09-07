@@ -219,6 +219,19 @@
   }
 }
 
+.travelers__item-left > .travelers__name {
+
+  @media (min-width: @tablet-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 18px 0px 0px -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
 .travelers__item-right {
 
   @media (min-width: @tablet-width) {
@@ -241,11 +254,31 @@
   }
 }
 
+.travelers__item-right > .travelers__hobbies {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 184px;
+    height: 46px;
+    padding: 0px 0px 0px 0px;
+    margin: 24px 0px 0px 0px;
+  }
+}
+
 .travelers__preferences {
   display: flex;
   justify-content: space-between;
   width: auto;
   margin-top: -14px;
+
+  @media (min-width: @tablet-width) {
+    margin: -12px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .travelers__preferences img {
@@ -337,7 +370,7 @@
     font-size: 24px;
     line-height: 22px;
     padding: 0px 0px 0px 0px;
-    margin: 17px 0px 0px -26px;
+    margin: 18px 0px 0px -26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -358,6 +391,11 @@
   background-color: #F97676;
   border-radius: 50%;
   margin: 3px 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 6px 0px -8px;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0px 0px 0px 0px;
