@@ -61,8 +61,22 @@
     }
 }
 
-.persons__item:last-child {
-  margin: 0px 0px 0px 0px;
+.persons__item-one {
+  margin: 10px 0px 0px 0px;
+}
+
+.persons__item-two {
+  height: 356px;
+  margin: 10px 0px 0px 0px;
+}
+
+.persons__item-three {
+  margin: 10px 0px 0px 0px;
+}
+
+.persons__item-four {
+  height: 358px;
+  margin: 10px 0px 0px 0px;
 }
 
 .persons__avatar {
@@ -249,9 +263,9 @@
   font-size: 15px;
   line-height: 18px;
   color: #444444;
-  margin-top: 0px;
+  margin-top: -1px;
   margin-bottom: 0px;
-  margin-left: 27px;
+  margin-left: 25px;
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {
@@ -321,7 +335,7 @@
   grid-column-start: 1;
   grid-row-start: 1;
   border: solid 1px transparent;
-  margin-top: 0px;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -349,8 +363,9 @@
 .persons__about-item:nth-child(2) {
   grid-column-start: 1;
   grid-row-start: 2;
+  grid-row-end: auto;
   border: solid 1px transparent;
-  margin-top: 0px;
+  margin-top: 4px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
@@ -377,8 +392,9 @@
 .persons__about-item:nth-child(3) {
   grid-column-start: 2;
   grid-row-start: 2;
+  grid-row-end: 4;
   border: solid 1px transparent;
-  margin-top: 0px;
+  margin: 4px 0px 0px 17px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
@@ -405,7 +421,7 @@
 .persons__button {
   grid-column-start: 1;
   grid-row-start: 4;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-left: 20px;
   width: 230px;
   height: 38px;
@@ -473,7 +489,7 @@
 .persons__wish-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  width: 170px;
+  width: 150px;
   align-items: center;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -482,7 +498,7 @@
   line-height: 1px;
   text-transform: uppercase;
   color: #1D2E5B;
-  margin-top: 16px;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -515,6 +531,8 @@
 }
 
 .persons__wish-flag {
+  margin: 8px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 
   @media (min-width: @tablet-width) {
     width: 35px;
@@ -537,7 +555,8 @@
 }
 
 .persons__wish-text {
-  margin-top: 12px;
+  margin: 12px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 
   @media (min-width: @tablet-width) {
 
