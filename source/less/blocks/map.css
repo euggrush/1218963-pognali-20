@@ -138,8 +138,8 @@
   border: 3px solid #192144;
   box-sizing: border-box;
   border-radius: 10px;
-  margin-top: 33px;
-  background-image: url("../img/icon-btn-triangle.svg");
+  margin: 33px 0px 0px -1px;
+  background-image: url(../img/icon-btn-triangle.svg);
   background-repeat: no-repeat;
   background-position: 92% 50%;
   cursor: pointer;
