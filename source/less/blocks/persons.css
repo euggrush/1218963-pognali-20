@@ -58,20 +58,6 @@
     margin: 0px 0px 29px 0px;
   }
 }
-.persons__item-one {
-  margin: 10px 0px 0px 0px;
-}
-.persons__item-two {
-  height: 356px;
-  margin: 10px 0px 0px 0px;
-}
-.persons__item-three {
-  margin: 10px 0px 0px 0px;
-}
-.persons__item-four {
-  height: 358px;
-  margin: 10px 0px 0px 0px;
-}
 .persons__avatar {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -468,6 +454,18 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+.persons__button-two {
+  padding: 0px 0px 0px 0px;
+  margin: 3px 0px 0px 19px;
+}
+.persons__button-three {
+  padding: 0px 0px 0px 0px;
+  margin: 12px 0px 0px 19px;
+}
+.persons__button-four {
+  padding: 0px 0px 0px 0px;
+  margin: -2px 0px 0px 19px;
 }
 .persons__wishes {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
