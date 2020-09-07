@@ -325,7 +325,7 @@
     width: 220px;
     height: 137px;
     padding: 0px 0px 0px 0px;
-    margin: 89px 189px 0px 0px;
+    margin: 94px 186px 0px 0px;
     background-image: url(../img/slider-three.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1928,7 +1928,7 @@
     width: auto;
     height: 142px;
     border-radius: 5px;
-    margin-top: 31px;
+    margin-top: 26px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2454,6 +2454,15 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .add-plan__todo-wrap-two {
+    width: auto;
+    margin-top: 47px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .add-plan__submit-button {
   grid-column-start: 1;
   grid-row-start: 9;
@@ -2669,7 +2678,7 @@
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: 70px, 47px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 136px;
   }
 }

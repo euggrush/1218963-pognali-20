@@ -5,6 +5,14 @@
   padding-top: 36px;
   min-height: 662px;
 }
+@media (min-width: 768px) {
+  .filter {
+    background-color: #E5E5E5;
+    min-height: 602px;
+    margin: -50px 0px 0px 0px;
+    padding: 51px 0px 0px 0px;
+  }
+}
 @media (min-width: 1440px) {
   .filter {
     margin: -25px 0px 0px 0px;
@@ -33,11 +41,11 @@
 }
 @media (min-width: 768px) {
   .filter__form {
-    min-width: 636px;
-    min-height: 527px;
+    min-width: 688px;
+    min-height: 550px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 40px;
+    margin: 39px auto 0px auto;
     box-sizing: border-box;
   }
 }
