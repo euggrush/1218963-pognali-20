@@ -9,6 +9,7 @@
   padding-top: 97px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  background-image: none;
 }
 @media (min-width: 768px) {
   .directions {
@@ -16,6 +17,15 @@
     min-height: 1045px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    background-image: url(../img/flags-back@1x.png);
+    background-repeat: no-repeat;
+    background-position: 440px 128px;
+    background-size: 288px 574px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .directions {
+    background-image: url(../img/flags-back@2x.png);
   }
 }
 @media (min-width: 1440px) {
@@ -26,6 +36,15 @@
     min-height: 800px;
     padding: 0px 0px 0px 0px;
     margin: -50px 0px 0px 0px;
+    background-image: url(../img/flags-back@1x.png);
+    background-repeat: no-repeat;
+    background-position: 1093px 138px;
+    background-size: 288px 574px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .directions {
+    background-image: url(../img/flags-back@2x.png);
   }
 }
 .directions__title {

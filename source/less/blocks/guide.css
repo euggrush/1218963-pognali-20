@@ -17,6 +17,14 @@
     margin-top: -160px;
   }
 }
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .guide {
+    background-image: url(../img/traveller-illustration-tablet@2x.png), url(../img/globe-back-tablet@2x.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 283px -7px, -356px -29px;
+    background-size: 372px 451px, 768px 612px;
+  }
+}
 @media (min-width: 1440px) {
   .guide {
     display: flex;

@@ -17,6 +17,13 @@
   background-position: 79px 221px, 0px 0px;
   border: solid 1px transparent;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/traveller-illustration-mobile@2x.png), url(../img/globe-back-mobile@2x.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 79px 221px, 0px 0px;
+    background-size: 192px 255px, 320px 569px;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -40,6 +47,13 @@
     background-position: 605px 109px, -180px 1px;
     position: relative;
     z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/traveller-illustration-mobile@2x.png), url(../img/globe-back-mobile@2x.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: 79px 221px, 0px 0px;
+      background-size: 431px 640px, 1440px 750px;
+    }
   }
 }
 
