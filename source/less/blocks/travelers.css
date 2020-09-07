@@ -79,7 +79,7 @@
     grid-row-start: 1;
     grid-row-end: 3;
     padding: 0px 0px 0px 0px;
-    margin: 185px 0px 0px 126px;
+    margin: 185px 0px 0px 129px;
   }
 }
 .travelers__quote {
@@ -123,7 +123,7 @@
     font-size: 28px;
     line-height: 33px;
     padding: 0px 0px 0px 0px;
-    margin: 58px 0px 0px 128px;
+    margin: 56px 0px 0px 131px;
   }
 }
 .travelers__slogan {
@@ -168,7 +168,7 @@
     font-size: 21px;
     line-height: 24px;
     padding: 0px 0px 0px 0px;
-    margin: -2px 0px 0px 127px;
+    margin: -2px 0px 0px 130px;
   }
 }
 .travelers__item {
@@ -216,7 +216,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 58px 0px 0px 29px;
+    margin: 58px 0px 0px 32px;
   }
 }
 @media (min-width: 768px) {
@@ -228,7 +228,7 @@
 @media (min-width: 1440px) {
   .travelers__item-left > .travelers__name {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 17px 0px 0px -7px;
   }
 }
 @media (min-width: 768px) {
@@ -249,7 +249,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 58px 0px 0px 15px;
+    margin: 58px 0px 0px 17px;
   }
 }
 @media (min-width: 768px) {
@@ -275,7 +275,7 @@
 }
 @media (min-width: 1440px) {
   .travelers__preferences {
-    margin: 0px 0px 0px 0px;
+    margin: -11px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
   }
 }

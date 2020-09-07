@@ -55,7 +55,7 @@
     height: 55px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 67px;
+    margin-left: 0px;
     margin-right: 0px;
   }
 }
@@ -77,6 +77,14 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .page-footer__contacts {
+    margin-top: 36px;
+    margin-bottom: 0px;
+    margin-left: -159px;
+    margin-right: 0px;
+  }
+}
 .page-footer__social {
   display: flex;
   justify-content: center;
@@ -95,10 +103,10 @@
 }
 @media (min-width: 1440px) {
   .page-footer__social {
-    margin-top: 33px;
+    margin-top: 32px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 4px;
+    margin-right: 0px;
   }
 }
 .page-footer__copyright {

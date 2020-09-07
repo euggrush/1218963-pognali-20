@@ -325,9 +325,9 @@
   .page-header__logo {
     width: 200px;
     height: 63px;
-    margin-top: -4px;
+    margin-top: 4px;
     margin-bottom: 0px;
-    margin-left: 58px;
+    margin-left: 59px;
     margin-right: 0px;
   }
 }
@@ -627,7 +627,7 @@
   .page-header__desktop-line {
     display: block;
     width: 60px;
-    height: 2px;
+    height: 1px;
     background-color: #FFFFFF;
     margin: -2px 0px 0px 40px;
   }
@@ -654,7 +654,7 @@
 @media (min-width: 1440px) {
   .page-header__desktop-link-service {
     display: inline-block;
-    margin: -2px 0px 0px 47px;
+    margin: -2px 0px 0px 45px;
   }
 }
 .page-header__desktop-link-directions {
@@ -707,6 +707,7 @@
     height: 90px;
     background-color: #FFFFFF;
     margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .page-header__scroll-logo {
@@ -726,7 +727,7 @@
     display: inline-block;
     width: 198px;
     height: 60px;
-    margin: 3px 0px 0px 40px;
+    margin: 11px 0px 0px 40px;
     cursor: pointer;
   }
 }
@@ -787,7 +788,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #192144;
-    margin: 1px 0px 0px 45px;
+    margin: 2px 0px 0px 40px;
   }
 }
 .page-header__scroll-directions {
