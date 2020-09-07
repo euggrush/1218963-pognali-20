@@ -96,7 +96,7 @@
 }
 
 .filter__title {
-  font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -228,7 +228,7 @@
 }
 
 .filter__item-title {
-  font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -427,7 +427,7 @@
 
   @media (min-width: @tablet-width) {
     width: 44px;
-height: 44px;
+    height: 44px;
     background-image: url("../img/transport-bike-tablet.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -472,7 +472,7 @@ height: 44px;
   background-color: #FFFFFF;
   border: 1px solid #CBCED9;
   box-sizing: border-box;
-  font-family: "Blogger Sans" ,Arial, Helvetica, sans-serif;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -577,8 +577,11 @@ height: 44px;
 }
 
 .filter__range {
-  width: 100%;
+  width: 220px;
+  height: 12px;
   margin-top: 18px;
+
+  border: solid 1px transparent;
 
   @media (min-width: @tablet-width) {
     width: 270px;
@@ -592,6 +595,117 @@ height: 44px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+.filter__range-line-one {
+  position: absolute;
+  transform: translate(0%, 0%);
+  width: 220px;
+  height: 2px;
+  background-color: #1D2E5B;
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    transform: translate(0%, 0%);
+    width: 220px;
+    height: 2px;
+    background-color: #1D2E5B;
+    opacity: 0.2;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: translate(0%, 0%);
+    width: 220px;
+    height: 2px;
+    background-color: #1D2E5B;
+    opacity: 0.2;
+  }
+}
+
+.filter__range-line-two {
+  position: absolute;
+  transform: translate(59%, 0%);
+  width: 138px;
+  height: 2px;
+  background-color: #1D2E5B;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    transform: translate(59%, 0%);
+    width: 138px;
+    height: 2px;
+    background-color: #1D2E5B;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: translate(59%, 0%);
+    width: 138px;
+    height: 2px;
+    background-color: #1D2E5B;
+  }
+}
+
+.filter__btn-min {
+  position: absolute;
+  transform: translate(637%, -33%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1D2E5B;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    transform: translate(637%, -33%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D2E5B;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: translate(637%, -33%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D2E5B;
+    border: none;
+  }
+}
+
+.filter__btn-max {
+  position: absolute;
+  transform: translate(1745%, -33%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1D2E5B;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    transform: translate(1745%, -33%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D2E5B;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transform: translate(1745%, -33%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1D2E5B;
+    border: none;
   }
 }
 
