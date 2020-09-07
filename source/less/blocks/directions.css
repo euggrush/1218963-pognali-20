@@ -3,7 +3,7 @@
   z-index: 8;
   display: flex;
   flex-direction: column;
-  min-height: 916px;
+  min-height: 915px;
   background-color: #EDEFF6;
   margin-top: -20px;
   padding-top: 97px;
@@ -244,7 +244,7 @@
   border: solid 1px transparent;
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-bottom: 7px;
   position: relative;
   z-index: 2;
@@ -282,7 +282,7 @@
   width: 270px;
   height: 62px;
   margin: 0 auto;
-  margin-top: 14px;
+  margin-top: 17px;
   background-color: #FFD74B;
   border-radius: 10px;
   background-image: url("../img/icon-btn-triangle.svg");
@@ -385,6 +385,9 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
+  display: inline-block;
+  width: 140px;
+  height: auto;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
