@@ -33,6 +33,7 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 21px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     min-width: 636px;
@@ -40,6 +41,7 @@
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 40px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -51,6 +53,7 @@
     min-height: 814px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
   }
 }
 
@@ -579,20 +582,21 @@
 .filter__range {
   width: 220px;
   height: 12px;
-  margin-top: 18px;
+  margin-top: 24px;
 
   border: solid 1px transparent;
 
   @media (min-width: @tablet-width) {
     width: 270px;
     order: 2;
+    margin: 48px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 195px;
+    width: 193px;
     order: 3;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: -6px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -600,7 +604,7 @@
 
 .filter__range-line-one {
   position: absolute;
-  transform: translate(0%, 0%);
+  transform: translate(-2%, 0%);
   width: 220px;
   height: 2px;
   background-color: #1D2E5B;
@@ -618,7 +622,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     transform: translate(0%, 0%);
-    width: 220px;
+    width: 192px;
     height: 2px;
     background-color: #1D2E5B;
     opacity: 0.2;
@@ -627,15 +631,15 @@
 
 .filter__range-line-two {
   position: absolute;
-  transform: translate(59%, 0%);
+  transform: translate(53%, 0%);
   width: 138px;
   height: 2px;
   background-color: #1D2E5B;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    transform: translate(59%, 0%);
-    width: 138px;
+    transform: translate(40%, 0%);
+    width: 200px;
     height: 2px;
     background-color: #1D2E5B;
   }
@@ -643,7 +647,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     transform: translate(59%, 0%);
-    width: 138px;
+    width: 120px;
     height: 2px;
     background-color: #1D2E5B;
   }
@@ -651,7 +655,7 @@
 
 .filter__btn-min {
   position: absolute;
-  transform: translate(637%, -33%);
+  transform: translate(532%, -33%);
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -660,9 +664,9 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    transform: translate(637%, -33%);
-    width: 10px;
-    height: 10px;
+    transform: translate(489%, -50%);
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: #1D2E5B;
     border: none;
@@ -670,9 +674,9 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    transform: translate(637%, -33%);
-    width: 10px;
-    height: 10px;
+    transform: translate(465%, -33%);
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: #1D2E5B;
     border: none;
@@ -681,7 +685,7 @@
 
 .filter__btn-max {
   position: absolute;
-  transform: translate(1745%, -33%);
+  transform: translate(1717%, -33%);
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -690,9 +694,9 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    transform: translate(1745%, -33%);
-    width: 10px;
-    height: 10px;
+    transform: translate(1917%, -50%);
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: #1D2E5B;
     border: none;
@@ -700,12 +704,13 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    transform: translate(1745%, -33%);
-    width: 10px;
-    height: 10px;
+    transform: translate(1380%, -45%);
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: #1D2E5B;
     border: none;
+
   }
 }
 
