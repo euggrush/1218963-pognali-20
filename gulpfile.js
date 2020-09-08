@@ -5,7 +5,7 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const del = require("del");
+// const del = require("del");
 const csso = require("csso");
 const rename = require("rename");
 
@@ -55,20 +55,20 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-const clean = () => {
-  return del("build");
-};
+// const clean = () => {
+//   return del("build");
+// };
 
-const copy = () => {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
-};
+// const copy = () => {
+//   return gulp.src([
+//     "source/fonts/**/*.{woff,woff2}",
+//     "source/img/**",
+//     "source/js/**",
+//     "source/*.ico"
+//   ], {
+//     base: "source"
+//   })
+//   .pipe(gulp.dest("build"));
+// };
 
-exports.copy = copy;
+// exports.copy = copy;
