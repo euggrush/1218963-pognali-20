@@ -9,6 +9,8 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const svgstore = require('gulp-svgstore');
+const imagemin = require('gulp-imagemin');
+
 
 // Styles
 
@@ -25,7 +27,7 @@ const styles = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -41,7 +43,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -50,7 +52,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
-}
+};
 
 exports.default = gulp.series(
   styles, server, watcher
@@ -61,9 +63,21 @@ const sprite = () => {
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"));
-}
+};
 
 exports.sprite = sprite;
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.svgo()
+  ]));
+
+};
+
+exports.images = images;
 
 // const clean = () => {
 //   return del("build");
