@@ -6,8 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 // const del = require("del");
-const csso = require("csso");
-const rename = require("rename");
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 
 // Styles
 
