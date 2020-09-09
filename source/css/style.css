@@ -7526,6 +7526,46 @@ textarea {
     margin-right: 0px;
   }
 }
+.persons__name-demin {
+  padding: 0px 0px 0px 0px;
+  margin: -2px 0px 0px 14px;
+}
+.persons__dot-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 7px 0px 0px 62px;
+}
+.persons__rating-demin {
+  padding: 0px 0px 0px 38px;
+  margin: 40px 0px 0px -24px;
+}
+.persons__hobby-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 6px 0px 0px 25px;
+}
+.persons__about-list-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 7px 0px 0px 24px;
+}
+.persons__about-list > .persons__demin-transport {
+  padding: 0px 0px 0px 0px;
+  margin: -11px 0px 0px 2px;
+}
+.persons__about-list > .persons__demin-level {
+  padding: 0px 0px 0px 0px;
+  margin: -13px 0px 0px 20px;
+}
+.persons__wish-wrapper-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 3px 0px 0px 0px;
+}
+.persons__wish-flag-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 14px 0px -4px 0px;
+}
+.persons__wish-text-demin {
+  padding: 0px 0px 0px 0px;
+  margin: 15px 0px -6px 2px;
+}
 .plans {
   display: flex;
   flex-direction: column;
