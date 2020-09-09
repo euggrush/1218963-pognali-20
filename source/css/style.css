@@ -5552,9 +5552,9 @@ textarea {
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .page-header {
-    background-image: url(../img/traveller-illustration-mobile@2x.png), url(../img/globe-back-mobile@2x.jpg);
+    background-image: url(../img/traveller-illustration-desktop@2x.png), url(../img/globe-back-desktop@2x.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 79px 221px, 0px 0px;
+    background-position: 603px 109px, 0px 0px;
     background-size: 431px 640px, 1440px 750px;
   }
 }
