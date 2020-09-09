@@ -72,12 +72,13 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    transform:translate(0%, 0%);
+    transform: translate(0%, 0%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
     min-width: 766px;
-    width: 766px;;
+    width: 766px;
+    ;
     min-height: 910px;
     padding-top: 0px;
     padding-left: 6px;
@@ -544,6 +545,19 @@
   }
 }
 
+.page-header__controls-item:nth-child(1):hover {
+
+  @media (min-width: @desktop-width) {
+    background-color: #F26926;
+  }
+}
+
+.page-header__controls-item:nth-child(1):active {
+  @media (min-width: @desktop-width) {
+    background-color: #F26926;
+  }
+}
+
 .page-header__controls-item:nth-child(2) {
   display: inline-block;
   width: 40px;
@@ -562,6 +576,19 @@
     display: block;
     width: 50px;
     height: 50px;
+  }
+}
+
+.page-header__controls-item:nth-child(2):hover {
+
+  @media (min-width: @desktop-width) {
+    background-color: #FF8D30;
+  }
+}
+
+.page-header__controls-item:nth-child(2):active {
+  @media (min-width: @desktop-width) {
+    background-color: #FF8D30;
   }
 }
 
@@ -594,6 +621,19 @@
     line-height: 49px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+  }
+}
+
+.page-header__controls-item:nth-child(3):hover {
+
+  @media (min-width: @desktop-width) {
+    background-color: #FFBD30;
+  }
+}
+
+.page-header__controls-item:nth-child(3):active {
+  @media (min-width: @desktop-width) {
+    background-color: #FFBD30;
   }
 }
 
@@ -644,12 +684,18 @@
   }
 }
 
+.page-header__desktop-link:hover {
+  @media (min-width: @desktop-width) {
+    color: #FFD74B;
+  }
+}
+
 .page-header__desktop-link-service {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: inline-block;
-    margin:-2px 0px 0px 45px;
+    margin: -2px 0px 0px 45px;
   }
 }
 
@@ -673,6 +719,19 @@
 
 .page-header__scroll-modal {
   display: none;
+  //display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 73px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: solid 1px transparent;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  transform: translate(0%, 0%);
 
   @media (min-width: @tablet-width) {
     position: absolute;

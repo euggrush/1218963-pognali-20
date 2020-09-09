@@ -156,6 +156,12 @@
     background-position: center;
   }
 }
+.form-header__btn-call:hover {
+  background-color: #F26926;
+}
+.form-header__btn-call:active {
+  background-color: #F26926;
+}
 .form-header__btn-email {
   display: none;
 }
@@ -175,6 +181,12 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+.form-header__btn-email:hover {
+  background-color: #FF8D30;
+}
+.form-header__btn-email:active {
+  background-color: #FF8D30;
 }
 .form-header__btn-authorization {
   display: none;
@@ -208,6 +220,12 @@
     margin-left: 0px;
     margin-right: 0px;
   }
+}
+.form-header__btn-authorization:hover {
+  background-color: #FFBD30;
+}
+.form-header__btn-authorization:active {
+  background-color: #FFBD30;
 }
 .form-header__main-page-link {
   display: none;
@@ -316,6 +334,17 @@
     height: 25px;
     padding: 0px 0px 0px 0px;
     margin: 63px 0px 0px 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-header__nav a:hover {
+    color: #FFD74B;
+  }
+}
+@media (min-width: 1440px) {
+  .form-header__nav a:active {
+    color: #FFD74B;
+    opacity: 0.3;
   }
 }
 .form-header__desktop-line {
