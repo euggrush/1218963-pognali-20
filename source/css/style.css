@@ -7574,6 +7574,7 @@ textarea {
   margin: -2px 0px 0px 14px;
 }
 .persons__dot-rog {
+  background-color: #BBF085;
   padding: 0px 0px 0px 0px;
   margin: 7px 0px 0px 62px;
 }
@@ -7613,6 +7614,31 @@ textarea {
 .persons__transport-wrapper-rog {
   padding: 0px 0px 0px 0px;
   margin: 15px 0px 0px -6px;
+}
+.persons__wish-wrapper-smolov {
+  width: 159px;
+  padding: 0px 0px 0px 0px;
+  margin: 8px 0px 0px 0px;
+}
+.persons__wish-flag-smolov {
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+.persons__wish-text-smolov {
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+.persons__about-list > .persons__smolov-transport {
+  padding: 0px 0px 0px 0px;
+  margin: 6px 0px 0px 0px;
+}
+.persons__about-list > .persons__smolov-level {
+  padding: 0px 0px 0px 0px;
+  margin: 4px 0px 0px 10px;
+}
+.persons__transport-wrapper-smolov {
+  padding: 0px 0px 0px 0px;
+  margin: 16px 0px 0px -5px;
 }
 .plans {
   display: flex;
