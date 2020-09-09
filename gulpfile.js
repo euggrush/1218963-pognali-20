@@ -47,7 +47,7 @@ const styles = () => {
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
-    // .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
 
