@@ -16,7 +16,8 @@
   .catalog-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 153px;
+    grid-template-rows: 140px;
+    min-height: 140px;
     margin-top: -59px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -24,6 +25,7 @@
 }
 @media (min-width: 1440px) {
   .catalog-footer {
+    min-height: 154px;
     margin-top: -63px;
     margin-bottom: 0px;
     margin-left: 0px;
