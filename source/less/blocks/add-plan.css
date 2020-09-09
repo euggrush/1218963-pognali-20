@@ -1489,6 +1489,12 @@
     padding: 0px 29px 0px 26px;
   }
 }
+.add-plan__add-button:hover {
+  background-color: #DFE3F0;
+}
+.add-plan__add-button:active {
+  background-color: #DFE3F0;
+}
 @media (min-width: 768px) {
   .add-plan__add-button .add-plan__circle-empty {
     position: absolute;
@@ -1627,6 +1633,15 @@
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
+}
+.add-plan__btn-back-step-two:hover {
+  opacity: 0.7;
+}
+.add-plan__btn-back-step-two:active {
+  opacity: 0.3;
+}
+button:focus {
+  outline: 0;
 }
 .add-plan__country {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -1976,6 +1991,15 @@
     padding: 21px 0px 0px 25px;
     box-sizing: border-box;
   }
+}
+.add-plan__todo:hover {
+  border: 1px solid #959BB2;
+}
+.add-plan__todo:active {
+  border: 1px solid #161C35;
+}
+.add-plan__todo:invalid {
+  border: 1px solid #F47E7E;
 }
 .add-plan__border {
   position: absolute;
@@ -2626,6 +2650,15 @@
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
+}
+.add-plan__btn-back-step-three:hover {
+  opacity: 0.7;
+}
+.add-plan__btn-back-step-three:active {
+  opacity: 0.3;
+}
+button:focus {
+  outline: 0;
 }
 .add-plan__btn-back-text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;

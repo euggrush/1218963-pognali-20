@@ -169,6 +169,14 @@
     background-position: 90% 50%;
   }
 }
+.map__button:hover {
+  background-color: #192144;
+  color: #FFFFFF;
+}
+.map__button:active {
+  background-color: #192144;
+  color: #FFFFFF;
+}
 .map__btn-text {
   font-family: "Blogger Sans";
   font-style: normal;
@@ -203,4 +211,11 @@
     margin-left: 0px;
     margin-right: 27px;
   }
+}
+.map__btn-text:hover {
+  color: #FFFFFF;
+}
+.map__btn-text:active {
+  color: #FFFFFF;
+  opacity: 0.3;
 }

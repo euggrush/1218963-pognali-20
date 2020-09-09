@@ -109,9 +109,16 @@
     margin-right: 0px;
   }
 }
+.page-footer__social a:hover {
+  background-color: #FFBD30;
+}
+.page-footer__social a:active {
+  background-color: #FFBD30;
+}
 .page-footer__copyright {
   margin-top: 50px;
   padding-left: 23px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .page-footer__copyright {
@@ -132,6 +139,12 @@
     margin-left: 240px;
     margin-right: 0px;
   }
+}
+.page-footer__copyright:hover {
+  opacity: 0.6;
+}
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 .page-footer__link {
   display: inline-block;

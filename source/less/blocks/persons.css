@@ -36,6 +36,7 @@
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 21px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .persons__item {
@@ -56,6 +57,63 @@
     min-height: 283px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 29px 0px;
+  }
+}
+.persons__item:hover {
+  filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+}
+@media (min-width: 320px) {
+  .persons__item-two {
+    min-height: 355px;
+    height: 355px;
+  }
+}
+@media (min-width: 768px) {
+  .persons__item-two {
+    min-height: inherit;
+    height: inherit;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__item-two {
+    min-height: inherit;
+    height: inherit;
+  }
+}
+@media (min-width: 320px) {
+  .persons .persons__item-three {
+    min-height: 379px;
+    height: 379px;
+  }
+}
+@media (min-width: 768px) {
+  .persons .persons__item-three {
+    min-height: inherit;
+    height: inherit;
+  }
+}
+@media (min-width: 1440px) {
+  .persons .persons__item-three {
+    min-height: inherit;
+    height: inherit;
+  }
+}
+@media (min-width: 320px) {
+  .persons__item-four {
+    min-height: 358px;
+    height: 358px;
+  }
+}
+@media (min-width: 768px) {
+  .persons__item-four {
+    min-height: inherit;
+    height: inherit;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__item-four {
+    min-height: inherit;
+    height: inherit;
   }
 }
 .persons__avatar {
@@ -240,6 +298,8 @@
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
+  display: inline-block;
+  width: 177px;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -320,6 +380,7 @@
   grid-row-start: 1;
   border: solid 1px transparent;
   margin-top: 3px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .persons__about-item:nth-child(1) {
