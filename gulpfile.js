@@ -74,10 +74,6 @@ const images = () => {
 
 exports.images = images;
 
-exports.build = gulp.series(
-  clean, copy, styles, images, sprite
-);
-
 // Server
 
 const server = (done) => {
@@ -93,6 +89,10 @@ const server = (done) => {
 };
 
 exports.server = server;
+
+exports.build = gulp.series(
+  clean, copy, styles, images, sprite, server
+);
 
 // Watcher
 
