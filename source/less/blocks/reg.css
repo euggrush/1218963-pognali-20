@@ -23,6 +23,7 @@
 }
 @media (min-width: 1440px) {
   .reg {
+    width: 1438px;
     min-height: 800px;
     padding: 0px 0px 0px 0px;
     margin-top: -48px;
@@ -326,7 +327,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 869px;
+    width: 330px;
     margin: 28px 0px 0px 76px;
   }
 }
