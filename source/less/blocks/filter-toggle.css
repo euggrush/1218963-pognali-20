@@ -123,6 +123,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #192144;
+    opacity: 0.3;
     cursor: pointer;
   }
 }
@@ -150,6 +151,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #192144;
+    opacity: 0.3;
     cursor: pointer;
   }
 }
@@ -177,6 +179,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #192144;
+    opacity: 0.3;
     cursor: pointer;
   }
 }
