@@ -6596,10 +6596,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons .persons__item-three {
-    min-height: 286px;
-    height: 286px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 945px;
+    min-height: 284px;
+    height: 284px;
+    margin: 29px 0px 0px 0px;
   }
 }
 @media (min-width: 320px) {
@@ -6617,10 +6617,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__item-four {
-    min-height: 286px;
-    height: 286px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 945px;
+    min-height: 284px;
+    height: 284px;
+    margin: 29px 0px 0px 0px;
   }
 }
 .persons__avatar {
@@ -7603,7 +7603,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__name-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 44px 0px 0px 29px;
   }
 }
 .persons__dot-demin {
@@ -7621,7 +7621,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__dot-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 57px 0px 0px 3px;
   }
 }
 .persons__rating-demin {
@@ -7653,7 +7653,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__hobby-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 24px 0px 0px 29px;
   }
 }
 .persons__about-list-demin {
@@ -7719,8 +7719,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__wish-wrapper-demin {
+    width: 214px;
+    min-width: auto;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -9px 0px 0px -5px;
   }
 }
 .persons__wish-flag-demin {
