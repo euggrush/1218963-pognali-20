@@ -6554,8 +6554,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__item-one {
-    min-height: 333px;
-    height: 333px;
+    width: 945px;
+    min-height: 284px;
+    height: 284px;
+    margin: 0px 0px 0px 0px;
   }
 }
 @media (min-width: 320px) {
@@ -6573,8 +6575,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__item-two {
-    min-height: 333px;
-    height: 333px;
+    width: 945px;
+    min-height: 284px;
+    height: 284px;
+    margin: 29px 0px 0px 0px;
   }
 }
 @media (min-width: 320px) {
@@ -6592,8 +6596,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons .persons__item-three {
-    min-height: 333px;
-    height: 333px;
+    min-height: 286px;
+    height: 286px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 320px) {
@@ -6611,8 +6617,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__item-four {
-    min-height: 333px;
-    height: 333px;
+    min-height: 286px;
+    height: 286px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .persons__avatar {
@@ -6644,7 +6652,7 @@ textarea {
     width: 285px;
     height: 285px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px -3px;
   }
 }
 .persons__icon {
@@ -8043,7 +8051,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__name-firsova {
     padding: 0px 0px 0px 0px;
-    margin: -3px 0px 0px 13px;
+    margin: 43px 0px 0px 29px;
   }
 }
 .persons__dot-firsova {
@@ -8061,7 +8069,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__dot-firsova {
     padding: 0px 0px 0px 0px;
-    margin: -3px 0px 0px 13px;
+    margin: 56px 0px 0px 3px;
   }
 }
 .persons__rating-firsova {
@@ -8099,7 +8107,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__hobby-firsova {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 23px 0px 0px 29px;
   }
 }
 .persons__about-list-firsova {
@@ -8132,8 +8140,9 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__wish-wrapper-firsova {
+    width: 217px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px -5px;
   }
 }
 .persons__wish-flag-firsova {
@@ -8233,8 +8242,7 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__wishes-firsova {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    display: none;
   }
 }
 .plans {
