@@ -4474,7 +4474,7 @@ button:focus {
     width: 100%;
     margin-top: 63px;
     margin-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 48px;
     margin-right: 0px;
   }
 }
@@ -4505,6 +4505,7 @@ button:focus {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    background-size: 32px 32px;
   }
 }
 @media (min-width: 1440px) {
@@ -4575,10 +4576,10 @@ button:focus {
     height: 80px;
     margin-top: 44px;
     margin-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 48px;
     margin-right: 0px;
     border-radius: 20px;
-    background-position: 95% 50%;
+    background-position: 569px 32px;
   }
 }
 @media (min-width: 1440px) {
@@ -5375,7 +5376,7 @@ textarea {
     height: auto;
     margin-top: 43px;
     margin-bottom: 0px;
-    margin-left: 36px;
+    margin-left: 33px;
     margin-right: 0px;
   }
 }
@@ -5396,10 +5397,11 @@ textarea {
   .page-footer__social {
     grid-column-start: 2;
     grid-row-start: 1;
+    width: 183px;
     height: auto;
     margin-top: 32px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 34px;
     margin-right: 0px;
   }
 }
