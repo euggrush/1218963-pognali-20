@@ -71,7 +71,7 @@
     color: #FF8D30;
     margin-top: 19px;
     margin-bottom: 0px;
-    margin-left: 145px;
+    margin-left: 142px;
     margin-right: 0px;
   }
 }
@@ -147,9 +147,9 @@
     grid-row-start: 2;
     grid-row-end: 4;
     min-width: auto;
-    margin-top: 12px;
+    margin-top: 13px;
     margin-bottom: 0px;
-    margin-left: 36px;
+    margin-left: 34px;
     margin-right: 0px;
   }
 }
@@ -367,9 +367,9 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -6px;
+    margin-top: -5px;
     margin-bottom: 0px;
-    margin-left: 40px;
+    margin-left: 38px;
     margin-right: 0px;
     background-image: url("../img/business-rates.png");
     background-repeat: no-repeat;
