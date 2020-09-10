@@ -2793,7 +2793,7 @@ button:focus {
     grid-row-end: 8;
     width: 286px;
     height: 80px;
-    margin-top: 34px;
+    margin-top: 35px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -2862,13 +2862,13 @@ button:focus {
     grid-row-end: 8;
     width: 185px;
     height: 22px;
-    margin-top: 62px;
+    margin-top: 63px;
     margin-bottom: 0px;
     margin-left: 349px;
     margin-right: 0px;
-    background-image: url(../img/icon-btn-triangle.svg);
+    background-image: url(../img/icon-triangle-back.svg);
     background-repeat: no-repeat;
-    background-position: 4%, 50%;
+    background-position: 2%, 50%;
   }
 }
 @media (min-width: 1440px) {
@@ -12425,7 +12425,7 @@ textarea {
     height: auto;
     margin-top: 43px;
     margin-bottom: 0px;
-    margin-left: 36px;
+    margin-left: -14px;
     margin-right: 0px;
   }
 }
@@ -12451,7 +12451,7 @@ textarea {
     grid-column-start: 2;
     grid-row-start: 1;
     height: auto;
-    margin-top: 32px;
+    margin-top: 34px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -12520,15 +12520,30 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .form-footer__link:first-child {
+    background-size: 25px 25px;
+  }
+}
 .form-footer__link:nth-child(2) {
   background-image: url(../img/vk-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .form-footer__link:nth-child(2) {
+    background-size: 25px 25px;
+  }
+}
 .form-footer__link:last-child {
   background-image: url(../img/instagram-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .form-footer__link:last-child {
+    background-size: 25px 25px;
+  }
 }
 .form-footer__copyright-link {
   display: inline-block;
