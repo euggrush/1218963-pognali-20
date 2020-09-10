@@ -4099,7 +4099,6 @@ button:focus {
 .guide__item:nth-child(1) {
   height: 87px;
   background-color: #FF8D30;
-  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .guide__item:nth-child(1) {
@@ -4125,6 +4124,7 @@ button:focus {
     margin-right: 0px;
     margin-left: 5px;
     padding: 0px 0px 0px 4px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 768px) {
@@ -4185,7 +4185,6 @@ button:focus {
   height: 88px;
   margin-top: -30px;
   background-color: #FFBD30;
-  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .guide__item:nth-child(3) {
@@ -4211,6 +4210,7 @@ button:focus {
     margin-right: 0px;
     margin-left: -32px;
     padding: 0px 0px 0px 3px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 768px) {
