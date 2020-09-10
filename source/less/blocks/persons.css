@@ -518,7 +518,7 @@
     grid-row-end: 4;
     width: 150px;
     height: 50px;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 0px;
     margin-left: 23px;
     margin-right: 0px;
@@ -987,7 +987,7 @@
     margin-right: 0px;
     background-image: url(../img/persons-btn-more-tablet.svg);
     background-repeat: no-repeat;
-    background-position: 10% 58%;
+    background-position: 9% 58%;
   }
 }
 @media (min-width: 1440px) {
@@ -1132,7 +1132,7 @@
     line-height: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: -4px;
+    margin-left: -6px;
     margin-right: 0px;
   }
 }
