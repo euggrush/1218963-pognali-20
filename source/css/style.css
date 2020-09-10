@@ -6546,6 +6546,8 @@ textarea {
 }
 @media (min-width: 768px) {
   .persons__item-one {
+    margin-top: 10px;
+    margin-bottom: 30px;
     min-height: 330px;
     height: 330px;
   }
@@ -7016,6 +7018,14 @@ textarea {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 19px;
 }
+@media (min-width: 768px) {
+  .persons__button-two {
+    width: 150px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 8px 0px 0px 23px;
+  }
+}
 .persons__button-three {
   padding: 0px 0px 0px 0px;
   margin: 12px 0px 0px 19px;
@@ -7254,7 +7264,7 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 30px;
-    height: 120px;
+    height: 128px;
     margin-top: 29px;
     margin-bottom: 0px;
     margin-left: 65px;
@@ -7559,7 +7569,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__name-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 30px 0px 0px 28px;
   }
 }
 @media (min-width: 1440px) {
@@ -7574,8 +7584,10 @@ textarea {
 }
 @media (min-width: 768px) {
   .persons__dot-demin {
+    width: 8px;
+    height: 8px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 44px 0px 0px 9px;
   }
 }
 @media (min-width: 1440px) {
@@ -7591,7 +7603,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__rating-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 7px 0px 0px -55px;
   }
 }
 @media (min-width: 1440px) {
@@ -7607,7 +7619,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__hobby-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -6px 0px 0px 30px;
   }
 }
 @media (min-width: 1440px) {
@@ -7639,7 +7651,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__about-list > .persons__demin-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 2px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -7655,7 +7667,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__about-list > .persons__demin-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -8px 0px 0px 43px;
   }
 }
 @media (min-width: 1440px) {
@@ -7670,8 +7682,11 @@ textarea {
 }
 @media (min-width: 768px) {
   .persons__wish-wrapper-demin {
+    width: 256px;
+    min-width: auto;
+    justify-content: space-between;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 0px 0px -2px;
   }
 }
 @media (min-width: 1440px) {
@@ -7703,7 +7718,7 @@ textarea {
 @media (min-width: 768px) {
   .persons__wish-text-demin {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 2px 0px 0px -21px;
   }
 }
 @media (min-width: 1440px) {
