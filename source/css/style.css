@@ -9401,11 +9401,11 @@ textarea {
 }
 @media (min-width: 768px) {
   .reg__button-wrapper {
-    width: 613px;
+    width: 614px;
     margin-top: 44px;
     margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -5px;
+    margin-right: 0px;
     padding: 0px;
   }
 }
@@ -9435,6 +9435,10 @@ textarea {
 }
 @media (min-width: 768px) {
   .reg__input {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
     width: 500px;
     height: 80px;
     padding: 0px 0px 0px 37px;
@@ -9488,12 +9492,12 @@ textarea {
     margin-top: -1px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: -2px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-position: 50%, 50%;
+    background-position: 51% 52%;
   }
 }
 @media (min-width: 1440px) {
@@ -9586,7 +9590,7 @@ textarea {
     justify-content: space-between;
     align-items: flex-start;
     width: 330px;
-    margin: 28px 0px 0px 76px;
+    margin: 29px 0px 0px 75px;
   }
 }
 @media (min-width: 1440px) {
