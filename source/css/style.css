@@ -7899,7 +7899,7 @@ textarea {
 .persons__wish-wrapper-rog {
   width: 159px;
   padding: 0px 0px 0px 0px;
-  margin: 8px 0px 0px 0px;
+  margin: 6px 0px 0px 0px;
 }
 @media (min-width: 768px) {
   .persons__wish-wrapper-rog {
@@ -7922,7 +7922,7 @@ textarea {
 }
 .persons__wish-flag-rog {
   padding: 0px 0px 0px 0px;
-  margin: 9px 0px -4px 0px;
+  margin: 12px 0px -4px 0px;
 }
 @media (min-width: 768px) {
   .persons__wish-flag-rog {
@@ -7940,7 +7940,7 @@ textarea {
 }
 .persons__wish-text-rog {
   padding: 0px 0px 0px 0px;
-  margin: 9px 0px -6px 2px;
+  margin: 10px 0px -6px 2px;
 }
 @media (min-width: 768px) {
   .persons__wish-text-rog {
@@ -12214,7 +12214,7 @@ textarea {
   display: inline-block;
   width: 28px;
   height: 34px;
-  margin-left: 153px;
+  margin-left: 158px;
   background-image: url(../img/html-footer-icon.svg);
   background-repeat: no-repeat;
 }
