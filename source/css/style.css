@@ -537,7 +537,7 @@
     width: 220px;
     height: 137px;
     padding: 0px 0px 0px 0px;
-    margin: 89px 189px 0px 0px;
+    margin: 93px 186px 0px 0px;
     background-image: url(../img/slider-two.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -809,7 +809,7 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 7;
-    margin-top: 539px;
+    margin-top: 540px;
     margin-bottom: 0px;
     margin-left: 161px;
     margin-right: 0px;
@@ -1082,7 +1082,7 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: normal;
-    margin: 0px 0px 0px -12px;
+    margin: 0px 0px 0px -11px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -1146,10 +1146,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
+    letter-spacing: normal;
     text-transform: uppercase;
     opacity: 1;
     color: #1D2E5B;
-    margin: 0px 11px 0px 0px;
+    margin: 0px 19px 0px 0px;
     padding: 0px 0px 0px 0px;
     order: 3;
   }
@@ -1182,9 +1183,10 @@
     font-size: 20px;
     line-height: 18px;
     text-transform: uppercase;
+    letter-spacing: normal;
     opacity: 1;
     color: #1D2E5B;
-    margin: 0px 8px 0px 11px;
+    margin: 0px 13px 0px 11px;
     padding: 0px 0px 0px 0px;
     order: 3;
   }
@@ -1209,6 +1211,7 @@
   .add-plan__calendar-days {
     min-width: 1000px;
     min-height: auto;
+    height: 463px;
     width: auto;
     margin: 19px auto 0px auto;
     padding: 0px 0px 0px 0px;
@@ -1248,6 +1251,14 @@
   line-height: 18px;
   color: #444444;
 }
+@media (min-width: 1440px) {
+  .add-plan__week-day {
+    text-align: left;
+    vertical-align: top;
+    padding: 0px 0px 18px 14px;
+    box-sizing: border-box;
+  }
+}
 .add-plan__weekend-day {
   width: 32px;
   height: 32px;
@@ -1258,6 +1269,14 @@
   font-size: 18px;
   line-height: 18px;
   color: #FF5C23;
+}
+@media (min-width: 1440px) {
+  .add-plan__weekend-day {
+    text-align: left;
+    vertical-align: top;
+    padding: 0px 0px 0px 14px;
+    box-sizing: border-box;
+  }
 }
 .add-plan__week-date {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -1288,7 +1307,11 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
-    height: 69px;
+    height: auto;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 0px 0px 15px;
+    box-sizing: border-box;
   }
 }
 .add-plan__week-date:hover {
@@ -1804,7 +1827,7 @@
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 8;
-    margin-top: -58px;
+    margin-top: -56px;
     margin-bottom: 0px;
     margin-left: 160px;
     margin-right: 0px;
@@ -1866,9 +1889,10 @@
     grid-row-end: 8;
     margin-top: -31px;
     margin-bottom: 0px;
-    margin-left: 65px;
+    margin-left: 62px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
+    letter-spacing: normal;
   }
 }
 .add-plan__btn-back-step-two:hover {
@@ -2169,6 +2193,18 @@ button:focus {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-plan__choose-button {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 0px 0px 6px;
   }
 }
 .add-plan__todo {
@@ -2808,7 +2844,7 @@ button:focus {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: -87px;
+    margin-top: -86px;
     margin-bottom: 0px;
     margin-left: 160px;
     margin-right: 0px;
@@ -2879,11 +2915,11 @@ button:focus {
     grid-row-end: 5;
     background-image: url(../img/triangle-arrow-left.svg);
     background-repeat: no-repeat;
-    background-position: 4%, 50%;
+    background-position: 2% 50%;
     background-size: 11px;
     margin-top: -58px;
     margin-bottom: 0px;
-    margin-left: 65px;
+    margin-left: 63px;
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
@@ -5249,6 +5285,7 @@ textarea {
     height: 44px;
     margin: 0px 0px 0px -7px;
     padding: 0px 0px 0px 0px;
+    background-size: 26px;
   }
 }
 .my-profile__transport-bike {
@@ -11748,7 +11785,7 @@ textarea {
     grid-column-end: 3;
     grid-row-start: 1;
     padding: 0px 0px 0px 0px;
-    margin: 29px 0px 0px 60px;
+    margin: 28px 0px 0px 60px;
   }
 }
 .form-header__logo {
@@ -11830,7 +11867,7 @@ textarea {
     align-items: center;
     width: 290px;
     height: 52px;
-    margin: 49px 0px 0px 131px;
+    margin: 48px 0px 0px 131px;
   }
 }
 .form-header__btn-call {
@@ -11974,7 +12011,7 @@ textarea {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 124px 0px 0px 124px;
+    margin: 123px 0px 0px 124px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -12030,7 +12067,7 @@ textarea {
     width: 500px;
     height: 25px;
     padding: 0px 0px 0px 0px;
-    margin: 63px 0px 0px 60px;
+    margin: 62px 0px 0px 60px;
   }
 }
 @media (min-width: 1440px) {
@@ -12525,6 +12562,11 @@ textarea {
     background-size: 25px 25px;
   }
 }
+@media (min-width: 1440px) {
+  .form-footer__link:first-child {
+    background-size: 28px 28px;
+  }
+}
 .form-footer__link:nth-child(2) {
   background-image: url(../img/vk-icon.svg);
   background-repeat: no-repeat;
@@ -12535,12 +12577,22 @@ textarea {
     background-size: 25px 25px;
   }
 }
+@media (min-width: 1440px) {
+  .form-footer__link:nth-child(2) {
+    background-size: 30px 30px;
+  }
+}
 .form-footer__link:last-child {
   background-image: url(../img/instagram-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-width: 768px) {
+  .form-footer__link:last-child {
+    background-size: 25px 25px;
+  }
+}
+@media (min-width: 1440px) {
   .form-footer__link:last-child {
     background-size: 25px 25px;
   }

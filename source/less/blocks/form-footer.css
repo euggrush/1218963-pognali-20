@@ -169,6 +169,11 @@
     background-size: 25px 25px;
   }
 }
+@media (min-width: 1440px) {
+  .form-footer__link:first-child {
+    background-size: 28px 28px;
+  }
+}
 .form-footer__link:nth-child(2) {
   background-image: url(../img/vk-icon.svg);
   background-repeat: no-repeat;
@@ -179,12 +184,22 @@
     background-size: 25px 25px;
   }
 }
+@media (min-width: 1440px) {
+  .form-footer__link:nth-child(2) {
+    background-size: 30px 30px;
+  }
+}
 .form-footer__link:last-child {
   background-image: url(../img/instagram-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-width: 768px) {
+  .form-footer__link:last-child {
+    background-size: 25px 25px;
+  }
+}
+@media (min-width: 1440px) {
   .form-footer__link:last-child {
     background-size: 25px 25px;
   }

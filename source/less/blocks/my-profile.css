@@ -598,6 +598,7 @@ textarea {
     height: 44px;
     margin: 0px 0px 0px -7px;
     padding: 0px 0px 0px 0px;
+    background-size: 26px;
   }
 }
 .my-profile__transport-bike {

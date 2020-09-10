@@ -51,7 +51,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     padding: 0px 0px 0px 0px;
-    margin: 29px 0px 0px 60px;
+    margin: 28px 0px 0px 60px;
   }
 }
 .form-header__logo {
@@ -133,7 +133,7 @@
     align-items: center;
     width: 290px;
     height: 52px;
-    margin: 49px 0px 0px 131px;
+    margin: 48px 0px 0px 131px;
   }
 }
 .form-header__btn-call {
@@ -277,7 +277,7 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 124px 0px 0px 124px;
+    margin: 123px 0px 0px 124px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -333,7 +333,7 @@
     width: 500px;
     height: 25px;
     padding: 0px 0px 0px 0px;
-    margin: 63px 0px 0px 60px;
+    margin: 62px 0px 0px 60px;
   }
 }
 @media (min-width: 1440px) {
