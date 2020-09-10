@@ -951,13 +951,13 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -8px;
+    margin-top: -10px;
     margin-bottom: 0px;
-    margin-left: -32px;
+    margin-left: -22px;
     margin-right: 0px;
-    background-image: url("../img/persons-btn-more-tablet.svg");
+    background-image: url(../img/persons-btn-more-tablet.svg);
     background-repeat: no-repeat;
-    background-position: 11% 52%;
+    background-position: 10% 58%;
   }
 }
 @media (min-width: 1440px) {
@@ -1359,7 +1359,7 @@
 @media (min-width: 768px) {
   .persons__about-list > .persons__rog-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 30px 0px 0px 64px;
   }
 }
 @media (min-width: 1440px) {
@@ -1375,7 +1375,7 @@
 @media (min-width: 768px) {
   .persons__about-list > .persons__rog-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -7px 0px 0px 44px;
   }
 }
 @media (min-width: 1440px) {
@@ -1391,8 +1391,11 @@
 }
 @media (min-width: 768px) {
   .persons__wish-wrapper-rog {
+    width: 368px;
+    min-width: auto;
+    justify-content: space-between;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 18px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -1407,6 +1410,8 @@
 }
 @media (min-width: 768px) {
   .persons__wish-flag-rog {
+    width: 35px;
+    height: 24px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
   }
@@ -1424,7 +1429,7 @@
 @media (min-width: 768px) {
   .persons__wish-text-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 3px 0px 0px -22px;
   }
 }
 @media (min-width: 1440px) {
