@@ -6495,7 +6495,7 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: -1084px 0px 0px 0px;
+    margin: -1088px 0px 0px 0px;
     padding: 0px 0px 140px 60px;
     position: relative;
     z-index: 9;
@@ -10263,7 +10263,7 @@ textarea {
     min-width: 285px;
     width: 285px;
     min-height: 814px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px -2px;
     padding: 0px 0px 0px 0px;
     box-sizing: border-box;
   }
@@ -10301,13 +10301,15 @@ textarea {
 }
 @media (min-width: 1440px) {
   .filter__button {
-    min-width: 194px;
+    min-width: auto;
     width: 194px;
     height: 49px;
-    margin-top: 28px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 32px;
     margin-bottom: 47px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 6px;
+    margin-right: 0px;
+    box-sizing: border-box;
   }
 }
 .filter__title {
@@ -10963,6 +10965,19 @@ textarea {
   .filter__range-split {
     position: absolute;
     transform: translate(1768%, 108%);
+    width: 21px;
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url(../img/split.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px transparent;
+  }
+}
+@media (min-width: 1440px) {
+  .filter__range-split {
+    position: absolute;
+    transform: translate(8%, 53%);
     width: 21px;
     height: 17px;
     background-color: #FFFFFF;
