@@ -6597,9 +6597,9 @@ textarea {
 @media (min-width: 1440px) {
   .persons .persons__item-three {
     width: 945px;
-    min-height: 284px;
-    height: 284px;
-    margin: 29px 0px 0px 0px;
+    min-height: 283px;
+    height: 283px;
+    margin: 31px 0px 0px 0px;
   }
 }
 @media (min-width: 320px) {
@@ -6618,9 +6618,9 @@ textarea {
 @media (min-width: 1440px) {
   .persons__item-four {
     width: 945px;
-    min-height: 284px;
-    height: 284px;
-    margin: 29px 0px 0px 0px;
+    min-height: 283px;
+    height: 283px;
+    margin: 31px 0px 0px 0px;
   }
 }
 .persons__avatar {
@@ -7040,6 +7040,14 @@ textarea {
     margin: 8px 0px 0px 23px;
   }
 }
+@media (min-width: 1440px) {
+  .persons__button-two {
+    width: 150px;
+    height: 50px;
+    padding: 1px 0px 0px 1px;
+    margin: 45px 0px 0px 21px;
+  }
+}
 .persons__button-three {
   padding: 0px 0px 0px 0px;
   margin: 12px 0px 0px 19px;
@@ -7050,6 +7058,14 @@ textarea {
     height: 50px;
     padding: 0px 0px 0px 0px;
     margin: 8px 0px 0px 23px;
+  }
+}
+@media (min-width: 1440px) {
+  .persons__button-three {
+    width: 150px;
+    height: 50px;
+    padding: 2px 0px 0px 2px;
+    margin: 44px 0px 0px 21px;
   }
 }
 .persons__button-four {
@@ -7636,8 +7652,8 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__rating-demin {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 56px;
+    margin: 44px 0px 0px 172px;
   }
 }
 .persons__hobby-demin {
@@ -7685,7 +7701,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__demin-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 55px 0px 0px -11px;
   }
 }
 .persons__about-list > .persons__demin-level {
@@ -7701,7 +7717,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__demin-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 27px 0px 0px 159px;
   }
 }
 .persons__wish-wrapper-demin {
@@ -7721,8 +7737,10 @@ textarea {
   .persons__wish-wrapper-demin {
     width: 214px;
     min-width: auto;
+    height: 72px;
+    min-height: auto;
     padding: 0px 0px 0px 0px;
-    margin: -9px 0px 0px -5px;
+    margin: 0px 0px 0px -5px;
   }
 }
 .persons__wish-flag-demin {
@@ -7956,8 +7974,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__wish-wrapper-smolov {
+    width: 216px;
+    min-width: auto;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -1px 0px 0px -5px;
   }
 }
 .persons__wish-flag-smolov {
@@ -8005,7 +8025,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__smolov-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 54px 0px 0px -11px;
   }
 }
 .persons__about-list > .persons__smolov-level {
@@ -8021,7 +8041,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__smolov-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 24px 0px 0px 160px;
   }
 }
 .persons__transport-wrapper-smolov {
