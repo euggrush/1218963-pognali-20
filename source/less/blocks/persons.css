@@ -92,6 +92,7 @@
   .persons__item-two {
     min-height: 330px;
     height: 330px;
+    margin: 10px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -110,6 +111,7 @@
   .persons .persons__item-three {
     min-height: 330px;
     height: 330px;
+    margin: 40px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -128,6 +130,7 @@
   .persons__item-four {
     min-height: 330px;
     height: 330px;
+    margin: 40px 0px 29px 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -249,6 +252,8 @@
   .persons__dot {
     grid-column-start: 3;
     grid-row-start: 1;
+    width: 8px;
+    height: 8px;
     margin-top: 43px;
     margin-bottom: 0px;
     margin-left: 9px;
@@ -292,9 +297,10 @@
     grid-row-end: 4;
     width: 50px;
     height: 51px;
-    background-image: url(../img/heart-rating-icon-tablet.svg);
+    background-image: url(../img/heart-rating-icon-grey.svg);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 50px 50px;
     font-size: 20px;
     line-height: 20px;
     margin-top: 5px;
@@ -554,9 +560,23 @@
   padding: 0px 0px 0px 0px;
   margin: 12px 0px 0px 19px;
 }
+@media (min-width: 768px) {
+  .persons__button-three {
+    width: 150px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 8px 0px 0px 23px;
+  }
+}
 .persons__button-four {
   padding: 0px 0px 0px 0px;
   margin: -2px 0px 0px 19px;
+}
+@media (min-width: 768px) {
+  .persons__button-four {
+    padding: 0px 0px 0px 0px;
+    margin: 8px 0px 0px 25px;
+  }
 }
 .persons__wishes {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -1126,7 +1146,7 @@
 }
 @media (min-width: 768px) {
   .persons__rating-demin {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 56px;
     margin: 7px 0px 0px -55px;
   }
 }
@@ -1258,7 +1278,7 @@
 @media (min-width: 768px) {
   .persons__name-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 30px 0px 0px 28px;
   }
 }
 @media (min-width: 1440px) {
@@ -1275,7 +1295,7 @@
 @media (min-width: 768px) {
   .persons__dot-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 39px 0px 0px 42px;
   }
 }
 @media (min-width: 1440px) {
@@ -1290,8 +1310,8 @@
 }
 @media (min-width: 768px) {
   .persons__rating-rog {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 57px;
+    margin: 7px 0px 0px -56px;
   }
 }
 @media (min-width: 1440px) {
@@ -1307,7 +1327,7 @@
 @media (min-width: 768px) {
   .persons__hobby-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -3px 0px 0px 30px;
   }
 }
 @media (min-width: 1440px) {
@@ -1436,8 +1456,11 @@
 }
 @media (min-width: 768px) {
   .persons__wish-wrapper-smolov {
+    width: 428px;
+    min-width: auto;
+    justify-content: space-between;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 18px 0px 0px -2px;
   }
 }
 @media (min-width: 1440px) {
@@ -1469,7 +1492,7 @@
 @media (min-width: 768px) {
   .persons__wish-text-smolov {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px -17px;
   }
 }
 @media (min-width: 1440px) {
@@ -1485,7 +1508,7 @@
 @media (min-width: 768px) {
   .persons__about-list > .persons__smolov-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 31px 0px 0px 64px;
   }
 }
 @media (min-width: 1440px) {
@@ -1501,7 +1524,7 @@
 @media (min-width: 768px) {
   .persons__about-list > .persons__smolov-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -9px 0px 0px 44px;
   }
 }
 @media (min-width: 1440px) {
