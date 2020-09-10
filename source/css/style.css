@@ -8637,7 +8637,7 @@ textarea {
   padding-right: 25px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-color: #E6E8F1;
+  background-color: #EDEFF6;
   border: solid 1px transparent;
   position: relative;
   z-index: 6;
@@ -8650,8 +8650,8 @@ textarea {
     min-height: 503px;
     margin: -50px 0px 0px 0px;
     padding: 100px 0px 0px 0px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 @media (min-width: 1440px) {
@@ -8723,6 +8723,8 @@ textarea {
   margin-bottom: 0px;
   margin-left: 23px;
   margin-right: 0px;
+  position: relative;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .profile__rates {
@@ -8762,6 +8764,8 @@ textarea {
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  position: relative;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .profile__list {
@@ -8818,6 +8822,12 @@ textarea {
     margin-right: 0px;
     margin-left: 125px;
   }
+}
+.profile__item:nth-child(2) > .profile__list-number {
+  background-color: #FFBD30;
+}
+.profile__item:nth-child(3) > .profile__list-number {
+  background-color: #FFD74B;
 }
 .profile__list-text {
   grid-column-start: 1;
@@ -9203,6 +9213,39 @@ textarea {
 ::placeholder {
   color: #444444;
   opacity: 0.3;
+}
+.profile__shadow-plate {
+  display: none;
+}
+@media (min-width: 768px) {
+  .profile__shadow-plate {
+    display: block;
+    width: 198px;
+    height: 285px;
+    background-color: #E2E5F2;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(263%, 69%);
+    z-index: 9;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px transparent;
+  }
+}
+@media (min-width: 1440px) {
+  .profile__shadow-plate {
+    display: block;
+    width: 446px;
+    height: 300px;
+    background-color: #E2E5F2;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(167%, 94%);
+    z-index: 9;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px transparent;
+  }
 }
 .reg {
   display: flex;

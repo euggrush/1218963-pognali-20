@@ -14,7 +14,7 @@
   padding-right: 25px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-color: #E6E8F1;
+  background-color: #EDEFF6;
   border: solid 1px transparent;
   position: relative;
   z-index: 6;
@@ -26,8 +26,8 @@
     min-height: 503px;
     margin: -50px 0px 0px 0px;
     padding: 100px 0px 0px 0px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,6 +98,8 @@
   margin-bottom: 0px;
   margin-left: 23px;
   margin-right: 0px;
+  position: relative;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 4;
@@ -136,6 +138,8 @@
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  position: relative;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -168,15 +172,15 @@
   min-height: 56px;
 
   @media (min-width: @tablet-width) {
-  display: grid;
-  grid-template-columns: 0.15fr 1fr 0.5fr;
-  grid-template-rows: 1fr;
-  width: 657px;
-  min-height: 70px;
-  margin-top: 0px;
-  margin-bottom: -3px;
-  margin-right: 0px;
-  margin-left: 0px;
+    display: grid;
+    grid-template-columns: 0.15fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    width: 657px;
+    min-height: 70px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   @media (min-width: @desktop-width) {
@@ -189,6 +193,14 @@
     margin-right: 0px;
     margin-left: 125px;
   }
+}
+
+.profile__item:nth-child(2)>.profile__list-number {
+  background-color: #FFBD30;
+}
+
+.profile__item:nth-child(3)>.profile__list-number {
+  background-color: #FFD74B;
 }
 
 .profile__list-text {
@@ -208,16 +220,16 @@
   margin-right: 0px;
 
   @media (min-width: @tablet-width) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 69px;
-  margin: 0px 0px 0px 22px;
-  padding: 0px 0px 0px 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 69px;
+    margin: 0px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
   }
 
   @media (min-width: @desktop-width) {
@@ -231,7 +243,7 @@
     line-height: 66px;
     margin: 0px 0px 0px 11px;
     padding: 0px 0px 0px 0px;
-    }
+  }
 }
 
 .profile__list-price {
@@ -260,16 +272,16 @@
     line-height: 67px;
     margin: 0px 0px 0px auto;
     padding: 0px 0px 0px 0px;
-    }
+  }
 
-    @media (min-width: @desktop-width) {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 28px;
-      line-height: 67px;
-      margin: 0px 0px 0px auto;
-      padding: 0px 0px 0px 0px;
-      }
+  @media (min-width: @desktop-width) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 67px;
+    margin: 0px 0px 0px auto;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .profile__list-number {
@@ -397,7 +409,7 @@
   border-radius: 20px;
   margin-bottom: 0px;
   align-self: center;
-  transform: translate(8%,-1%);
+  transform: translate(8%, -1%);
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -567,4 +579,36 @@
 ::placeholder {
   color: #444444;
   opacity: 0.3;
+}
+
+.profile__shadow-plate {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 198px;
+    height: 285px;
+    background-color: #E2E5F2;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(263%, 69%);
+    z-index: 9;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 446px;
+    height: 300px;
+    background-color: #E2E5F2;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(167%, 94%);
+    z-index: 9;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px transparent;
+  }
 }
