@@ -168,7 +168,7 @@
     font-size: 21px;
     line-height: 24px;
     padding: 0px 0px 0px 0px;
-    margin: -2px 0px 0px 130px;
+    margin: -1px 0px 0px 130px;
   }
 }
 .travelers__item {
@@ -216,7 +216,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 58px 0px 0px 32px;
+    margin: 60px 0px 0px 31px;
   }
 }
 @media (min-width: 768px) {
@@ -228,7 +228,7 @@
 @media (min-width: 1440px) {
   .travelers__item-left > .travelers__name {
     padding: 0px 0px 0px 0px;
-    margin: 17px 0px 0px -7px;
+    margin: 17px 0px 0px 2px;
   }
 }
 @media (min-width: 768px) {
@@ -249,7 +249,7 @@
     grid-row-start: 1;
     grid-row-end: 5;
     padding: 0px 0px 0px 0px;
-    margin: 58px 0px 0px 17px;
+    margin: 60px 0px 0px 17px;
   }
 }
 @media (min-width: 768px) {
@@ -316,10 +316,10 @@
   .travelers__button {
     grid-column-start: 1;
     grid-row-start: 4;
-    width: 281px;
+    width: 280px;
     height: 80px;
     padding: 0px 0px 0px 0px;
-    margin: -230px 0px 0px 128px;
+    margin: -230px 0px 0px 131px;
     background-position: 87% 52%;
   }
 }
@@ -379,7 +379,7 @@
     font-size: 24px;
     line-height: 22px;
     padding: 0px 0px 0px 0px;
-    margin: 17px 0px 0px -26px;
+    margin: 17px 0px 0px -21px;
   }
 }
 .travelers__name::before {
