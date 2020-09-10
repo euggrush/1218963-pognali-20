@@ -1,7 +1,7 @@
 .catalog-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   min-width: 318px;
   min-height: 240px;
   padding-top: 12px;
@@ -37,9 +37,9 @@
   }
 }
 .catalog-footer__logo {
-  width: 96px;
+  width: 100px;
   height: 15px;
-  margin: -1px 0px 0px -9px;
+  margin: 24px 0px 0px -2px;
 }
 @media (min-width: 768px) {
   .catalog-footer__logo {
@@ -76,7 +76,7 @@
 .catalog-footer__social {
   display: flex;
   justify-content: center;
-  margin: -15px 0px 0px -6px;
+  margin: 40px 0px 0px -4px;
 }
 @media (min-width: 768px) {
   .catalog-footer__social {
@@ -104,7 +104,7 @@
   background-color: #FFBD30;
 }
 .catalog-footer__copyright {
-  margin: 0px 0px 0px 23px;
+  margin: 50px 0px 0px 22px;
 }
 @media (min-width: 768px) {
   .catalog-footer__copyright {

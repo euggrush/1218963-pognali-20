@@ -3732,8 +3732,8 @@ button:focus {
   text-transform: uppercase;
   color: #192144;
   padding-top: 15px;
-  margin-top: 25px;
-  margin-left: -17px;
+  margin-top: 26px;
+  margin-left: -12px;
 }
 @media (min-width: 768px) {
   .filter-toggle__title {
@@ -3883,7 +3883,7 @@ button:focus {
   background-repeat: no-repeat;
   border: none;
   align-self: center;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-right: 27px;
 }
 @media (min-width: 768px) {
@@ -3915,8 +3915,8 @@ button:focus {
   background-image: url(../img/filter-toggle-icon.svg);
   background-repeat: no-repeat;
   align-self: center;
-  margin-top: 24px;
-  margin-left: 24px;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 @media (min-width: 768px) {
   .filter-toggle__icon {
@@ -6536,6 +6536,12 @@ textarea {
           filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
 }
 @media (min-width: 320px) {
+  .persons__item-one {
+    min-height: 377px;
+    height: 377px;
+  }
+}
+@media (min-width: 320px) {
   .persons__item-two {
     min-height: 355px;
     height: 355px;
@@ -6767,9 +6773,6 @@ textarea {
     margin: 42px 0px 0px 171px;
   }
 }
-.persons__item-one > .persons__rating {
-  background-image: url(../img/heart-rating-icon.svg);
-}
 .persons__hobby {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -6993,8 +6996,10 @@ textarea {
   }
 }
 .persons__button-two {
+  width: 230px;
+  height: 40px;
   padding: 0px 0px 0px 0px;
-  margin: 3px 0px 0px 19px;
+  margin: 0px 0px 0px 19px;
 }
 .persons__button-three {
   padding: 0px 0px 0px 0px;
@@ -7349,7 +7354,7 @@ textarea {
   }
 }
 .persons__btn-more {
-  min-width: 150px;
+  min-width: 160px;
   width: auto;
   height: 30px;
   background-color: transparent;
@@ -7362,9 +7367,12 @@ textarea {
   text-transform: uppercase;
   color: #1D2E5B;
   text-align: right;
-  background-image: url("../img/persons-btn-more.svg");
+  background-image: url(../img/persons-btn-more.svg);
   background-repeat: no-repeat;
-  background-position: -4% 73%;
+  background-position: 1% 82%;
+  margin: 0px 0px 0px 0px;
+  padding: 3px 9px 0px 0px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .persons__btn-more {
@@ -7475,7 +7483,7 @@ textarea {
   border: solid 1px transparent;
   background-image: url("../img/icon-arrows-prev.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 53% 59%;
 }
 @media (min-width: 768px) {
   .persons__btn-prev {
@@ -7513,7 +7521,7 @@ textarea {
   border: solid 1px transparent;
   background-image: url("../img/icon-arrows-next.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 51% 52%;
 }
 @media (min-width: 768px) {
   .persons__btn-next {
@@ -7639,6 +7647,55 @@ textarea {
 .persons__transport-wrapper-smolov {
   padding: 0px 0px 0px 0px;
   margin: 16px 0px 0px -5px;
+}
+.persons__name-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: -3px 0px 0px 13px;
+}
+.persons__dot-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 7px 0px 0px 61px;
+}
+.persons__rating-firsova {
+  background-image: url(../img/heart-rating-icon.svg);
+  padding: 0px 0px 0px 36px;
+  margin: 37px 0px 0px -23px;
+}
+.persons__hobby-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: -1px 0px 0px 25px;
+}
+.persons__about-list-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 2px 0px 0px 0px;
+}
+.persons__wish-wrapper-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 11px 0px 0px 23px;
+}
+.persons__wish-flag-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 9px 0px 0px 0px;
+}
+.persons__wish-text-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 13px 0px 0px 2px;
+}
+.persons__transport-wrapper-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 18px 0px 0px -5px;
+}
+.persons__about-list > .persons__firsova-transport {
+  padding: 0px 0px 0px 0px;
+  margin: 5px 0px 0px 25px;
+}
+.persons__about-list > .persons__firsova-level {
+  padding: 0px 0px 0px 0px;
+  margin: 4px 0px 0px 20px;
+}
+.persons__wishes-firsova {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 24px;
 }
 .plans {
   display: flex;
@@ -9564,7 +9621,7 @@ textarea {
   height: 24px;
 }
 .filter {
-  margin-top: -35px;
+  margin-top: -36px;
   margin-bottom: 0px;
   background-color: #E5E5E5;
   padding-top: 36px;
@@ -9591,7 +9648,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 272px;
+  width: 270px;
   min-height: 622px;
   margin: 0 auto;
   margin-top: 21px;
@@ -10520,10 +10577,10 @@ textarea {
 .catalog-header__logo {
   grid-column-start: 1;
   grid-row-start: 1;
-  width: 96px;
+  width: 100px;
   height: 15px;
   margin-top: 19px;
-  margin-left: 27px;
+  margin-left: 25px;
 }
 @media (min-width: 768px) {
   .catalog-header__logo {
@@ -11351,7 +11408,7 @@ textarea {
 .catalog-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   min-width: 318px;
   min-height: 240px;
   padding-top: 12px;
@@ -11387,9 +11444,9 @@ textarea {
   }
 }
 .catalog-footer__logo {
-  width: 96px;
+  width: 100px;
   height: 15px;
-  margin: -1px 0px 0px -9px;
+  margin: 24px 0px 0px -2px;
 }
 @media (min-width: 768px) {
   .catalog-footer__logo {
@@ -11426,7 +11483,7 @@ textarea {
 .catalog-footer__social {
   display: flex;
   justify-content: center;
-  margin: -15px 0px 0px -6px;
+  margin: 40px 0px 0px -4px;
 }
 @media (min-width: 768px) {
   .catalog-footer__social {
@@ -11454,7 +11511,7 @@ textarea {
   background-color: #FFBD30;
 }
 .catalog-footer__copyright {
-  margin: 0px 0px 0px 23px;
+  margin: 50px 0px 0px 22px;
 }
 @media (min-width: 768px) {
   .catalog-footer__copyright {
