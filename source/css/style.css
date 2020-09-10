@@ -7467,7 +7467,7 @@ textarea {
     align-items: center;
     min-width: 688px;
     height: 100px;
-    margin: 39px 9px 0px 0px;
+    margin: 41px 9px 0px 5px;
     padding: 0px 0px 0px 28px;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -7538,7 +7538,7 @@ textarea {
     background-color: transparent;
     border: none;
     line-height: 20px;
-    margin-top: 0px;
+    margin-top: -6px;
     margin-bottom: 0px;
     margin-left: 351px;
     margin-right: 0px;
@@ -11114,6 +11114,7 @@ textarea {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 1438px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     position: relative;
@@ -12019,7 +12020,7 @@ textarea {
     display: inline-block;
     width: 164px;
     height: 42px;
-    margin: 0px 0px 0px 0px;
+    margin: -1px -6px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
