@@ -7006,8 +7006,8 @@ textarea {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
-    padding: 0px 0px 0px 0px;
-    margin: 43px 0px 0px 23px;
+    padding: 1px 0px 0px 2px;
+    margin: 44px 0px 0px 21px;
   }
 }
 .persons__btn-text {
@@ -8090,8 +8090,8 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__rating-firsova {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 2px 58px;
+    margin: -4px 0px 0px 171px;
   }
 }
 .persons__hobby-firsova {
@@ -8191,8 +8191,10 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__transport-wrapper-firsova {
+    width: 133px;
+    height: 30px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 54px 0px 0px -11px;
   }
 }
 .persons__about-list > .persons__firsova-transport {
@@ -8224,7 +8226,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__firsova-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 26px 0px 0px 159px;
   }
 }
 .persons__wishes-firsova {
