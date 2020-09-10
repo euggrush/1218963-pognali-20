@@ -56,7 +56,7 @@
 @media (min-width: 1440px) {
   .map__address {
     padding: 0px 0px 0px 0px;
-    margin-top: 32px;
+    margin-top: 35px;
     margin-bottom: 0px;
     margin-left: 285px;
     margin-right: 0px;
@@ -87,10 +87,11 @@
   .map__icon {
     width: 90px;
     height: 90px;
-    margin-top: 7px;
+    margin-top: 6px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: -1px;
     margin-right: 0px;
+    background-size: 45px 45px;
   }
 }
 .map__text {
@@ -159,13 +160,13 @@
 }
 @media (min-width: 1440px) {
   .map__button {
-    width: 660px;
+    width: 659px;
     height: 80px;
     padding: 0px 0px 0px 0px;
     margin-top: 40px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 136px;
+    margin-right: 135px;
     border-radius: 20px;
     background-position: 90% 50%;
   }

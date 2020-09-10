@@ -106,9 +106,9 @@
 }
 @media (min-width: 1440px) {
   .page-footer__social {
-    margin-top: 32px;
+    margin-top: 33px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 148px;
     margin-right: 0px;
   }
 }
@@ -167,15 +167,30 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 1440px) {
+  .page-footer__link:first-child {
+    background-size: 30px 30px;
+  }
+}
 .page-footer__link:nth-child(2) {
   background-image: url(../img/vk-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 1440px) {
+  .page-footer__link:nth-child(2) {
+    background-size: 30px 30px;
+  }
+}
 .page-footer__link:last-child {
   background-image: url(../img/instagram-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 1440px) {
+  .page-footer__link:last-child {
+    background-size: 30px 30px;
+  }
 }
 .page-footer__text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
