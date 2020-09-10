@@ -43,18 +43,22 @@
 }
 @media (min-width: 768px) {
   .catalog-footer__logo {
-    display: inline-block;
     width: 164px;
     height: 42px;
-    margin: -1px -6px 0px 0px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: -51px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1440px) {
   .catalog-footer__logo {
-    display: inline-block;
-    width: 164px;
-    height: 42px;
-    margin: 0px 0px 0px 0px;
+    width: 200px;
+    height: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .catalog-footer__contacts {
@@ -70,6 +74,18 @@
     margin-top: 43px;
     margin-bottom: 0px;
     margin-left: 36px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-footer__contacts {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: auto;
+    height: auto;
+    margin-top: 38px;
+    margin-bottom: 0px;
+    margin-left: -163px;
     margin-right: 0px;
   }
 }
@@ -179,6 +195,16 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-footer__copyright-link {
+    width: 27px;
+    height: 34px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 18px;
+    margin-right: 0px;
+  }
+}
 .catalog-footer__text {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -188,6 +214,18 @@
   color: #444444;
 }
 @media (min-width: 768px) {
+  .catalog-footer__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1440px) {
   .catalog-footer__text {
     font-style: normal;
     font-weight: normal;
