@@ -7078,6 +7078,12 @@ textarea {
     margin: 8px 0px 0px 25px;
   }
 }
+@media (min-width: 1440px) {
+  .persons__button-four {
+    padding: 2px 0px 0px 1px;
+    margin: 44px 0px 0px 21px;
+  }
+}
 .persons__wishes {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -7369,12 +7375,12 @@ textarea {
 }
 @media (min-width: 768px) {
   .persons__transport-icon-bus {
-    background-size: 23px 23px;
+    background-size: 20px 23px;
   }
 }
 @media (min-width: 1440px) {
   .persons__transport-icon-bus {
-    background-size: 23px 23px;
+    background-size: 20px 23px;
   }
 }
 .persons__transport-icon-bike {
@@ -7468,13 +7474,13 @@ textarea {
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
-    margin-top: -2px;
+    margin-top: 27px;
     margin-bottom: 0px;
-    margin-left: -90px;
+    margin-left: -88px;
     margin-right: 0px;
-    background-image: url("../img/persons-btn-more-tablet.svg");
+    background-image: url(../img/persons-btn-more-tablet.svg);
     background-repeat: no-repeat;
-    background-position: 11% 52%;
+    background-position: 10% 63%;
   }
 }
 .persons__controls-wrap {
@@ -7503,9 +7509,9 @@ textarea {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-width: 948px;
+    min-width: 947px;
     height: 100px;
-    margin: 59px 0px 0px -5px;
+    margin: 62px 0px 0px -5px;
     padding: 0px 0px 0px 28px;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -7576,9 +7582,9 @@ textarea {
     background-color: transparent;
     border: none;
     line-height: 20px;
-    margin-top: 0px;
+    margin-top: -3px;
     margin-bottom: 0px;
-    margin-left: 605px;
+    margin-left: 602px;
     margin-right: 0px;
   }
 }
@@ -7602,7 +7608,7 @@ textarea {
     line-height: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: -7px;
+    margin-left: -4px;
     margin-right: 0px;
   }
 }
@@ -7788,7 +7794,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__name-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px 29px;
   }
 }
 .persons__dot-rog {
@@ -7805,7 +7811,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__dot-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 56px 0px 0px 4px;
   }
 }
 .persons__rating-rog {
@@ -7820,8 +7826,8 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__rating-rog {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 57px;
+    margin: 43px 0px 0px 171px;
   }
 }
 .persons__hobby-rog {
@@ -7837,7 +7843,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__hobby-rog {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 23px 0px 0px 30px;
   }
 }
 .persons__about-list-rog {
@@ -7869,7 +7875,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__rog-transport {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 54px 0px 0px -11px;
   }
 }
 .persons__about-list > .persons__rog-level {
@@ -7885,7 +7891,7 @@ textarea {
 @media (min-width: 1440px) {
   .persons__about-list > .persons__rog-level {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 26px 0px 0px 160px;
   }
 }
 .persons__wish-wrapper-rog {
@@ -7904,8 +7910,12 @@ textarea {
 }
 @media (min-width: 1440px) {
   .persons__wish-wrapper-rog {
+    width: 214px;
+    min-width: auto;
+    height: 76px;
+    min-height: auto;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: -4px 0px 0px -5px;
   }
 }
 .persons__wish-flag-rog {
