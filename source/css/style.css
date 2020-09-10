@@ -9342,15 +9342,16 @@ textarea {
     width: 638px;
     font-style: normal;
     font-weight: 300;
-    font-size: 27px;
+    font-size: 28px;
     line-height: 32px;
     text-align: center;
+    letter-spacing: normal;
     margin-top: 61px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 0px;
-    letter-spacing: 0.02em;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
@@ -9400,7 +9401,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .reg__button-wrapper {
-    width: 617px;
+    width: 613px;
     margin-top: 44px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -9557,9 +9558,9 @@ textarea {
     font-weight: 300;
     font-size: 28px;
     line-height: 30px;
-    margin-top: 59px;
+    margin-top: 58px;
     margin-bottom: 0px;
-    margin-left: 8px;
+    margin-left: 6px;
     margin-right: 0px;
     padding: 0px;
   }
