@@ -4701,7 +4701,8 @@ button:focus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    min-width: 768px;
+    min-width: 766px;
+    width: 766px;
     min-height: 500px;
     margin-top: -45px;
     margin-bottom: 0px;
@@ -4720,6 +4721,8 @@ button:focus {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-width: 1438px;
+    width: 1438px;
     min-height: 448px;
     padding: 0px 0px 0px 0px;
     margin: -191px 0px 0px 0px;
@@ -8362,7 +8365,8 @@ textarea {
 @media (min-width: 768px) {
   .plans {
     justify-content: start;
-    min-width: 768px;
+    width: 766px;
+    min-width: 766px;
     min-height: 558px;
     margin-top: -27px;
     margin-bottom: 0px;
