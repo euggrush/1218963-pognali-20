@@ -357,7 +357,7 @@
 .directions__country-title {
   grid-column-start: 1;
   grid-row-start: 1;
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;

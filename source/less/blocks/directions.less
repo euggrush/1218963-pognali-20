@@ -1,7 +1,4 @@
-@tablet-width: 768px;
-@desktop-width: 1440px;
-@mobile-width-only: 320px;
-
+@import "../utils/utils.less";
 
 .directions {
   position: relative;
@@ -350,7 +347,7 @@
 .directions__country-title {
   grid-column-start: 1;
   grid-row-start: 1;
-  font-family: Blogger Sans;
+  font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -508,7 +505,6 @@
 
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
-    //grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
     width: 70px;
@@ -519,7 +515,6 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
-    //grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
     width: 70px;
