@@ -5341,6 +5341,39 @@ textarea {
 .text-hidden {
   font-size: 0px;
 }
+@media (min-width: 320px) {
+  .page-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
+}
+@media (min-width: 768px) {
+  .page-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 768px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
+}
+@media (min-width: 1440px) {
+  .page-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 1440px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+  }
+}
 .page-footer {
   position: relative;
   z-index: 10;
@@ -5586,6 +5619,7 @@ textarea {
   background-repeat: no-repeat, no-repeat;
   background-position: 79px 221px, 0px 0px;
   border: solid 1px transparent;
+  margin: 0 auto;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .page-header {
@@ -11226,18 +11260,20 @@ textarea {
 .location {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 424px;
   margin-top: -30px;
 }
 @media (min-width: 768px) {
   .location {
+    width: 100%;
     min-height: 685px;
     margin-top: -50px;
   }
 }
 @media (min-width: 1440px) {
   .location {
-    width: 1440px;
+    width: 100%;
     min-height: 625px;
     margin-top: -100px;
     margin-bottom: 0px;
@@ -11248,18 +11284,18 @@ textarea {
   }
 }
 .location__map {
-  width: auto;
+  width: 100%;
   height: 424px;
 }
 @media (min-width: 768px) {
   .location__map {
-    width: auto;
+    width: 100%;
     height: 581px;
   }
 }
 @media (min-width: 1440px) {
   .location__map {
-    width: auto;
+    width: 100%;
     height: 584px;
   }
 }
@@ -13489,6 +13525,29 @@ textarea {
     color: #192144;
   }
 }
+.container {
+  width: 100%;
+  min-width: 318px;
+  max-width: 318px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    min-width: 766px;
+    max-width: 766px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 100%;
+    min-width: 1438px;
+    max-width: 1438px;
+  }
+}
 @font-face {
   font-family: "Blogger Sans";
   font-weight: 300;
@@ -13517,22 +13576,11 @@ textarea {
   src: url("../fonts/bloggersans-bold.woff") format("woff");
   src: url("../fonts/bloggersans-bold.woff2") format("woff2");
 }
-@media (min-width: 320px) {
-  .page-body {
-    width: 100%;
-    max-width: 320px;
-    min-width: 320px;
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Blogger Sans", "Arial", sans-serif;
-  }
-}
-.page-body main {
+main {
   min-width: 320px;
 }
 @media (min-width: 768px) {
-  .page-body {
+  main {
     width: 100%;
     max-width: 768px;
     min-width: 320px;
@@ -13543,7 +13591,7 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  .page-body {
+  main {
     width: 100%;
     max-width: 1440px;
     min-width: 320px;

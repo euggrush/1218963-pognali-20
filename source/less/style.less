@@ -27,6 +27,7 @@
 @import "blocks/filter-modal.less";
 @import "blocks/form-main.less";
 @import "blocks/countries-modal.less";
+@import "blocks/container.less";
 
 // Colors
 
@@ -73,21 +74,8 @@
   src: url("../fonts/bloggersans-bold.woff2") format("woff2");
 }
 
-.page-body {
-
-  @media (min-width: @mobile-width-only) {
-    width: 100%;
-    max-width: 320px;
-    min-width: 320px;
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Blogger Sans", "Arial", sans-serif;
-  }
-
   main {
     min-width: 320px;
-  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
