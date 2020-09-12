@@ -235,3 +235,10 @@
     margin: 0px 0px 0px 33px;
   }
 }
+.about__btn:hover {
+  background-color: #FFBD30;
+}
+.about__btn:active,
+.about__btn-text:active {
+  color: rgba(119, 110, 110, 0.3);
+}

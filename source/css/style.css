@@ -235,6 +235,13 @@
     margin: 0px 0px 0px 33px;
   }
 }
+.about__btn:hover {
+  background-color: #FFBD30;
+}
+.about__btn:active,
+.about__btn-text:active {
+  color: rgba(119, 110, 110, 0.3);
+}
 .add-plan {
   display: flex;
   flex-direction: column;
@@ -3526,6 +3533,14 @@ button:focus {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 33px;
   }
+}
+.directions__button:hover {
+  background-color: #FFBD30;
+}
+.directions__button:active,
+.directions__btn-text:active {
+  background-color: #FFBD30;
+  color: rgba(0, 0, 0, 0.3);
 }
 .directions__country-title {
   grid-column-start: 1;
@@ -10166,6 +10181,14 @@ textarea {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 34px;
   }
+}
+.travelers__button:hover {
+  background-color: #FFBD30;
+}
+.travelers__button:active,
+.travelers__btn-text:active {
+  background-color: #FFBD30;
+  color: rgba(0, 0, 0, 0.3);
 }
 .travelers__name {
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
