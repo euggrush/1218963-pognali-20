@@ -1,4 +1,9 @@
 .page-footer {
+  min-width: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.page-footer__container {
   position: relative;
   z-index: 10;
   display: flex;
@@ -14,9 +19,11 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -131px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-  .page-footer {
+  .page-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px;
@@ -24,19 +31,21 @@
     width: 766px;
     min-height: 140px;
     margin-top: -170px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
 }
 @media (min-width: 1440px) {
-  .page-footer {
+  .page-footer__container {
     min-width: 1438px;
     width: 1438px;
     min-height: 154px;
     margin-top: -127px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     z-index: 4;
   }

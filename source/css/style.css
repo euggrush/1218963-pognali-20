@@ -5424,6 +5424,11 @@ textarea {
   }
 }
 .page-footer {
+  min-width: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.page-footer__container {
   position: relative;
   z-index: 10;
   display: flex;
@@ -5439,9 +5444,11 @@ textarea {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -131px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-  .page-footer {
+  .page-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px;
@@ -5449,19 +5456,21 @@ textarea {
     width: 766px;
     min-height: 140px;
     margin-top: -170px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
 }
 @media (min-width: 1440px) {
-  .page-footer {
+  .page-footer__container {
     min-width: 1438px;
     width: 1438px;
     min-height: 154px;
     margin-top: -127px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     z-index: 4;
   }
@@ -9417,6 +9426,11 @@ textarea {
   }
 }
 .reg {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+.reg__container {
   display: flex;
   flex-direction: column;
   justify-self: start;
@@ -9424,6 +9438,8 @@ textarea {
   width: 318px;
   min-height: 448px;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 77px;
   background-color: #192144;
   border-bottom-left-radius: 30px;
@@ -9432,8 +9448,8 @@ textarea {
   z-index: 5;
 }
 @media (min-width: 768px) {
-  .reg {
-    margin: -50px 0px 0px 0px;
+  .reg__container {
+    margin: -50px auto 0px auto;
     padding: 0px 0px 0px 0px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -9443,15 +9459,15 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  .reg {
+  .reg__container {
     min-width: 1438px;
     width: 1438px;
     min-height: 798px;
     padding: 0px 0px 0px 0px;
     margin-top: -48px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
