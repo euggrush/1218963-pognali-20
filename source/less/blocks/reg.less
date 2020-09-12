@@ -352,6 +352,7 @@
   display: flex;
   align-items: center;
   margin-left: 25px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -447,35 +448,47 @@
 .reg__icon-tel {
   width: 16px;
   height: 15px;
-  margin: 0px 0px 0px 0px;
+  margin: 14px 0px 0px 9px;
 
   @media (min-width: @tablet-width) {
     width: 24px;
     height: 23px;
-    margin: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 17px;
   }
 
   @media (min-width: @desktop-width) {
     width: 32px;
     height: 30px;
-    margin: 0px 0px 0px 0px;
+    margin: 27px 0px 0px 24px;
   }
 }
 
 .reg__icon-mail {
   width: 19px;
   height: 13px;
-  margin: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 8px;
 
   @media (min-width: @tablet-width) {
     width: 28px;
     height: 19px;
-    margin: 0px 0px 0px 0px;
+    margin: 23px 0px 0px 15px;
   }
 
   @media (min-width: @desktop-width) {
     width: 37px;
     height: 25px;
-    margin: 0px 0px 0px 0px;
+    margin: 32px 0px 0px 22px;
   }
 }
+
+.reg__contact-wrapper:hover {
+  color: #FFBD30;
+  fill: #FFBD30;
+}
+
+.reg__contact-wrapper:active {
+  color: rgba(0, 0, 0, 0.3);
+  fill-opacity: 0.3;
+}
+
+

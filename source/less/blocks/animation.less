@@ -1,0 +1,30 @@
+.animation {
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;
+}
+
+.animation span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.animation span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 500;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.animation:hover span,
+.animation:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}

@@ -676,16 +676,12 @@
     margin: 0px 0px 0px 0px;
   }
 }
-@media (min-width: 1440px) {
-  .page-header__desktop-link:hover {
-    color: #FFD74B;
-  }
+.page-header__desktop-link:hover {
+  color: #FFD74B;
 }
-@media (min-width: 1440px) {
-  .page-header__desktop-link:active {
-    color: #FFD74B;
-    opacity: 0.3;
-  }
+.page-header__desktop-link:active {
+  color: #FFD74B;
+  opacity: 0.3;
 }
 .page-header__desktop-link-service {
   display: none;
