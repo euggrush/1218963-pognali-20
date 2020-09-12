@@ -5238,6 +5238,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   margin: 5px 0px 0px -2px;
+  border: none;
 }
 @media (min-width: 768px) {
   .my-profile__transport-plane {
@@ -5264,6 +5265,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 0px 0px -5px;
+  border: none;
 }
 @media (min-width: 768px) {
   .my-profile__transport-bus {
@@ -5291,6 +5293,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 0px 0px -5px;
+  border: none;
 }
 @media (min-width: 768px) {
   .my-profile__transport-bike {
@@ -5317,6 +5320,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px 0px 0px -5px;
+  border: none;
 }
 @media (min-width: 768px) {
   .my-profile__transport-run {
@@ -5333,6 +5337,9 @@ textarea {
     margin: 7px 0px 0px -6px;
     padding: 0px 0px 0px 0px;
   }
+}
+.text-hidden {
+  font-size: 0px;
 }
 .page-footer {
   position: relative;
