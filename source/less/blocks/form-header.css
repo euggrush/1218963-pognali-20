@@ -151,9 +151,6 @@
     height: 50px;
     border-radius: 50%;
     background-color: #FF8D30;
-    background-image: url(../img/icon-call.svg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 .form-header__btn-call:hover {
@@ -161,6 +158,7 @@
 }
 .form-header__btn-call:active {
   background-color: #F26926;
+  fill-opacity: 0.3;
 }
 .form-header__btn-email {
   display: none;
@@ -177,9 +175,6 @@
     height: 50px;
     border-radius: 50%;
     background-color: #FFBD30;
-    background-image: url(../img/icon-mail.svg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 .form-header__btn-email:hover {
@@ -187,6 +182,7 @@
 }
 .form-header__btn-email:active {
   background-color: #FF8D30;
+  fill-opacity: 0.3;
 }
 .form-header__btn-authorization {
   display: none;
@@ -226,6 +222,7 @@
 }
 .form-header__btn-authorization:active {
   background-color: #FFBD30;
+  color: rgba(0, 0, 0, 0.3);
 }
 .form-header__main-page-link {
   display: none;
@@ -421,4 +418,10 @@
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 25px;
   }
+}
+.form-header__icon-call {
+  margin: 15px 0px 0px 15px;
+}
+.form-header__icon-mail {
+  margin: 15px 0px 0px 15px;
 }
