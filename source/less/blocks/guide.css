@@ -137,8 +137,6 @@
     box-sizing: border-box;
   }
 }
-@media (min-width: 768px) {
-}
 @media (min-width: 1440px) {
   .guide__item:nth-child(1) .guide__number {
     margin-top: 26px;
@@ -179,8 +177,6 @@
     margin-left: -62px;
     padding: 0px 0px 0px 0px;
   }
-}
-@media (min-width: 768px) {
 }
 @media (min-width: 1440px) {
   .guide__item:nth-child(2) .guide__number {
@@ -223,8 +219,6 @@
     box-sizing: border-box;
   }
 }
-@media (min-width: 768px) {
-}
 @media (min-width: 1440px) {
   .guide__item:nth-child(3) .guide__number {
     margin-top: 26px;
@@ -265,8 +259,6 @@
     margin-left: -28px;
     padding: 0px 0px 0px 0px;
   }
-}
-@media (min-width: 768px) {
 }
 @media (min-width: 1440px) {
   .guide__item:last-child .guide__number {
