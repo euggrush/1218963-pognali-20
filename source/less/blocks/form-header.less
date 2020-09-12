@@ -351,9 +351,13 @@
 }
 
 .form-header__desktop-line {
-  width: 60px;
-  height: 2px;
-  background-color: #FFFFFF;
+
+  @media (min-width: @desktop-width) {
+    width: 60px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .form-header__nav-item-service {
@@ -365,6 +369,7 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+    width: 100px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -373,7 +378,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 42px;
   }
 }
 
@@ -394,7 +399,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 18px;
   }
 }
 
@@ -415,6 +420,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 25px;
   }
 }

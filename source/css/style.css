@@ -12203,10 +12203,13 @@ textarea {
     opacity: 0.3;
   }
 }
-.form-header__desktop-line {
-  width: 60px;
-  height: 2px;
-  background-color: #FFFFFF;
+@media (min-width: 1440px) {
+  .form-header__desktop-line {
+    width: 60px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+  }
 }
 .form-header__nav-item-service {
   display: none;
@@ -12219,6 +12222,7 @@ textarea {
 @media (min-width: 1440px) {
   .form-header__nav-item-service {
     display: inline-block;
+    width: 100px;
     font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12227,7 +12231,7 @@ textarea {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 42px;
   }
 }
 .form-header__nav-item-directions {
@@ -12249,7 +12253,7 @@ textarea {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 18px;
   }
 }
 .form-header__nav-item-travelers {
@@ -12271,7 +12275,7 @@ textarea {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 25px;
   }
 }
 .catalog-footer {
