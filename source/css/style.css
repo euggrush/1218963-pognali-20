@@ -4557,7 +4557,7 @@ button:focus {
   flex-direction: column;
   min-width: 318px;
   width: 318px;
-  min-height: 191px;
+  min-height: 226px;
   margin-top: -21px;
   padding-top: 35px;
   padding-left: 25px;
@@ -4577,7 +4577,7 @@ button:focus {
     margin-top: -50px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 339px;
+    min-height: 374px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -8937,7 +8937,7 @@ textarea {
   grid-template-rows: 1fr 1fr 1fr 0.6fr;
   min-width: 318px;
   width: 318px;
-  min-height: 420px;
+  min-height: 475px;
   margin-top: -25px;
   margin-left: auto;
   margin-right: auto;
@@ -8960,7 +8960,7 @@ textarea {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-width: 766px;
     width: 766px;
-    min-height: 503px;
+    min-height: 605px;
     margin: -50px auto 0px auto;
     padding: 100px 0px 0px 0px;
     border-bottom-left-radius: 60px;
@@ -9075,7 +9075,7 @@ textarea {
   list-style: none;
   min-width: 244px;
   min-height: 192px;
-  margin-top: 27px;
+  margin-top: 30px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -10090,7 +10090,7 @@ textarea {
   justify-content: flex-start;
   min-width: 318px;
   width: 318px;
-  min-height: 1273px;
+  min-height: 1271px;
   background-color: #192144;
   background-image: url(../img/smolov-back-desktop@1x.png), url(../img/rogovaya-back-mobile@1x.png);
   background-repeat: no-repeat, no-repeat;
@@ -10102,7 +10102,6 @@ textarea {
   border: solid 1px transparent;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .travelers__container {
@@ -10111,7 +10110,7 @@ textarea {
     grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr 1fr;
     min-width: 766px;
     width: 766px;
-    min-height: 1177px;
+    min-height: 1304px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     background-image: url(../img/smolov-back-desktop@2x.png), url(../img/rogovaya-back-desktop@2x.png);
@@ -10123,6 +10122,7 @@ textarea {
     margin-right: auto;
     padding-top: 125px;
     padding-left: 74px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {

@@ -11,7 +11,7 @@
   justify-content: flex-start;
   min-width: 318px;
   width: 318px;
-  min-height: 1273px;
+  min-height: 1271px;
   background-color: #192144;
   background-image: url(../img/smolov-back-desktop@1x.png), url(../img/rogovaya-back-mobile@1x.png);
   background-repeat: no-repeat, no-repeat;
@@ -23,7 +23,6 @@
   border: solid 1px transparent;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .travelers__container {
@@ -32,7 +31,7 @@
     grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr 1fr;
     min-width: 766px;
     width: 766px;
-    min-height: 1177px;
+    min-height: 1304px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     background-image: url(../img/smolov-back-desktop@2x.png), url(../img/rogovaya-back-desktop@2x.png);
@@ -44,6 +43,7 @@
     margin-right: auto;
     padding-top: 125px;
     padding-left: 74px;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 1440px) {
