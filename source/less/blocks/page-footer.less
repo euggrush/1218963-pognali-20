@@ -131,6 +131,7 @@
 
 .page-footer__social a:active {
   background-color: #FFBD30;
+  fill-opacity: 0.3;
 }
 
 .page-footer__copyright {
@@ -167,7 +168,9 @@
 
 
 .page-footer__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -180,9 +183,6 @@
 }
 
 .page-footer__link:first-child {
-  background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @desktop-width) {
     background-size: 30px 30px;
@@ -190,9 +190,6 @@
 }
 
 .page-footer__link:nth-child(2) {
-  background-image: url(../img/vk-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @desktop-width) {
     background-size: 30px 30px;
@@ -200,12 +197,36 @@
 }
 
 .page-footer__link:last-child {
-  background-image: url(../img/instagram-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @desktop-width) {
     background-size: 30px 30px;
+  }
+}
+
+.page-footer__icon-fb {
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.page-footer__icon-vk {
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.page-footer__icon-inst {
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
   }
 }
 
