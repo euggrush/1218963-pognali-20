@@ -1,15 +1,27 @@
 @import "../utils/utils.less";
 
 .persons {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+
+.persons__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-width: 320px;
+  width: 320px;
   background-color: #E5E5E5;
+  margin: 0px auto 0px auto;
   padding-top: 18px;
   padding-bottom: 66px;
 
   @media (min-width: @tablet-width) {
+    min-width: 768px;
+    width: 768px;
+    margin: 0px auto 0px auto;
     padding-bottom: 120px;
   }
 
@@ -18,10 +30,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: -1088px 0px 0px 0px;
+    min-width: 1440px;
+    width: 1440px;
+    margin: -1088px auto 0px auto;
     padding: 0px 0px 140px 60px;
     position: relative;
     z-index: 9;
+    box-sizing: border-box;
   }
 }
 

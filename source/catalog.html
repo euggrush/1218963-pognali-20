@@ -5,348 +5,359 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Погнали</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 
 <body class="page-body">
-  <header class="catalog-header container">
-    <a href="index.html" class="catalog-header__logo-link">
-      <span class="visually-hidden">Главная</span>
-      <div class="catalog-header__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@2x.png">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@2x.png">
-          <img src="img/logo-mobile-white@2x.png" alt="главная">
-        </picture>
+  <header class="catalog-header">
+
+    <div class="catalog-header__container">
+      <a href="index.html" class="catalog-header__logo-link">
+        <span class="visually-hidden">Главная</span>
+        <div class="catalog-header__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@2x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@2x.png">
+            <img src="img/logo-mobile-white@2x.png" alt="главная">
+          </picture>
+        </div>
+      </a>
+      <button class="catalog-header__button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <div class="catalog-header__btn-container">
+        <a class="catalog-header__btn-call" href="#">
+          <span class="visually-hidden">Позвонить</span>
+        </a>
+        <a class="catalog-header__btn-email" href="#">
+          <span class="visually-hidden">Отправить email</span>
+        </a>
+
+        <a class="catalog-header__btn-authorization" href="#">
+          Авторизация
+        </a>
       </div>
-    </a>
-    <button class="catalog-header__button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
 
-    <div class="catalog-header__btn-container">
-      <a class="catalog-header__btn-call" href="#">
-        <span class="visually-hidden">Позвонить</span>
-      </a>
-      <a class="catalog-header__btn-email" href="#">
-        <span class="visually-hidden">Отправить email</span>
-      </a>
+      <a class="catalog-header__main-page-link" href="index.html">на главную</a>
 
-      <a class="catalog-header__btn-authorization" href="#">
-        Авторизация
-      </a>
+      <nav class="catalog-header__nav">
+        <div class="catalog-header__desktop-line"></div>
+        <a class="catalog-header__nav-service animation" href="index.html">
+          <span data-hover="О сервисе">О сервисе</span>
+        </a>
+        <a class="catalog-header__nav-directions animation" href="form.html">
+          <span data-hover="Направления">Направления</span>
+        </a>
+        <a class="catalog-header__nav-travelers animation" href="catalog.html">
+          <span data-hover="Попутчики">Попутчики</span>
+        </a>
+      </nav>
+
+      <h2 class="catalog-header__title">Попутчики</h2>
+      <div class="catalog-header__title-underline"></div>
     </div>
 
-    <a class="catalog-header__main-page-link" href="index.html">на главную</a>
-
-    <nav class="catalog-header__nav">
-      <div class="catalog-header__desktop-line"></div>
-      <a class="catalog-header__nav-service animation" href="index.html">
-        <span data-hover="О сервисе">О сервисе</span>
-      </a>
-      <a class="catalog-header__nav-directions animation" href="form.html">
-        <span data-hover="Направления">Направления</span>
-      </a>
-      <a class="catalog-header__nav-travelers animation" href="catalog.html">
-        <span data-hover="Попутчики">Попутчики</span>
-      </a>
-    </nav>
-
-    <h2 class="catalog-header__title">Попутчики</h2>
-    <div class="catalog-header__title-underline"></div>
   </header>
 
-  <main class="container">
+  <main>
 
 <!-- БЛОК ЗАКРЫТЬ И ОТКРЫТЬ ФИЛТР ПО СТРАНАМ -->
 
     <section class="filter-toggle">
-      <div class="filter-toggle__btn-wrap">
-        <div class="filter-toggle__icon"></div>
-        <h3 class="filter-toggle__title">Фильтрация по странам:</h3>
-        <span class="filter-toggle__europe">Европа</span>
-        <span class="filter-toggle__asia">Азия</span>
-        <span class="filter-toggle__america">америка</span>
-        <span class="filter-toggle__islands">острова</span>
 
-        <button class="filter-toggle__button">
-          <span class="text-hidden">Открыть</span>
-          <span class="filter-toggle__btn-more">показать все</span>
-        </button>
+      <div class="filter-toggle__container">
+        <div class="filter-toggle__btn-wrap">
+          <div class="filter-toggle__icon"></div>
+          <h3 class="filter-toggle__title">Фильтрация по странам:</h3>
+          <span class="filter-toggle__europe">Европа</span>
+          <span class="filter-toggle__asia">Азия</span>
+          <span class="filter-toggle__america">америка</span>
+          <span class="filter-toggle__islands">острова</span>
 
-        <button class="filter-toggle__btn-hide">
-          <span class="filter-toggle__hide-text">Свернуть</span>
-        </button>
+          <button class="filter-toggle__button">
+            <span class="text-hidden">Открыть</span>
+            <span class="filter-toggle__btn-more">показать все</span>
+          </button>
+
+          <button class="filter-toggle__btn-hide">
+            <span class="filter-toggle__hide-text">Свернуть</span>
+          </button>
+        </div>
       </div>
+
     </section>
 
 <!-- СПИСОК СТРАН ДЕСКТОП -->
 <section class="countries-modal">
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">A</h2>
-    <a class="countries-modal__list-item" href="#">Австралия</a>
-    <a class="countries-modal__list-item" href="#">Австрия</a>
-    <a class="countries-modal__list-item" href="#">Азербайджан</a>
-    <a class="countries-modal__list-item" href="#">Албания</a>
-    <a class="countries-modal__list-item" href="#">Алжир</a>
-    <a class="countries-modal__list-item" href="#">Ангола</a>
-    <a class="countries-modal__list-item" href="#">Андорра</a>
-    <a class="countries-modal__list-item" href="#">Антигуа и Барбуда</a>
-    <a class="countries-modal__list-item" href="#">Аргентина</a>
-    <a class="countries-modal__list-item" href="#">Армения</a>
-    <a class="countries-modal__list-item" href="#">Афганистан</a>
-  </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">б</h2>
-    <a class="countries-modal__list-item" href="#">Багамские Острова</a>
-    <a class="countries-modal__list-item" href="#">Бангладеш</a>
-    <a class="countries-modal__list-item" href="#">Барбадос</a>
-    <a class="countries-modal__list-item" href="#">Бахрейн</a>
-    <a class="countries-modal__list-item" href="#">Белоруссия</a>
-    <a class="countries-modal__list-item" href="#">Белиз</a>
-    <a class="countries-modal__list-item" href="#">Бельгия</a>
-    <a class="countries-modal__list-item" href="#">Бенин</a>
-    <a class="countries-modal__list-item" href="#">Болгария</a>
-    <a class="countries-modal__list-item" href="#">Боливия</a>
-    <a class="countries-modal__list-item" href="#">Босния и Герцеговина</a>
-    <a class="countries-modal__list-item" href="#">Ботсвана</a>
-    <a class="countries-modal__list-item" href="#">Бразилия</a>
-    <a class="countries-modal__list-item" href="#">Бруней</a>
-    <a class="countries-modal__list-item" href="#">Буркина-Фасо</a>
-    <a class="countries-modal__list-item" href="#">Бурунди</a>
-    <a class="countries-modal__list-item" href="#">Бутан</a>
-  </div>
+  <div class="countries-modal__container">
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">A</h2>
+      <a class="countries-modal__list-item" href="#">Австралия</a>
+      <a class="countries-modal__list-item" href="#">Австрия</a>
+      <a class="countries-modal__list-item" href="#">Азербайджан</a>
+      <a class="countries-modal__list-item" href="#">Албания</a>
+      <a class="countries-modal__list-item" href="#">Алжир</a>
+      <a class="countries-modal__list-item" href="#">Ангола</a>
+      <a class="countries-modal__list-item" href="#">Андорра</a>
+      <a class="countries-modal__list-item" href="#">Антигуа и Барбуда</a>
+      <a class="countries-modal__list-item" href="#">Аргентина</a>
+      <a class="countries-modal__list-item" href="#">Армения</a>
+      <a class="countries-modal__list-item" href="#">Афганистан</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">в</h2>
-    <a class="countries-modal__list-item" href="#">Вануату</a>
-    <a class="countries-modal__list-item" href="#">Великобритания</a>
-    <a class="countries-modal__list-item" href="#">Венгрия</a>
-    <a class="countries-modal__list-item" href="#">Венесуэла</a>
-    <a class="countries-modal__list-item" href="#">Восточный Тимор</a>
-    <a class="countries-modal__list-item" href="#">Вьетнам</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">б</h2>
+      <a class="countries-modal__list-item" href="#">Багамские Острова</a>
+      <a class="countries-modal__list-item" href="#">Бангладеш</a>
+      <a class="countries-modal__list-item" href="#">Барбадос</a>
+      <a class="countries-modal__list-item" href="#">Бахрейн</a>
+      <a class="countries-modal__list-item" href="#">Белоруссия</a>
+      <a class="countries-modal__list-item" href="#">Белиз</a>
+      <a class="countries-modal__list-item" href="#">Бельгия</a>
+      <a class="countries-modal__list-item" href="#">Бенин</a>
+      <a class="countries-modal__list-item" href="#">Болгария</a>
+      <a class="countries-modal__list-item" href="#">Боливия</a>
+      <a class="countries-modal__list-item" href="#">Босния и Герцеговина</a>
+      <a class="countries-modal__list-item" href="#">Ботсвана</a>
+      <a class="countries-modal__list-item" href="#">Бразилия</a>
+      <a class="countries-modal__list-item" href="#">Бруней</a>
+      <a class="countries-modal__list-item" href="#">Буркина-Фасо</a>
+      <a class="countries-modal__list-item" href="#">Бурунди</a>
+      <a class="countries-modal__list-item" href="#">Бутан</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">г</h2>
-    <a class="countries-modal__list-item" href="#">Габон</a>
-    <a class="countries-modal__list-item" href="#">Гаити</a>
-    <a class="countries-modal__list-item" href="#">Гайана</a>
-    <a class="countries-modal__list-item" href="#">Гамбия</a>
-    <a class="countries-modal__list-item" href="#">Гана</a>
-    <a class="countries-modal__list-item" href="#">Гватемала</a>
-    <a class="countries-modal__list-item" href="#">Гвинея</a>
-    <a class="countries-modal__list-item" href="#">Гвинея-Бисау</a>
-    <a class="countries-modal__list-item" href="#">Германия</a>
-    <a class="countries-modal__list-item" href="#">Гондурас</a>
-    <a class="countries-modal__list-item" href="#">Гренада</a>
-    <a class="countries-modal__list-item" href="#">Греция</a>
-    <a class="countries-modal__list-item" href="#">Грузия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">в</h2>
+      <a class="countries-modal__list-item" href="#">Вануату</a>
+      <a class="countries-modal__list-item" href="#">Великобритания</a>
+      <a class="countries-modal__list-item" href="#">Венгрия</a>
+      <a class="countries-modal__list-item" href="#">Венесуэла</a>
+      <a class="countries-modal__list-item" href="#">Восточный Тимор</a>
+      <a class="countries-modal__list-item" href="#">Вьетнам</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">д</h2>
-    <a class="countries-modal__list-item" href="#">Дания</a>
-    <a class="countries-modal__list-item" href="#">Джибути</a>
-    <a class="countries-modal__list-item" href="#">Доминика</a>
-    <a class="countries-modal__list-item" href="#">Доминикана</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">г</h2>
+      <a class="countries-modal__list-item" href="#">Габон</a>
+      <a class="countries-modal__list-item" href="#">Гаити</a>
+      <a class="countries-modal__list-item" href="#">Гайана</a>
+      <a class="countries-modal__list-item" href="#">Гамбия</a>
+      <a class="countries-modal__list-item" href="#">Гана</a>
+      <a class="countries-modal__list-item" href="#">Гватемала</a>
+      <a class="countries-modal__list-item" href="#">Гвинея</a>
+      <a class="countries-modal__list-item" href="#">Гвинея-Бисау</a>
+      <a class="countries-modal__list-item" href="#">Германия</a>
+      <a class="countries-modal__list-item" href="#">Гондурас</a>
+      <a class="countries-modal__list-item" href="#">Гренада</a>
+      <a class="countries-modal__list-item" href="#">Греция</a>
+      <a class="countries-modal__list-item" href="#">Грузия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">е</h2>
-    <a class="countries-modal__list-item" href="#">Египет</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">д</h2>
+      <a class="countries-modal__list-item" href="#">Дания</a>
+      <a class="countries-modal__list-item" href="#">Джибути</a>
+      <a class="countries-modal__list-item" href="#">Доминика</a>
+      <a class="countries-modal__list-item" href="#">Доминикана</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">з</h2>
-    <a class="countries-modal__list-item" href="#">Замбия</a>
-    <a class="countries-modal__list-item" href="#">Зимбабве</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">е</h2>
+      <a class="countries-modal__list-item" href="#">Египет</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">и</h2>
-    <a class="countries-modal__list-item" href="#">Израиль</a>
-    <a class="countries-modal__list-item" href="#">Индия</a>
-    <a class="countries-modal__list-item" href="#">Индонезия</a>
-    <a class="countries-modal__list-item" href="#">Иордания</a>
-    <a class="countries-modal__list-item" href="#">Ирак</a>
-    <a class="countries-modal__list-item" href="#">Иран</a>
-    <a class="countries-modal__list-item" href="#">Ирландия</a>
-    <a class="countries-modal__list-item" href="#">Исландия</a>
-    <a class="countries-modal__list-item" href="#">Испания</a>
-    <a class="countries-modal__list-item" href="#">Италия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">з</h2>
+      <a class="countries-modal__list-item" href="#">Замбия</a>
+      <a class="countries-modal__list-item" href="#">Зимбабве</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">к</h2>
-    <a class="countries-modal__list-item" href="#">Кабо-Верде</a>
-    <a class="countries-modal__list-item" href="#">Казахстан</a>
-    <a class="countries-modal__list-item" href="#">Камбоджа</a>
-    <a class="countries-modal__list-item" href="#">Камерун</a>
-    <a class="countries-modal__list-item" href="#">Канада</a>
-    <a class="countries-modal__list-item" href="#">Катар</a>
-    <a class="countries-modal__list-item" href="#">Кения</a>
-    <a class="countries-modal__list-item" href="#">Кипр</a>
-    <a class="countries-modal__list-item" href="#">Киргизия</a>
-    <a class="countries-modal__list-item" href="#">Кирибати</a>
-    <a class="countries-modal__list-item" href="#">Китай</a>
-    <a class="countries-modal__list-item" href="#">Колумбия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">и</h2>
+      <a class="countries-modal__list-item" href="#">Израиль</a>
+      <a class="countries-modal__list-item" href="#">Индия</a>
+      <a class="countries-modal__list-item" href="#">Индонезия</a>
+      <a class="countries-modal__list-item" href="#">Иордания</a>
+      <a class="countries-modal__list-item" href="#">Ирак</a>
+      <a class="countries-modal__list-item" href="#">Иран</a>
+      <a class="countries-modal__list-item" href="#">Ирландия</a>
+      <a class="countries-modal__list-item" href="#">Исландия</a>
+      <a class="countries-modal__list-item" href="#">Испания</a>
+      <a class="countries-modal__list-item" href="#">Италия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">л</h2>
-    <a class="countries-modal__list-item" href="#">Лаос</a>
-    <a class="countries-modal__list-item" href="#">Латвия</a>
-    <a class="countries-modal__list-item" href="#">Лесото</a>
-    <a class="countries-modal__list-item" href="#">Либерия</a>
-    <a class="countries-modal__list-item" href="#">Ливан</a>
-    <a class="countries-modal__list-item" href="#">Ливия</a>
-    <a class="countries-modal__list-item" href="#">Литва</a>
-    <a class="countries-modal__list-item" href="#">Лихтенштейн</a>
-    <a class="countries-modal__list-item" href="#">Люксембург</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">к</h2>
+      <a class="countries-modal__list-item" href="#">Кабо-Верде</a>
+      <a class="countries-modal__list-item" href="#">Казахстан</a>
+      <a class="countries-modal__list-item" href="#">Камбоджа</a>
+      <a class="countries-modal__list-item" href="#">Камерун</a>
+      <a class="countries-modal__list-item" href="#">Канада</a>
+      <a class="countries-modal__list-item" href="#">Катар</a>
+      <a class="countries-modal__list-item" href="#">Кения</a>
+      <a class="countries-modal__list-item" href="#">Кипр</a>
+      <a class="countries-modal__list-item" href="#">Киргизия</a>
+      <a class="countries-modal__list-item" href="#">Кирибати</a>
+      <a class="countries-modal__list-item" href="#">Китай</a>
+      <a class="countries-modal__list-item" href="#">Колумбия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">м</h2>
-    <a class="countries-modal__list-item" href="#">Маврикий</a>
-    <a class="countries-modal__list-item" href="#">Мавритания</a>
-    <a class="countries-modal__list-item" href="#">Мадагаскар</a>
-    <a class="countries-modal__list-item" href="#">Малави</a>
-    <a class="countries-modal__list-item" href="#">Малайзия</a>
-    <a class="countries-modal__list-item" href="#">Мали</a>
-    <a class="countries-modal__list-item" href="#">Мальдивы</a>
-    <a class="countries-modal__list-item" href="#">Мальта</a>
-    <a class="countries-modal__list-item" href="#">Марокко</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">л</h2>
+      <a class="countries-modal__list-item" href="#">Лаос</a>
+      <a class="countries-modal__list-item" href="#">Латвия</a>
+      <a class="countries-modal__list-item" href="#">Лесото</a>
+      <a class="countries-modal__list-item" href="#">Либерия</a>
+      <a class="countries-modal__list-item" href="#">Ливан</a>
+      <a class="countries-modal__list-item" href="#">Ливия</a>
+      <a class="countries-modal__list-item" href="#">Литва</a>
+      <a class="countries-modal__list-item" href="#">Лихтенштейн</a>
+      <a class="countries-modal__list-item" href="#">Люксембург</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">н</h2>
-    <a class="countries-modal__list-item" href="#">Намибия</a>
-    <a class="countries-modal__list-item" href="#">Науру</a>
-    <a class="countries-modal__list-item" href="#">Непал</a>
-    <a class="countries-modal__list-item" href="#">Нигер</a>
-    <a class="countries-modal__list-item" href="#">Нигерия</a>
-    <a class="countries-modal__list-item" href="#">Нидерланды</a>
-    <a class="countries-modal__list-item" href="#">Никарагуа</a>
-    <a class="countries-modal__list-item" href="#">Новая Зеландия</a>
-    <a class="countries-modal__list-item" href="#">Норвегия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">м</h2>
+      <a class="countries-modal__list-item" href="#">Маврикий</a>
+      <a class="countries-modal__list-item" href="#">Мавритания</a>
+      <a class="countries-modal__list-item" href="#">Мадагаскар</a>
+      <a class="countries-modal__list-item" href="#">Малави</a>
+      <a class="countries-modal__list-item" href="#">Малайзия</a>
+      <a class="countries-modal__list-item" href="#">Мали</a>
+      <a class="countries-modal__list-item" href="#">Мальдивы</a>
+      <a class="countries-modal__list-item" href="#">Мальта</a>
+      <a class="countries-modal__list-item" href="#">Марокко</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">о</h2>
-    <a class="countries-modal__list-item" href="#">ОАЭ</a>
-    <a class="countries-modal__list-item" href="#">Оман</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">н</h2>
+      <a class="countries-modal__list-item" href="#">Намибия</a>
+      <a class="countries-modal__list-item" href="#">Науру</a>
+      <a class="countries-modal__list-item" href="#">Непал</a>
+      <a class="countries-modal__list-item" href="#">Нигер</a>
+      <a class="countries-modal__list-item" href="#">Нигерия</a>
+      <a class="countries-modal__list-item" href="#">Нидерланды</a>
+      <a class="countries-modal__list-item" href="#">Никарагуа</a>
+      <a class="countries-modal__list-item" href="#">Новая Зеландия</a>
+      <a class="countries-modal__list-item" href="#">Норвегия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">п</h2>
-    <a class="countries-modal__list-item" href="#">Пакистан</a>
-    <a class="countries-modal__list-item" href="#">Палау</a>
-    <a class="countries-modal__list-item" href="#">Панама</a>
-    <a class="countries-modal__list-item" href="#">Папуа - Новая Гвинея</a>
-    <a class="countries-modal__list-item" href="#">Парагвай</a>
-    <a class="countries-modal__list-item" href="#">Перу</a>
-    <a class="countries-modal__list-item" href="#">Польша</a>
-    <a class="countries-modal__list-item" href="#">Португалия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">о</h2>
+      <a class="countries-modal__list-item" href="#">ОАЭ</a>
+      <a class="countries-modal__list-item" href="#">Оман</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">р</h2>
-    <a class="countries-modal__list-item" href="#">Руанда</a>
-    <a class="countries-modal__list-item" href="#">Румыния</a>
-    <a class="countries-modal__list-item" href="#">Россия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">п</h2>
+      <a class="countries-modal__list-item" href="#">Пакистан</a>
+      <a class="countries-modal__list-item" href="#">Палау</a>
+      <a class="countries-modal__list-item" href="#">Панама</a>
+      <a class="countries-modal__list-item" href="#">Папуа - Новая Гвинея</a>
+      <a class="countries-modal__list-item" href="#">Парагвай</a>
+      <a class="countries-modal__list-item" href="#">Перу</a>
+      <a class="countries-modal__list-item" href="#">Польша</a>
+      <a class="countries-modal__list-item" href="#">Португалия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">с</h2>
-    <a class="countries-modal__list-item" href="#">Сальвадор</a>
-    <a class="countries-modal__list-item" href="#">Самоа</a>
-    <a class="countries-modal__list-item" href="#">Сан-Марино</a>
-    <a class="countries-modal__list-item" href="#">Саудовская Аравия</a>
-    <a class="countries-modal__list-item" href="#">Сейшелы</a>
-    <a class="countries-modal__list-item" href="#">Сенегал</a>
-    <a class="countries-modal__list-item" href="#">Сербия</a>
-    <a class="countries-modal__list-item" href="#">Сингапур</a>
-    <a class="countries-modal__list-item" href="#">Сирия</a>
-    <a class="countries-modal__list-item" href="#">Словакия</a>
-    <a class="countries-modal__list-item" href="#">Словения</a>
-    <a class="countries-modal__list-item" href="#">США</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">р</h2>
+      <a class="countries-modal__list-item" href="#">Руанда</a>
+      <a class="countries-modal__list-item" href="#">Румыния</a>
+      <a class="countries-modal__list-item" href="#">Россия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">т</h2>
-    <a class="countries-modal__list-item" href="#">Таджикистан</a>
-    <a class="countries-modal__list-item" href="#">Таиланд</a>
-    <a class="countries-modal__list-item" href="#">Танзания</a>
-    <a class="countries-modal__list-item" href="#">Того</a>
-    <a class="countries-modal__list-item" href="#">Тонга</a>
-    <a class="countries-modal__list-item" href="#">Тринидад и Тобаго</a>
-    <a class="countries-modal__list-item" href="#">Тувалу</a>
-    <a class="countries-modal__list-item" href="#">Тунис</a>
-    <a class="countries-modal__list-item" href="#">Туркмения</a>
-    <a class="countries-modal__list-item" href="#">Турция</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">с</h2>
+      <a class="countries-modal__list-item" href="#">Сальвадор</a>
+      <a class="countries-modal__list-item" href="#">Самоа</a>
+      <a class="countries-modal__list-item" href="#">Сан-Марино</a>
+      <a class="countries-modal__list-item" href="#">Саудовская Аравия</a>
+      <a class="countries-modal__list-item" href="#">Сейшелы</a>
+      <a class="countries-modal__list-item" href="#">Сенегал</a>
+      <a class="countries-modal__list-item" href="#">Сербия</a>
+      <a class="countries-modal__list-item" href="#">Сингапур</a>
+      <a class="countries-modal__list-item" href="#">Сирия</a>
+      <a class="countries-modal__list-item" href="#">Словакия</a>
+      <a class="countries-modal__list-item" href="#">Словения</a>
+      <a class="countries-modal__list-item" href="#">США</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">у</h2>
-    <a class="countries-modal__list-item" href="#">Уганда</a>
-    <a class="countries-modal__list-item" href="#">Узбекистан</a>
-    <a class="countries-modal__list-item" href="#">Украина</a>
-    <a class="countries-modal__list-item" href="#">Уругвай</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">т</h2>
+      <a class="countries-modal__list-item" href="#">Таджикистан</a>
+      <a class="countries-modal__list-item" href="#">Таиланд</a>
+      <a class="countries-modal__list-item" href="#">Танзания</a>
+      <a class="countries-modal__list-item" href="#">Того</a>
+      <a class="countries-modal__list-item" href="#">Тонга</a>
+      <a class="countries-modal__list-item" href="#">Тринидад и Тобаго</a>
+      <a class="countries-modal__list-item" href="#">Тувалу</a>
+      <a class="countries-modal__list-item" href="#">Тунис</a>
+      <a class="countries-modal__list-item" href="#">Туркмения</a>
+      <a class="countries-modal__list-item" href="#">Турция</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">ф</h2>
-    <a class="countries-modal__list-item" href="#">Фиджи</a>
-    <a class="countries-modal__list-item" href="#">Филиппины</a>
-    <a class="countries-modal__list-item" href="#">Финляндия</a>
-    <a class="countries-modal__list-item" href="#">Франция</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">у</h2>
+      <a class="countries-modal__list-item" href="#">Уганда</a>
+      <a class="countries-modal__list-item" href="#">Узбекистан</a>
+      <a class="countries-modal__list-item" href="#">Украина</a>
+      <a class="countries-modal__list-item" href="#">Уругвай</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">х</h2>
-    <a class="countries-modal__list-item" href="#">Хорватия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">ф</h2>
+      <a class="countries-modal__list-item" href="#">Фиджи</a>
+      <a class="countries-modal__list-item" href="#">Филиппины</a>
+      <a class="countries-modal__list-item" href="#">Финляндия</a>
+      <a class="countries-modal__list-item" href="#">Франция</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">ч</h2>
-    <a class="countries-modal__list-item" href="#">Чад</a>
-    <a class="countries-modal__list-item" href="#">Черногория</a>
-    <a class="countries-modal__list-item" href="#">Чехия</a>
-    <a class="countries-modal__list-item" href="#">Чили</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">х</h2>
+      <a class="countries-modal__list-item" href="#">Хорватия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">ш</h2>
-    <a class="countries-modal__list-item" href="#">Швейцария</a>
-    <a class="countries-modal__list-item" href="#">Швеция</a>
-    <a class="countries-modal__list-item" href="#">Шри-Ланка</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">ч</h2>
+      <a class="countries-modal__list-item" href="#">Чад</a>
+      <a class="countries-modal__list-item" href="#">Черногория</a>
+      <a class="countries-modal__list-item" href="#">Чехия</a>
+      <a class="countries-modal__list-item" href="#">Чили</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">э</h2>
-    <a class="countries-modal__list-item" href="#">Эквадор</a>
-    <a class="countries-modal__list-item" href="#">Эритрея</a>
-    <a class="countries-modal__list-item" href="#">Эсватини</a>
-    <a class="countries-modal__list-item" href="#">Эстония</a>
-    <a class="countries-modal__list-item" href="#">Эфиопия</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">ш</h2>
+      <a class="countries-modal__list-item" href="#">Швейцария</a>
+      <a class="countries-modal__list-item" href="#">Швеция</a>
+      <a class="countries-modal__list-item" href="#">Шри-Ланка</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">ю</h2>
-    <a class="countries-modal__list-item" href="#">ЮАР</a>
-    <a class="countries-modal__list-item" href="#">Южный Судан</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">э</h2>
+      <a class="countries-modal__list-item" href="#">Эквадор</a>
+      <a class="countries-modal__list-item" href="#">Эритрея</a>
+      <a class="countries-modal__list-item" href="#">Эсватини</a>
+      <a class="countries-modal__list-item" href="#">Эстония</a>
+      <a class="countries-modal__list-item" href="#">Эфиопия</a>
+    </div>
 
-  <div class="countries-modal__item-wrap">
-    <h2 class="countries-modal__title">я</h2>
-    <a class="countries-modal__list-item" href="#">Ямайка</a>
-    <a class="countries-modal__list-item" href="#">Япония</a>
-  </div>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">ю</h2>
+      <a class="countries-modal__list-item" href="#">ЮАР</a>
+      <a class="countries-modal__list-item" href="#">Южный Судан</a>
+    </div>
 
-  <button class="countries-modal__btn" type="button"><span class="countries-modal__btn-text">свернуть</span></button>
+    <div class="countries-modal__item-wrap">
+      <h2 class="countries-modal__title">я</h2>
+      <a class="countries-modal__list-item" href="#">Ямайка</a>
+      <a class="countries-modal__list-item" href="#">Япония</a>
+    </div>
+
+    <button class="countries-modal__btn" type="button"><span class="countries-modal__btn-text">свернуть</span></button>
+  </div>
 
 </section>
 
@@ -422,375 +433,387 @@
 <!-- БЛОК ФИЛЬТР ПОДБОРА ПОПУТЧИКА -->
 
 <section class="filter">
-  <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-    <h2 class="filter__title">Подберите идеального попутчика</h2>
 
-    <section class="filter__item">
-      <div class="filter__item-wrap">
-        <span class="filter__item-title">хобби:</span>
+  <div class="filter__container">
+
+    <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="filter__title">Подберите идеального попутчика</h2>
+
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">хобби:</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <div class="filter__sort">
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Спортзал
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Кальян
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-off"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Диван
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">музыка:</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <div class="filter__sort">
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Тяжелый рок
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Русский рэп
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-off"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Евроденс
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="filter__item">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title">еда:</span>
+          <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <div class="filter__sort">
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Мясоед
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-on"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Сидит на ПП
+            </label>
+          </div>
+          <div class="filter__checkbox-wrap">
+            <div class="filter__check-off"></div>
+            <label class="filter__checkbox-level">
+              <input class="filter__checkbox" type="checkbox">
+              Веган-сыроед
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="filter__item filter__item-transport">
+        <div class="filter__item-wrap">
+          <span class="filter__item-title filter__item-title-transport">транспорт:</span>
         <button class="filter__toggle-btn" type="button"></button>
+        </div>
+        <div class="filter__sort filter__sort-transport">
+          <input class="filter__checkbox" type="checkbox" id="input-plane" name="input-plane" value="input-plane">
+          <label for="input-plane" class="filter__btn-plane"> <span class="text-hidden">самолет</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-bus" name="input-bus" value="input-bus">
+          <label for="input-bus" class="filter__btn-bus"><span class="text-hidden">автобус</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-bike" name="input-bike" value="input-bike">
+          <label for="input-bike" class="filter__btn-bike"><span class="text-hidden">велосипед</span></label>
+
+          <input class="filter__checkbox" type="checkbox" id="input-run" name="input-run" value="input-run">
+          <label for="input-run" class="filter__btn-run"><span class="text-hidden">пешком</span></label>
       </div>
-      <div class="filter__sort">
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Спортзал
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Кальян
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-off"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Диван
-          </label>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="filter__item">
-      <div class="filter__item-wrap">
-        <span class="filter__item-title">музыка:</span>
-        <button class="filter__toggle-btn" type="button"></button>
-      </div>
-      <div class="filter__sort">
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Тяжелый рок
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Русский рэп
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-off"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Евроденс
-          </label>
-        </div>
-      </div>
-    </section>
-
-    <section class="filter__item">
-      <div class="filter__item-wrap">
-        <span class="filter__item-title">еда:</span>
-        <button class="filter__toggle-btn" type="button"></button>
-      </div>
-      <div class="filter__sort">
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Мясоед
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-on"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Сидит на ПП
-          </label>
-        </div>
-        <div class="filter__checkbox-wrap">
-          <div class="filter__check-off"></div>
-          <label class="filter__checkbox-level">
-            <input class="filter__checkbox" type="checkbox">
-            Веган-сыроед
-          </label>
-        </div>
-      </div>
-    </section>
-
-    <section class="filter__item filter__item-transport">
-      <div class="filter__item-wrap">
-        <span class="filter__item-title filter__item-title-transport">транспорт:</span>
-      <button class="filter__toggle-btn" type="button"></button>
-      </div>
-      <div class="filter__sort filter__sort-transport">
-        <input class="filter__checkbox" type="checkbox" id="input-plane" name="input-plane" value="input-plane">
-        <label for="input-plane" class="filter__btn-plane"> <span class="text-hidden">самолет</span></label>
-
-        <input class="filter__checkbox" type="checkbox" id="input-bus" name="input-bus" value="input-bus">
-        <label for="input-bus" class="filter__btn-bus"><span class="text-hidden">автобус</span></label>
-
-        <input class="filter__checkbox" type="checkbox" id="input-bike" name="input-bike" value="input-bike">
-        <label for="input-bike" class="filter__btn-bike"><span class="text-hidden">велосипед</span></label>
-
-        <input class="filter__checkbox" type="checkbox" id="input-run" name="input-run" value="input-run">
-        <label for="input-run" class="filter__btn-run"><span class="text-hidden">пешком</span></label>
-    </div>
-    </section>
-
-    <section class="filter__item filter__item-range">
-      <div class="filter__item-wrap filter__item-wrap-range">
-        <span class="filter__item-title filter__item-title-level">Левел:</span>
-        <button class="filter__toggle-btn" type="button"></button>
-      </div>
-
-      <div class="filter__sort filter__sort-range">
-        <div class="filter__range-wrap">
-          <input class="filter__range-input" type="text" placeholder="30">
-          <input class="filter__range-input" type="text" placeholder="100">
-        </div>
-        <div class="filter__range-split"></div>
-        <div class="filter__range">
-          <div class="filter__range-line-one"></div>
-          <div class="filter__range-line-two"></div>
-          <button class="filter__btn-min" type="button"></button>
-          <button class="filter__btn-max" type="button"></button>
+      <section class="filter__item filter__item-range">
+        <div class="filter__item-wrap filter__item-wrap-range">
+          <span class="filter__item-title filter__item-title-level">Левел:</span>
+          <button class="filter__toggle-btn" type="button"></button>
         </div>
 
-      </div>
-    </section>
+        <div class="filter__sort filter__sort-range">
+          <div class="filter__range-wrap">
+            <input class="filter__range-input" type="text" placeholder="30">
+            <input class="filter__range-input" type="text" placeholder="100">
+          </div>
+          <div class="filter__range-split"></div>
+          <div class="filter__range">
+            <div class="filter__range-line-one"></div>
+            <div class="filter__range-line-two"></div>
+            <button class="filter__btn-min" type="button"></button>
+            <button class="filter__btn-max" type="button"></button>
+          </div>
 
-    <button class="filter__button" type="submit">показать</button>
-  </form>
+        </div>
+      </section>
+
+      <button class="filter__button" type="submit">показать</button>
+    </form>
+  </div>
+
 </section>
 
     <!-- БЛОК КАТАЛОГА С ПОПУТЧИКАМИ -->
 
     <section class="persons">
 
-      <section class="persons__item persons__item-one">
+      <div class="persons__container">
+        <section class="persons__item persons__item-one">
 
-        <div class="persons__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-            <img class="persons__icon" src="img/firsova-mobile.png" width="70" height="70" alt="фото попутчика">
-          </picture>
-        </div>
+          <div class="persons__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <img class="persons__icon" src="img/firsova-mobile.png" width="70" height="70" alt="фото попутчика">
+            </picture>
+          </div>
 
-        <h3 class="persons__name persons__name-firsova">Таня Фирсова</h3>
-        <div class="persons__dot persons__dot-firsova"></div>
-        <b class="persons__rating persons__rating-firsova">1,5 M</b>
-        <p class="persons__hobby persons__hobby-firsova">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <h3 class="persons__name persons__name-firsova">Таня Фирсова</h3>
+          <div class="persons__dot persons__dot-firsova"></div>
+          <b class="persons__rating persons__rating-firsova">1,5 M</b>
+          <p class="persons__hobby persons__hobby-firsova">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 
-        <ul class="persons__about-list persons__about-list-firsova">
+          <ul class="persons__about-list persons__about-list-firsova">
 
-          <li class="persons__about-item">
-            <b class="persons__wishes persons__wishes-firsova">хочет посетить:</b>
-            <div class="persons__wish-wrapper persons__wish-wrapper-firsova">
-              <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-sri-lanka.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-firsova">шри-ланка</p>
-              <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-thailand.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-firsova">Тайланд</p>
-              <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-seychelles.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-firsova">сейшелы</p>
-            </div>
-          </li>
+            <li class="persons__about-item">
+              <b class="persons__wishes persons__wishes-firsova">хочет посетить:</b>
+              <div class="persons__wish-wrapper persons__wish-wrapper-firsova">
+                <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-sri-lanka.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-firsova">шри-ланка</p>
+                <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-thailand.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-firsova">Тайланд</p>
+                <img class="persons__wish-flag persons__wish-flag-firsova" src="img/flag-seychelles.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-firsova">сейшелы</p>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__firsova-transport">
-            <b class="persons__transport">транспорт:</b>
-            <div class="persons__transport-wrapper persons__transport-wrapper-firsova">
-              <button class="persons__transport-icon persons__transport-icon-plane"></button>
-              <button class="persons__transport-icon persons__transport-icon-bus"></button>
-              <button class="persons__transport-icon persons__transport-icon-bike"></button>
-              <button class="persons__transport-icon persons__transport-icon-run"></button>
-            </div>
-          </li>
+            <li class="persons__about-item persons__firsova-transport">
+              <b class="persons__transport">транспорт:</b>
+              <div class="persons__transport-wrapper persons__transport-wrapper-firsova">
+                <button class="persons__transport-icon persons__transport-icon-plane"></button>
+                <button class="persons__transport-icon persons__transport-icon-bus"></button>
+                <button class="persons__transport-icon persons__transport-icon-bike"></button>
+                <button class="persons__transport-icon persons__transport-icon-run"></button>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__firsova-level">
-            <b class="persons__level">левел:</b>
-            <span class="persons__level-number-firsova"></span>
-          </li>
-        </ul>
-        <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
-      </section>
+            <li class="persons__about-item persons__firsova-level">
+              <b class="persons__level">левел:</b>
+              <span class="persons__level-number-firsova"></span>
+            </li>
+          </ul>
+          <button class="persons__button"><span class="persons__btn-text">Позвать!</span></button>
+        </section>
 
-      <section class="persons__item persons__item-two">
+        <section class="persons__item persons__item-two">
 
-        <div class="persons__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-            <img class="persons__icon" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
-          </picture>
-        </div>
+          <div class="persons__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+              <img class="persons__icon" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
+            </picture>
+          </div>
 
-        <h3 class="persons__name persons__name-demin">Петя Демин</h3>
-        <div class="persons__dot persons__dot-demin"></div>
-        <b class="persons__rating persons__rating-demin">1500</b>
-        <p class="persons__hobby persons__hobby-demin">#бургер #бар #футбол #концерт #крафт</p>
+          <h3 class="persons__name persons__name-demin">Петя Демин</h3>
+          <div class="persons__dot persons__dot-demin"></div>
+          <b class="persons__rating persons__rating-demin">1500</b>
+          <p class="persons__hobby persons__hobby-demin">#бургер #бар #футбол #концерт #крафт</p>
 
-        <ul class="persons__about-list persons__about-list-demin">
+          <ul class="persons__about-list persons__about-list-demin">
 
-          <li class="persons__about-item">
-            <b class="persons__wishes">хочет посетить:</b>
-            <div class="persons__wish-wrapper persons__wish-wrapper-demin">
-              <img class="persons__wish-flag persons__wish-flag-demin" src="img/flag-belgium.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-demin">бельгия</p>
-              <img class="persons__wish-flag persons__wish-flag-demin" src="img/flag-czech.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-demin">чехия</p>
-            </div>
-          </li>
+            <li class="persons__about-item">
+              <b class="persons__wishes">хочет посетить:</b>
+              <div class="persons__wish-wrapper persons__wish-wrapper-demin">
+                <img class="persons__wish-flag persons__wish-flag-demin" src="img/flag-belgium.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-demin">бельгия</p>
+                <img class="persons__wish-flag persons__wish-flag-demin" src="img/flag-czech.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-demin">чехия</p>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__demin-transport">
-            <b class="persons__transport">транспорт:</b>
-            <div class="persons__transport-wrapper">
-              <button class="persons__transport-icon persons__transport-icon-plane"></button>
-              <button class="persons__transport-icon persons__transport-icon-bus"></button>
-              <button class="persons__transport-icon persons__transport-icon-bike"></button>
-              <button class="persons__transport-icon persons__transport-icon-run"></button>
-            </div>
-          </li>
+            <li class="persons__about-item persons__demin-transport">
+              <b class="persons__transport">транспорт:</b>
+              <div class="persons__transport-wrapper">
+                <button class="persons__transport-icon persons__transport-icon-plane"></button>
+                <button class="persons__transport-icon persons__transport-icon-bus"></button>
+                <button class="persons__transport-icon persons__transport-icon-bike"></button>
+                <button class="persons__transport-icon persons__transport-icon-run"></button>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__demin-level">
-            <b class="persons__level">левел:</b>
-            <span class="persons__level-number-demin"></span>
-          </li>
-        </ul>
-        <button class="persons__button persons__button-two"><span class="persons__btn-text">Позвать!</span></button>
-      </section>
+            <li class="persons__about-item persons__demin-level">
+              <b class="persons__level">левел:</b>
+              <span class="persons__level-number-demin"></span>
+            </li>
+          </ul>
+          <button class="persons__button persons__button-two"><span class="persons__btn-text">Позвать!</span></button>
+        </section>
 
-      <section class="persons__item persons__item-three">
+        <section class="persons__item persons__item-three">
 
-        <div class="persons__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-            <img class="persons__icon" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
-          </picture>
-        </div>
+          <div class="persons__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+              <img class="persons__icon" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
+            </picture>
+          </div>
 
-        <h3 class="persons__name">Марк Смолов</h3>
-        <div class="persons__dot"></div>
-        <b class="persons__rating persons__rating-smolov">170</b>
-        <p class="persons__hobby">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          <h3 class="persons__name">Марк Смолов</h3>
+          <div class="persons__dot"></div>
+          <b class="persons__rating persons__rating-smolov">170</b>
+          <p class="persons__hobby">#рэп #тату #хайпбист #кроссовки #суприм</p>
 
-        <ul class="persons__about-list">
+          <ul class="persons__about-list">
 
-          <li class="persons__about-item">
-            <b class="persons__wishes">хочет посетить:</b>
-            <div class="persons__wish-wrapper persons__wish-wrapper-smolov">
-              <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-usa.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-smolov">сша</p>
-              <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-australia.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-smolov">австралия</p>
-              <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-dominica.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-smolov">доминика</p>
-            </div>
-          </li>
+            <li class="persons__about-item">
+              <b class="persons__wishes">хочет посетить:</b>
+              <div class="persons__wish-wrapper persons__wish-wrapper-smolov">
+                <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-usa.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-smolov">сша</p>
+                <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-australia.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-smolov">австралия</p>
+                <img class="persons__wish-flag persons__wish-flag-smolov" src="img/flag-dominica.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-smolov">доминика</p>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__smolov-transport">
-            <b class="persons__transport">транспорт:</b>
-            <div class="persons__transport-wrapper persons__transport-wrapper-smolov">
-              <button class="persons__transport-icon persons__transport-icon-plane"></button>
-              <button class="persons__transport-icon persons__transport-icon-bus"></button>
-              <button class="persons__transport-icon persons__transport-icon-bike"></button>
-              <button class="persons__transport-icon persons__transport-icon-run"></button>
-            </div>
-          </li>
+            <li class="persons__about-item persons__smolov-transport">
+              <b class="persons__transport">транспорт:</b>
+              <div class="persons__transport-wrapper persons__transport-wrapper-smolov">
+                <button class="persons__transport-icon persons__transport-icon-plane"></button>
+                <button class="persons__transport-icon persons__transport-icon-bus"></button>
+                <button class="persons__transport-icon persons__transport-icon-bike"></button>
+                <button class="persons__transport-icon persons__transport-icon-run"></button>
+              </div>
+            </li>
 
-          <li class="persons__about-item persons__smolov-level">
-            <b class="persons__level">левел:</b>
-            <span class="persons__level-number-smolov"></span>
-          </li>
+            <li class="persons__about-item persons__smolov-level">
+              <b class="persons__level">левел:</b>
+              <span class="persons__level-number-smolov"></span>
+            </li>
 
-        </ul>
-        <button class="persons__button persons__button-three"><span class="persons__btn-text">Позвать!</span></button>
-      </section>
+          </ul>
+          <button class="persons__button persons__button-three"><span class="persons__btn-text">Позвать!</span></button>
+        </section>
 
-      <section class="persons__item persons__item-four">
+        <section class="persons__item persons__item-four">
 
-        <div class="persons__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-            <img class="persons__icon" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
-          </picture>
-        </div>
+          <div class="persons__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+              <img class="persons__icon" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="фото попутчика">
+            </picture>
+          </div>
 
-        <h3 class="persons__name persons__name-rog">Лариса Роговая</h3>
-        <div class="persons__dot persons__dot-rog"></div>
-        <b class="persons__rating persons__rating-rog">23</b>
-        <p class="persons__hobby persons__hobby-rog">#образование #карьера #учеба #линкедин</p>
+          <h3 class="persons__name persons__name-rog">Лариса Роговая</h3>
+          <div class="persons__dot persons__dot-rog"></div>
+          <b class="persons__rating persons__rating-rog">23</b>
+          <p class="persons__hobby persons__hobby-rog">#образование #карьера #учеба #линкедин</p>
 
-        <ul class="persons__about-list persons__about-list-rog">
-          <li class="persons__about-item">
-            <b class="persons__wishes">хочет посетить:</b>
-            <div class="persons__wish-wrapper persons__wish-wrapper-rog">
-              <img class="persons__wish-flag persons__wish-flag-rog" src="img/flag-united-kingdom.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-rog">Великобритания</p>
-              <img class="persons__wish-flag persons__wish-flag-rog" src="img/flag-germany.svg" width="26" height="18" alt="флаг">
-              <p class="persons__wish-text persons__wish-text-rog">Германия</p>
-            </div>
-          </li>
-          <li class="persons__about-item persons__rog-transport">
-            <b class="persons__transport">транспорт:</b>
-            <div class="persons__transport-wrapper persons__transport-wrapper-rog">
-              <button class="persons__transport-icon persons__transport-icon-plane"></button>
-              <button class="persons__transport-icon persons__transport-icon-bus"></button>
-              <button class="persons__transport-icon persons__transport-icon-bike"></button>
-              <button class="persons__transport-icon persons__transport-icon-run"></button>
-            </div>
-          </li>
-          <li class="persons__about-item persons__rog-level">
-            <b class="persons__level">левел:</b>
-            <span class="persons__level-number-rogovya"></span>
-          </li>
-        </ul>
-        <button class="persons__button persons__button-four"><span class="persons__btn-text">Позвать!</span></button>
-      </section>
+          <ul class="persons__about-list persons__about-list-rog">
+            <li class="persons__about-item">
+              <b class="persons__wishes">хочет посетить:</b>
+              <div class="persons__wish-wrapper persons__wish-wrapper-rog">
+                <img class="persons__wish-flag persons__wish-flag-rog" src="img/flag-united-kingdom.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-rog">Великобритания</p>
+                <img class="persons__wish-flag persons__wish-flag-rog" src="img/flag-germany.svg" width="26" height="18" alt="флаг">
+                <p class="persons__wish-text persons__wish-text-rog">Германия</p>
+              </div>
+            </li>
+            <li class="persons__about-item persons__rog-transport">
+              <b class="persons__transport">транспорт:</b>
+              <div class="persons__transport-wrapper persons__transport-wrapper-rog">
+                <button class="persons__transport-icon persons__transport-icon-plane"></button>
+                <button class="persons__transport-icon persons__transport-icon-bus"></button>
+                <button class="persons__transport-icon persons__transport-icon-bike"></button>
+                <button class="persons__transport-icon persons__transport-icon-run"></button>
+              </div>
+            </li>
+            <li class="persons__about-item persons__rog-level">
+              <b class="persons__level">левел:</b>
+              <span class="persons__level-number-rogovya"></span>
+            </li>
+          </ul>
+          <button class="persons__button persons__button-four"><span class="persons__btn-text">Позвать!</span></button>
+        </section>
 
-      <section class="persons__controls">
-        <button class="persons__btn-more">показать еще</button>
-        <div class="persons__controls-wrap">
-          <button class="persons__breadcrumbs-btn persons__breadcrumbs-btn-active">1</button>
-          <button class="persons__breadcrumbs-btn">2</button>
-          <button class="persons__breadcrumbs-btn">3</button>
-          <button class="persons__breadcrumbs-btn">4</button>
+        <section class="persons__controls">
+          <button class="persons__btn-more">показать еще</button>
+          <div class="persons__controls-wrap">
+            <button class="persons__breadcrumbs-btn persons__breadcrumbs-btn-active">1</button>
+            <button class="persons__breadcrumbs-btn">2</button>
+            <button class="persons__breadcrumbs-btn">3</button>
+            <button class="persons__breadcrumbs-btn">4</button>
 
-          <button class="persons__btn-prev" type="button"><span class="text-hidden">лево</span></button>
-          <button class="persons__btn-next" type="button"><span class="text-hidden">право</span></button>
+            <button class="persons__btn-prev" type="button"><span class="text-hidden">лево</span></button>
+            <button class="persons__btn-next" type="button"><span class="text-hidden">право</span></button>
 
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
+
     </section>
 
   </main>
 
   <!-- ФУТЕР -->
 
-  <footer class="catalog-footer container">
-    <a class="catalog-footer__contacts">
-      <span class="text-hidden">Главная</span>
-      <div class="catalog-footer__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@2x.png">
-          <source media="(min-width: 768px)" srcset="img/logo-desktop-blue@2x.png">
-          <img src="img/logo-mobile-blue@2x.png" alt="главная">
-        </picture>
+  <footer class="catalog-footer">
+
+    <div class="catalog-footer__container">
+      <a class="catalog-footer__contacts">
+        <span class="text-hidden">Главная</span>
+        <div class="catalog-footer__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@2x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop-blue@2x.png">
+            <img src="img/logo-mobile-blue@2x.png" alt="главная">
+          </picture>
+        </div>
+      </a>
+      <div class="catalog-footer__social">
+        <a class="catalog-footer__link" href="https://www.facebook.com/htmlacademy">
+          <span class="text-hidden">Мы в Фейсбуке</span></a>
+        <a class="catalog-footer__link" href="https://vk.com/htmlacademy">
+          <span class="text-hidden">Мы в Вконтакте</span></a>
+        <a class="catalog-footer__link" href="https://www.instagram.com/htmlacademy">
+          <span class="text-hidden">Мы в Инстаграме</span></a>
       </div>
-    </a>
-    <div class="catalog-footer__social">
-      <a class="catalog-footer__link" href="https://www.facebook.com/htmlacademy">
-        <span class="text-hidden">Мы в Фейсбуке</span></a>
-      <a class="catalog-footer__link" href="https://vk.com/htmlacademy">
-        <span class="text-hidden">Мы в Вконтакте</span></a>
-      <a class="catalog-footer__link" href="https://www.instagram.com/htmlacademy">
-        <span class="text-hidden">Мы в Инстаграме</span></a>
+      <div class="catalog-footer__copyright">
+        <b class="catalog-footer__text">Разработано
+          <a class="catalog-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="text-hidden">HTML Academy</span></a>
+        </b>
+      </div>
     </div>
-    <div class="catalog-footer__copyright">
-      <b class="catalog-footer__text">Разработано
-        <a class="catalog-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="text-hidden">HTML Academy</span></a>
-      </b>
-    </div>
+
   </footer>
 
 </body>

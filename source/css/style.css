@@ -3775,11 +3775,17 @@ button:focus {
   }
 }
 .filter-toggle {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+.filter-toggle__container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: -20px;
+  margin: -20px auto 0px auto;
   min-height: 73px;
+  min-width: 320px;
   width: 320px;
   background-color: #E5E5E5;
   border-bottom-right-radius: 20px;
@@ -3788,20 +3794,22 @@ button:focus {
   z-index: 9;
 }
 @media (min-width: 768px) {
-  .filter-toggle {
-    margin-top: -40px;
+  .filter-toggle__container {
     min-width: 768px;
+    width: 768px;
     min-height: 182px;
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 58px;
     position: relative;
     z-index: 9;
+    margin: -40px auto 0px auto;
   }
 }
 @media (min-width: 1440px) {
-  .filter-toggle {
-    width: auto;
-    margin: -50px 0px 0px 0px;
+  .filter-toggle__container {
+    min-width: 1438px;
+    width: 1438px;
+    margin: -50px auto 0px auto;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -6739,29 +6747,43 @@ textarea {
   height: auto;
 }
 .persons {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+.persons__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-width: 320px;
+  width: 320px;
   background-color: #E5E5E5;
+  margin: 0px auto 0px auto;
   padding-top: 18px;
   padding-bottom: 66px;
 }
 @media (min-width: 768px) {
-  .persons {
+  .persons__container {
+    min-width: 768px;
+    width: 768px;
+    margin: 0px auto 0px auto;
     padding-bottom: 120px;
   }
 }
 @media (min-width: 1440px) {
-  .persons {
+  .persons__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: -1088px 0px 0px 0px;
+    min-width: 1440px;
+    width: 1440px;
+    margin: -1088px auto 0px auto;
     padding: 0px 0px 140px 60px;
     position: relative;
     z-index: 9;
+    box-sizing: border-box;
   }
 }
 .persons__item {
@@ -10644,27 +10666,46 @@ textarea {
   height: 24px;
 }
 .filter {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+@media (min-width: 1440px) {
+  .filter {
+    background-color: transparent;
+  }
+}
+.filter__container {
+  min-width: 320px;
+  width: 320px;
   margin-top: -36px;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #E5E5E5;
   padding-top: 36px;
   min-height: 662px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter__container {
+    min-width: 768px;
+    width: 768px;
     background-color: #E5E5E5;
     min-height: 602px;
-    margin: -50px 0px 0px 0px;
+    margin: -50px auto 0px auto;
     padding: 51px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
-  .filter {
-    margin: -25px 0px 0px 0px;
+  .filter__container {
+    min-width: 1440px;
+    width: 1440px;
+    margin: -25px auto 0px auto;
     padding: 0px 0px 0px 1094px;
     background-color: transparent;
     position: relative;
     z-index: 10;
+    box-sizing: border-box;
   }
 }
 .filter__form {
@@ -11589,21 +11630,27 @@ textarea {
   }
 }
 .catalog-header {
+  min-width: 100%;
+  width: 100%;
+  background-color: #182044;
+}
+.catalog-header__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   min-width: 320px;
+  width: 320px;
   min-height: 143px;
   background-color: #182044;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin: 0px;
+  margin: 0px auto 0px auto;
   padding: 0px;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 768px) {
-  .catalog-header {
+  .catalog-header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -11614,15 +11661,17 @@ textarea {
     border-bottom-right-radius: 58px;
     position: relative;
     z-index: 10;
+    margin: 0px auto 0px auto;
   }
 }
 @media (min-width: 1440px) {
-  .catalog-header {
+  .catalog-header__container {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-width: 1438px;
     width: 1438px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
     padding: 0px 0px 0px 0px;
     position: relative;
     z-index: 10;
@@ -12508,10 +12557,16 @@ textarea {
   margin: 15px 0px 0px 15px;
 }
 .catalog-footer {
+  min-width: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.catalog-footer__container {
   display: flex;
   flex-direction: column;
   justify-content: start;
   min-width: 318px;
+  width: 318px;
   min-height: 240px;
   padding-top: 12px;
   background-color: #FFFFFF;
@@ -12520,25 +12575,33 @@ textarea {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-  .catalog-footer {
+  .catalog-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px;
+    min-width: 766px;
+    width: 766px;
     min-height: 140px;
     margin-top: -59px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
 }
 @media (min-width: 1440px) {
-  .catalog-footer {
+  .catalog-footer__container {
+    min-width: 1438px;
+    width: 1438px;
     min-height: 154px;
     margin-top: -63px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     position: relative;
@@ -13263,12 +13326,29 @@ textarea {
 }
 @media (min-width: 1440px) {
   .countries-modal {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+}
+.countries-modal__container {
+  display: none;
+}
+@media (min-width: 768px) {
+  .countries-modal__container {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .countries-modal__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    min-width: 1440px;
     width: 1440px;
     height: 2755px;
-    margin: -50px 0px 0px 0px;
+    margin: -50px auto 0px auto;
     padding: 0px 0px 0px 0px;
     background-color: #E5E5E5;
     position: relative;

@@ -1,15 +1,22 @@
 @import "../utils/utils.less";
 
 .catalog-header {
+  min-width: 100%;
+  width: 100%;
+  background-color: #182044;
+}
+
+.catalog-header__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   min-width: 320px;
+  width: 320px;
   min-height: 143px;
   background-color: #182044;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin: 0px;
+  margin: 0px auto 0px auto;
   padding: 0px;
   position: relative;
   z-index: 10;
@@ -25,14 +32,16 @@
     border-bottom-right-radius: 58px;
     position: relative;
     z-index: 10;
+    margin: 0px auto 0px auto;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-width: 1438px;
     width: 1438px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
     padding: 0px 0px 0px 0px;
     position: relative;
     z-index: 10;

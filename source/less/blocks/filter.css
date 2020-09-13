@@ -1,25 +1,44 @@
 .filter {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+@media (min-width: 1440px) {
+  .filter {
+    background-color: transparent;
+  }
+}
+.filter__container {
+  min-width: 320px;
+  width: 320px;
   margin-top: -36px;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #E5E5E5;
   padding-top: 36px;
   min-height: 662px;
 }
 @media (min-width: 768px) {
-  .filter {
+  .filter__container {
+    min-width: 768px;
+    width: 768px;
     background-color: #E5E5E5;
     min-height: 602px;
-    margin: -50px 0px 0px 0px;
+    margin: -50px auto 0px auto;
     padding: 51px 0px 0px 0px;
   }
 }
 @media (min-width: 1440px) {
-  .filter {
-    margin: -25px 0px 0px 0px;
+  .filter__container {
+    min-width: 1440px;
+    width: 1440px;
+    margin: -25px auto 0px auto;
     padding: 0px 0px 0px 1094px;
     background-color: transparent;
     position: relative;
     z-index: 10;
+    box-sizing: border-box;
   }
 }
 .filter__form {
