@@ -424,7 +424,7 @@ textarea {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #161C35;
-    margin: 0px auto -10px 216px;
+    margin: 0px auto -10px 218px;
     padding: 0px 0px 0px 0px;
     box-sizing: border-box;
     background-color: #E5E5E5;
@@ -534,9 +534,9 @@ textarea {
     text-transform: uppercase;
     color: #1D2E5B;
     background-color: #E5E5E5;
-    margin-top: 9px;
+    margin-top: 14px;
     margin-bottom: -41px;
-    margin-left: 76px;
+    margin-left: 78px;
     margin-right: 0px;
   }
 }
@@ -555,7 +555,7 @@ textarea {
     text-transform: uppercase;
     color: #1D2E5B;
     background-color: #E5E5E5;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: -41px;
     margin-left: 117px;
     margin-right: 0px;
@@ -606,6 +606,7 @@ textarea {
     height: 44px;
     margin: 0px 0px 0px -7px;
     padding: 0px 0px 0px 0px;
+    background-size: 24px 23px;
   }
 }
 @media (min-width: 1440px) {

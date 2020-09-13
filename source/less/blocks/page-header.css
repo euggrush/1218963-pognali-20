@@ -717,7 +717,7 @@
 @media (min-width: 1440px) {
   .page-header__desktop-link-service {
     display: inline-block;
-    margin: -2px 0px 0px 45px;
+    margin: -2px 0px 0px 41px;
   }
 }
 .page-header__desktop-link-directions {
@@ -726,7 +726,7 @@
 @media (min-width: 1440px) {
   .page-header__desktop-link-directions {
     display: inline-block;
-    margin: -2px 0px 0px 34px;
+    margin: -2px 0px 0px 26px;
   }
 }
 .page-header__desktop-link-travelers {
@@ -735,7 +735,7 @@
 @media (min-width: 1440px) {
   .page-header__desktop-link-travelers {
     display: inline-block;
-    margin: -2px 0px 0px 34px;
+    margin: -2px 0px 0px 26px;
   }
 }
 .page-header__scroll-modal {

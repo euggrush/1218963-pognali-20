@@ -48,7 +48,7 @@
     justify-content: start;
     width: 1438px;
     min-width: 1438px;
-    min-height: 383px;
+    min-height: 440px;
     margin-top: -27px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -56,6 +56,7 @@
     padding: 54px 0px 0px 124px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    box-sizing: border-box;
   }
 }
 .plans__title {
@@ -127,7 +128,7 @@
     align-self: flex-start;
     width: 1258px;
     min-height: 97px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
