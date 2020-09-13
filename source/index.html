@@ -13,371 +13,392 @@
 <body class="page-body">
   <header class="page-header">
 
-    <!-- ОТКРЫТОЕ МЕНЮ МОДАЛЬНОЕ -->
+    <div class="page-header__container">
+ <!-- ОТКРЫТОЕ МЕНЮ МОДАЛЬНОЕ -->
 
-    <nav class="page-header__nav-modal">
-      <div class="page-header__modal-btn-wrap">
-        <a href="#" class="page-header__nav-item-link">
-          <span class="text-hidden">Главная</span>
+ <nav class="page-header__nav-modal hidden">
+  <div class="page-header__modal-btn-wrap">
+    <a href="#" class="page-header__nav-item-link">
+      <span class="text-hidden">Главная</span>
 
-          <div class="page-header__logo-open">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@2x.png">
-              <source media="(min-width: 768px)" srcset="img/logo-desktop-blue@2x.png">
-              <img src="img/logo-mobile-blue@2x.png" alt="главная">
-            </picture>
-          </div>
-        </a>
-        <button class="page-header__button" type="button">
-          <span class="text-hidden">закрыть меню</span>
-        </button>
-      </div>
-
-      <a class="page-header__nav-item" href="index.html">
-        О сервисе
-      </a>
-      <a class="page-header__nav-item" href="form.html">
-        Направления
-      </a>
-      <a class="page-header__nav-item" href="catalog.html">
-        Попутчики
-      </a>
-      <a class="page-header__nav-button" href="#">
-        Авторизация
-      </a>
-
-      <div class="page-header__contact-wrap">
-        <a class="page-header__nav-call" href="tel:+88005558628"><span class="text-hidden">Позвонить</span></a>
-        <span class="page-header__link-text">8 800 555-86-28</span>
-
-        <a class="page-header__nav-email" href="mailto:mail@htmlacademy.ru"><span class="text-hidden">Отправить
-            email</span></a>
-        <span class="page-header__link-text">mail@htmlacademy.ru</span>
-      </div>
-
-      <div class="page-header__social">
-        <a class="page-header__link-fb" href="https://www.facebook.com/htmlacademy">
-          <span class="text-hidden">Мы в Фейсбуке</span>
-        </a>
-        <a class="page-header__link-vk" href="https://vk.com/htmlacademy">
-          <span class="text-hidden">Мы в Вконтакте</span>
-        </a>
-        <a class="page-header__link-inst" href="https://www.instagram.com/htmlacademy">
-          <span class="text-hidden">Мы в Инстаграме</span>
-        </a>
-      </div>
-
-    </nav>
-
-    <!-- БЛОК ЕСЛИ МЕНЮ ЗАКРЫТО -->
-
-    <div class="page-header__btn-wrap">
-      <a href="index.html" class="page-header__link">
-        <span class="visually-hidden">Главная</span>
-        <div class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@2x.png">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@2x.png">
-            <img src="img/logo-mobile-white@2x.png" alt="главная">
-          </picture>
-        </div>
-
-      </a>
-      <button class="page-header__close-button" type="button">
-        <span class="text-hidden">Открыть меню</span>
-      </button>
-      <div class="page-header__desktop-line"></div>
-
-      <a class="page-header__desktop-link page-header__desktop-link-service animation" href="index.html">
-        <span data-hover="О сервисе">О сервисе</span>
-
-      </a>
-      <a class="page-header__desktop-link page-header__desktop-link-directions animation" href="form.html">
-        <span data-hover="Направления">Направления</span>
-      </a>
-      <a class="page-header__desktop-link page-header__desktop-link-travelers animation" href="catalog.html">
-        <span data-hover="Попутчики">Попутчики</span>
-      </a>
-    </div>
-
-    <h1 class="page-header__title">В путешествие <br> с крутыми попутчиками!</h1>
-    <div class="page-header__controls">
-      <a class="page-header__controls-item" href="#">
-        <span class="visually-hidden">Позвонить</span>
-        <svg class="page-header__icon-call" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" fill="#161C35"/>
-          <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" fill="#161C35"/>
-          </svg>
-      </a>
-      <a class="page-header__controls-item" href="#">
-        <span class="visually-hidden">Отправить email</span>
-        <svg class="page-header__icon-mail" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.0166 3.32528L8.7666 7.55572C8.9934 7.69747 9.2868 7.76467 9.582 7.76467C9.8772 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.9689C1.1616 1.97498 1.5774 3.04913 2.0166 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.8772 10.0757 9.582 10.0757C9.2868 10.0757 9.0726 10.0537 8.7666 9.86677C8.4606 9.67987 2.3469 5.94082 1.8474 5.63737C1.4964 5.42317 1.5 5.67412 1.5 5.86732V13.525C1.5 13.966 2.0094 14.575 2.4 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
-          </svg>
-      </a>
-      <a class="page-header__controls-item" href="#">
-        Авторизация
-      </a>
-    </div>
-
-    <!-- СКРОЛЛ МЕНЮ -->
-
-    <section class="page-header__scroll-modal hidden">
-      <div class="page-header__scroll-logo">
+      <div class="page-header__logo-open">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@2x.png">
           <source media="(min-width: 768px)" srcset="img/logo-desktop-blue@2x.png">
           <img src="img/logo-mobile-blue@2x.png" alt="главная">
         </picture>
       </div>
+    </a>
+    <button class="page-header__button" type="button">
+      <span class="text-hidden">закрыть меню</span>
+    </button>
+  </div>
 
-      <div class="page-header__scroll-line"></div>
+  <a class="page-header__nav-item" href="index.html">
+    О сервисе
+  </a>
+  <a class="page-header__nav-item" href="form.html">
+    Направления
+  </a>
+  <a class="page-header__nav-item" href="catalog.html">
+    Попутчики
+  </a>
+  <a class="page-header__nav-button" href="#">
+    Авторизация
+  </a>
 
-      <button class="page-header__scroll-btn-main" type="button"></button>
+  <div class="page-header__contact-wrap">
+    <a class="page-header__nav-call" href="tel:+88005558628"><span class="text-hidden">Позвонить</span></a>
+    <span class="page-header__link-text">8 800 555-86-28</span>
 
-      <a class="page-header__scroll-service" href="index.html">
-        О сервисе
-      </a>
-      <a class="page-header__scroll-directions" href="form.html">
-        Направления
-      </a>
-      <a class="page-header__scroll-travelers" href="catalog.html">
-        Попутчики
-      </a>
+    <a class="page-header__nav-email" href="mailto:mail@htmlacademy.ru"><span class="text-hidden">Отправить
+        email</span></a>
+    <span class="page-header__link-text">mail@htmlacademy.ru</span>
+  </div>
 
-      <a class="page-header__scroll-btn-call" href="#"><span class="visually-hidden">Позвонить</span></a>
-      <a class="page-header__scroll-btn-email" href="#"><span class="visually-hidden">Отправить email</span></a>
-      <a class="page-header__scroll-btn-authorization" href="#">Авторизация</a>
-    </section>
+  <div class="page-header__social">
+    <a class="page-header__link-fb" href="https://www.facebook.com/htmlacademy">
+      <span class="text-hidden">Мы в Фейсбуке</span>
+    </a>
+    <a class="page-header__link-vk" href="https://vk.com/htmlacademy">
+      <span class="text-hidden">Мы в Вконтакте</span>
+    </a>
+    <a class="page-header__link-inst" href="https://www.instagram.com/htmlacademy">
+      <span class="text-hidden">Мы в Инстаграме</span>
+    </a>
+  </div>
+
+</nav>
+
+<!-- БЛОК ЕСЛИ МЕНЮ ЗАКРЫТО -->
+
+<div class="page-header__btn-wrap">
+  <a href="index.html" class="page-header__link">
+    <span class="visually-hidden">Главная</span>
+    <div class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@2x.png">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-white@2x.png">
+        <img src="img/logo-mobile-white@2x.png" alt="главная">
+      </picture>
+    </div>
+
+  </a>
+  <button class="page-header__close-button" type="button">
+    <span class="text-hidden">Открыть меню</span>
+  </button>
+  <div class="page-header__desktop-line"></div>
+
+  <a class="page-header__desktop-link page-header__desktop-link-service animation" href="index.html">
+    <span data-hover="О сервисе">О сервисе</span>
+
+  </a>
+  <a class="page-header__desktop-link page-header__desktop-link-directions animation" href="form.html">
+    <span data-hover="Направления">Направления</span>
+  </a>
+  <a class="page-header__desktop-link page-header__desktop-link-travelers animation" href="catalog.html">
+    <span data-hover="Попутчики">Попутчики</span>
+  </a>
+</div>
+
+<h1 class="page-header__title">В путешествие <br> с крутыми попутчиками!</h1>
+<div class="page-header__controls">
+  <a class="page-header__controls-item" href="#">
+    <span class="visually-hidden">Позвонить</span>
+    <svg class="page-header__icon-call" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z" fill="#161C35"/>
+      <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z" fill="#161C35"/>
+      </svg>
+  </a>
+  <a class="page-header__controls-item" href="#">
+    <span class="visually-hidden">Отправить email</span>
+    <svg class="page-header__icon-mail" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.0166 3.32528L8.7666 7.55572C8.9934 7.69747 9.2868 7.76467 9.582 7.76467C9.8772 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.9689C1.1616 1.97498 1.5774 3.04913 2.0166 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.8772 10.0757 9.582 10.0757C9.2868 10.0757 9.0726 10.0537 8.7666 9.86677C8.4606 9.67987 2.3469 5.94082 1.8474 5.63737C1.4964 5.42317 1.5 5.67412 1.5 5.86732V13.525C1.5 13.966 2.0094 14.575 2.4 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
+      </svg>
+  </a>
+  <a class="page-header__controls-item" href="#">
+    Авторизация
+  </a>
+</div>
+
+<!-- СКРОЛЛ МЕНЮ -->
+
+<section class="page-header__scroll-modal hidden">
+  <div class="page-header__scroll-logo">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@2x.png">
+      <source media="(min-width: 768px)" srcset="img/logo-desktop-blue@2x.png">
+      <img src="img/logo-mobile-blue@2x.png" alt="главная">
+    </picture>
+  </div>
+
+  <div class="page-header__scroll-line"></div>
+
+  <button class="page-header__scroll-btn-main" type="button"></button>
+
+  <a class="page-header__scroll-service" href="index.html">
+    О сервисе
+  </a>
+  <a class="page-header__scroll-directions" href="form.html">
+    Направления
+  </a>
+  <a class="page-header__scroll-travelers" href="catalog.html">
+    Попутчики
+  </a>
+
+  <a class="page-header__scroll-btn-call" href="#"><span class="visually-hidden">Позвонить</span></a>
+  <a class="page-header__scroll-btn-email" href="#"><span class="visually-hidden">Отправить email</span></a>
+  <a class="page-header__scroll-btn-authorization" href="#">Авторизация</a>
+</section>
+    </div>
 
   </header>
 
   <main class="page-main">
     <section class="guide">
-      <blockquote class="guide__quote">
-        «Лучшее приложение, что я видел в жизни!»
-      </blockquote>
-      <b class="guide__slogan">
-        Мурат Эльтазин главный редактор газеты «гаджетлайф»
-      </b>
-      <ul class="guide__list">
-        <li class="guide__item">
-          <span class="guide__text">Выберите <br> направление</span>
-          <span class="guide__number">1</span>
-        </li>
-        <li class="guide__item">
-          <span class="guide__text">Изучите идеи <br> путешественников</span>
-          <span class="guide__number">2</span>
-        </li>
-        <li class="guide__item">
-          <span class="guide__text">Находите тех, <br> кто похож на вас</span>
-          <span class="guide__number">3</span>
-        </li>
-        <li class="guide__item">
-          <span class="guide__text">Путешествуйте <br> вместе!</span>
-          <span class="guide__number">4</span>
-        </li>
-      </ul>
+
+      <div class="guide__container">
+        <blockquote class="guide__quote">
+          «Лучшее приложение, что я видел в жизни!»
+        </blockquote>
+        <b class="guide__slogan">
+          Мурат Эльтазин главный редактор газеты «гаджетлайф»
+        </b>
+        <ul class="guide__list">
+          <li class="guide__item">
+            <span class="guide__text">Выберите <br> направление</span>
+            <span class="guide__number">1</span>
+          </li>
+          <li class="guide__item">
+            <span class="guide__text">Изучите идеи <br> путешественников</span>
+            <span class="guide__number">2</span>
+          </li>
+          <li class="guide__item">
+            <span class="guide__text">Находите тех, <br> кто похож на вас</span>
+            <span class="guide__number">3</span>
+          </li>
+          <li class="guide__item">
+            <span class="guide__text">Путешествуйте <br> вместе!</span>
+            <span class="guide__number">4</span>
+          </li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- БЛОК ОПИСАНИЯ СЕРВИСА -->
 
     <section class="about">
-      <h2 class="about__title">О сервисе</h2>
-      <blockquote class="about__quote">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
-        черпайте вдохновение в чужих.
-      </blockquote>
-      <b class="about__slogan">
-        А если найдете кого-то близкого по духу —- скорее зовите в совместный трип!
-      </b>
-      <a class="about__btn" href="#"><span class="about__btn-text">Подробнее</span></a>
+
+      <div class="about__container">
+        <h2 class="about__title">О сервисе</h2>
+        <blockquote class="about__quote">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+          черпайте вдохновение в чужих.
+        </blockquote>
+        <b class="about__slogan">
+          А если найдете кого-то близкого по духу —- скорее зовите в совместный трип!
+        </b>
+        <a class="about__btn" href="#"><span class="about__btn-text">Подробнее</span></a>
+      </div>
+
     </section>
 
     <!-- БЛОК СО СПИСКОМ НАПРАВЛЕНИЙ -->
 
     <section class="directions">
-      <h2 class="directions__title">Направления</h2>
-      <p class="directions__slogan">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
-        бы отправиться и чем можно
-        там заняться.</p>
-      <ul class="directions__country-list">
-        <li class="directions__country-item">
-          <div class="directions__country-picture">
 
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-              <img class="directions__image" src="img/thailand-mobile.png" srcset="img/thailand-mobile@2x.jpg 2x"
-                alt="Тайланд">
-            </picture>
+      <div class="directions__container">
+        <h2 class="directions__title">Направления</h2>
+        <p class="directions__slogan">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
+          бы отправиться и чем можно
+          там заняться.</p>
+        <ul class="directions__country-list">
+          <li class="directions__country-item">
+            <div class="directions__country-picture">
 
-          </div>
-          <div class="directions__country-wrap">
-            <img class="directions__flag-icon" src="img/flag-thailand.svg" width="35" height="24" alt="флаг">
-            <h3 class="directions__country-title">Таиланд</h3>
-            <p class="directions__quote">Джунгли зовут!</p>
-            <p class="directions__rating">18321</p>
-          </div>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <img class="directions__image" src="img/thailand-mobile.png" srcset="img/thailand-mobile@2x.jpg 2x"
+                  alt="Тайланд">
+              </picture>
 
-        </li>
-        <li class="directions__country-item">
-          <div class="directions__country-picture directions__country-picture-france">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-              <img class="directions__image" src="img/france-mobile.png" srcset="img/france-mobile@2x.jpg 2x"
-                alt="Франция">
-            </picture>
-          </div>
-          <div class="directions__country-wrap">
-            <img class="directions__flag-icon" src="img/flag-france.svg" width="35" height="24" alt="флаг">
-            <h3 class="directions__country-title">Франция</h3>
-            <p class="directions__quote">Трэ бьен, манифик!</p>
-            <p class="directions__rating">12518</p>
-          </div>
+            </div>
+            <div class="directions__country-wrap">
+              <img class="directions__flag-icon" src="img/flag-thailand.svg" width="35" height="24" alt="флаг">
+              <h3 class="directions__country-title">Таиланд</h3>
+              <p class="directions__quote">Джунгли зовут!</p>
+              <p class="directions__rating">18321</p>
+            </div>
 
-        </li>
-        <li class="directions__country-item">
-          <div class="directions__country-picture">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-              <img class="directions__image" src="img/czech-mobile.png" srcset="img/czech-mobile@2x.jpg 2x" alt="Чехия">
-            </picture>
-          </div>
-          <div class="directions__country-wrap">
-            <img class="directions__flag-icon" src="img/flag-czech.svg" width="35" height="24" alt="флаг">
-            <h3 class="directions__country-title">Чехия</h3>
-            <p class="directions__quote">Закоулки старой Европы</p>
-            <p class="directions__rating directions__rating-last">5326</p>
-          </div>
-        </li>
-      </ul>
-      <a href="form.html" class="directions__button"><span class="directions__btn-text">Показать все</span></a>
+          </li>
+          <li class="directions__country-item">
+            <div class="directions__country-picture directions__country-picture-france">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <img class="directions__image" src="img/france-mobile.png" srcset="img/france-mobile@2x.jpg 2x"
+                  alt="Франция">
+              </picture>
+            </div>
+            <div class="directions__country-wrap">
+              <img class="directions__flag-icon" src="img/flag-france.svg" width="35" height="24" alt="флаг">
+              <h3 class="directions__country-title">Франция</h3>
+              <p class="directions__quote">Трэ бьен, манифик!</p>
+              <p class="directions__rating">12518</p>
+            </div>
+
+          </li>
+          <li class="directions__country-item">
+            <div class="directions__country-picture">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <img class="directions__image" src="img/czech-mobile.png" srcset="img/czech-mobile@2x.jpg 2x" alt="Чехия">
+              </picture>
+            </div>
+            <div class="directions__country-wrap">
+              <img class="directions__flag-icon" src="img/flag-czech.svg" width="35" height="24" alt="флаг">
+              <h3 class="directions__country-title">Чехия</h3>
+              <p class="directions__quote">Закоулки старой Европы</p>
+              <p class="directions__rating directions__rating-last">5326</p>
+            </div>
+          </li>
+        </ul>
+        <a href="form.html" class="directions__button"><span class="directions__btn-text">Показать все</span></a>
+      </div>
+
     </section>
 
     <!-- БЛОК СО СПИСКОМ ПОПУТЧИКОВ -->
 
     <section class="travelers">
-      <h2 class="travelers__title">Попутчики</h2>
-      <blockquote class="travelers__quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
-        нужен пляж и коктейль, а другому маршрут для хайкинга.</blockquote>
-      <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
-      <section class="travelers__item travelers__item-left">
-        <span class="travelers__level-firsova">
 
-        </span>
+      <div class="travelers__container">
+        <h2 class="travelers__title">Попутчики</h2>
+        <blockquote class="travelers__quote">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+          нужен пляж и коктейль, а другому маршрут для хайкинга.</blockquote>
+        <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
+        <section class="travelers__item travelers__item-left">
+          <span class="travelers__level-firsova">
 
-        <div class="travelers__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-            <img class="travelers__pictire" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="аватарка">
-          </picture>
-        </div>
+          </span>
 
-        <div class="travelers__preferences">
-          <img src="img/flag-sri-lanka.png" width="35" height="25" alt="флаг">
-          <img src="img/flag-thailand.png" width="35" height="25" alt="флаг">
-          <img src="img/flag-seychelles.png" width="35" height="25" alt="флаг">
-        </div>
+          <div class="travelers__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <img class="travelers__pictire" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="аватарка">
+            </picture>
+          </div>
 
-        <h3 class="travelers__name">Таня Фирсова</h3>
-        <span class="travelers__hobbies">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+          <div class="travelers__preferences">
+            <img src="img/flag-sri-lanka.png" width="35" height="25" alt="флаг">
+            <img src="img/flag-thailand.png" width="35" height="25" alt="флаг">
+            <img src="img/flag-seychelles.png" width="35" height="25" alt="флаг">
+          </div>
 
-        <div class="travelers__transport">
-          <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
-        </div>
+          <h3 class="travelers__name">Таня Фирсова</h3>
+          <span class="travelers__hobbies">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
 
-      </section>
+          <div class="travelers__transport">
+            <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
+          </div>
 
-      <section class="travelers__item travelers__item-right">
-        <span class="travelers__level-demin">
+        </section>
 
-        </span>
+        <section class="travelers__item travelers__item-right">
+          <span class="travelers__level-demin">
 
-        <div class="travelers__avatar">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-            <img class="travelers__pictire" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="аватарка">
-          </picture>
-        </div>
+          </span>
 
-        <div class="travelers__preferences">
-          <img src="img/flag-belgium.png" width="35" height="25" alt="флаг">
-          <img src="img/flag-czech.png" width="35" height="25" alt="флаг">
-        </div>
+          <div class="travelers__avatar">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <img class="travelers__pictire" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="аватарка">
+            </picture>
+          </div>
 
-        <h3 class="travelers__name">Петя Демин</h3>
-        <span class="travelers__hobbies">#бургер #бар #футбол #концерт #крафт</span>
+          <div class="travelers__preferences">
+            <img src="img/flag-belgium.png" width="35" height="25" alt="флаг">
+            <img src="img/flag-czech.png" width="35" height="25" alt="флаг">
+          </div>
 
-        <div class="travelers__transport">
-          <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
-          <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
-        </div>
+          <h3 class="travelers__name">Петя Демин</h3>
+          <span class="travelers__hobbies">#бургер #бар #футбол #концерт #крафт</span>
 
-      </section>
-      <a href="catalog.html" class="travelers__button"><span class="travelers__btn-text">Показать всех</span></a>
+          <div class="travelers__transport">
+            <img class="travelers__plane-icon" src="img/transport-plane.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__bus-icon" src="img/transport-bus.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__bike-icon" src="img/transport-bike.svg" width="18" height="18" alt="транспорт">
+            <img class="travelers__run-icon" src="img/transport-run.svg" width="18" height="18" alt="транспорт">
+          </div>
+
+        </section>
+        <a href="catalog.html" class="travelers__button"><span class="travelers__btn-text">Показать всех</span></a>
+      </div>
+
     </section>
 
     <!-- БЛОК ДОБАВЛЕНИЯ СВОЕГО ПРОФИЛЯ -->
 
     <section class="profile">
-      <h2 class="profile__title">Добавьте свой профиль</h2>
-      <img class="profile__rates" src="img/rates.svg" width="100" height="100" alt="rates">
-      <ul class="profile__list">
-        <li class="profile__item">
-          <span class="profile__list-text">Базовое размещение</span>
-          <span class="profile__list-price">Бесплатно</span>
-          <span class="profile__list-number">1</span>
-        </li>
-        <li class="profile__item">
-          <span class="profile__list-text">Вывод на первых позициях</span>
-          <span class="profile__list-price">99 руб./мес</span>
-          <span class="profile__list-number">2</span>
-        </li>
-        <li class="profile__item">
-          <span class="profile__list-text">Кастомный цвет карточки</span>
-          <span class="profile__list-price">59 руб./мес</span>
-          <span class="profile__list-number">3</span>
-        </li>
-      </ul>
-      <a href="#" class="profile__button">Показать тарифы для бизнеса</a>
-      <div class="profile__shadow-plate"></div>
 
-      <!-- МОДАЛЬНОЕ ОКНО С ТАРИФАМИ ДЛЯ БИЗНЕСА -->
+      <div class="profile__container">
+        <h2 class="profile__title">Добавьте свой профиль</h2>
+        <img class="profile__rates" src="img/rates.svg" width="100" height="100" alt="rates">
+        <ul class="profile__list">
+          <li class="profile__item">
+            <span class="profile__list-text">Базовое размещение</span>
+            <span class="profile__list-price">Бесплатно</span>
+            <span class="profile__list-number">1</span>
+          </li>
+          <li class="profile__item">
+            <span class="profile__list-text">Вывод на первых позициях</span>
+            <span class="profile__list-price">99 руб./мес</span>
+            <span class="profile__list-number">2</span>
+          </li>
+          <li class="profile__item">
+            <span class="profile__list-text">Кастомный цвет карточки</span>
+            <span class="profile__list-price">59 руб./мес</span>
+            <span class="profile__list-number">3</span>
+          </li>
+        </ul>
+        <a href="#" class="profile__button">Показать тарифы для бизнеса</a>
+        <div class="profile__shadow-plate"></div>
 
-      <div class="profile__modal hidden">
-        <h2 class="profile__modal-title">Бизнес-тарифы</h2>
-        <div class="profile__cost-wrap">
-          <p class="profile__modal-item">Реклама у блоггера</p>
-          <p class="profile__modal-item-cost">300 000 руб./пост</p>
+        <!-- МОДАЛЬНОЕ ОКНО С ТАРИФАМИ ДЛЯ БИЗНЕСА -->
+
+        <div class="profile__modal hidden">
+          <h2 class="profile__modal-title">Бизнес-тарифы</h2>
+          <div class="profile__cost-wrap">
+            <p class="profile__modal-item">Реклама у блоггера</p>
+            <p class="profile__modal-item-cost">300 000 руб./пост</p>
+          </div>
+
+          <div class="profile__cost-wrap">
+            <p class="profile__modal-item">Накрутка подписчиков</p>
+            <p class="profile__modal-item-cost">от 1 руб./шт.</p>
+          </div>
+
+          <div class="profile__cost-wrap">
+            <p class="profile__modal-item">Лайки от ботов</p>
+            <p class="profile__modal-item-cost">от 20 коп./лайк</p>
+          </div>
+
+          <div class="profile__cost-wrap">
+            <p class="profile__modal-item">Ваш продакт-плейсмент</p>
+            <p class="profile__modal-item-cost">Индивидуально</p>
+          </div>
+
+
+          <button class="profile__modal-close" type="button">Закрыть окно</button>
         </div>
-
-        <div class="profile__cost-wrap">
-          <p class="profile__modal-item">Накрутка подписчиков</p>
-          <p class="profile__modal-item-cost">от 1 руб./шт.</p>
-        </div>
-
-        <div class="profile__cost-wrap">
-          <p class="profile__modal-item">Лайки от ботов</p>
-          <p class="profile__modal-item-cost">от 20 коп./лайк</p>
-        </div>
-
-        <div class="profile__cost-wrap">
-          <p class="profile__modal-item">Ваш продакт-плейсмент</p>
-          <p class="profile__modal-item-cost">Индивидуально</p>
-        </div>
-
-
-        <button class="profile__modal-close" type="button">Закрыть окно</button>
       </div>
 
     </section>

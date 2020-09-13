@@ -1,4 +1,9 @@
 .about {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+.about__container {
   position: relative;
   z-index: 9;
   display: flex;
@@ -6,7 +11,9 @@
   min-width: 318px;
   width: 318px;
   min-height: 341px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 16px;
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
@@ -16,7 +23,7 @@
   border: solid 1px transparent;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-mobile@2x.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +31,7 @@
   }
 }
 @media (min-width: 768px) {
-  .about {
+  .about__container {
     background-image: url(../img/about-tablet@1x.png);
     background-repeat: no-repeat;
     background-position: 382px 139px;
@@ -33,12 +40,14 @@
     min-height: 759px;
     background-color: #182044;
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-tablet@2x.png);
     background-repeat: no-repeat;
     background-position: 382px 139px;
@@ -46,8 +55,10 @@
   }
 }
 @media (min-width: 1440px) {
-  .about {
+  .about__container {
     margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../img/about-desktop@1x.png);
     background-repeat: no-repeat;
     background-position: 750px 82px;
@@ -62,7 +73,7 @@
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-desktop@2x.png);
     background-repeat: no-repeat;
     background-position: 750px 82px;
@@ -3185,6 +3196,11 @@ button:focus {
   color: #1D2E5B;
 }
 .directions {
+  min-width: 100%;
+  width: 100%;
+  background-color: #EDEFF6;
+}
+.directions__container {
   position: relative;
   z-index: 8;
   display: flex;
@@ -3194,14 +3210,18 @@ button:focus {
   min-height: 915px;
   background-color: #EDEFF6;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 97px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   background-image: none;
 }
 @media (min-width: 768px) {
-  .directions {
+  .directions__container {
     margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 766px;
     width: 766px;
     min-height: 1046px;
@@ -3214,12 +3234,12 @@ button:focus {
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
-  .directions {
+  .directions__container {
     background-image: url(../img/flags-back@2x.png);
   }
 }
 @media (min-width: 1440px) {
-  .directions {
+  .directions__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -3227,7 +3247,7 @@ button:focus {
     width: 1438px;
     min-height: 800px;
     padding: 0px 0px 0px 0px;
-    margin: -50px 0px 0px 0px;
+    margin: -50px auto 0px auto;
     background-image: url(../img/flags-back@1x.png);
     background-repeat: no-repeat;
     background-position: 1093px 138px;
@@ -3235,7 +3255,7 @@ button:focus {
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
-  .directions {
+  .directions__container {
     background-image: url(../img/flags-back@2x.png);
   }
 }
@@ -4052,6 +4072,11 @@ button:focus {
   }
 }
 .guide {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+.guide__container {
   display: flex;
   flex-direction: column;
   min-width: 318px;
@@ -4062,9 +4087,11 @@ button:focus {
   color: #FFFFFF;
   border: solid 1px transparent;
   margin-top: -92px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-  .guide {
+  .guide__container {
     min-width: 766px;
     width: 766px;
     background-image: url(../img/traveller-illustration-tablet@1x.png), url(../img/globe-back-tablet@1x.jpg);
@@ -4072,10 +4099,12 @@ button:focus {
     background-position: 283px -7px, -356px -29px;
     background-color: #182044;
     margin-top: -160px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
-  .guide {
+  .guide__container {
     background-image: url(../img/traveller-illustration-tablet@2x.png), url(../img/globe-back-tablet@2x.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: 283px -7px, -356px -29px;
@@ -4083,7 +4112,7 @@ button:focus {
   }
 }
 @media (min-width: 1440px) {
-  .guide {
+  .guide__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -4091,6 +4120,8 @@ button:focus {
     width: 1438px;
     min-height: 648px;
     margin-top: -648px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: none;
     background-color: transparent;
     position: relative;
@@ -5670,6 +5701,11 @@ textarea {
   }
 }
 .page-header {
+  min-width: 100%;
+  width: 100%;
+  background-color: #161C35;
+}
+.page-header__container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -5682,10 +5718,11 @@ textarea {
   background-repeat: no-repeat, no-repeat;
   background-position: 79px 221px, 0px 0px;
   border: solid 1px transparent;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .page-header {
+  .page-header__container {
     background-image: url(../img/traveller-illustration-mobile@2x.png), url(../img/globe-back-mobile@2x.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: 79px 221px, 0px 0px;
@@ -5693,7 +5730,7 @@ textarea {
   }
 }
 @media (min-width: 768px) {
-  .page-header {
+  .page-header__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -5701,10 +5738,12 @@ textarea {
     background-image: none;
     min-width: 766px;
     width: 766px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1440px) {
-  .page-header {
+  .page-header__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -5717,10 +5756,12 @@ textarea {
     background-position: 605px 109px, -180px 1px;
     position: relative;
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
-  .page-header {
+  .page-header__container {
     background-image: url(../img/traveller-illustration-desktop@2x.png), url(../img/globe-back-desktop@2x.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: 603px 109px, 0px 0px;
@@ -8796,6 +8837,11 @@ textarea {
   }
 }
 .profile {
+  min-width: 100%;
+  width: 100%;
+  background-color: #EDEFF6;
+}
+.profile__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 0.6fr;
@@ -8803,6 +8849,8 @@ textarea {
   width: 318px;
   min-height: 420px;
   margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 0px;
   padding-left: 50px;
@@ -8816,21 +8864,21 @@ textarea {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  .profile {
+  .profile__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-width: 766px;
     width: 766px;
     min-height: 503px;
-    margin: -50px 0px 0px 0px;
+    margin: -50px auto 0px auto;
     padding: 100px 0px 0px 0px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 }
 @media (min-width: 1440px) {
-  .profile {
+  .profile__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -8839,8 +8887,8 @@ textarea {
     min-height: 798px;
     margin-top: -50px;
     margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0px 0px 0px 0px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -9940,6 +9988,11 @@ textarea {
   fill-opacity: 0.3;
 }
 .travelers {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+.travelers__container {
   position: relative;
   z-index: 7;
   display: flex;
@@ -9953,6 +10006,8 @@ textarea {
   background-repeat: no-repeat, no-repeat;
   background-position: 152px 66px, -10px 337px;
   margin-top: -31px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 75px;
   border: solid 1px transparent;
   border-bottom-left-radius: 30px;
@@ -9960,7 +10015,7 @@ textarea {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  .travelers {
+  .travelers__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr 1fr;
@@ -9974,12 +10029,14 @@ textarea {
     background-position: 40px 474px, 409px 130px;
     background-size: 143px 143px, 285px 285px;
     margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 125px;
     padding-left: 74px;
   }
 }
 @media (min-width: 1440px) {
-  .travelers {
+  .travelers__container {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
@@ -9991,7 +10048,7 @@ textarea {
     background-position: 542px 192px, 186px 444px;
     background-size: 143px 143px, 285px 285px;
     padding: 0px 0px 0px 0px;
-    margin: -60px 0px 0px 0px;
+    margin: -60px auto 0px auto;
   }
 }
 .travelers__title {
@@ -11418,9 +11475,11 @@ textarea {
   display: flex;
   flex-direction: column;
   min-width: 318px;
-  width: 318px;
+  width: 100%;
   min-height: 424px;
   margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   .location {
@@ -11428,6 +11487,8 @@ textarea {
     width: 100%;
     min-height: 685px;
     margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1440px) {
@@ -11437,8 +11498,8 @@ textarea {
     min-height: 625px;
     margin-top: -100px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     z-index: 3;
   }

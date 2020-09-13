@@ -1,4 +1,9 @@
 .about {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+.about__container {
   position: relative;
   z-index: 9;
   display: flex;
@@ -6,7 +11,9 @@
   min-width: 318px;
   width: 318px;
   min-height: 341px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 16px;
   background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
@@ -16,7 +23,7 @@
   border: solid 1px transparent;
 }
 @media (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-mobile@2x.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +31,7 @@
   }
 }
 @media (min-width: 768px) {
-  .about {
+  .about__container {
     background-image: url(../img/about-tablet@1x.png);
     background-repeat: no-repeat;
     background-position: 382px 139px;
@@ -33,12 +40,14 @@
     min-height: 759px;
     background-color: #182044;
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-tablet@2x.png);
     background-repeat: no-repeat;
     background-position: 382px 139px;
@@ -46,8 +55,10 @@
   }
 }
 @media (min-width: 1440px) {
-  .about {
+  .about__container {
     margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../img/about-desktop@1x.png);
     background-repeat: no-repeat;
     background-position: 750px 82px;
@@ -62,7 +73,7 @@
   }
 }
 @media (min-width: 1440px) and (min-resolution: 2dppx) {
-  .about {
+  .about__container {
     background-image: url(../img/about-desktop@2x.png);
     background-repeat: no-repeat;
     background-position: 750px 82px;

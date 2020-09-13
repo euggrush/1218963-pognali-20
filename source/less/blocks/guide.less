@@ -1,6 +1,12 @@
 @import "../utils/utils.less";
 
 .guide {
+  min-width: 100%;
+  width: 100%;
+  background-color: #192144;
+}
+
+.guide__container {
   display: flex;
   flex-direction: column;
   min-width: 318px;
@@ -11,6 +17,8 @@
   color: #FFFFFF;
   border: solid 1px transparent;
   margin-top: -92px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     min-width: 766px;
@@ -20,6 +28,8 @@
     background-position: 283px -7px, -356px -29px;
     background-color: #182044;
     margin-top: -160px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/traveller-illustration-tablet@2x.png), url(../img/globe-back-tablet@2x.jpg);
@@ -37,6 +47,8 @@
     width: 1438px;
     min-height: 648px;
     margin-top: -648px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: none;
     background-color: transparent;
     position: relative;

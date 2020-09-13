@@ -1,6 +1,12 @@
 @import "../utils/utils.less";
 
 .page-header {
+  min-width: 100%;
+  width: 100%;
+  background-color: #161C35;
+}
+
+.page-header__container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -13,7 +19,8 @@
   background-repeat: no-repeat, no-repeat;
   background-position: 79px 221px, 0px 0px;
   border: solid 1px transparent;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url(../img/traveller-illustration-mobile@2x.png), url(../img/globe-back-mobile@2x.jpg);
@@ -30,6 +37,8 @@
     background-image: none;
     min-width: 766px;
     width: 766px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,6 +54,8 @@
     background-position: 605px 109px, -180px 1px;
     position: relative;
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/traveller-illustration-desktop@2x.png), url(../img/globe-back-desktop@2x.jpg);
