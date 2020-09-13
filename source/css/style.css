@@ -4764,18 +4764,27 @@ button:focus {
   opacity: 0.3;
 }
 .my-profile {
+  min-width: 100%;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+.my-profile__container {
   display: flex;
   flex-direction: column;
+  min-width: 318px;
+  width: 318px;
   min-height: 436px;
   justify-content: space-between;
   align-items: center;
   background-color: #E5E5E5;
   border: solid 1px transparent;
   margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 38px;
 }
 @media (min-width: 768px) {
-  .my-profile {
+  .my-profile__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -4784,8 +4793,8 @@ button:focus {
     min-height: 500px;
     margin-top: -45px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 45px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -4795,7 +4804,7 @@ button:focus {
   }
 }
 @media (min-width: 1440px) {
-  .my-profile {
+  .my-profile__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -4803,7 +4812,7 @@ button:focus {
     width: 1438px;
     min-height: 448px;
     padding: 0px 0px 0px 0px;
-    margin: -191px 0px 0px 0px;
+    margin: -191px auto 0px auto;
     background-color: transparent;
     position: relative;
     z-index: 10;
@@ -12017,25 +12026,44 @@ textarea {
   overflow: hidden;
 }
 .form-header {
+  min-width: 100%;
+  width: 100%;
+  background-color: #182044;
+}
+@media (min-width: 768px) {
+  .form-header {
+    background-color: #182044;
+  }
+}
+@media (min-width: 1440px) {
+  .form-header {
+    background-color: #182044;
+  }
+}
+.form-header__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  min-width: 320px;
+  min-width: 318px;
+  width: 318px;
   min-height: 143px;
   background-color: #182044;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin: 0px;
+  margin: 0px auto 0px auto;
   padding: 0px;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 768px) {
-  .form-header {
+  .form-header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-width: 766px;
+    width: 766px;
     min-height: 351px;
+    margin: 0px auto 0px auto;
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 58px;
     position: relative;
@@ -12043,12 +12071,14 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  .form-header {
+  .form-header__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
+    min-width: 1438px;
+    width: 1438px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
     position: relative;
     z-index: 9;
   }
@@ -12683,10 +12713,16 @@ textarea {
   }
 }
 .form-footer {
+  min-width: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.form-footer__container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-width: 318px;
+  width: 318px;
   min-height: 240px;
   padding-top: 12px;
   background-color: #FFFFFF;
@@ -12695,14 +12731,20 @@ textarea {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -178px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
-  .form-footer {
+  .form-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px;
+    min-width: 766px;
+    width: 766px;
     min-height: 140px;
     margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-left-radius: 55px;
     border-top-right-radius: 55px;
     position: relative;
@@ -12710,12 +12752,14 @@ textarea {
   }
 }
 @media (min-width: 1440px) {
-  .form-footer {
+  .form-footer__container {
+    min-width: 1438px;
+    width: 1438px;
     min-height: 155px;
     margin-top: -100px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .form-footer__logo {
