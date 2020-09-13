@@ -87,7 +87,7 @@
     display: inline-block;
     width: 200px;
     height: 52px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 3px;
   }
 }
 .catalog-header__button {
@@ -345,7 +345,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 44px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -367,7 +367,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 26px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -389,7 +389,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 26px;
     padding: 0px 0px 0px 0px;
   }
 }

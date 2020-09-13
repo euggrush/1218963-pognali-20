@@ -6781,7 +6781,7 @@ textarea {
     min-width: 1440px;
     width: 1440px;
     margin: -1088px auto 0px auto;
-    padding: 0px 0px 140px 60px;
+    padding: 0px 0px 140px 64px;
     position: relative;
     z-index: 9;
     box-sizing: border-box;
@@ -7184,7 +7184,7 @@ textarea {
   .persons__about-item:nth-child(1) {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin-top: -60px;
+    margin-top: -59px;
     margin-bottom: 0px;
     margin-left: 35px;
     margin-right: 0px;
@@ -10703,7 +10703,7 @@ textarea {
     min-width: 1440px;
     width: 1440px;
     margin: -25px auto 0px auto;
-    padding: 0px 0px 0px 1094px;
+    padding: 0px 0px 0px 1098px;
     background-color: transparent;
     position: relative;
     z-index: 10;
@@ -11720,7 +11720,7 @@ textarea {
     display: inline-block;
     width: 200px;
     height: 52px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 3px;
   }
 }
 .catalog-header__button {
@@ -11978,7 +11978,7 @@ textarea {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 44px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -12000,7 +12000,7 @@ textarea {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 26px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -12022,7 +12022,7 @@ textarea {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0px 0px 0px 34px;
+    margin: 0px 0px 0px 26px;
     padding: 0px 0px 0px 0px;
   }
 }
