@@ -1,16 +1,30 @@
 @import "../utils/utils.less";
 
 .plans {
+  position: relative;
+  z-index: 10;
+  min-width: 100%;
+  width: 100%;
+  background-color: #DFE3F0;
+}
+
+.plans__container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 318px;
+  min-width: 318px;
   min-height: 404px;
   margin-top: -36px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 55px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #DFE3F0;
   border: solid 1px transparent;
+  position: relative;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
     justify-content: start;
@@ -19,8 +33,8 @@
     min-height: 558px;
     margin-top: -27px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -33,11 +47,13 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    width: 1438px;
+    min-width: 1438px;
     min-height: 383px;
     margin-top: -27px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 54px 0px 0px 124px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
