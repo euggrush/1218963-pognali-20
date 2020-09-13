@@ -230,13 +230,17 @@
   .catalog-header__btn-authorization {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border: solid 1px red;
   }
 }
 .catalog-header__btn-authorization:hover {
   background-color: #FFBD30;
 }
-.catalog-header__btn-authorization:active {
-  background-color: #FFBD30;
+@media (min-width: 1440px) {
+  .catalog-header__btn-authorization:active {
+    background-color: #FFBD30;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 .catalog-header__main-page-link {
   display: none;
