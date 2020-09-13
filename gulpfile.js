@@ -43,8 +43,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    // .pipe(csso())
+    // .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     //.pipe(gulp.dest("build/css"))
@@ -79,7 +79,7 @@ exports.images = images;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
