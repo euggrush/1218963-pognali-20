@@ -4076,6 +4076,11 @@ button:focus {
   width: 100%;
   background-color: #192144;
 }
+@media (min-width: 1440px) {
+  .guide {
+    background-color: #161C35;
+  }
+}
 .guide__container {
   display: flex;
   flex-direction: column;
@@ -4574,6 +4579,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  width: auto;
   margin-top: 16px;
 }
 @media (min-width: 768px) {
@@ -4581,7 +4587,7 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
     margin-top: 63px;
     margin-bottom: 0px;
     margin-left: 48px;
@@ -4590,6 +4596,7 @@ button:focus {
 }
 @media (min-width: 1440px) {
   .map__address {
+    width: auto;
     padding: 0px 0px 0px 0px;
     margin-top: 35px;
     margin-bottom: 0px;
@@ -5425,7 +5432,7 @@ textarea {
   .page-body {
     width: 100%;
     max-width: 100%;
-    min-width: 320px;
+    min-width: 318px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -5436,7 +5443,7 @@ textarea {
   .page-body {
     width: 100%;
     max-width: 100%;
-    min-width: 768px;
+    min-width: 766px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -5447,7 +5454,7 @@ textarea {
   .page-body {
     width: 100%;
     max-width: 100%;
-    min-width: 1440px;
+    min-width: 1438px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -5705,6 +5712,16 @@ textarea {
   width: 100%;
   background-color: #161C35;
 }
+@media (min-width: 768px) {
+  .page-header {
+    background-color: #182044;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header {
+    background-color: #161C35;
+  }
+}
 .page-header__container {
   display: flex;
   flex-direction: column;
@@ -5770,6 +5787,11 @@ textarea {
 }
 .page-header__nav-modal {
   position: absolute;
+  min-width: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.page-header__nav-modal-container {
   display: flex;
   flex-direction: column;
   min-height: 568px;
@@ -5777,26 +5799,29 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   min-width: 318px;
+  width: 318px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 4px;
   box-sizing: border-box;
-  border: solid 1px #FFFFFF;
+  border: solid 1px transparent;
 }
 @media (min-width: 768px) {
-  .page-header__nav-modal {
-    position: absolute;
-    transform: translate(0%, 0%);
+  .page-header__nav-modal-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
     min-width: 766px;
     width: 766px;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 910px;
     padding-top: 0px;
     padding-left: 6px;
   }
 }
 @media (min-width: 1440px) {
-  .page-header__nav-modal {
+  .page-header__nav-modal-container {
     display: none;
   }
 }

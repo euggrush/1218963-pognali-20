@@ -3,6 +3,11 @@
   width: 100%;
   background-color: #192144;
 }
+@media (min-width: 1440px) {
+  .guide {
+    background-color: #161C35;
+  }
+}
 .guide__container {
   display: flex;
   flex-direction: column;
