@@ -1,7 +1,28 @@
 .filter-toggle {
   min-width: 100%;
   width: 100%;
-  background-color: #E5E5E5;
+  background-color: #E2E5F2;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  z-index: 9;
+}
+@media (min-width: 768px) {
+  .filter-toggle {
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    position: relative;
+    z-index: 9;
+  }
+}
+@media (min-width: 1440px) {
+  .filter-toggle {
+    background-color: #E5E5E5;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    position: relative;
+    z-index: 9;
+  }
 }
 .filter-toggle__container {
   display: flex;
@@ -11,21 +32,12 @@
   min-height: 73px;
   min-width: 320px;
   width: 320px;
-  background-color: #E5E5E5;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  position: relative;
-  z-index: 9;
 }
 @media (min-width: 768px) {
   .filter-toggle__container {
     min-width: 768px;
     width: 768px;
     min-height: 182px;
-    border-bottom-left-radius: 58px;
-    border-bottom-right-radius: 58px;
-    position: relative;
-    z-index: 9;
     margin: -40px auto 0px auto;
   }
 }
