@@ -1,14 +1,26 @@
 @import "../utils/utils.less";
 
 .about {
+  position: relative;
+  z-index: 9;
   min-width: 100%;
   width: 100%;
   background-color: #192144;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      }
 }
 
 .about__container {
-  position: relative;
-  z-index: 9;
   display: flex;
   flex-direction: column;
   min-width: 318px;
@@ -18,11 +30,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 16px;
-  background-color: #192144;
   background-image: url(../img/about-mobile@1x.png);
   color: #FFFFFF;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   border: solid 1px transparent;
 
   @media (min-resolution: 2dppx) {
@@ -43,8 +52,6 @@
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/about-tablet@2x.png);

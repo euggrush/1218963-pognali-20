@@ -1,26 +1,35 @@
 @import "../utils/utils.less";
 
 .directions {
+  position: relative;
+  z-index: 8;
   min-width: 100%;
   width: 100%;
   background-color: #EDEFF6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+      }
 }
 
 .directions__container {
-  position: relative;
-  z-index: 8;
   display: flex;
   flex-direction: column;
   min-width: 318px;
   width: 318px;
   min-height: 915px;
-  background-color: #EDEFF6;
   margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 97px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   background-image: none;
 
   @media (min-width: @tablet-width) {
@@ -30,8 +39,6 @@
     min-width: 766px;
     width: 766px;
     min-height: 1046px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
     background-image: url(../img/flags-back@1x.png);
     background-repeat: no-repeat;
     background-position: 440px 128px;

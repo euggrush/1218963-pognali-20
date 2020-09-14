@@ -1,9 +1,12 @@
 @import "../utils/utils.less";
 
 .my-profile {
+  position: relative;
+  z-index: 9;
   min-width: 100%;
   width: 100%;
   background-color: #E5E5E5;
+
 }
 
 .my-profile__container {
@@ -14,14 +17,11 @@
   min-height: 436px;
   justify-content: space-between;
   align-items: center;
-  background-color: #E5E5E5;
   border: solid 1px transparent;
   margin-top: -15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 38px;
-  position: relative;
-  z-index: 9;
 
   @media (min-width: @tablet-width) {
     display: grid;

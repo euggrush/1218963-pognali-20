@@ -1,21 +1,32 @@
 @import "../utils/utils.less";
 
 .travelers {
+  position: relative;
+  z-index: 7;
   min-width: 100%;
   width: 100%;
   background-color: #192144;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      }
 }
 
 .travelers__container {
-  position: relative;
-  z-index: 7;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-width: 318px;
   width: 318px;
   min-height: 1271px;
-  background-color: #192144;
   background-image: url(../img/smolov-back-desktop@1x.png), url(../img/rogovaya-back-mobile@1x.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 152px 66px, -10px 337px;
@@ -24,8 +35,6 @@
   margin-right: auto;
   padding-top: 75px;
   border: solid 1px transparent;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -34,8 +43,6 @@
     min-width: 766px;
     width: 766px;
     min-height: 1304px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
     background-image: url(../img/smolov-back-desktop@2x.png), url(../img/rogovaya-back-desktop@2x.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 40px 474px, 409px 130px;
