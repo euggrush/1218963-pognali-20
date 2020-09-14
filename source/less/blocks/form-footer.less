@@ -130,6 +130,7 @@
 
 .form-footer__social a:active {
   background-color: #FFBD30;
+  fill-opacity: 0.3;
 }
 
 .form-footer__copyright {
@@ -166,7 +167,9 @@
 }
 
 .form-footer__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -178,45 +181,30 @@
   }
 }
 
-.form-footer__link:first-child {
-  background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.form-footer__icon-fb {
+  margin: auto;
 
   @media (min-width: @tablet-width) {
-    background-size: 25px 25px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-size: 28px 28px;
+    width: 14px;
+    height: 28px;
   }
 }
 
-.form-footer__link:nth-child(2) {
-  background-image: url(../img/vk-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.form-footer__icon-vk {
+  margin: auto;
 
   @media (min-width: @tablet-width) {
-    background-size: 25px 25px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-size: 30px 30px;
+    width: 30px;
+    height: 16px;
   }
 }
 
-.form-footer__link:last-child {
-  background-image: url(../img/instagram-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.form-footer__icon-inst {
+  margin: auto;
 
   @media (min-width: @tablet-width) {
-    background-size: 25px 25px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-size: 25px 25px;
+    width: 23px;
+    height: 23px;
   }
 }
 
