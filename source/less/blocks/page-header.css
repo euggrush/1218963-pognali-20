@@ -202,22 +202,27 @@
     width: 150px;
   }
 }
+.page-header__social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-header__social a:hover {
+  fill-opacity: 0.3;
+}
+.page-header__social a:active {
+  fill-opacity: 0.5;
+}
 .page-header__link-fb {
   display: inline-block;
   width: 25px;
   height: 25px;
   background-color: transparent;
-  background-image: url("../img/icon-facebook-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 768px) {
   .page-header__link-fb {
     width: 33px;
     height: 33px;
-    background-image: url("../img/icon-facebook-white-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     margin: -1px 0px 0px -4px;
   }
 }
@@ -225,17 +230,11 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/icon-vk-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 768px) {
   .page-header__link-vk {
     width: 35px;
     height: 35px;
-    background-image: url("../img/icon-vk-white-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0px 0px 0px 0px;
   }
 }
@@ -243,18 +242,42 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("../img/icon-instagram-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 768px) {
   .page-header__link-inst {
     width: 35px;
     height: 35px;
-    background-image: url("../img/icon-instagram-white-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0px 0px 0px 0px;
+  }
+}
+.page-header__icon-fb {
+  width: 11px;
+  height: 21px;
+}
+@media (min-width: 768px) {
+  .page-header__icon-fb {
+    width: 14px;
+    height: 28px;
+  }
+}
+.page-header__icon-vk {
+  width: 23px;
+  height: 12px;
+}
+@media (min-width: 768px) {
+  .page-header__icon-vk {
+    width: 31px;
+    height: 16px;
+  }
+}
+.page-header__icon-inst {
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  .page-header__icon-inst {
+    width: 24px;
+    height: 24px;
   }
 }
 .page-header__title {

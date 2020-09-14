@@ -147,6 +147,13 @@
     line-height: 31px;
   }
 }
+.reg__quote .reg__quote-link:hover {
+  color: #FF8D30;
+}
+.reg__quote .reg__quote-link:active {
+  color: #FF8D30;
+  opacity: 0.3;
+}
 .reg__button-wrapper {
   display: flex;
   align-self: center;
@@ -509,6 +516,5 @@
   fill: #FFBD30;
 }
 .reg__contact-wrapper:active {
-  color: rgba(0, 0, 0, 0.3);
-  fill-opacity: 0.3;
+  opacity: 0.3;
 }
