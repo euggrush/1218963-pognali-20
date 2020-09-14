@@ -9,7 +9,7 @@
   justify-self: start;
   min-width: 318px;
   width: 318px;
-  min-height: 448px;
+  min-height: 446px;
   margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
@@ -184,7 +184,7 @@
 .reg__input {
   display: block;
   width: 100%;
-  height: 61px;
+  height: 62px;
   border-radius: 10px;
   border: none;
   font-family: "Blogger Sans", Arial, Helvetica, sans-serif;
@@ -193,6 +193,8 @@
   font-size: 18px;
   line-height: 18px;
   padding-left: 25px;
+  outline: none;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .reg__input {
@@ -219,7 +221,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-    width: 830px;
+    width: 868px;
     height: 81px;
     padding: 0px 0px 0px 37px;
     margin-top: 0px;
@@ -232,12 +234,22 @@
     border-top-right-radius: 0px;
   }
 }
+.reg__input:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.reg__input:active {
+  background-color: #192144;
+  color: #FFFFFF;
+  box-shadow: inset 0px 0px 0px 4px #ffffff;
+  box-sizing: border-box;
+  opacity: 1;
+}
 .reg__button {
   position: relative;
   z-index: 1;
   margin-left: -44px;
-  width: 68px;
-  height: 63px;
+  width: 62px;
+  height: 62px;
   background-color: #FFD74B;
   border-radius: 10px;
   border: none;

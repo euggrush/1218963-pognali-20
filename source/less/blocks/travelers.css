@@ -585,3 +585,9 @@
   width: 24px;
   height: 24px;
 }
+.travelers__name:hover {
+  opacity: 0.7;
+}
+.travelers__name:active {
+  opacity: 0.3;
+}
