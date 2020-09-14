@@ -1,16 +1,26 @@
 @import "../utils/utils.less";
 
 .form-header {
-  min-width: 100%;
+  position: relative;
+  z-index: 10;
+  min-width: 320px;
   width: 100%;
   background-color: #182044;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   @media (min-width: @tablet-width) {
     background-color: #182044;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 58px;
+    position: relative;
+    z-index: 10;
   }
 
   @media (min-width: @desktop-width) {
     background-color: #182044;
+    position: relative;
+    z-index: 9;
   }
 }
 
@@ -21,13 +31,8 @@
   min-width: 318px;
   width: 318px;
   min-height: 143px;
-  background-color: #182044;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   margin: 0px auto 0px auto;
   padding: 0px;
-  position: relative;
-  z-index: 10;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -37,10 +42,6 @@
     width: 766px;
     min-height: 351px;
     margin: 0px auto 0px auto;
-    border-bottom-left-radius: 58px;
-    border-bottom-right-radius: 58px;
-    position: relative;
-    z-index: 10;
   }
 
   @media (min-width: @desktop-width) {
@@ -51,8 +52,6 @@
     width: 1438px;
     padding: 0px 0px 0px 0px;
     margin: 0px auto 0px auto;
-    position: relative;
-    z-index: 9;
   }
 }
 

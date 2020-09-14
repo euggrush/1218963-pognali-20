@@ -1,9 +1,27 @@
 @import "../utils/utils.less";
 
 .form-footer {
-  min-width: 100%;
+  min-width: 320px;
   width: 100%;
-  background-color: transparent;
+  background-color: #FFFFFF;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  z-index: 12;
+
+  @media (min-width: @tablet-width) {
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    position: relative;
+    z-index: 12;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-top-left-radius: 55px;
+      border-top-right-radius: 55px;
+      position: relative;
+      z-index: 12;
+    }
 }
 
 .form-footer__container {
@@ -14,16 +32,12 @@
   width: 318px;
   min-height: 240px;
   padding-top: 12px;
-  background-color: #FFFFFF;
   color: #444444;
   border: solid 1px transparent;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   margin-top: -178px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  z-index: 12;
+
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -35,10 +49,6 @@
     margin-top: -60px;
     margin-left: auto;
     margin-right: auto;
-    border-top-left-radius: 55px;
-    border-top-right-radius: 55px;
-    position: relative;
-    z-index: 12;
   }
 
   @media (min-width: @desktop-width) {

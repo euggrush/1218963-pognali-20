@@ -5,6 +5,19 @@
   width: 100%;
   background-color: #E5E5E5;
 }
+@media (min-width: 768px) {
+  .my-profile {
+    position: relative;
+    z-index: 9;
+  }
+}
+@media (min-width: 1440px) {
+  .my-profile {
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+}
 .my-profile__container {
   display: flex;
   flex-direction: column;
@@ -35,8 +48,6 @@
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    position: relative;
-    z-index: 9;
   }
 }
 @media (min-width: 1440px) {
@@ -49,9 +60,6 @@
     min-height: 448px;
     padding: 0px 0px 0px 0px;
     margin: -191px auto 0px auto;
-    background-color: transparent;
-    position: relative;
-    z-index: 10;
   }
 }
 .my-profile__wrapper {

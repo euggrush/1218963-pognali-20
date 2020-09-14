@@ -4,6 +4,22 @@
   min-width: 100%;
   width: 100%;
   background-color: #D4D9EB;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  z-index: 11;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 11;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
 }
 
 .add-plan__container {
@@ -11,36 +27,24 @@
   flex-direction: column;
   min-width: 318px;
   width: 318px;
-  background-color: #D4D9EB;
   border: solid 1px transparent;
-  border-radius: 20px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   margin-top: -29px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 160px;
-  position: relative;
-  z-index: 11;
 
   @media (min-width: @tablet-width) {
     min-width: 766px;
     width: 766px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     margin-top: -26px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 60px 0px;
-    position: relative;
-    z-index: 11;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 1438px;
     width: 1438px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
     margin: -26px auto 60px auto;
     padding: 0px 0px 112px 0px;
   }
